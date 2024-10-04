@@ -69,7 +69,7 @@
       "id": "A-4e80420d-abe0-4c8d-826c-42f72a9df57d"
     }, {
       "@type": "type.googleapis.com/HttpRequest",
-      "url": "http://www.kuaidi100.com/autonumber/auto?num\u003dYT3754696625497",
+      "url": "http://www.kuaidi100.com/autonumber/auto?num\u003d{mvelRet}",
       "adapter": {
         "@type": "type.googleapis.com/HttpRequestRawAdapter"
       },
@@ -174,7 +174,7 @@
         "id": "A-4e80420d-abe0-4c8d-826c-42f72a9df57d"
       }, {
         "@type": "type.googleapis.com/HttpRequest",
-        "url": "http://www.kuaidi100.com/autonumber/auto?num\u003dYT3754696625497",
+        "url": "http://www.kuaidi100.com/autonumber/auto?num\u003d{mvelRet}",
         "adapter": {
           "@type": "type.googleapis.com/HttpRequestRawAdapter"
         },
