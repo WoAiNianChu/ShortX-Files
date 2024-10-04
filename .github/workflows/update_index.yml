@@ -1,0 +1,55 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-gradle
+
+name: Update index
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    types: [closed]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    - name: Grant execute permission for gradlew
+      run: chmod +x tools/AutoGen/gradlew
+    - name: Build with Gradle
+      uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
+      with:
+        arguments: run -PGPR_USER=${{ secrets.GPR_USER }} -PGPR_API_KEY=${{ secrets.GPR_API_KEY }} --args='../../'
+        build-root-directory: tools/AutoGen
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.PAT }}
+        commit-message: Update index
+        committer: GitHub <noreply@github.com>
+        author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+        signoff: false
+        delete-branch: true
+        title: '[Index] Update index'
+        body: |
+            Update index
+            - Updated with latest files
+        assignees: tornaco
+        reviewers: tornaco
+        draft: false
