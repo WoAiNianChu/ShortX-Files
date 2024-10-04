@@ -50,7 +50,17 @@
       "updateTimeMillis": 1709856411654,
       "author": "He",
       "tags": []
-    } 
+    },
+    {
+      "id": "rule-d44a357e-4687-4b00-9568-1e6d5bd2cb80",
+      "fileUrl": "ShortX-Clean_Sweep_v1.1.txt",
+      "title": "Clean Sweep v1.1",
+      "description": "自动清理垃圾文件/夹\n拯救强迫症患者，还世界一片清净\n\n想法来源于酷安@Kotch的清理黑名单列表模块\n简介抄的酷安@芙洛洛",
+      "versionCode": 1,
+      "updateTimeMillis": 1712312312697,
+      "author": "HeWei",
+      "tags": []
+    }
   ],
   "updateTimeMillis": 0
 }
