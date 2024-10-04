@@ -1,5 +1,15 @@
 {
   "directActions": [
+    {
+      "id": "DA312fa1a8-9ac7-40a0-9cb2-e949a4e37572",
+      "fileUrl": "ShortX-快递查询_2.0.txt",
+      "title": "快递查询 2.0",
+      "description": "使用快递 100的官方Api\n速度嘎嘎快",
+      "versionCode": 2,
+      "updateTimeMillis": 1702739628806,
+      "author": "He",
+      "tags": []
+    }
   ],
   "rules": [
     {
