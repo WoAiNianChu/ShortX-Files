@@ -1,0 +1,56 @@
+{
+  "directActions": [
+  ],
+  "rules": [
+    {
+      "id": "SHARE-rule-e4462102-ac38-48bf-a342-f2a6aa3d7673",
+      "fileUrl": "ShortX-应用焕新_v4.0.txt",
+      "title": "应用焕新 v4.0",
+      "description": "把想检测更新的应用放在应用集\n适合那种在检测源上架，软件没有内置更新并且你追求更新的应用(比如：ShortX\n比较版本号检测\n检测源：\n应用宝✅\n酷安✅\nAppShare✅\n华为应用市场✅\n小米应用商店✅\nvivo应用商店✅\n魅族应用商店✅\n百度手机助手✅\n360手机助手✅\n应用汇✅\n豌豆荚|PP助手✅\n历趣市场✅",
+      "versionCode": 2,
+      "updateTimeMillis": 1727788247074,
+      "author": "He",
+      "tags": []
+    },
+    {
+      "id": "SHARE-rule-debea634-75d4-4727-b672-ada30c7eaf2d",
+      "fileUrl": "ShortX-代理Boss_2.2.txt",
+      "title": "代理Boss(2.2",
+      "description": "自动开关代理\n没预设的代理工具自己手动输入代理应用的包名即可",
+      "versionCode": 1,
+      "updateTimeMillis": 1726051081836,
+      "author": "He",
+      "tags": []
+    },
+    {
+      "id": "SHARE-rule-08585fb4-7b80-4dc7-a792-d635e4b4ea3f",
+      "fileUrl": "ShortX-ShortX备份_1.0.txt",
+      "title": "ShortX备份 1.0",
+      "description": "定时备份",
+      "versionCode": 1,
+      "updateTimeMillis": 1728036075579,
+      "author": "He",
+      "tags": []
+    },
+    {
+      "id": "SHARE-rule-502e006a-285f-4890-906b-279d1c70e0bc",
+      "fileUrl": "ShortX-自动开启USB网络共享.txt",
+      "title": "自动开启USB网络共享",
+      "versionCode": 1,
+      "updateTimeMillis": 1726154490064,
+      "author": "He",
+      "tags": []
+    },
+    {
+      "id": "rule-cf801b7e-c7ab-4bcf-bb7b-0265a155d513",
+      "fileUrl": "ShortX-输入法助手_1.6.txt",
+      "title": "输入法助手(1.6",
+      "description": "例:复制/粘贴\n单击复制，长按粘贴",
+      "versionCode": 2,
+      "updateTimeMillis": 1709856411654,
+      "author": "He",
+      "tags": []
+    } 
+  ],
+  "updateTimeMillis": 0
+}

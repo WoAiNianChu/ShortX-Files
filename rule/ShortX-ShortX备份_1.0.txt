@@ -1,0 +1,137 @@
+{
+  "facts": [{
+    "@type": "type.googleapis.com/Alarm",
+    "triggerAt": {
+      "hour": 12
+    },
+    "repeat": {
+      "days": ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"]
+    },
+    "customContextDataKey": {
+    },
+    "id": "F-800c949e-11e7-4491-8846-6387f8ee464b"
+  }],
+  "actions": [{
+    "@type": "type.googleapis.com/ExportBackup",
+    "destDir": "globalVarOf$backup_dir",
+    "customContextDataKey": {
+      "keys": [{
+        "first": "backupFilePath",
+        "second": "shortx_backup"
+      }]
+    },
+    "id": "A-d736cefb-99f0-4e33-81f4-f8ea4104f568"
+  }, {
+    "@type": "type.googleapis.com/IfThenElse",
+    "If": [{
+      "@type": "type.googleapis.com/MatchMVEL",
+      "expression": "{shortx_backup}.contains(\u0027ShortX备份成功\u0027)",
+      "isDisabled": true,
+      "customContextDataKey": {
+      },
+      "id": "C-ba2227af-d140-4d86-9261-d321a466e15e"
+    }, {
+      "@type": "type.googleapis.com/MatchMVEL",
+      "expression": "{shortx_backup}.contains(\"/storage/emulated/0/Download/ShortX-Backup\")",
+      "customContextDataKey": {
+      },
+      "id": "C-9b254cce-fca5-4988-a9a9-d7a1932b5a23"
+    }],
+    "IfActions": [{
+      "@type": "type.googleapis.com/PostNotification",
+      "tag": "tag-1699270756725",
+      "message": "ShortX备份成功。",
+      "isImportant": true,
+      "smallIcon": "send-backward",
+      "vibrate": true,
+      "sound": true,
+      "customContextDataKey": {
+      },
+      "id": "A-584aee07-0145-4741-9c13-c9aee425073b"
+    }],
+    "ElseActions": [{
+      "@type": "type.googleapis.com/PostNotification",
+      "tag": "tag-1699270756725",
+      "message": "ShortX备份失败，请检查路径设置。",
+      "isImportant": true,
+      "smallIcon": "send-backward",
+      "vibrate": true,
+      "sound": true,
+      "customContextDataKey": {
+      },
+      "id": "A-9e5f324a-4710-4067-a531-58c2d65c7781"
+    }],
+    "customContextDataKey": {
+    },
+    "id": "A-7b461001-2e02-4969-a0ad-e12db71c0aef"
+  }],
+  "id": "SHARE-rule-08585fb4-7b80-4dc7-a792-d635e4b4ea3f",
+  "lastUpdateTime": "1728036075579",
+  "createTime": "1717269916025",
+  "author": {
+    "name": "He"
+  },
+  "title": "ShortX备份 1.0",
+  "description": "定时备份",
+  "isEnabled": true,
+  "hook": {
+    "actionsOnEnabled": [{
+      "@type": "type.googleapis.com/CreateGlobalVar",
+      "globalVar": {
+        "name": "backup_dir",
+        "type": {
+          "@type": "type.googleapis.com/StringVar"
+        }
+      },
+      "customContextDataKey": {
+      },
+      "id": "A-a27fe800-db3d-47b6-aa35-d6a05258f17b"
+    }, {
+      "@type": "type.googleapis.com/ShowAlertDialog",
+      "positive": "默认",
+      "onPositive": [{
+        "@type": "type.googleapis.com/WriteGlobalVar",
+        "varName": "backup_dir",
+        "valueAsString": "/storage/emulated/0/Download/",
+        "customContextDataKey": {
+        },
+        "id": "A-b5c24371-4b60-4acf-9387-9eabfc9582c3"
+      }],
+      "negative": "自定义",
+      "onNegative": [{
+        "@type": "type.googleapis.com/ShowTextFieldDialog",
+        "title": "填写ShortX备份路径",
+        "cancelable": true,
+        "textFields": [{
+        }],
+        "customContextDataKey": {
+        },
+        "id": "A-23c8eac7-7306-4d59-a0e2-585f726989c2"
+      }, {
+        "@type": "type.googleapis.com/WriteGlobalVar",
+        "varName": "backup_dir",
+        "valueAsString": "{textFieldInput1}",
+        "customContextDataKey": {
+        },
+        "id": "A-8f124dce-4724-4c9f-88f1-f65c999f8adf"
+      }],
+      "title": "ShortX备份",
+      "message": "ShortX备份路径\n默认在Download目录",
+      "customContextDataKey": {
+      },
+      "id": "A-947bc145-4d82-41de-b8e9-141acfa8a5e0"
+    }],
+    "actionsOnDeleted": [{
+      "@type": "type.googleapis.com/DeleteGlobalVar",
+      "varName": "backup_dir",
+      "customContextDataKey": {
+      },
+      "id": "A-5b8332dc-8658-4753-982e-78e29edaf76d"
+    }]
+  },
+  "quit": {
+  },
+  "versionCode": "1"
+}
+###------###
+{"type":"rule"}
