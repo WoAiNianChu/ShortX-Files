@@ -73,16 +73,6 @@
       "tags": []
     },
     {
-      "id": "SHARE-rule-2bdaf14c-8f09-42bc-b2eb-5b40e973fcde",
-      "fileUrl": "ShortX-缓存走开.txt",
-      "title": "缓存走开",
-      "description": "定时清理应用集内的应用缓存",
-      "versionCode": 1,
-      "updateTimeMillis": 1728152014491,
-      "author": "He",
-      "tags": []
-    },    
-    {
       "id": "rule-d44a357e-4687-4b00-9568-1e6d5bd2cb80",
       "fileUrl": "ShortX-Clean_Sweep_v1.1.txt",
       "title": "Clean Sweep v1.1",

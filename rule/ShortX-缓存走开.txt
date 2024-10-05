@@ -1,0 +1,73 @@
+{
+  "facts": [{
+    "@type": "type.googleapis.com/Alarm",
+    "triggerAt": {
+    },
+    "repeat": {
+      "days": ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "SATURDAY", "FRIDAY"]
+    },
+    "customContextDataKey": {
+    },
+    "id": "F-b60b1e75-b0ef-4a61-9919-0c2c1497a7d9"
+  }],
+  "actions": [{
+    "@type": "type.googleapis.com/ForEachPkgSet",
+    "pkgSet": "缓存走开",
+    "action": [{
+      "@type": "type.googleapis.com/Delay",
+      "timeString": "300",
+      "customContextDataKey": {
+      },
+      "id": "A-303b3bd4-044a-4d0c-8fb3-889b329c88e0"
+    }, {
+      "@type": "type.googleapis.com/ExecuteMVEL",
+      "expression": "import android.content.Context;\nimport android.content.pm.PackageManager;\n\nString packageName \u003d {loopAppPkgName};\n\nPackageManager packageManager \u003d context.getPackageManager();\n\n// 清除指定包的缓存数据\npackageManager.deleteApplicationCacheFiles(packageName, null);",
+      "customContextDataKey": {
+      },
+      "id": "A-27956d54-5e02-4608-a2b5-426811b2e8fb"
+    }],
+    "customContextDataKey": {
+    },
+    "id": "A-52df40f2-aeb1-4b58-a943-f600390f0f00"
+  }],
+  "id": "SHARE-rule-2bdaf14c-8f09-42bc-b2eb-5b40e973fcde",
+  "lastUpdateTime": "1728152014491",
+  "createTime": "1715306922692",
+  "author": {
+    "name": "He"
+  },
+  "title": "缓存走开",
+  "description": "定时清理应用集内的应用缓存",
+  "hook": {
+    "actionsOnEnabled": [{
+      "@type": "type.googleapis.com/ShowAlertDialog",
+      "positive": "确定",
+      "onPositive": [{
+        "@type": "type.googleapis.com/CreatePkgSet",
+        "label": "缓存走开",
+        "customContextDataKey": {
+        },
+        "id": "A-b65545bb-bec3-4318-ae19-7c7c90be53e1"
+      }],
+      "negative": "取消",
+      "onNegative": [{
+        "@type": "type.googleapis.com/SetRuleEnabled",
+        "ruleId": "SHARE-rule-2bdaf14c-8f09-42bc-b2eb-5b40e973fcde",
+        "customContextDataKey": {
+        },
+        "id": "A-d7e2f0c0-6ed2-487b-9101-1b8f23bdb07d"
+      }],
+      "title": "使用说明",
+      "message": "我已经创建一个叫做缓存走开的应用集,把你需要清理缓存的软件添加在里面",
+      "customContextDataKey": {
+      },
+      "id": "A-d57c7f51-a637-4b67-bcd1-48bda6d895a4"
+    }]
+  },
+  "quit": {
+  },
+  "versionCode": "1",
+  "ruleSetId": "RS-c90ed3d5-1c3c-4762-88ee-c11091fef98c"
+}
+###------###
+{"type":"rule"}
