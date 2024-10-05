@@ -38,6 +38,7 @@
     "name": "He"
   },
   "title": "自动开启USB网络共享",
+  "description": "连接PC自动开启USB网络共享",
   "isEnabled": true,
   "hook": {
   },
