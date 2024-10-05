@@ -1,0 +1,48 @@
+{
+  "actions": [{
+    "@type": "type.googleapis.com/ShowTextFieldDialog",
+    "title": "输入阿里云盘链接",
+    "cancelable": true,
+    "textFields": [{
+    }],
+    "customContextDataKey": {
+    },
+    "id": "A-e19c7e25-e50c-487c-9280-2f98b00d7880"
+  }, {
+    "@type": "type.googleapis.com/ExecuteMVEL",
+    "expression": "{textFieldInput1} + \"@import\u003djs:`hiker://page/aliyun?realurl\u003d${input.trim()}\u0026rule\u003d云盘君.简`;\"",
+    "customContextDataKey": {
+    },
+    "id": "A-50c8704d-22dc-4718-9ffe-840a300876d0"
+  }, {
+    "@type": "type.googleapis.com/ShowAlertDialog",
+    "positive": "复制",
+    "onPositive": [{
+      "@type": "type.googleapis.com/WriteClipboard",
+      "text": "{mvelRet}",
+      "customContextDataKey": {
+      },
+      "id": "A-aa7b3923-c051-4a01-a178-f9032511f4ac"
+    }],
+    "negative": "取消",
+    "title": "云盘君链接生成",
+    "message": "{mvelRet}",
+    "cancelable": true,
+    "customContextDataKey": {
+    },
+    "id": "A-837c7702-430f-49a4-8ebd-8e3e049b7ebe"
+  }],
+  "id": "SHARED-DA-dad2f48b-e38b-4ef0-97b2-85b0904e8bc3",
+  "lastUpdateTime": "1728099601174",
+  "createTime": "1721556394890",
+  "author": {
+    "name": "He"
+  },
+  "title": "云盘君·简",
+  "description": "将阿里云盘链接转换成海阔视界小程序(云盘君)的规则，方便导入",
+  "versionCode": "1",
+  "quit": {
+  }
+}
+###------###
+{"type":"da"}
