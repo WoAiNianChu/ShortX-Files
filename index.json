@@ -1,6 +1,16 @@
 {
   "directActions": [
     {
+      "id": "DA734c5850-9225-41db-a99a-fb711f15079d",
+      "fileUrl": "ShortX-获取已保存wifi密码.txt",
+      "title": "获取已保存wifi密码 - 去重",
+      "description": "基于mvel实现",
+      "versionCode": 1,
+      "updateTimeMillis": 1691452793746,
+      "author": "ShortX",
+      "tags": []
+    },
+    {
       "id": "DA312fa1a8-9ac7-40a0-9cb2-e949a4e37572",
       "fileUrl": "ShortX-快递查询_2.0.txt",
       "title": "快递查询 2.0",
