@@ -3774,7 +3774,7 @@
   "author": {
     "name": "He"
   },
-  "title": "应用焕新 v4.0",
+  "title": "应用焕新 v4.1",
   "description": "把想检测更新的应用放在应用集\n适合那种在检测源上架，软件没有内置更新并且你追求更新的应用(比如：ShortX\n比较版本号检测\n检测源：\n应用宝✅\n酷安✅\nAppShare✅\n华为应用市场✅\n小米应用商店✅\nvivo应用商店✅\n魅族应用商店✅\n百度手机助手✅\n360手机助手✅\n应用汇✅\n豌豆荚|PP助手✅\n历趣市场✅",
   "isEnabled": true,
   "hook": {
@@ -3805,6 +3805,33 @@
       "@type": "type.googleapis.com/ShowAlertDialog",
       "positive": "好的",
       "onPositive": [{
+        "@type": "type.googleapis.com/IfThenElse",
+        "If": [{
+          "@type": "type.googleapis.com/EvaluateGlobalVar",
+          "op": "IsNotExists",
+          "varName": "检测源",
+          "payload": {
+          },
+          "customContextDataKey": {
+          },
+          "id": "C-f41eb424-b754-4117-b761-aaf2c9a56acb"
+        }],
+        "IfActions": [{
+          "@type": "type.googleapis.com/CreateGlobalVar",
+          "globalVar": {
+            "name": "检测源",
+            "type": {
+              "@type": "type.googleapis.com/StringVar"
+            }
+          },
+          "customContextDataKey": {
+          },
+          "id": "A-30c36c0c-25a9-4b1d-94dc-217d432dbca8"
+        }],
+        "customContextDataKey": {
+        },
+        "id": "A-935de7b9-16d9-4e76-a81a-18b14f58dd94"
+      }, {
         "@type": "type.googleapis.com/WriteGlobalVar",
         "varName": "检测源",
         "customContextDataKey": {
@@ -5606,6 +5633,26 @@
         }],
         "description": "AppShareToken",
         "id": "Case-11107036-10e0-4d30-a3bb-4d178c211109"
+      }, {
+        "case": [{
+          "@type": "type.googleapis.com/EvaluateGlobalVar",
+          "op": "IsExists",
+          "varName": "选择源",
+          "payload": {
+          },
+          "customContextDataKey": {
+          },
+          "id": "C-c49799a5-5655-444c-90f0-bd94cee56fbd"
+        }],
+        "action": [{
+          "@type": "type.googleapis.com/DeleteGlobalVar",
+          "varName": "检测源",
+          "customContextDataKey": {
+          },
+          "id": "A-2f830a71-2258-49f8-b096-aacb6bd412b8"
+        }],
+        "description": "选择源",
+        "id": "Case-844f2b97-83e1-4e89-8cde-499bf1891d96"
       }],
       "customContextDataKey": {
       },
@@ -5623,7 +5670,7 @@
   },
   "quit": {
   },
-  "versionCode": "2",
+  "versionCode": "3",
   "conflictPolicy": "ConflictStrategy_ReplaceOld"
 }
 ###------###
