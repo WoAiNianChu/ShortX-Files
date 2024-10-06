@@ -33,7 +33,7 @@
         "second": "User-Agent"
       }]
     },
-    "id": "A-54fa9ee8-5958-4016-a835-e83b70746ed9"
+    "id": "A-72b2c1f3-2719-4cbe-8a13-29e6ed18d879"
   }, {
     "@type": "type.googleapis.com/SwitchCase",
     "case": [{
@@ -659,6 +659,9 @@
         }, {
           "key": "X-App-Version",
           "value": "11.2.4"
+        }, {
+          "key": "User-Agent",
+          "value": "{User-Agent}"
         }],
         "requestBody": {
           "@type": "type.googleapis.com/HttpRequestBodyForm",
@@ -860,6 +863,10 @@
           "@type": "type.googleapis.com/HttpRequestJsonMapAdapter",
           "expressions": ["data.vid"]
         },
+        "headers": [{
+          "key": "User-Agent",
+          "value": "{User-Agent}"
+        }],
         "requestBody": {},
         "withCookieJar": true,
         "customContextDataKey": {
@@ -904,6 +911,10 @@
             "@type": "type.googleapis.com/HttpRequestJsonMapAdapter",
             "expressions": ["data.versionName", "data.versionCode", "data.updateLog", "data.uploadTime", "data.targetSdk", "data.minSdk", "data.abi", "data.warning", "data.size", "data"]
           },
+          "headers": [{
+            "key": "User-Agent",
+            "value": "{User-Agent}"
+          }],
           "requestBody": {},
           "withCookieJar": true,
           "customContextDataKey": {
@@ -990,7 +1001,7 @@
         "id": "C-ef4206ba-5089-4dd9-8975-3d908fb87b88"
       }, {
         "@type": "type.googleapis.com/MatchMVEL",
-        "expression": "import java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.util.regex.*;\n\nurl \u003d \"https://appgallery.cloud.huawei.com/appDetail?pkgName\u003d\" + {pkgName};\n\n// 创建并设置 HTTP 连接\nconnection \u003d new URL(url).openConnection();\nconnection.setRequestMethod(\"GET\");\n\n// 设置连接超时时间（单位：毫秒）\nconnection.setConnectTimeout(2000);\n// 设置读取响应超时时间\nconnection.setReadTimeout(2000);\n\n// 连接服务器\nconnection.connect();\n\nreader \u003d new BufferedReader(new InputStreamReader(connection.getInputStream()));\nresponse \u003d new StringBuilder();\nline \u003d null;\n\nwhile ((line \u003d reader.readLine()) !\u003d null) {\n    response.append(line);\n}\n\nreader.close();\nhtmlContent \u003d response.toString();\n\n// 使用正则表达式提取 URL\npattern \u003d Pattern.compile(\"input type\u003d\\\"hidden\\\" value\u003d\\\"(.*?)\\\" id\u003d\\\"redirectUrl\\\"\");\nmatcher \u003d pattern.matcher(htmlContent);\n\nextractedUrl \u003d matcher.find() ? matcher.group(1) : null;\n\n// 提取的URL中使用正则表达式提取id\nappId \u003d null;\nif (extractedUrl !\u003d null) {\n    idPattern \u003d Pattern.compile(\"/app/(.*?)\\\\?\");\n    idMatcher \u003d idPattern.matcher(extractedUrl);\n    appId \u003d idMatcher.find() ? idMatcher.group(1) : null;\n}\n\n// 如果有ID就输出true，否则输出false\nreturn appId !\u003d null;",
+        "expression": "import java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.util.regex.*;\n\nurl \u003d \"https://appgallery.cloud.huawei.com/appDetail?pkgName\u003d\" + {pkgName};\n\n// 创建并设置 HTTP 连接\nconnection \u003d new URL(url).openConnection();\nconnection.setRequestMethod(\"GET\");\nconnection.setRequestProperty(\"User-Agent\", {User-Agent});\n// 设置连接超时时间（单位：毫秒）\nconnection.setConnectTimeout(2000);\n// 设置读取响应超时时间\nconnection.setReadTimeout(2000);\n\n// 连接服务器\nconnection.connect();\n\nreader \u003d new BufferedReader(new InputStreamReader(connection.getInputStream()));\nresponse \u003d new StringBuilder();\nline \u003d null;\n\nwhile ((line \u003d reader.readLine()) !\u003d null) {\n    response.append(line);\n}\n\nreader.close();\nhtmlContent \u003d response.toString();\n\n// 使用正则表达式提取 URL\npattern \u003d Pattern.compile(\"input type\u003d\\\"hidden\\\" value\u003d\\\"(.*?)\\\" id\u003d\\\"redirectUrl\\\"\");\nmatcher \u003d pattern.matcher(htmlContent);\n\nextractedUrl \u003d matcher.find() ? matcher.group(1) : null;\n\n// 提取的URL中使用正则表达式提取id\nappId \u003d null;\nif (extractedUrl !\u003d null) {\n    idPattern \u003d Pattern.compile(\"/app/(.*?)\\\\?\");\n    idMatcher \u003d idPattern.matcher(extractedUrl);\n    appId \u003d idMatcher.find() ? idMatcher.group(1) : null;\n}\n\n// 如果有ID就输出true，否则输出false\nreturn appId !\u003d null;",
         "customContextDataKey": {
         },
         "id": "C-d6e88ee1-5d03-404a-ad1f-d037cb43e9f7"
@@ -1031,7 +1042,7 @@
         "id": "A-b94e4a51-e73e-43c9-b2d7-614114443543"
       }, {
         "@type": "type.googleapis.com/ExecuteMVEL",
-        "expression": "import java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.io.OutputStream;\n\ndef sendPostRequest(urlString, payload) {\n    url \u003d new URL(urlString);\n    connection \u003d (HttpURLConnection) url.openConnection();\n    connection.setRequestMethod(\"POST\");\n    connection.setRequestProperty(\"User-Agent\", \"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1\");\n    \n    connection.setDoOutput(true);\n\n    // Sending the payload\n    os \u003d connection.getOutputStream();\n    os.write(payload.getBytes(\"UTF-8\"));\n    os.flush();\n    os.close();\n\n    // Reading the response\n    reader \u003d new BufferedReader(new InputStreamReader(connection.getInputStream()));\n    response \u003d new StringBuilder();\n    line \u003d null;\n    while ((line \u003d reader.readLine()) !\u003d null) {\n        response.append(line);\n    }\n    reader.close();\n    return response.toString();\n}\n\npayload \u003d \u0027{\"params\":{},\"zone\":\"\",\"locale\":\"zh\"}\u0027;\nurlString \u003d \u0027https://web-drcn.hispace.dbankcloud.com/edge/webedge/getInterfaceCode\u0027;\n\n// Output the response\nurlString \u003d sendPostRequest(urlString, payload);\n\n// 去除首尾双引号\nurlString \u003d urlString.replaceAll(\"^\\\"|\\\"$\", \"\");\n\nreturn urlString;",
+        "expression": "import java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.io.OutputStream;\n\ndef sendPostRequest(urlString, payload) {\n    url \u003d new URL(urlString);\n    connection \u003d (HttpURLConnection) url.openConnection();\n    connection.setRequestMethod(\"POST\");\n    connection.setRequestProperty(\"User-Agent\", {User-Agent});\n    \n    connection.setDoOutput(true);\n\n    // Sending the payload\n    os \u003d connection.getOutputStream();\n    os.write(payload.getBytes(\"UTF-8\"));\n    os.flush();\n    os.close();\n\n    // Reading the response\n    reader \u003d new BufferedReader(new InputStreamReader(connection.getInputStream()));\n    response \u003d new StringBuilder();\n    line \u003d null;\n    while ((line \u003d reader.readLine()) !\u003d null) {\n        response.append(line);\n    }\n    reader.close();\n    return response.toString();\n}\n\npayload \u003d \u0027{\"params\":{},\"zone\":\"\",\"locale\":\"zh\"}\u0027;\nurlString \u003d \u0027https://web-drcn.hispace.dbankcloud.com/edge/webedge/getInterfaceCode\u0027;\n\n// Output the response\nurlString \u003d sendPostRequest(urlString, payload);\n\n// 去除首尾双引号\nurlString \u003d urlString.replaceAll(\"^\\\"|\\\"$\", \"\");\n\nreturn urlString;",
         "customContextDataKey": {
           "keys": [{
             "first": "mvelRet",
@@ -1048,7 +1059,7 @@
         },
         "headers": [{
           "key": "User-Agent",
-          "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1"
+          "value": "{User-Agent}"
         }, {
           "key": "Interface-Code",
           "value": "{Interface-Code}"
@@ -1283,6 +1294,10 @@
           "@type": "type.googleapis.com/HttpRequestJsonMapAdapter",
           "expressions": ["app.versionName", "app.versionCode", "app.changeLog", "app.releaseKeyHash", "app.apkSize", "app.packageName", "app.updateTime", "app.id"]
         },
+        "headers": [{
+          "key": "User-Agent",
+          "value": "{User-Agent}"
+        }],
         "requestBody": {},
         "withCookieJar": true,
         "customContextDataKey": {
@@ -1417,6 +1432,10 @@
           "@type": "type.googleapis.com/HttpRequestJsonMapAdapter",
           "expressions": ["data.appSearchResponse.value[0].package_name", "data.appSearchResponse.value[0].id"]
         },
+        "headers": [{
+          "key": "User-Agent",
+          "value": "{User-Agent}"
+        }],
         "requestBody": {},
         "withCookieJar": true,
         "customContextDataKey": {
@@ -1450,7 +1469,7 @@
           },
           "headers": [{
             "key": "User-Agent",
-            "value": "Mozilla/5.0 (Linux; Android 14; Android Build/TP1A.220905.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Mobile Safari/537.36"
+            "value": "{User-Agent}"
           }],
           "requestBody": {},
           "withCookieJar": true,
@@ -1582,7 +1601,7 @@
         "id": "A-23a89887-c887-42c4-a284-e4adc18b92a0"
       }, {
         "@type": "type.googleapis.com/ExecuteMVEL",
-        "expression": "import java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport org.json.JSONObject;\n\nurl \u003d new URL(\"https://api-app.meizu.com/apps/public/external/redirect?package_name\u003d\" + {pkgName} );\nconn \u003d (HttpURLConnection) url.openConnection();\nconn.setRequestMethod(\"GET\");\nconn.setRequestProperty(\"User-Agent\", \"\");\nconn.connect();\n\n// 读取响应内容\nreader \u003d new BufferedReader(new InputStreamReader(conn.getInputStream()));\nresponse \u003d \"\";\nline \u003d null;\nwhile ((line \u003d reader.readLine()) !\u003d null) {\n    response +\u003d line;\n}\nreader.close();\n\n// 解析 JSON 并提取 redirect_url 中的 ID\njson \u003d new JSONObject(response);\nredirectUrl \u003d json.getJSONObject(\"value\").getString(\"redirect_url\");\nreturn redirectUrl.split(\"/\")[4];  // 返回 882048",
+        "expression": "import java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport org.json.JSONObject;\n\nurl \u003d new URL(\"https://api-app.meizu.com/apps/public/external/redirect?package_name\u003d\" + {pkgName} );\nconn \u003d (HttpURLConnection) url.openConnection();\nconn.setRequestMethod(\"GET\");\nconn.setRequestProperty(\"User-Agent\", {User-Agent});\nconn.connect();\n\n// 读取响应内容\nreader \u003d new BufferedReader(new InputStreamReader(conn.getInputStream()));\nresponse \u003d \"\";\nline \u003d null;\nwhile ((line \u003d reader.readLine()) !\u003d null) {\n    response +\u003d line;\n}\nreader.close();\n\n// 解析 JSON 并提取 redirect_url 中的 ID\njson \u003d new JSONObject(response);\nredirectUrl \u003d json.getJSONObject(\"value\").getString(\"redirect_url\");\nreturn redirectUrl.split(\"/\")[4];  // 返回 882048",
         "customContextDataKey": {
           "keys": [{
             "first": "mvelRet",
@@ -1612,6 +1631,9 @@
           "headers": [{
             "key": "Connection",
             "value": "keep-alive"
+          }, {
+            "key": "User-Agent",
+            "value": "{User-Agent}"
           }],
           "requestBody": {},
           "withCookieJar": true,
@@ -1753,7 +1775,7 @@
         "id": "A-13ee7cd0-34da-4e0c-8e66-ba24390a18a6"
       }, {
         "@type": "type.googleapis.com/ExecuteMVEL",
-        "expression": "import java.net.HttpURLConnection;\nimport java.net.URL;\n\nString url \u003d \"https://www.wandoujia.com/apps/\" + {pkgName};\n//String url \u003d \"https://www.wandoujia.com/apps/com.tencent.mobileqq\";\n\nURL obj \u003d new URL(url);\n\nHttpURLConnection connection \u003d (HttpURLConnection) obj.openConnection();\n// 设置模拟浏览器的请求头\nconnection.setRequestProperty(\"User-Agent\", \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36\");\n\nconnection.setInstanceFollowRedirects(false); // 禁止自动跟随重定向\nconnection.setRequestMethod(\"GET\");\nconnection.connect();\n\nint responseCode \u003d connection.getResponseCode();\nString redirectedUrl \u003d url; // 默认为原始URL\n\nif (responseCode \u003d\u003d HttpURLConnection.HTTP_MOVED_PERM || responseCode \u003d\u003d HttpURLConnection.HTTP_MOVED_TEMP) {\n    // 获取重定向的URL\n    redirectedUrl \u003d connection.getHeaderField(\"Location\");\n}\n\nint id \u003d redirectedUrl.substring(redirectedUrl.lastIndexOf(\u0027/\u0027) + 1);\n\nid;",
+        "expression": "import java.net.HttpURLConnection;\nimport java.net.URL;\n\nString url \u003d \"https://www.wandoujia.com/apps/\" + {pkgName};\n//String url \u003d \"https://www.wandoujia.com/apps/com.tencent.mobileqq\";\n\nURL obj \u003d new URL(url);\n\nHttpURLConnection connection \u003d (HttpURLConnection) obj.openConnection();\n// 设置模拟浏览器的请求头\nconnection.setRequestProperty(\"User-Agent\", \u0027Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36\u0027);\n\nconnection.setInstanceFollowRedirects(false); // 禁止自动跟随重定向\nconnection.setRequestMethod(\"GET\");\nconnection.connect();\n\nint responseCode \u003d connection.getResponseCode();\nString redirectedUrl \u003d url; // 默认为原始URL\n\nif (responseCode \u003d\u003d HttpURLConnection.HTTP_MOVED_PERM || responseCode \u003d\u003d HttpURLConnection.HTTP_MOVED_TEMP) {\n    // 获取重定向的URL\n    redirectedUrl \u003d connection.getHeaderField(\"Location\");\n}\n\nint id \u003d redirectedUrl.substring(redirectedUrl.lastIndexOf(\u0027/\u0027) + 1);\n\nid;",
         "customContextDataKey": {
           "keys": [{
             "first": "mvelRet",
@@ -1782,6 +1804,9 @@
           },
           "headers": [{
             "key": "referer"
+          }, {
+            "key": "User-Agent",
+            "value": "{User-Agent}"
           }],
           "requestBody": {},
           "withCookieJar": true,
@@ -1924,6 +1949,10 @@
           "@type": "type.googleapis.com/HttpRequestJsonMapAdapter",
           "expressions": ["data[0].version_name", "data[0].version_code", "data[0].update_info", "data[0].apkid", "data[0].apk_md5", "data[0].cpu_arch", "data[0].update_time", "data[0].down_url", "data[0].id", "data[0]"]
         },
+        "headers": [{
+          "key": "User-Agent",
+          "value": "{User-Agent}"
+        }],
         "requestBody": {},
         "withCookieJar": true,
         "customContextDataKey": {
@@ -2095,7 +2124,7 @@
         },
         "headers": [{
           "key": "User-Agent",
-          "value": "okhttp/3.11.0"
+          "value": "{User-Agent}"
         }],
         "requestBody": {},
         "withCookieJar": true,
@@ -2247,7 +2276,7 @@
         "method": "POST",
         "headers": [{
           "key": "User-Agent",
-          "value": "Dalvik/2.1.0 (Linux; U; Android 14; Android Build/TP1A.220905.001)"
+          "value": "{User-Agent}"
         }],
         "requestBody": {
           "@type": "type.googleapis.com/HttpRequestBodyForm",
@@ -2372,7 +2401,7 @@
         "id": "C-0e3bf647-e54b-40dd-87a3-dacdcfc1b704"
       }, {
         "@type": "type.googleapis.com/MatchMVEL",
-        "expression": "import java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.util.regex.Pattern;\nimport java.util.regex.Matcher;\n\n// 构建请求 URL\nurl \u003d \"https://appserver-android.liqucn.com/request_v10.php?op\u003dapp_info\u0026package\u003d\" + {pkgName};\n\n// 打开连接\nconnection \u003d new URL(url).openConnection();\nconnection.setRequestMethod(\"GET\");\n\n// 设置请求头\nconnection.setRequestProperty(\"Host\", \"appserver-android.liqucn.com\");\nconnection.setRequestProperty(\"Connection\", \"Keep-Alive\");\nconnection.setRequestProperty(\"User-Agent\", \"Liqumarket(6.5.0)Apache-HttpClient/Android\");\n\n// 设置超时（单位：毫秒）\nconnection.setConnectTimeout(2000);\nconnection.setReadTimeout(2000);\n\n// 发起连接\nconnection.connect();\n\n// 读取响应内容\nreader \u003d new BufferedReader(new InputStreamReader(connection.getInputStream()));\nresponse \u003d new StringBuilder();\nline \u003d null;\n\nwhile ((line \u003d reader.readLine()) !\u003d null) {\n    response.append(line);\n}\n\nreader.close();\nhtmlContent \u003d response.toString();\n\n// 使用正则表达式匹配第一个 \"id\":\"0\",\" 格式的数值\npattern \u003d Pattern.compile(\"\\\"id\\\":\\\"(\\\\d+)\\\",\");\nmatcher \u003d pattern.matcher(htmlContent);\n\n// 提取第一个匹配到的 ID 数值\nfirstId \u003d matcher.find() ? matcher.group(1) : null;\n\n// 返回提取到的 ID，如果没有匹配到则返回 null\nreturn firstId !\u003d 0 ;",
+        "expression": "import java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.util.regex.Pattern;\nimport java.util.regex.Matcher;\n\n// 构建请求 URL\nurl \u003d \"https://appserver-android.liqucn.com/request_v10.php?op\u003dapp_info\u0026package\u003d\" + {pkgName};\n\n// 打开连接\nconnection \u003d new URL(url).openConnection();\nconnection.setRequestMethod(\"GET\");\nconnection.setRequestProperty(\"User-Agent\", {User-Agent});\n\n// 设置请求头\nconnection.setRequestProperty(\"Host\", \"appserver-android.liqucn.com\");\nconnection.setRequestProperty(\"Connection\", \"Keep-Alive\");\nconnection.setRequestProperty(\"User-Agent\", \"Liqumarket(6.5.0)Apache-HttpClient/Android\");\n\n// 设置超时（单位：毫秒）\nconnection.setConnectTimeout(2000);\nconnection.setReadTimeout(2000);\n\n// 发起连接\nconnection.connect();\n\n// 读取响应内容\nreader \u003d new BufferedReader(new InputStreamReader(connection.getInputStream()));\nresponse \u003d new StringBuilder();\nline \u003d null;\n\nwhile ((line \u003d reader.readLine()) !\u003d null) {\n    response.append(line);\n}\n\nreader.close();\nhtmlContent \u003d response.toString();\n\n// 使用正则表达式匹配第一个 \"id\":\"0\",\" 格式的数值\npattern \u003d Pattern.compile(\"\\\"id\\\":\\\"(\\\\d+)\\\",\");\nmatcher \u003d pattern.matcher(htmlContent);\n\n// 提取第一个匹配到的 ID 数值\nfirstId \u003d matcher.find() ? matcher.group(1) : null;\n\n// 返回提取到的 ID，如果没有匹配到则返回 null\nreturn firstId !\u003d 0 ;",
         "customContextDataKey": {
         },
         "id": "C-0076b804-d195-4c3f-b411-e04f95f44180"
@@ -3774,7 +3803,7 @@
   "author": {
     "name": "He"
   },
-  "title": "应用焕新 v4.1",
+  "title": "应用焕新 v4.2",
   "description": "把想检测更新的应用放在应用集\n适合那种在检测源上架，软件没有内置更新并且你追求更新的应用(比如：ShortX\n比较版本号检测\n检测源：\n应用宝✅\n酷安✅\nAppShare✅\n华为应用市场✅\n小米应用商店✅\nvivo应用商店✅\n魅族应用商店✅\n百度手机助手✅\n360手机助手✅\n应用汇✅\n豌豆荚|PP助手✅\n历趣市场✅",
   "isEnabled": true,
   "hook": {
@@ -5670,7 +5699,7 @@
   },
   "quit": {
   },
-  "versionCode": "3",
+  "versionCode": "4",
   "conflictPolicy": "ConflictStrategy_ReplaceOld"
 }
 ###------###
