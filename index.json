@@ -43,10 +43,10 @@
     },
     {
       "id": "SHARE-rule-debea634-75d4-4727-b672-ada30c7eaf2d",
-      "fileUrl": "ShortX-代理Boss_2.3.txt",
-      "title": "代理Boss(2.3",
+      "fileUrl": "ShortX-代理Boss_2.4.txt",
+      "title": "代理Boss(2.4",
       "description": "自动开关代理\n没预设的代理工具自己手动输入代理应用的包名即可",
-      "versionCode": 2,
+      "versionCode": 3,
       "updateTimeMillis": 1726051081836,
       "author": "He",
       "tags": []

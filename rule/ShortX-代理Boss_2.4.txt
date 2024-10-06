@@ -63,13 +63,12 @@
     "id": "A-43709944-bec1-4c9e-8f59-af3bb86ece6d"
   }],
   "id": "SHARE-rule-debea634-75d4-4727-b672-ada30c7eaf2d",
-  "versionCode": "2",
   "lastUpdateTime": "1726051081836",
   "createTime": "1687238394751",
   "author": {
     "name": "He"
   },
-  "title": "代理Boss(2.3",
+  "title": "代理Boss(2.4",
   "description": "自动开关代理\n没预设的代理工具自己手动输入代理应用的包名即可",
   "isEnabled": true,
   "hook": {
@@ -145,6 +144,16 @@
           "id": "A-28c46d31-97ee-4ec3-ab27-c6e1d23cfe1d"
         }]
       }, {
+        "title": "FlClash",
+        "clickActions": [{
+          "@type": "type.googleapis.com/WriteGlobalVar",
+          "varName": "代理工具",
+          "valueAsString": "com.follow.clash",
+          "customContextDataKey": {
+          },
+          "id": "A-504ac7d8-bf21-40d4-bbf6-b2b7baf64563"
+        }]
+      }, {
         "title": "Surfboard",
         "clickActions": [{
           "@type": "type.googleapis.com/WriteGlobalVar",
@@ -153,7 +162,7 @@
           "customContextDataKey": {
           },
           "id": "A-504ac7d8-bf21-40d4-bbf6-b2b7baf64563"
-        }]
+        }]        
       }, {
         "title": "NekoBox",
         "clickActions": [{
@@ -319,7 +328,8 @@
       },
       "id": "A-1c8059e1-817b-40e4-8faa-d4c3ef8a7116"
     }]
-  }
+  },
+  "versionCode": "3"
 }
 ###------###
 {"type":"rule"}
