@@ -20,8 +20,6 @@
           },
           "id": "A-d8efd272-befe-43dd-95a4-0033c5775387"
         }]
-      }, {
-        "title": "QQ"
       }],
       "title": "联系方式",
       "cancelable": true,
