@@ -1,0 +1,51 @@
+{
+  "actions": [{
+    "@type": "type.googleapis.com/ExecuteMVEL",
+    "expression": "\u0027这是我个人创建的指令仓库，通常会上传我制作的指令。\\n如果你有不错的指令，可以联系我上传！\\n上传只需要给我指令文件就行。\u0027",
+    "customContextDataKey": {
+    },
+    "id": "A-303757e0-da68-4bdd-8577-1190dbeb09b9"
+  }, {
+    "@type": "type.googleapis.com/ShowAlertDialog",
+    "positive": "好的",
+    "negative": "联系一下",
+    "onNegative": [{
+      "@type": "type.googleapis.com/ShowMenuDialog",
+      "items": [{
+        "title": "Telegram",
+        "clickActions": [{
+          "@type": "type.googleapis.com/StartActivityUrlSchema",
+          "urlSchema": "https://t.me/AiNianChu",
+          "customContextDataKey": {
+          },
+          "id": "A-d8efd272-befe-43dd-95a4-0033c5775387"
+        }]
+      }, {
+        "title": "QQ"
+      }],
+      "title": "联系方式",
+      "cancelable": true,
+      "customContextDataKey": {
+      },
+      "id": "A-45c426cc-05d9-4022-9cfd-254a88729d22"
+    }],
+    "title": "仓库说明",
+    "message": "{mvelRet}",
+    "cancelable": true,
+    "customContextDataKey": {
+    },
+    "id": "A-92508495-270e-4049-8ff4-3b113785c209"
+  }],
+  "id": "SHARED-DA-f3bcc9b0-36ae-46a9-bbed-5f9b9c48c5e5",
+  "lastUpdateTime": "1728172765257",
+  "createTime": "1728172681604",
+  "author": {
+    "name": "He"
+  },
+  "title": "仓库说明",
+  "versionCode": "3",
+  "quit": {
+  }
+}
+###------###
+{"type":"da"}
