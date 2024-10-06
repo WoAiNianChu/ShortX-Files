@@ -33,10 +33,10 @@
   "rules": [
     {
       "id": "SHARE-rule-e4462102-ac38-48bf-a342-f2a6aa3d7673",
-      "fileUrl": "ShortX-应用焕新_v4.1.txt",
-      "title": "应用焕新 v4.1",
+      "fileUrl": "ShortX-应用焕新_v4.2.txt",
+      "title": "应用焕新 v4.2",
       "description": "把想检测更新的应用放在应用集\n适合那种在检测源上架，软件没有内置更新并且你追求更新的应用(比如：ShortX\n比较版本号检测\n检测源：\n应用宝✅\n酷安✅\nAppShare✅\n华为应用市场✅\n小米应用商店✅\nvivo应用商店✅\n魅族应用商店✅\n百度手机助手✅\n360手机助手✅\n应用汇✅\n豌豆荚|PP助手✅\n历趣市场✅",
-      "versionCode": 3,
+      "versionCode": 4,
       "updateTimeMillis": 1727788247074,
       "author": "He",
       "tags": []
