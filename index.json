@@ -21,11 +21,11 @@
     },
     {
       "id": "SHARED-DA-88e8aacf-6c30-4c6a-9b75-b4047d42ba20",
-      "fileUrl": "ShortX-设置项监视器_3.0.txt",
-      "title": "设置项监视器 3.0",
+      "fileUrl": "ShortX-设置项监视器_3.5.txt",
+      "title": "设置项监视器 3.5",
       "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
-      "versionCode": 3,
-      "updateTimeMillis": 1728730486217,
+      "versionCode": 4,
+      "updateTimeMillis": 1728731943527,
       "author": "He",
       "tags": []
     },
