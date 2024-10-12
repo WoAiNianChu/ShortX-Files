@@ -1,15 +1,22 @@
 {
   "actions": [{
-    "@type": "type.googleapis.com/ExecuteMVEL",
-    "expression": "import android.provider.Settings;\nimport android.content.Context;\n\n//延迟总控，报错就增延迟\nint sleep \u003d 3;\n\ncontext \u003d android.app.ActivityThread.currentApplication().getApplicationContext();\ncontentResolver \u003d context.getContentResolver();\n\n// 创建StringBuilder来存储输出\noutputBuffer \u003d new StringBuilder();\n\n// 定义分隔线和标题\nseparator \u003d \"\\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\\n\";\n\n// 处理Settings.Secure\noutputBuffer.append(\"Settings.Secure Settings\").append(separator);\nfields \u003d android.provider.Settings$Secure.getDeclaredFields();\nfor (field : fields) {\n    field.setAccessible(true);\n    if (field.getType().getName().equals(\"java.lang.String\")) {\n        key \u003d field.get(null);\n        value \u003d android.provider.Settings$Secure.getString(contentResolver, key);\n        if (value !\u003d null) {\n            outputBuffer.append(\"Secure\u0026\").append(key).append(\": \").append(value).append(\"\\n\");\n        }\n        Thread.sleep(sleep);\n    }\n}\n// 添加分隔线\noutputBuffer.append(separator);\n\n// 处理Settings.Global\noutputBuffer.append(\"Settings.Global Settings\").append(separator);\nfields \u003d android.provider.Settings$Global.getDeclaredFields();\nfor (field : fields) {\n    field.setAccessible(true);\n    if (field.getType().getName().equals(\"java.lang.String\")) {\n        key \u003d field.get(null);\n        value \u003d android.provider.Settings$Global.getString(contentResolver, key);\n        if (value !\u003d null) {\n            outputBuffer.append(\"Global\u0026\").append(key).append(\": \").append(value).append(\"\\n\");\n        }\n        Thread.sleep(sleep);\n    }\n}\n// 添加分隔线\noutputBuffer.append(separator);\n\n// 处理Settings.System\noutputBuffer.append(\"Settings.System Settings\").append(separator);\nfields \u003d android.provider.Settings$System.getDeclaredFields();\nfor (field : fields) {\n    field.setAccessible(true);\n    if (field.getType().getName().equals(\"java.lang.String\")) {\n        key \u003d field.get(null);\n        value \u003d android.provider.Settings$System.getString(contentResolver, key);\n        if (value !\u003d null) {\n            outputBuffer.append(\"System\u0026\").append(key).append(\": \").append(value).append(\"\\n\");\n        }\n        Thread.sleep(sleep);\n    }\n}\n// 添加最后一条分隔线\noutputBuffer.append(separator);\n\n// 输出最终结果\noutputBuffer.toString();",
+    "@type": "type.googleapis.com/NoAction",
+    "icon": "settings-4-fill",
+    "customContextDataKey": {
+    },
+    "id": "A-37b7bc6d-dfed-408d-ac83-99054c199874"
+  }, {
+    "@type": "type.googleapis.com/ShellCommand",
+    "command": "#!/bin/bash\n\n# 获取 Secure Settings\necho \"\u003d\u003d\u003d\u003d Secure Settings \u003d\u003d\u003d\u003d\"\nsettings list secure | while IFS\u003d\u0027\u003d\u0027 read -r key value; do\n    echo \"Secure\u0026$key: $value\"\ndone\n\n# 获取 Global Settings\necho \"\u003d\u003d\u003d\u003d Global Settings \u003d\u003d\u003d\u003d\"\nsettings list global | while IFS\u003d\u0027\u003d\u0027 read -r key value; do\n    echo \"Global\u0026$key: $value\"\ndone\n\n# 获取 System Settings\necho \"\u003d\u003d\u003d\u003d System Settings \u003d\u003d\u003d\u003d\"\nsettings list system | while IFS\u003d\u0027\u003d\u0027 read -r key value; do\n    echo \"System\u0026$key: $value\"\ndone",
+    "singleShot": true,
     "customContextDataKey": {
       "keys": [{
-        "first": "mvelRet",
+        "first": "shellOut",
         "second": "SettingsItem"
       }]
     },
     "note": "输出所有设置项",
-    "id": "A-3bd76e69-75a4-4b90-b7df-80039d8199ce"
+    "id": "A-8f278a54-6b99-4b58-9110-fbfa5918d1a0"
   }, {
     "@type": "type.googleapis.com/IfThenElse",
     "If": [{
@@ -235,14 +242,14 @@
     "id": "A-396640e5-c111-428e-9b5f-fd49234150a2"
   }],
   "id": "SHARED-DA-88e8aacf-6c30-4c6a-9b75-b4047d42ba20",
-  "lastUpdateTime": "1728731943527",
+  "lastUpdateTime": "1728736632200",
   "createTime": "1728713310475",
   "author": {
     "name": "He"
   },
-  "title": "设置项监视器 3.5",
+  "title": "设置项监视器 4.0",
   "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
-  "versionCode": "4",
+  "versionCode": "5",
   "quit": {
   }
 }
