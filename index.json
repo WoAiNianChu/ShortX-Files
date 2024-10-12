@@ -10,6 +10,16 @@
       "tags": []
     },
     {
+      "id": "SHARED-DA-88e8aacf-6c30-4c6a-9b75-b4047d42ba20",
+      "fileUrl": "ShortX-设置项监视器_1.0.txt",
+      "title": "设置项监视器 1.0",
+      "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
+      "versionCode": 1,
+      "updateTimeMillis": 1728720751613,
+      "author": "He",
+      "tags": []
+    },
+    {
       "id": "DA312fa1a8-9ac7-40a0-9cb2-e949a4e37572",
       "fileUrl": "ShortX-快递查询_2.0.txt",
       "title": "快递查询 2.0",
