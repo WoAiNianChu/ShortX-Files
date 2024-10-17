@@ -226,7 +226,7 @@
   },
   "title": "设置项监视器 4.2",
   "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
-  "versionCode": "5",
+  "versionCode": "6",
   "quit": {
   }
 }
