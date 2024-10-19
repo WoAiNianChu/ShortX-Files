@@ -1,0 +1,1918 @@
+{
+    "Keycode": [
+        {
+            "name": "KEYCODE_UNKNOWN",
+            "api_level": 1,
+            "Key code constant": "Unknown key code.",
+            "constant_value": 0
+        },
+        {
+            "name": "KEYCODE_SOFT_LEFT",
+            "api_level": 1,
+            "Key code constant": "Soft Left key. Usually situated below the display on phones and used as a multi-function feature key for selecting a software defined function shown on the bottom left of the display.",
+            "constant_value": 1
+        },
+        {
+            "name": "KEYCODE_SOFT_RIGHT",
+            "api_level": 1,
+            "Key code constant": "Soft Right key. Usually situated below the display on phones and used as a multi-function feature key for selecting a software defined function shown on the bottom right of the display.",
+            "constant_value": 2
+        },
+        {
+            "name": "KEYCODE_HOME",
+            "api_level": 1,
+            "Key code constant": "Home key. This key is handled by the framework and is never delivered to applications.",
+            "constant_value": 3
+        },
+        {
+            "name": "KEYCODE_BACK",
+            "api_level": 1,
+            "Key code constant": "Back key.",
+            "constant_value": 4
+        },
+        {
+            "name": "KEYCODE_CALL",
+            "api_level": 1,
+            "Key code constant": "Call key.",
+            "constant_value": 5
+        },
+        {
+            "name": "KEYCODE_ENDCALL",
+            "api_level": 1,
+            "Key code constant": "End Call key.",
+            "constant_value": 6
+        },
+        {
+            "name": "KEYCODE_0",
+            "api_level": 1,
+            "Key code constant": "'0' key.",
+            "constant_value": 7
+        },
+        {
+            "name": "KEYCODE_1",
+            "api_level": 1,
+            "Key code constant": "'1' key.",
+            "constant_value": 8
+        },
+        {
+            "name": "KEYCODE_2",
+            "api_level": 1,
+            "Key code constant": "'2' key.",
+            "constant_value": 9
+        },
+        {
+            "name": "KEYCODE_3",
+            "api_level": 1,
+            "Key code constant": "'3' key.",
+            "constant_value": 10
+        },
+        {
+            "name": "KEYCODE_4",
+            "api_level": 1,
+            "Key code constant": "'4' key.",
+            "constant_value": 11
+        },
+        {
+            "name": "KEYCODE_5",
+            "api_level": 1,
+            "Key code constant": "'5' key.",
+            "constant_value": 12
+        },
+        {
+            "name": "KEYCODE_6",
+            "api_level": 1,
+            "Key code constant": "'6' key.",
+            "constant_value": 13
+        },
+        {
+            "name": "KEYCODE_7",
+            "api_level": 1,
+            "Key code constant": "'7' key.",
+            "constant_value": 14
+        },
+        {
+            "name": "KEYCODE_8",
+            "api_level": 1,
+            "Key code constant": "'8' key.",
+            "constant_value": 15
+        },
+        {
+            "name": "KEYCODE_9",
+            "api_level": 1,
+            "Key code constant": "'9' key.",
+            "constant_value": 16
+        },
+        {
+            "name": "KEYCODE_STAR",
+            "api_level": 1,
+            "Key code constant": "'*' key.",
+            "constant_value": 17
+        },
+        {
+            "name": "KEYCODE_POUND",
+            "api_level": 1,
+            "Key code constant": "'#' key.",
+            "constant_value": 18
+        },
+        {
+            "name": "KEYCODE_DPAD_UP",
+            "api_level": 1,
+            "Key code constant": "Directional Pad Up key. May also be synthesized from trackball motions.",
+            "constant_value": 19
+        },
+        {
+            "name": "KEYCODE_DPAD_DOWN",
+            "api_level": 1,
+            "Key code constant": "Directional Pad Down key. May also be synthesized from trackball motions.",
+            "constant_value": 20
+        },
+        {
+            "name": "KEYCODE_DPAD_LEFT",
+            "api_level": 1,
+            "Key code constant": "Directional Pad Left key. May also be synthesized from trackball motions.",
+            "constant_value": 21
+        },
+        {
+            "name": "KEYCODE_DPAD_RIGHT",
+            "api_level": 1,
+            "Key code constant": "Directional Pad Right key. May also be synthesized from trackball motions.",
+            "constant_value": 22
+        },
+        {
+            "name": "KEYCODE_DPAD_CENTER",
+            "api_level": 1,
+            "Key code constant": "Directional Pad Center key. May also be synthesized from trackball motions.",
+            "constant_value": 23
+        },
+        {
+            "name": "KEYCODE_VOLUME_UP",
+            "api_level": 1,
+            "Key code constant": "Volume Up key. Adjusts the speaker volume up.",
+            "constant_value": 24
+        },
+        {
+            "name": "KEYCODE_VOLUME_DOWN",
+            "api_level": 1,
+            "Key code constant": "Volume Down key. Adjusts the speaker volume down.",
+            "constant_value": 25
+        },
+        {
+            "name": "KEYCODE_POWER",
+            "api_level": 1,
+            "Key code constant": "Power key.",
+            "constant_value": 26
+        },
+        {
+            "name": "KEYCODE_CAMERA",
+            "api_level": 1,
+            "Key code constant": "Camera key. Used to launch a camera application or take pictures.",
+            "constant_value": 27
+        },
+        {
+            "name": "KEYCODE_CLEAR",
+            "api_level": 1,
+            "Key code constant": "Clear key.",
+            "constant_value": 28
+        },
+        {
+            "name": "KEYCODE_A",
+            "api_level": 1,
+            "Key code constant": "'A' key.",
+            "constant_value": 29
+        },
+        {
+            "name": "KEYCODE_B",
+            "api_level": 1,
+            "Key code constant": "'B' key.",
+            "constant_value": 30
+        },
+        {
+            "name": "KEYCODE_C",
+            "api_level": 1,
+            "Key code constant": "'C' key.",
+            "constant_value": 31
+        },
+        {
+            "name": "KEYCODE_D",
+            "api_level": 1,
+            "Key code constant": "'D' key.",
+            "constant_value": 32
+        },
+        {
+            "name": "KEYCODE_E",
+            "api_level": 1,
+            "Key code constant": "'E' key.",
+            "constant_value": 33
+        },
+        {
+            "name": "KEYCODE_F",
+            "api_level": 1,
+            "Key code constant": "'F' key.",
+            "constant_value": 34
+        },
+        {
+            "name": "KEYCODE_G",
+            "api_level": 1,
+            "Key code constant": "'G' key.",
+            "constant_value": 35
+        },
+        {
+            "name": "KEYCODE_H",
+            "api_level": 1,
+            "Key code constant": "'H' key.",
+            "constant_value": 36
+        },
+        {
+            "name": "KEYCODE_I",
+            "api_level": 1,
+            "Key code constant": "'I' key.",
+            "constant_value": 37
+        },
+        {
+            "name": "KEYCODE_J",
+            "api_level": 1,
+            "Key code constant": "'J' key.",
+            "constant_value": 38
+        },
+        {
+            "name": "KEYCODE_K",
+            "api_level": 1,
+            "Key code constant": "'K' key.",
+            "constant_value": 39
+        },
+        {
+            "name": "KEYCODE_L",
+            "api_level": 1,
+            "Key code constant": "'L' key.",
+            "constant_value": 40
+        },
+        {
+            "name": "KEYCODE_M",
+            "api_level": 1,
+            "Key code constant": "'M' key.",
+            "constant_value": 41
+        },
+        {
+            "name": "KEYCODE_N",
+            "api_level": 1,
+            "Key code constant": "'N' key.",
+            "constant_value": 42
+        },
+        {
+            "name": "KEYCODE_O",
+            "api_level": 1,
+            "Key code constant": "'O' key.",
+            "constant_value": 43
+        },
+        {
+            "name": "KEYCODE_P",
+            "api_level": 1,
+            "Key code constant": "'P' key.",
+            "constant_value": 44
+        },
+        {
+            "name": "KEYCODE_Q",
+            "api_level": 1,
+            "Key code constant": "'Q' key.",
+            "constant_value": 45
+        },
+        {
+            "name": "KEYCODE_R",
+            "api_level": 1,
+            "Key code constant": "'R' key.",
+            "constant_value": 46
+        },
+        {
+            "name": "KEYCODE_S",
+            "api_level": 1,
+            "Key code constant": "'S' key.",
+            "constant_value": 47
+        },
+        {
+            "name": "KEYCODE_T",
+            "api_level": 1,
+            "Key code constant": "'T' key.",
+            "constant_value": 48
+        },
+        {
+            "name": "KEYCODE_U",
+            "api_level": 1,
+            "Key code constant": "'U' key.",
+            "constant_value": 49
+        },
+        {
+            "name": "KEYCODE_V",
+            "api_level": 1,
+            "Key code constant": "'V' key.",
+            "constant_value": 50
+        },
+        {
+            "name": "KEYCODE_W",
+            "api_level": 1,
+            "Key code constant": "'W' key.",
+            "constant_value": 51
+        },
+        {
+            "name": "KEYCODE_X",
+            "api_level": 1,
+            "Key code constant": "'X' key.",
+            "constant_value": 52
+        },
+        {
+            "name": "KEYCODE_Y",
+            "api_level": 1,
+            "Key code constant": "'Y' key.",
+            "constant_value": 53
+        },
+        {
+            "name": "KEYCODE_Z",
+            "api_level": 1,
+            "Key code constant": "'Z' key.",
+            "constant_value": 54
+        },
+        {
+            "name": "KEYCODE_COMMA",
+            "api_level": 1,
+            "Key code constant": "',' key.",
+            "constant_value": 55
+        },
+        {
+            "name": "KEYCODE_PERIOD",
+            "api_level": 1,
+            "Key code constant": "'.' key.",
+            "constant_value": 56
+        },
+        {
+            "name": "KEYCODE_ALT_LEFT",
+            "api_level": 1,
+            "Key code constant": "Left Alt modifier key.",
+            "constant_value": 57
+        },
+        {
+            "name": "KEYCODE_ALT_RIGHT",
+            "api_level": 1,
+            "Key code constant": "Right Alt modifier key.",
+            "constant_value": 58
+        },
+        {
+            "name": "KEYCODE_SHIFT_LEFT",
+            "api_level": 1,
+            "Key code constant": "Left Shift modifier key.",
+            "constant_value": 59
+        },
+        {
+            "name": "KEYCODE_SHIFT_RIGHT",
+            "api_level": 1,
+            "Key code constant": "Right Shift modifier key.",
+            "constant_value": 60
+        },
+        {
+            "name": "KEYCODE_TAB",
+            "api_level": 1,
+            "Key code constant": "Tab key.",
+            "constant_value": 61
+        },
+        {
+            "name": "KEYCODE_SPACE",
+            "api_level": 1,
+            "Key code constant": "Space key.",
+            "constant_value": 62
+        },
+        {
+            "name": "KEYCODE_SYM",
+            "api_level": 1,
+            "Key code constant": "Symbol modifier key. Used to enter alternate symbols.",
+            "constant_value": 63
+        },
+        {
+            "name": "KEYCODE_EXPLORER",
+            "api_level": 1,
+            "Key code constant": "Explorer special function key. Used to launch a browser application.",
+            "constant_value": 64
+        },
+        {
+            "name": "KEYCODE_ENVELOPE",
+            "api_level": 1,
+            "Key code constant": "Envelope special function key. Used to launch a mail application.",
+            "constant_value": 65
+        },
+        {
+            "name": "KEYCODE_ENTER",
+            "api_level": 1,
+            "Key code constant": "Enter key.",
+            "constant_value": 66
+        },
+        {
+            "name": "KEYCODE_DEL",
+            "api_level": 1,
+            "Key code constant": "Backspace key. Deletes characters before the insertion point, unlike KEYCODE_FORWARD_DEL.",
+            "constant_value": 67
+        },
+        {
+            "name": "KEYCODE_GRAVE",
+            "api_level": 1,
+            "Key code constant": "'`' (backtick) key.",
+            "constant_value": 68
+        },
+        {
+            "name": "KEYCODE_MINUS",
+            "api_level": 1,
+            "Key code constant": "'-'.",
+            "constant_value": 69
+        },
+        {
+            "name": "KEYCODE_EQUALS",
+            "api_level": 1,
+            "Key code constant": "'=' key.",
+            "constant_value": 70
+        },
+        {
+            "name": "KEYCODE_LEFT_BRACKET",
+            "api_level": 1,
+            "Key code constant": "'[' key.",
+            "constant_value": 71
+        },
+        {
+            "name": "KEYCODE_RIGHT_BRACKET",
+            "api_level": 1,
+            "Key code constant": "']' key.",
+            "constant_value": 72
+        },
+        {
+            "name": "KEYCODE_BACKSLASH",
+            "api_level": 1,
+            "Key code constant": "'\\' key.",
+            "constant_value": 73
+        },
+        {
+            "name": "KEYCODE_SEMICOLON",
+            "api_level": 1,
+            "Key code constant": "';' key.",
+            "constant_value": 74
+        },
+        {
+            "name": "KEYCODE_APOSTROPHE",
+            "api_level": 1,
+            "Key code constant": "''' (apostrophe) key.",
+            "constant_value": 75
+        },
+        {
+            "name": "KEYCODE_SLASH",
+            "api_level": 1,
+            "Key code constant": "'/' key.",
+            "constant_value": 76
+        },
+        {
+            "name": "KEYCODE_AT",
+            "api_level": 1,
+            "Key code constant": "'@' key.",
+            "constant_value": 77
+        },
+        {
+            "name": "KEYCODE_NUM",
+            "api_level": 1,
+            "Key code constant": "Number modifier key. Used to enter numeric symbols. This key is not Num Lock; it is more like KEYCODE_ALT_LEFT and is interpreted as an ALT key by MetaKeyKeyListener.",
+            "constant_value": 78
+        },
+        {
+            "name": "KEYCODE_HEADSETHOOK",
+            "api_level": 1,
+            "Key code constant": "Headset Hook key. Used to hang up calls and stop media.",
+            "constant_value": 79
+        },
+        {
+            "name": "KEYCODE_FOCUS",
+            "api_level": 1,
+            "Key code constant": "Camera Focus key. Used to focus the camera.",
+            "constant_value": 80
+        },
+        {
+            "name": "KEYCODE_PLUS",
+            "api_level": 1,
+            "Key code constant": "'+' key.",
+            "constant_value": 81
+        },
+        {
+            "name": "KEYCODE_MENU",
+            "api_level": 1,
+            "Key code constant": "Menu key.",
+            "constant_value": 82
+        },
+        {
+            "name": "KEYCODE_NOTIFICATION",
+            "api_level": 1,
+            "Key code constant": "Notification key.",
+            "constant_value": 83
+        },
+        {
+            "name": "KEYCODE_SEARCH",
+            "api_level": 1,
+            "Key code constant": "Search key.",
+            "constant_value": 84
+        },
+        {
+            "name": "KEYCODE_MEDIA_PLAY_PAUSE",
+            "api_level": 3,
+            "Key code constant": "Play/Pause media key.",
+            "constant_value": 85
+        },
+        {
+            "name": "KEYCODE_MEDIA_STOP",
+            "api_level": 3,
+            "Key code constant": "Stop media key.",
+            "constant_value": 86
+        },
+        {
+            "name": "KEYCODE_MEDIA_NEXT",
+            "api_level": 3,
+            "Key code constant": "Play Next media key.",
+            "constant_value": 87
+        },
+        {
+            "name": "KEYCODE_MEDIA_PREVIOUS",
+            "api_level": 3,
+            "Key code constant": "Play Previous media key.",
+            "constant_value": 88
+        },
+        {
+            "name": "KEYCODE_MEDIA_REWIND",
+            "api_level": 3,
+            "Key code constant": "Rewind media key.",
+            "constant_value": 89
+        },
+        {
+            "name": "KEYCODE_MEDIA_FAST_FORWARD",
+            "api_level": 3,
+            "Key code constant": "Fast Forward media key.",
+            "constant_value": 90
+        },
+        {
+            "name": "KEYCODE_MUTE",
+            "api_level": 3,
+            "Key code constant": "Mute key. Mute key for the microphone (unlike KEYCODE_VOLUME_MUTE, which is the speaker mute key).",
+            "constant_value": 91
+        },
+        {
+            "name": "KEYCODE_PAGE_UP",
+            "api_level": 9,
+            "Key code constant": "Page Up key.",
+            "constant_value": 92
+        },
+        {
+            "name": "KEYCODE_PAGE_DOWN",
+            "api_level": 9,
+            "Key code constant": "Page Down key.",
+            "constant_value": 93
+        },
+        {
+            "name": "KEYCODE_PICTSYMBOLS",
+            "api_level": 9,
+            "Key code constant": "Picture Symbols modifier key. Used to switch symbol sets (Emoji, Kao-moji).",
+            "constant_value": 94
+        },
+        {
+            "name": "KEYCODE_SWITCH_CHARSET",
+            "api_level": 9,
+            "Key code constant": "Switch Charset modifier key. Used to switch character sets (Kanji, Katakana).",
+            "constant_value": 95
+        },
+        {
+            "name": "KEYCODE_BUTTON_A",
+            "api_level": 9,
+            "Key code constant": "A Button key. On a game controller, the A button should be either the button labeled A or the first button on the bottom row of controller buttons.",
+            "constant_value": 96
+        },
+        {
+            "name": "KEYCODE_BUTTON_B",
+            "api_level": 9,
+            "Key code constant": "B Button key. On a game controller, the B button should be either the button labeled B or the second button on the bottom row of controller buttons.",
+            "constant_value": 97
+        },
+        {
+            "name": "KEYCODE_BUTTON_C",
+            "api_level": 9,
+            "Key code constant": "C Button key. On a game controller, the C button should be either the button labeled C or the third button on the bottom row of controller buttons.",
+            "constant_value": 98
+        },
+        {
+            "name": "KEYCODE_BUTTON_X",
+            "api_level": 9,
+            "Key code constant": "X Button key. On a game controller, the X button should be either the button labeled X or the first button on the upper row of controller buttons.",
+            "constant_value": 99
+        },
+        {
+            "name": "KEYCODE_BUTTON_Y",
+            "api_level": 9,
+            "Key code constant": "Y Button key. On a game controller, the Y button should be either the button labeled Y or the second button on the upper row of controller buttons.",
+            "constant_value": 100
+        },
+        {
+            "name": "KEYCODE_BUTTON_Z",
+            "api_level": 9,
+            "Key code constant": "Z Button key. On a game controller, the Z button should be either the button labeled Z or the third button on the upper row of controller buttons.",
+            "constant_value": 101
+        },
+        {
+            "name": "KEYCODE_BUTTON_L1",
+            "api_level": 9,
+            "Key code constant": "L1 Button key. On a game controller, the L1 button should be either the button labeled L1 (or L) or the top left trigger button.",
+            "constant_value": 102
+        },
+        {
+            "name": "KEYCODE_BUTTON_R1",
+            "api_level": 9,
+            "Key code constant": "R1 Button key. On a game controller, the R1 button should be either the button labeled R1 (or R) or the top right trigger button.",
+            "constant_value": 103
+        },
+        {
+            "name": "KEYCODE_BUTTON_L2",
+            "api_level": 9,
+            "Key code constant": "L2 Button key. On a game controller, the L2 button should be either the button labeled L2 or the bottom left trigger button.",
+            "constant_value": 104
+        },
+        {
+            "name": "KEYCODE_BUTTON_R2",
+            "api_level": 9,
+            "Key code constant": "R2 Button key. On a game controller, the R2 button should be either the button labeled R2 or the bottom right trigger button.",
+            "constant_value": 105
+        },
+        {
+            "name": "KEYCODE_BUTTON_THUMBL",
+            "api_level": 9,
+            "Key code constant": "Left Thumb Button key. On a game controller, the left thumb button indicates that the left (or only) joystick is pressed.",
+            "constant_value": 106
+        },
+        {
+            "name": "KEYCODE_BUTTON_THUMBR",
+            "api_level": 9,
+            "Key code constant": "Right Thumb Button key. On a game controller, the right thumb button indicates that the right joystick is pressed.",
+            "constant_value": 107
+        },
+        {
+            "name": "KEYCODE_BUTTON_START",
+            "api_level": 9,
+            "Key code constant": "Start Button key. On a game controller, the button labeled Start.",
+            "constant_value": 108
+        },
+        {
+            "name": "KEYCODE_BUTTON_SELECT",
+            "api_level": 9,
+            "Key code constant": "Select Button key. On a game controller, the button labeled Select.",
+            "constant_value": 109
+        },
+        {
+            "name": "KEYCODE_BUTTON_MODE",
+            "api_level": 9,
+            "Key code constant": "Mode Button key. On a game controller, the button labeled Mode.",
+            "constant_value": 110
+        },
+        {
+            "name": "KEYCODE_ESCAPE",
+            "api_level": 11,
+            "Key code constant": "Escape key.",
+            "constant_value": 111
+        },
+        {
+            "name": "KEYCODE_FORWARD_DEL",
+            "api_level": 11,
+            "Key code constant": "Forward Delete key. Deletes characters ahead of the insertion point, unlike KEYCODE_DEL.",
+            "constant_value": 112
+        },
+        {
+            "name": "KEYCODE_CTRL_LEFT",
+            "api_level": 11,
+            "Key code constant": "Left Control modifier key.",
+            "constant_value": 113
+        },
+        {
+            "name": "KEYCODE_CTRL_RIGHT",
+            "api_level": 11,
+            "Key code constant": "Right Control modifier key.",
+            "constant_value": 114
+        },
+        {
+            "name": "KEYCODE_CAPS_LOCK",
+            "api_level": 11,
+            "Key code constant": "Caps Lock key.",
+            "constant_value": 115
+        },
+        {
+            "name": "KEYCODE_SCROLL_LOCK",
+            "api_level": 11,
+            "Key code constant": "Scroll Lock key.",
+            "constant_value": 116
+        },
+        {
+            "name": "KEYCODE_META_LEFT",
+            "api_level": 11,
+            "Key code constant": "Left Meta modifier key.",
+            "constant_value": 117
+        },
+        {
+            "name": "KEYCODE_META_RIGHT",
+            "api_level": 11,
+            "Key code constant": "Right Meta modifier key.",
+            "constant_value": 118
+        },
+        {
+            "name": "KEYCODE_FUNCTION",
+            "api_level": 11,
+            "Key code constant": "Function modifier key.",
+            "constant_value": 119
+        },
+        {
+            "name": "KEYCODE_SYSRQ",
+            "api_level": 11,
+            "Key code constant": "System Request / Print Screen key. This key is sent to the app first and only if the app doesn't handle it, the framework handles it (to take a screenshot), unlike KEYCODE_TAKE_SCREENSHOT which is fully handled by the framework.",
+            "constant_value": 120
+        },
+        {
+            "name": "KEYCODE_BREAK",
+            "api_level": 11,
+            "Key code constant": "Break / Pause key.",
+            "constant_value": 121
+        },
+        {
+            "name": "KEYCODE_MOVE_HOME",
+            "api_level": 11,
+            "Key code constant": "Home Movement key. Used for scrolling or moving the cursor around to the start of a line or to the top of a list.",
+            "constant_value": 122
+        },
+        {
+            "name": "KEYCODE_MOVE_END",
+            "api_level": 11,
+            "Key code constant": "End Movement key. Used for scrolling or moving the cursor around to the end of a line or to the bottom of a list.",
+            "constant_value": 123
+        },
+        {
+            "name": "KEYCODE_INSERT",
+            "api_level": 11,
+            "Key code constant": "Insert key. Toggles insert / overwrite edit mode.",
+            "constant_value": 124
+        },
+        {
+            "name": "KEYCODE_FORWARD",
+            "api_level": 11,
+            "Key code constant": "Forward key. Navigates forward in the history stack. Complement of KEYCODE_BACK.",
+            "constant_value": 125
+        },
+        {
+            "name": "KEYCODE_MEDIA_PLAY",
+            "api_level": 11,
+            "Key code constant": "Play media key.",
+            "constant_value": 126
+        },
+        {
+            "name": "KEYCODE_MEDIA_PAUSE",
+            "api_level": 11,
+            "Key code constant": "Pause media key.",
+            "constant_value": 127
+        },
+        {
+            "name": "KEYCODE_MEDIA_CLOSE",
+            "api_level": 11,
+            "Key code constant": "Close media key. May be used to close a CD tray, for example.",
+            "constant_value": 128
+        },
+        {
+            "name": "KEYCODE_MEDIA_EJECT",
+            "api_level": 11,
+            "Key code constant": "Eject media key. May be used to eject a CD tray, for example.",
+            "constant_value": 129
+        },
+        {
+            "name": "KEYCODE_MEDIA_RECORD",
+            "api_level": 11,
+            "Key code constant": "Record media key.",
+            "constant_value": 130
+        },
+        {
+            "name": "KEYCODE_F1",
+            "api_level": 11,
+            "Key code constant": "F1 key.",
+            "constant_value": 131
+        },
+        {
+            "name": "KEYCODE_F2",
+            "api_level": 11,
+            "Key code constant": "F2 key.",
+            "constant_value": 132
+        },
+        {
+            "name": "KEYCODE_F3",
+            "api_level": 11,
+            "Key code constant": "F3 key.",
+            "constant_value": 133
+        },
+        {
+            "name": "KEYCODE_F4",
+            "api_level": 11,
+            "Key code constant": "F4 key.",
+            "constant_value": 134
+        },
+        {
+            "name": "KEYCODE_F5",
+            "api_level": 11,
+            "Key code constant": "F5 key.",
+            "constant_value": 135
+        },
+        {
+            "name": "KEYCODE_F6",
+            "api_level": 11,
+            "Key code constant": "F6 key.",
+            "constant_value": 136
+        },
+        {
+            "name": "KEYCODE_F7",
+            "api_level": 11,
+            "Key code constant": "F7 key.",
+            "constant_value": 137
+        },
+        {
+            "name": "KEYCODE_F8",
+            "api_level": 11,
+            "Key code constant": "F8 key.",
+            "constant_value": 138
+        },
+        {
+            "name": "KEYCODE_F9",
+            "api_level": 11,
+            "Key code constant": "F9 key.",
+            "constant_value": 139
+        },
+        {
+            "name": "KEYCODE_F10",
+            "api_level": 11,
+            "Key code constant": "F10 key.",
+            "constant_value": 140
+        },
+        {
+            "name": "KEYCODE_F11",
+            "api_level": 11,
+            "Key code constant": "F11 key.",
+            "constant_value": 141
+        },
+        {
+            "name": "KEYCODE_F12",
+            "api_level": 11,
+            "Key code constant": "F12 key.",
+            "constant_value": 142
+        },
+        {
+            "name": "KEYCODE_NUM_LOCK",
+            "api_level": 11,
+            "Key code constant": "Num Lock key. This is the Num Lock key; it is different from KEYCODE_NUM. This key alters the behavior of other keys on the numeric keypad.",
+            "constant_value": 143
+        },
+        {
+            "name": "KEYCODE_NUMPAD_0",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '0' key.",
+            "constant_value": 144
+        },
+        {
+            "name": "KEYCODE_NUMPAD_1",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '1' key.",
+            "constant_value": 145
+        },
+        {
+            "name": "KEYCODE_NUMPAD_2",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '2' key.",
+            "constant_value": 146
+        },
+        {
+            "name": "KEYCODE_NUMPAD_3",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '3' key.",
+            "constant_value": 147
+        },
+        {
+            "name": "KEYCODE_NUMPAD_4",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '4' key.",
+            "constant_value": 148
+        },
+        {
+            "name": "KEYCODE_NUMPAD_5",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '5' key.",
+            "constant_value": 149
+        },
+        {
+            "name": "KEYCODE_NUMPAD_6",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '6' key.",
+            "constant_value": 150
+        },
+        {
+            "name": "KEYCODE_NUMPAD_7",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '7' key.",
+            "constant_value": 151
+        },
+        {
+            "name": "KEYCODE_NUMPAD_8",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '8' key.",
+            "constant_value": 152
+        },
+        {
+            "name": "KEYCODE_NUMPAD_9",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '9' key.",
+            "constant_value": 153
+        },
+        {
+            "name": "KEYCODE_NUMPAD_DIVIDE",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '/' key (for division).",
+            "constant_value": 154
+        },
+        {
+            "name": "KEYCODE_NUMPAD_MULTIPLY",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '*' key (for multiplication).",
+            "constant_value": 155
+        },
+        {
+            "name": "KEYCODE_NUMPAD_SUBTRACT",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '-' key (for subtraction).",
+            "constant_value": 156
+        },
+        {
+            "name": "KEYCODE_NUMPAD_ADD",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '+' key (for addition).",
+            "constant_value": 157
+        },
+        {
+            "name": "KEYCODE_NUMPAD_DOT",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '.' key (for decimals or digit grouping).",
+            "constant_value": 158
+        },
+        {
+            "name": "KEYCODE_NUMPAD_COMMA",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad ',' key (for decimals or digit grouping).",
+            "constant_value": 159
+        },
+        {
+            "name": "KEYCODE_NUMPAD_ENTER",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad Enter key.",
+            "constant_value": 160
+        },
+        {
+            "name": "KEYCODE_NUMPAD_EQUALS",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '=' key.",
+            "constant_value": 161
+        },
+        {
+            "name": "KEYCODE_NUMPAD_LEFT_PAREN",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad '(' key.",
+            "constant_value": 162
+        },
+        {
+            "name": "KEYCODE_NUMPAD_RIGHT_PAREN",
+            "api_level": 11,
+            "Key code constant": "Numeric keypad ')' key.",
+            "constant_value": 163
+        },
+        {
+            "name": "KEYCODE_VOLUME_MUTE",
+            "api_level": 11,
+            "Key code constant": "Volume Mute key. Mute key for speaker (unlike KEYCODE_MUTE, which is the mute key for the microphone). This key should normally be implemented as a toggle such that the first press mutes the speaker and the second press restores the original volume.",
+            "constant_value": 164
+        },
+        {
+            "name": "KEYCODE_INFO",
+            "api_level": 11,
+            "Key code constant": "Info key. Common on TV remotes to show additional information related to what is currently being viewed.",
+            "constant_value": 165
+        },
+        {
+            "name": "KEYCODE_CHANNEL_UP",
+            "api_level": 11,
+            "Key code constant": "Channel up key. On TV remotes, increments the television channel.",
+            "constant_value": 166
+        },
+        {
+            "name": "KEYCODE_CHANNEL_DOWN",
+            "api_level": 11,
+            "Key code constant": "Channel down key. On TV remotes, decrements the television channel.",
+            "constant_value": 167
+        },
+        {
+            "name": "KEYCODE_ZOOM_IN",
+            "api_level": 11,
+            "Key code constant": "Zoom in key.",
+            "constant_value": 168
+        },
+        {
+            "name": "KEYCODE_ZOOM_OUT",
+            "api_level": 11,
+            "Key code constant": "Zoom out key.",
+            "constant_value": 169
+        },
+        {
+            "name": "KEYCODE_TV",
+            "api_level": 11,
+            "Key code constant": "TV key. On TV remotes, switches to viewing live TV.",
+            "constant_value": 170
+        },
+        {
+            "name": "KEYCODE_WINDOW",
+            "api_level": 11,
+            "Key code constant": "Window key. On TV remotes, toggles picture-in-picture mode or other windowing functions. On Android Wear devices, triggers a display offset.",
+            "constant_value": 171
+        },
+        {
+            "name": "KEYCODE_GUIDE",
+            "api_level": 11,
+            "Key code constant": "Guide key. On TV remotes, shows a programming guide.",
+            "constant_value": 172
+        },
+        {
+            "name": "KEYCODE_DVR",
+            "api_level": 11,
+            "Key code constant": "DVR key. On some TV remotes, switches to a DVR mode for recorded shows.",
+            "constant_value": 173
+        },
+        {
+            "name": "KEYCODE_BOOKMARK",
+            "api_level": 11,
+            "Key code constant": "Bookmark key. On some TV remotes, bookmarks content or web pages.",
+            "constant_value": 174
+        },
+        {
+            "name": "KEYCODE_CAPTIONS",
+            "api_level": 11,
+            "Key code constant": "Toggle captions key. Switches the mode for closed-captioning text, for example during television shows.",
+            "constant_value": 175
+        },
+        {
+            "name": "KEYCODE_SETTINGS",
+            "api_level": 11,
+            "Key code constant": "Settings key. Starts the system settings activity.",
+            "constant_value": 176
+        },
+        {
+            "name": "KEYCODE_TV_POWER",
+            "api_level": 11,
+            "Key code constant": "TV power key. On HDMI TV panel devices and Android TV devices that don't support HDMI, toggles the power state of the device. On HDMI source devices, toggles the power state of the HDMI-connected TV via HDMI-CEC and makes the source device follow this power state.",
+            "constant_value": 177
+        },
+        {
+            "name": "KEYCODE_TV_INPUT",
+            "api_level": 11,
+            "Key code constant": "TV input key. On TV remotes, switches the input on a television screen.",
+            "constant_value": 178
+        },
+        {
+            "name": "KEYCODE_STB_POWER",
+            "api_level": 11,
+            "Key code constant": "Set-top-box power key. On TV remotes, toggles the power on an external Set-top-box.",
+            "constant_value": 179
+        },
+        {
+            "name": "KEYCODE_STB_INPUT",
+            "api_level": 11,
+            "Key code constant": "Set-top-box input key. On TV remotes, switches the input mode on an external Set-top-box.",
+            "constant_value": 180
+        },
+        {
+            "name": "KEYCODE_AVR_POWER",
+            "api_level": 11,
+            "Key code constant": "A/V Receiver power key. On TV remotes, toggles the power on an external A/V Receiver.",
+            "constant_value": 181
+        },
+        {
+            "name": "KEYCODE_AVR_INPUT",
+            "api_level": 11,
+            "Key code constant": "A/V Receiver input key. On TV remotes, switches the input mode on an external A/V Receiver.",
+            "constant_value": 182
+        },
+        {
+            "name": "KEYCODE_PROG_RED",
+            "api_level": 11,
+            "Key code constant": "Red \"programmable\" key. On TV remotes, acts as a contextual/programmable key.",
+            "constant_value": 183
+        },
+        {
+            "name": "KEYCODE_PROG_GREEN",
+            "api_level": 11,
+            "Key code constant": "Green \"programmable\" key. On TV remotes, actsas a contextual/programmable key.",
+            "constant_value": 184
+        },
+        {
+            "name": "KEYCODE_PROG_YELLOW",
+            "api_level": 11,
+            "Key code constant": "Yellow \"programmable\" key. On TV remotes, acts as a contextual/programmable key.",
+            "constant_value": 185
+        },
+        {
+            "name": "KEYCODE_PROG_BLUE",
+            "api_level": 11,
+            "Key code constant": "Blue \"programmable\" key. On TV remotes, acts as a contextual/programmable key.",
+            "constant_value": 186
+        },
+        {
+            "name": "KEYCODE_APP_SWITCH",
+            "api_level": 11,
+            "Key code constant": "App switch key. Should bring up the application switcher dialog.",
+            "constant_value": 187
+        },
+        {
+            "name": "KEYCODE_BUTTON_1",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #1.",
+            "constant_value": 188
+        },
+        {
+            "name": "KEYCODE_BUTTON_2",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #2.",
+            "constant_value": 189
+        },
+        {
+            "name": "KEYCODE_BUTTON_3",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #3.",
+            "constant_value": 190
+        },
+        {
+            "name": "KEYCODE_BUTTON_4",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #4.",
+            "constant_value": 191
+        },
+        {
+            "name": "KEYCODE_BUTTON_5",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #5.",
+            "constant_value": 192
+        },
+        {
+            "name": "KEYCODE_BUTTON_6",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #6.",
+            "constant_value": 193
+        },
+        {
+            "name": "KEYCODE_BUTTON_7",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #7.",
+            "constant_value": 194
+        },
+        {
+            "name": "KEYCODE_BUTTON_8",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #8.",
+            "constant_value": 195
+        },
+        {
+            "name": "KEYCODE_BUTTON_9",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #9.",
+            "constant_value": 196
+        },
+        {
+            "name": "KEYCODE_BUTTON_10",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #10.",
+            "constant_value": 197
+        },
+        {
+            "name": "KEYCODE_BUTTON_11",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #11.",
+            "constant_value": 198
+        },
+        {
+            "name": "KEYCODE_BUTTON_12",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #12.",
+            "constant_value": 199
+        },
+        {
+            "name": "KEYCODE_BUTTON_13",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #13.",
+            "constant_value": 200
+        },
+        {
+            "name": "KEYCODE_BUTTON_14",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #14.",
+            "constant_value": 201
+        },
+        {
+            "name": "KEYCODE_BUTTON_15",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #15.",
+            "constant_value": 202
+        },
+        {
+            "name": "KEYCODE_BUTTON_16",
+            "api_level": 12,
+            "Key code constant": "Generic Game Pad Button #16.",
+            "constant_value": 203
+        },
+        {
+            "name": "KEYCODE_LANGUAGE_SWITCH",
+            "api_level": 14,
+            "Key code constant": "Language Switch key. Toggles the current input language such as switching between English and Japanese on a QWERTY keyboard. On some devices, the same function may be performed by pressing Shift+Spacebar.",
+            "constant_value": 204
+        },
+        {
+            "name": "KEYCODE_MANNER_MODE",
+            "api_level": 14,
+            "Key code constant": "Manner Mode key. Toggles silent or vibrate mode on and off to make the device behave more politely in certain settings such as on a crowded train. On some devices, the key may only operate when long-pressed.",
+            "constant_value": 205
+        },
+        {
+            "name": "KEYCODE_3D_MODE",
+            "api_level": 14,
+            "Key code constant": "3D Mode key. Toggles the display between 2D and 3D mode.",
+            "constant_value": 206
+        },
+        {
+            "name": "KEYCODE_CONTACTS",
+            "api_level": 15,
+            "Key code constant": "Contacts special function key. Used to launch an address book application.",
+            "constant_value": 207
+        },
+        {
+            "name": "KEYCODE_CALENDAR",
+            "api_level": 15,
+            "Key code constant": "Calendar special function key. Used to launch a calendar application.",
+            "constant_value": 208
+        },
+        {
+            "name": "KEYCODE_MUSIC",
+            "api_level": 15,
+            "Key code constant": "Music special function key. Used to launch a music player application.",
+            "constant_value": 209
+        },
+        {
+            "name": "KEYCODE_CALCULATOR",
+            "api_level": 15,
+            "Key code constant": "Calculator special function key. Used to launch a calculator application.",
+            "constant_value": 210
+        },
+        {
+            "name": "KEYCODE_ZENKAKU_HANKAKU",
+            "api_level": 16,
+            "Key code constant": "Japanese full-width / half-width key.",
+            "constant_value": 211
+        },
+        {
+            "name": "KEYCODE_EISU",
+            "api_level": 16,
+            "Key code constant": "Japanese alphanumeric key.",
+            "constant_value": 212
+        },
+        {
+            "name": "KEYCODE_MUHENKAN",
+            "api_level": 16,
+            "Key code constant": "Japanese non-conversion key.",
+            "constant_value": 213
+        },
+        {
+            "name": "KEYCODE_HENKAN",
+            "api_level": 16,
+            "Key code constant": "Japanese conversion key.",
+            "constant_value": 214
+        },
+        {
+            "name": "KEYCODE_KATAKANA_HIRAGANA",
+            "api_level": 16,
+            "Key code constant": "Japanese katakana / hiragana key.",
+            "constant_value": 215
+        },
+        {
+            "name": "KEYCODE_YEN",
+            "api_level": 16,
+            "Key code constant": "Japanese Yen key.",
+            "constant_value": 216
+        },
+        {
+            "name": "KEYCODE_RO",
+            "api_level": 16,
+            "Key code constant": "Japanese Ro key.",
+            "constant_value": 217
+        },
+        {
+            "name": "KEYCODE_KANA",
+            "api_level": 16,
+            "Key code constant": "Japanese kana key.",
+            "constant_value": 218
+        },
+        {
+            "name": "KEYCODE_ASSIST",
+            "api_level": 16,
+            "Key code constant": "Assist key. Launches the global assist activity. Not delivered to applications.",
+            "constant_value": 219
+        },
+        {
+            "name": "KEYCODE_BRIGHTNESS_DOWN",
+            "api_level": 18,
+            "Key code constant": "Brightness Down key. Adjusts the screen brightness down.",
+            "constant_value": 220
+        },
+        {
+            "name": "KEYCODE_BRIGHTNESS_UP",
+            "api_level": 18,
+            "Key code constant": "Brightness Up key. Adjusts the screen brightness up.",
+            "constant_value": 221
+        },
+        {
+            "name": "KEYCODE_MEDIA_AUDIO_TRACK",
+            "api_level": 19,
+            "Key code constant": "Audio Track key. Switches the audio tracks.",
+            "constant_value": 222
+        },
+        {
+            "name": "KEYCODE_SLEEP",
+            "api_level": 20,
+            "Key code constant": "Sleep key. Puts the device to sleep. Behaves somewhat like KEYCODE_POWER but it has no effect if the device is already asleep.",
+            "constant_value": 223
+        },
+        {
+            "name": "KEYCODE_WAKEUP",
+            "api_level": 20,
+            "Key code constant": "Wakeup key. Wakes up the device. Behaves somewhat like KEYCODE_POWER but it has no effect if the device is already awake.",
+            "constant_value": 224
+        },
+        {
+            "name": "KEYCODE_PAIRING",
+            "api_level": 21,
+            "Key code constant": "Pairing key. Initiates peripheral pairing mode. Useful for pairing remote control devices or game controllers, especially if no other input mode is available.",
+            "constant_value": 225
+        },
+        {
+            "name": "KEYCODE_MEDIA_TOP_MENU",
+            "api_level": 21,
+            "Key code constant": "Media Top Menu key. Goes to the top of media menu.",
+            "constant_value": 226
+        },
+        {
+            "name": "KEYCODE_11",
+            "api_level": 21,
+            "Key code constant": "'11' key.",
+            "constant_value": 227
+        },
+        {
+            "name": "KEYCODE_12",
+            "api_level": 21,
+            "Key code constant": "'12' key.",
+            "constant_value": 228
+        },
+        {
+            "name": "KEYCODE_LAST_CHANNEL",
+            "api_level": 21,
+            "Key code constant": "Last Channel key. Goes to the last viewed channel.",
+            "constant_value": 229
+        },
+        {
+            "name": "KEYCODE_TV_DATA_SERVICE",
+            "api_level": 21,
+            "Key code constant": "TV data service key. Displays data services like weather, sports.",
+            "constant_value": 230
+        },
+        {
+            "name": "KEYCODE_VOICE_ASSIST",
+            "api_level": 21,
+            "Key code constant": "Voice Assist key. Launches the global voice assist activity. Not delivered to applications.",
+            "constant_value": 231
+        },
+        {
+            "name": "KEYCODE_TV_RADIO_SERVICE",
+            "api_level": 21,
+            "Key code constant": "Radio key. Toggles TV service / Radio service.",
+            "constant_value": 232
+        },
+        {
+            "name": "KEYCODE_TV_TELETEXT",
+            "api_level": 21,
+            "Key code constant": "Teletext key. Displays Teletext service.",
+            "constant_value": 233
+        },
+        {
+            "name": "KEYCODE_TV_NUMBER_ENTRY",
+            "api_level": 21,
+            "Key code constant": "Number entry key. Initiates to enter multi-digit channel nubmber when each digit key is assigned for selecting separate channel. Corresponds to Number Entry Mode (0x1D) of CEC User Control Code.",
+            "constant_value": 234
+        },
+        {
+            "name": "KEYCODE_TV_TERRESTRIAL_ANALOG",
+            "api_level": 21,
+            "Key code constant": "Analog Terrestrial key. Switches to analog terrestrial broadcast service.",
+            "constant_value": 235
+        },
+        {
+            "name": "KEYCODE_TV_TERRESTRIAL_DIGITAL",
+            "api_level": 21,
+            "Key code constant": "Digital Terrestrial key. Switches to digital terrestrial broadcast service.",
+            "constant_value": 236
+        },
+        {
+            "name": "KEYCODE_TV_SATELLITE",
+            "api_level": 21,
+            "Key code constant": "Satellite key. Switches to digital satellite broadcast service.",
+            "constant_value": 237
+        },
+        {
+            "name": "KEYCODE_TV_SATELLITE_BS",
+            "api_level": 21,
+            "Key code constant": "BS key. Switches to BS digital satellite broadcasting service available in Japan.",
+            "constant_value": 238
+        },
+        {
+            "name": "KEYCODE_TV_SATELLITE_CS",
+            "api_level": 21,
+            "Key code constant": "CS key. Switches to CS digital satellite broadcasting service available in Japan.",
+            "constant_value": 239
+        },
+        {
+            "name": "KEYCODE_TV_SATELLITE_SERVICE",
+            "api_level": 21,
+            "Key code constant": "BS/CS key. Toggles between BS and CS digital satellite services.",
+            "constant_value": 240
+        },
+        {
+            "name": "KEYCODE_TV_NETWORK",
+            "api_level": 21,
+            "Key code constant": "Toggle Network key. Toggles selecting broacast services.",
+            "constant_value": 241
+        },
+        {
+            "name": "KEYCODE_TV_ANTENNA_CABLE",
+            "api_level": 21,
+            "Key code constant": "Antenna/Cable key. Toggles broadcast input source between antenna and cable.",
+            "constant_value": 242
+        },
+        {
+            "name": "KEYCODE_TV_INPUT_HDMI_1",
+            "api_level": 21,
+            "Key code constant": "HDMI #1 key. Switches to HDMI input #1.",
+            "constant_value": 243
+        },
+        {
+            "name": "KEYCODE_TV_INPUT_HDMI_2",
+            "api_level": 21,
+            "Key code constant": "HDMI #2 key. Switches to HDMI input #2.",
+            "constant_value": 244
+        },
+        {
+            "name": "KEYCODE_TV_INPUT_HDMI_3",
+            "api_level": 21,
+            "Key code constant": "HDMI #3 key. Switches to HDMI input #3.",
+            "constant_value": 245
+        },
+        {
+            "name": "KEYCODE_TV_INPUT_HDMI_4",
+            "api_level": 21,
+            "Key code constant": "HDMI #4 key. Switches to HDMI input #4.",
+            "constant_value": 246
+        },
+        {
+            "name": "KEYCODE_TV_INPUT_COMPOSITE_1",
+            "api_level": 21,
+            "Key code constant": "Composite #1 key. Switches to composite video input #1.",
+            "constant_value": 247
+        },
+        {
+            "name": "KEYCODE_TV_INPUT_COMPOSITE_2",
+            "api_level": 21,
+            "Key code constant": "Composite #2 key. Switches to composite video input #2.",
+            "constant_value": 248
+        },
+        {
+            "name": "KEYCODE_TV_INPUT_COMPONENT_1",
+            "api_level": 21,
+            "Key code constant": "Component #1 key. Switches to component video input #1.",
+            "constant_value": 249
+        },
+        {
+            "name": "KEYCODE_TV_INPUT_COMPONENT_2",
+            "api_level": 21,
+            "Key code constant": "Component #2 key. Switches to component video input #2.",
+            "constant_value": 250
+        },
+        {
+            "name": "KEYCODE_TV_INPUT_VGA_1",
+            "api_level": 21,
+            "Key code constant": "VGA #1 key. Switches to VGA (analog RGB) input #1.",
+            "constant_value": 251
+        },
+        {
+            "name": "KEYCODE_TV_AUDIO_DESCRIPTION",
+            "api_level": 21,
+            "Key code constant": "Audio description key. Toggles audio description off / on.",
+            "constant_value": 252
+        },
+        {
+            "name": "KEYCODE_TV_AUDIO_DESCRIPTION_MIX_UP",
+            "api_level": 21,
+            "Key code constant": "Audio description mixing volume up key. Louden audio description volume as compared with normal audio volume.",
+            "constant_value": 253
+        },
+        {
+            "name": "KEYCODE_TV_AUDIO_DESCRIPTION_MIX_DOWN",
+            "api_level": 21,
+            "Key code constant": "Audio description mixing volume down key. Lessen audio description volume as compared with normal audio volume.",
+            "constant_value": 254
+        },
+        {
+            "name": "KEYCODE_TV_ZOOM_MODE",
+            "api_level": 21,
+            "Key code constant": "Zoom mode key. Changes Zoom mode (Normal, Full, Zoom, Wide-zoom, etc.)",
+            "constant_value": 255
+        },
+        {
+            "name": "KEYCODE_TV_CONTENTS_MENU",
+            "api_level": 21,
+            "Key code constant": "Contents menu key. Goes to the title list. Corresponds to Contents Menu (0x0B) of CEC User Control Code",
+            "constant_value": 256
+        },
+        {
+            "name": "KEYCODE_TV_MEDIA_CONTEXT_MENU",
+            "api_level": 21,
+            "Key code constant": "Media context menu key. Goes to the context menu of media contents. Corresponds to Media Context-sensitive Menu (0x11) of CEC User Control Code.",
+            "constant_value": 257
+        },
+        {
+            "name": "KEYCODE_TV_TIMER_PROGRAMMING",
+            "api_level": 21,
+            "Key code constant": "Timer programming key. Goes to the timer recording menu. Corresponds to Timer Programming (0x54) of CEC User Control Code.",
+            "constant_value": 258
+        },
+        {
+            "name": "KEYCODE_HELP",
+            "api_level": 21,
+            "Key code constant": "Help key.",
+            "constant_value": 259
+        },
+        {
+            "name": "KEYCODE_NAVIGATE_PREVIOUS",
+            "api_level": 23,
+            "Key code constant": "Navigate to previous key. Goes backward by one item in an ordered collection of items.",
+            "constant_value": 260
+        },
+        {
+            "name": "KEYCODE_NAVIGATE_NEXT",
+            "api_level": 23,
+            "Key code constant": "Navigate to next key. Advances to the next item in an ordered collection of items.",
+            "constant_value": 261
+        },
+        {
+            "name": "KEYCODE_NAVIGATE_IN",
+            "api_level": 23,
+            "Key code constant": "Navigate in key. Activates the item that currently has focus or expands to the next level of a navigation hierarchy.",
+            "constant_value": 262
+        },
+        {
+            "name": "KEYCODE_NAVIGATE_OUT",
+            "api_level": 23,
+            "Key code constant": "Navigate out key. Backs out one level of a navigation hierarchy or collapses the item that currently has focus.",
+            "constant_value": 263
+        },
+        {
+            "name": "KEYCODE_STEM_PRIMARY",
+            "api_level": 24,
+            "Key code constant": "Primary stem key for Wear Main power/reset button on watch.",
+            "constant_value": 264
+        },
+        {
+            "name": "KEYCODE_STEM_1",
+            "api_level": 24,
+            "Key code constant": "Generic stem key 1 for Wear",
+            "constant_value": 265
+        },
+        {
+            "name": "KEYCODE_STEM_2",
+            "api_level": 24,
+            "Key code constant": "Generic stem key 2 for Wear",
+            "constant_value": 266
+        },
+        {
+            "name": "KEYCODE_STEM_3",
+            "api_level": 24,
+            "Key code constant": "Generic stem key 3 for Wear",
+            "constant_value": 267
+        },
+        {
+            "name": "KEYCODE_DPAD_UP_LEFT",
+            "api_level": 24,
+            "Key code constant": "Directional Pad Up-Left",
+            "constant_value": 268
+        },
+        {
+            "name": "KEYCODE_DPAD_DOWN_LEFT",
+            "api_level": 24,
+            "Key code constant": "Directional Pad Down-Left",
+            "constant_value": 269
+        },
+        {
+            "name": "KEYCODE_DPAD_UP_RIGHT",
+            "api_level": 24,
+            "Key code constant": "Directional Pad Up-Right",
+            "constant_value": 270
+        },
+        {
+            "name": "KEYCODE_DPAD_DOWN_RIGHT",
+            "api_level": 24,
+            "Key code constant": "Directional Pad Down-Right",
+            "constant_value": 271
+        },
+        {
+            "name": "KEYCODE_MEDIA_SKIP_FORWARD",
+            "api_level": 23,
+            "Key code constant": "Skip forward media key.",
+            "constant_value": 272
+        },
+        {
+            "name": "KEYCODE_MEDIA_SKIP_BACKWARD",
+            "api_level": 23,
+            "Key code constant": "Skip backward media key.",
+            "constant_value": 273
+        },
+        {
+            "name": "KEYCODE_MEDIA_STEP_FORWARD",
+            "api_level": 23,
+            "Key code constant": "Step forward media key. Steps media forward, one frame at a time.",
+            "constant_value": 274
+        },
+        {
+            "name": "KEYCODE_MEDIA_STEP_BACKWARD",
+            "api_level": 23,
+            "Key code constant": "Step backward media key. Steps media backward, one frame at a time.",
+            "constant_value": 275
+        },
+        {
+            "name": "KEYCODE_SOFT_SLEEP",
+            "api_level": 24,
+            "Key code constant": "put device to sleep unless a wakelock is held.",
+            "constant_value": 276
+        },
+        {
+            "name": "KEYCODE_CUT",
+            "api_level": 24,
+            "Key code constant": "Cut key.",
+            "constant_value": 277
+        },
+        {
+            "name": "KEYCODE_COPY",
+            "api_level": 24,
+            "Key code constant": "Copy key.",
+            "constant_value": 278
+        },
+        {
+            "name": "KEYCODE_PASTE",
+            "api_level": 24,
+            "Key code constant": "Paste key.",
+            "constant_value": 279
+        },
+        {
+            "name": "KEYCODE_SYSTEM_NAVIGATION_UP",
+            "api_level": 25,
+            "Key code constant": "Consumed by the system for navigation up",
+            "constant_value": 280
+        },
+        {
+            "name": "KEYCODE_SYSTEM_NAVIGATION_DOWN",
+            "api_level": 25,
+            "Key code constant": "Consumed by the system for navigation down",
+            "constant_value": 281
+        },
+        {
+            "name": "KEYCODE_SYSTEM_NAVIGATION_LEFT",
+            "api_level": 25,
+            "Key code constant": "Consumed by the system for navigation left",
+            "constant_value": 282
+        },
+        {
+            "name": "KEYCODE_SYSTEM_NAVIGATION_RIGHT",
+            "api_level": 25,
+            "Key code constant": "Consumed by the system for navigation right",
+            "constant_value": 283
+        },
+        {
+            "name": "KEYCODE_ALL_APPS",
+            "api_level": 28,
+            "Key code constant": "Show all apps",
+            "constant_value": 284
+        },
+        {
+            "name": "KEYCODE_REFRESH",
+            "api_level": 28,
+            "Key code constant": "Refresh key.",
+            "constant_value": 285
+        },
+        {
+            "name": "KEYCODE_THUMBS_UP",
+            "api_level": 29,
+            "Key code constant": "Thumbs up key. Apps can use this to let user upvote content.",
+            "constant_value": 286
+        },
+        {
+            "name": "KEYCODE_THUMBS_DOWN",
+            "api_level": 29,
+            "Key code constant": "Thumbs down key. Apps can use this to let user downvote content.",
+            "constant_value": 287
+        },
+        {
+            "name": "KEYCODE_PROFILE_SWITCH",
+            "api_level": 29,
+            "Key code constant": "Used to switch current Account that is consuming content. May be consumed by system to set account globally.",
+            "constant_value": 288
+        },
+        {
+            "name": "KEYCODE_VIDEO_APP_1",
+            "api_level": 33,
+            "Key code constant": "Video Application key #1.",
+            "constant_value": 289
+        },
+        {
+            "name": "KEYCODE_VIDEO_APP_2",
+            "api_level": 33,
+            "Key code constant": "Video Application key #2.",
+            "constant_value": 290
+        },
+        {
+            "name": "KEYCODE_VIDEO_APP_3",
+            "api_level": 33,
+            "Key code constant": "Video Application key #3.",
+            "constant_value": 291
+        },
+        {
+            "name": "KEYCODE_VIDEO_APP_4",
+            "api_level": 33,
+            "Key code constant": "Video Application key #4.",
+            "constant_value": 292
+        },
+        {
+            "name": "KEYCODE_VIDEO_APP_5",
+            "api_level": 33,
+            "Key code constant": "Video Application key #5.",
+            "constant_value": 293
+        },
+        {
+            "name": "KEYCODE_VIDEO_APP_6",
+            "api_level": 33,
+            "Key code constant": "Video Application key #6.",
+            "constant_value": 294
+        },
+        {
+            "name": "KEYCODE_VIDEO_APP_7",
+            "api_level": 33,
+            "Key code constant": "Video Application key #7.",
+            "constant_value": 295
+        },
+        {
+            "name": "KEYCODE_VIDEO_APP_8",
+            "api_level": 33,
+            "Key code constant": "Video Application key #8.",
+            "constant_value": 296
+        },
+        {
+            "name": "KEYCODE_FEATURED_APP_1",
+            "api_level": 33,
+            "Key code constant": "Featured Application key #1.",
+            "constant_value": 297
+        },
+        {
+            "name": "KEYCODE_FEATURED_APP_2",
+            "api_level": 33,
+            "Key code constant": "Featured Application key #2.",
+            "constant_value": 298
+        },
+        {
+            "name": "KEYCODE_FEATURED_APP_3",
+            "api_level": 33,
+            "Key code constant": "Featured Application key #3.",
+            "constant_value": 299
+        },
+        {
+            "name": "KEYCODE_FEATURED_APP_4",
+            "api_level": 33,
+            "Key code constant": "Featured Application key #4.",
+            "constant_value": 300
+        },
+        {
+            "name": "KEYCODE_DEMO_APP_1",
+            "api_level": 33,
+            "Key code constant": "Demo Application key #1.",
+            "constant_value": 301
+        },
+        {
+            "name": "KEYCODE_DEMO_APP_2",
+            "api_level": 33,
+            "Key code constant": "Demo Application key #2.",
+            "constant_value": 302
+        },
+        {
+            "name": "KEYCODE_DEMO_APP_3",
+            "api_level": 33,
+            "Key code constant": "Demo Application key #3.",
+            "constant_value": 303
+        },
+        {
+            "name": "KEYCODE_DEMO_APP_4",
+            "api_level": 33,
+            "Key code constant": "Demo Application key #4.",
+            "constant_value": 304
+        },
+        {
+            "name": "KEYCODE_KEYBOARD_BACKLIGHT_DOWN",
+            "api_level": 34,
+            "Key code constant": "Keyboard backlight down",
+            "constant_value": 305
+        },
+        {
+            "name": "KEYCODE_KEYBOARD_BACKLIGHT_UP",
+            "api_level": 34,
+            "Key code constant": "Keyboard backlight up",
+            "constant_value": 306
+        },
+        {
+            "name": "KEYCODE_KEYBOARD_BACKLIGHT_TOGGLE",
+            "api_level": 34,
+            "Key code constant": "Keyboard backlight toggle",
+            "constant_value": 307
+        },
+        {
+            "name": "KEYCODE_STYLUS_BUTTON_PRIMARY",
+            "api_level": 34,
+            "Key code constant": "The primary button on the barrel of a stylus. This is usually the button closest to the tip of the stylus.",
+            "constant_value": 308
+        },
+        {
+            "name": "KEYCODE_STYLUS_BUTTON_SECONDARY",
+            "api_level": 34,
+            "Key code constant": "The secondary button on the barrel of a stylus. This is usually the second button from the tip of the stylus.",
+            "constant_value": 309
+        },
+        {
+            "name": "KEYCODE_STYLUS_BUTTON_TERTIARY",
+            "api_level": 34,
+            "Key code constant": "The tertiary button on the barrel of a stylus. This is usually the third button from the tip of the stylus.",
+            "constant_value": 310
+        },
+        {
+            "name": "KEYCODE_STYLUS_BUTTON_TAIL",
+            "api_level": 34,
+            "Key code constant": "A button on the tail end of a stylus. The use of this button does not usually correspond to the function of an eraser.",
+            "constant_value": 311
+        },
+        {
+            "name": "KEYCODE_RECENT_APPS",
+            "api_level": 34,
+            "Key code constant": "To open recent apps view (a.k.a. Overview). This key is handled by the framework and is never delivered to applications.",
+            "constant_value": 312
+        },
+        {
+            "name": "KEYCODE_MACRO_1",
+            "api_level": 34,
+            "Key code constant": "A button whose usage can be customized by the user through the system. User customizable key #1.",
+            "constant_value": 313
+        },
+        {
+            "name": "KEYCODE_MACRO_2",
+            "api_level": 34,
+            "Key code constant": "A button whose usage can be customized by the user through the system. User customizable key #2.",
+            "constant_value": 314
+        },
+        {
+            "name": "KEYCODE_MACRO_3",
+            "api_level": 34,
+            "Key code constant": "A button whose usage can be customized by the user through the system. User customizable key #3.",
+            "constant_value": 315
+        },
+        {
+            "name": "KEYCODE_MACRO_4",
+            "api_level": 34,
+            "Key code constant": "A button whose usage can be customized by the user through the system. User customizable key #4.",
+            "constant_value": 316
+        },
+        {
+            "name": "KEYCODE_EMOJI_PICKER",
+            "api_level": 35,
+            "Key code constant": "To open emoji picker",
+            "constant_value": 317
+        },
+        {
+            "name": "KEYCODE_SCREENSHOT",
+            "api_level": 35,
+            "Key code constant": "To take a screenshot This key is fully handled by the framework and will not be sent to the foreground app, unlike KEYCODE_SYSRQ which is sent to the app first and only if the app doesn't handle it, the framework handles it (to take a screenshot).",
+            "constant_value": 318
+        }
+    ]
+}
