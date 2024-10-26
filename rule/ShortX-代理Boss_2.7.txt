@@ -91,6 +91,17 @@
         "customContextDataKey": {
         },
         "id": "C-3b50c25f-f6bd-42c1-bbcd-e55b594d8cc1"
+      }, {
+        "@type": "type.googleapis.com/VPNIsConnected",
+        "customContextDataKey": {
+        },
+        "id": "C-4d06c198-d796-414c-ac5b-cf4b80ade5fa"
+      }, {
+        "@type": "type.googleapis.com/AppIsNotRunning",
+        "pkgSets": ["Proxy"],
+        "customContextDataKey": {
+        },
+        "id": "C-1fe34f5d-88bd-4f03-bc9d-ab96d81e181d"
       }],
       "action": [{
         "@type": "type.googleapis.com/WaitUtilConditionMatch",
@@ -144,7 +155,7 @@
     "id": "A-b094a927-ecca-4c09-a8fc-f6a8b62b00ee"
   }],
   "id": "SHARE-rule-debea634-75d4-4727-b672-ada30c7eaf2d",
-  "lastUpdateTime": "1729950407711",
+  "lastUpdateTime": "1729951429568",
   "createTime": "1687238394751",
   "author": {
     "name": "He"
