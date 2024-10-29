@@ -30,6 +30,16 @@
       "tags": []
     },
     {
+      "id": "SHARED-DA-cb7a42a7-c032-4536-b622-c7e5b7d90b91",
+      "fileUrl": "ShortX-全局贴图_1.0.txt",
+      "title": "全局贴图 1.0",
+      "description": "局域截图并实现贴图",
+      "versionCode": 1,
+      "updateTimeMillis": 1730199892158,
+      "author": "ShortX",
+      "tags": []
+    },
+    {
       "id": "SHARED-DA-dad2f48b-e38b-4ef0-97b2-85b0904e8bc3",
       "fileUrl": "ShortX-云盘君_简.txt",
       "title": "云盘君·简",
