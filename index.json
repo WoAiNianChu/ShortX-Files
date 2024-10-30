@@ -43,7 +43,7 @@
       "id": "SHARED-DA-3a196a0d-e9a3-4e21-9109-6485b525a959",
       "fileUrl": "ShortX-坐标提取器.txt",
       "title": "坐标提取器",
-      "description": "提取下次点击的坐标",
+      "description": "提取下次点击或滑动的坐标",
       "versionCode": 1,
       "updateTimeMillis": 1730286175722,
       "author": "He",
