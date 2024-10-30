@@ -78,7 +78,7 @@
     "name": "He"
   },
   "title": "坐标提取器",
-  "description": "提取下次点击的坐标",
+  "description": "提取下次点击或滑动的坐标",
   "versionCode": "1",
   "quit": {
     "facts": [{
