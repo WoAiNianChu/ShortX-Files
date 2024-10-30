@@ -40,6 +40,16 @@
       "tags": []
     },
     {
+      "id": "SHARED-DA-3a196a0d-e9a3-4e21-9109-6485b525a959",
+      "fileUrl": "ShortX-坐标提取器.txt",
+      "title": "坐标提取器",
+      "description": "提取下次点击的坐标",
+      "versionCode": 1,
+      "updateTimeMillis": 1730286175722,
+      "author": "He",
+      "tags": []
+    },
+    {
       "id": "SHARED-DA-dad2f48b-e38b-4ef0-97b2-85b0904e8bc3",
       "fileUrl": "ShortX-云盘君_简.txt",
       "title": "云盘君·简",
