@@ -72,13 +72,13 @@
     "id": "A-64b484dc-12d8-4ec4-b3c6-d9ba01bb0011"
   }],
   "id": "SHARED-DA-3a196a0d-e9a3-4e21-9109-6485b525a959",
-  "lastUpdateTime": "1730286175722",
+  "lastUpdateTime": "1730293984754",
   "createTime": "1730190522317",
   "author": {
     "name": "He"
   },
   "title": "坐标提取器",
-  "description": "提取下次点击或滑动的坐标",
+  "description": "提取下次点击或滑动坐标",
   "versionCode": "1",
   "quit": {
     "facts": [{
@@ -95,12 +95,6 @@
       "customContextDataKey": {
       },
       "id": "F-567d1c27-7799-43f5-b7e6-10e8968bec94"
-    }, {
-      "@type": "type.googleapis.com/Broadcast",
-      "actions": ["SWIPE_MOVE"],
-      "customContextDataKey": {
-      },
-      "id": "F-28cf7f06-ec0b-41fe-97d7-fb10866af15b"
     }],
     "isEnabled": true,
     "actions": [{
@@ -129,13 +123,6 @@
       "customContextDataKey": {
       },
       "id": "A-f31f8a9e-4378-468c-a747-a85dc8430329"
-    }, {
-      "@type": "type.googleapis.com/ExecuteMVEL",
-      "expression": "import android.content.Intent;\nimport android.os.Bundle;\n\n// 假设 intent 是接收到的广播 \n// 初始化结果字符串\nresult \u003d \"\";\n\n// 获取序列化的 extras 数据\nextras \u003d intent.getExtras();\nif (extras !\u003d null) {\n    // 检查并获取 x 和 y 值，并转换为整数\n    if (extras.containsKey(\"x\")) {\n        result +\u003d ((Number) extras.get(\"x\")).intValue();\n    }\n    if (extras.containsKey(\"y\")) {\n        result +\u003d \",\" + ((Number) extras.get(\"y\")).intValue();\n    }\n} else {\n    result +\u003d \"No extras found in this intent.\\n\";\n}\n\n// 返回结果\nreturn result;",
-      "customContextDataKey": {
-      },
-      "isDisabled": true,
-      "id": "A-15fe909d-fa5b-4287-8dd5-e2026a82fb87"
     }, {
       "@type": "type.googleapis.com/ShowAlertDialog",
       "positive": "复制",
