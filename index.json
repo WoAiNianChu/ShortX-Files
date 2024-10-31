@@ -40,6 +40,16 @@
       "tags": []
     },
     {
+      "id": "SHARED-DA-7221c9e0-3192-4324-ad96-45ac3398c719",
+      "fileUrl": "ShortX-Shortcuts_快捷方式.txt",
+      "title": "Shortcuts(快捷方式",
+      "description": "1.0版本\n支持全部类型快捷方式",
+      "versionCode": 1,
+      "updateTimeMillis": 1730354333857,
+      "author": "He",
+      "tags": []
+    },
+    {
       "id": "SHARED-DA-3a196a0d-e9a3-4e21-9109-6485b525a959",
       "fileUrl": "ShortX-坐标提取器.txt",
       "title": "坐标提取器",
