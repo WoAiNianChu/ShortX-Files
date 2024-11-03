@@ -7,7 +7,7 @@
     "id": "A-7f6ece38-9e34-4f80-982c-d7917e358f44"
   }, {
     "@type": "type.googleapis.com/SwitchCase",
-    "case": [
+    "case": [{
       "case": [{
         "@type": "type.googleapis.com/MatchJS",
         "expression": "importPackage(java.io);\n\n// 设置目标目录\nvar dirPath \u003d \"/data/system_ce/\";\nvar dir \u003d new File(dirPath);\n\n// 检查目录是否存在且是一个目录\nif (dir.exists() \u0026\u0026 dir.isDirectory()) {\n    var files \u003d dir.listFiles();\n    var numberFolders \u003d 0; // 用于统计纯数字文件夹的数量\n\n    // 遍历所有文件和文件夹\n    for (var i \u003d 0; i \u003c files.length; i++) {\n        var fileName \u003d files[i].getName();\n        // 检查是否是目录，并且名字是否是纯数字\n        if (files[i].isDirectory() \u0026\u0026 /^\\d+$/.test(fileName)) {\n            numberFolders++;\n            // 一旦找到超过1个纯数字文件夹，输出true并停止\n            if (numberFolders \u003e 1) {\n                true;\n                break;\n            }\n        }\n    }\n\n    // 如果数量不超过1个，输出false\n    if (numberFolders \u003c\u003d 1) {\n        false;\n    }\n} else {\n    false;\n}",
@@ -499,4 +499,4 @@
   }
 }
 ###------###
-{"type":"da"}u
+{"type":"da"}
