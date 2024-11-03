@@ -43,9 +43,9 @@
       "id": "SHARED-DA-7221c9e0-3192-4324-ad96-45ac3398c719",
       "fileUrl": "ShortX-Shortcuts_快捷方式.txt",
       "title": "Shortcuts(快捷方式",
-      "description": "1.0版本\n支持全部类型快捷方式",
-      "versionCode": 1,
-      "updateTimeMillis": 1730354333857,
+      "description": "2.0版本\n支持全部类型快捷方式\n支持多用户",
+      "versionCode": 2,
+      "updateTimeMillis": 1730643608385,
       "author": "He",
       "tags": []
     },
