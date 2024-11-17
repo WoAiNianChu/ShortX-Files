@@ -260,22 +260,18 @@
         "customContextDataKey": {
           "keys": [{
             "first": "shellOut",
-            "second": "file"
+            "second": "EmptyFile"
           }]
         },
         "id": "A-dcc8577f-df4c-4655-bdea-fb22783613e9"
       }, {
         "@type": "type.googleapis.com/IfThenElse",
         "If": [{
-          "@type": "type.googleapis.com/EvaluateContextVar",
-          "op": "EqualTo",
-          "varName": "file",
-          "payload": {
-            "value": "文件为空"
-          },
+          "@type": "type.googleapis.com/MatchMVEL",
+          "expression": "{EmptyFile} \u003d\u003d \u0027文件为空\u0027;",
           "customContextDataKey": {
           },
-          "id": "C-1730045d-6c31-4593-b9cf-1f02c0b5db72"
+          "id": "C-89d94273-0801-4092-a68f-afc750a40c27"
         }],
         "IfActions": [{
           "@type": "type.googleapis.com/ExecuteJS",
@@ -352,15 +348,11 @@
       }, {
         "@type": "type.googleapis.com/IfThenElse",
         "If": [{
-          "@type": "type.googleapis.com/EvaluateContextVar",
-          "op": "EqualTo",
-          "varName": "file",
-          "payload": {
-            "value": "文件为空"
-          },
+          "@type": "type.googleapis.com/MatchMVEL",
+          "expression": "{EmptyFile} \u003d\u003d \u0027文件为空\u0027;",
           "customContextDataKey": {
           },
-          "id": "C-1730045d-6c31-4593-b9cf-1f02c0b5db72"
+          "id": "C-933630f7-567b-4c91-a0ee-121c3ace60e7"
         }],
         "IfActions": [{
           "@type": "type.googleapis.com/ExecuteJS",
@@ -1180,7 +1172,7 @@
                 "id": "A-6e5350ba-7eb2-46a3-a61b-f7ab134ec0ea"
               }, {
                 "@type": "type.googleapis.com/ExecuteMVEL",
-                "expression": "// 删除包含“被拉黑”或“被删除”的文本\nfirstLine \u003d mvelRet.replaceAll(\"被拉黑|被删除\", \"\");  \n\nreturn firstLine;",
+                "expression": "// 删除包含“被拉黑”或“被删除”,\"被限制登录\"的文本\nfirstLine \u003d mvelRet.replaceAll(\"被拉黑|被删除|被限制登录\", \"\");  \n\nreturn firstLine;",
                 "customContextDataKey": {
                   "keys": [{
                     "first": "mvelRet",
@@ -1240,12 +1232,6 @@
                 "customContextDataKey": {
                 },
                 "id": "A-9fcaabbf-b39b-4b6f-8795-2e655d6cf227"
-              }, {
-                "@type": "type.googleapis.com/ShowToast",
-                "message": "{mvelRet}",
-                "customContextDataKey": {
-                },
-                "id": "A-932043ea-895e-4977-aa94-bf7d20818d8a"
               }],
               "description": "记录",
               "id": "Case-63294a97-d6ed-485f-99d0-0980c6f19fa7"
@@ -1261,7 +1247,7 @@
           "@type": "type.googleapis.com/ShowAlertDialog",
           "positive": "好的",
           "title": "备注完毕",
-          "message": "微信直接搜索被删除或者是被拉黑",
+          "message": "微信直接搜索被删除｜被拉黑｜被限制登录",
           "cancelable": true,
           "customContextDataKey": {
           },
@@ -1282,8 +1268,8 @@
     },
     "id": "A-ca46ef4d-e7da-4f51-9827-61ec3d3b4e6f"
   }],
-  "id": "SHARED-DA-c478b6c2-724d-4fde-ac2a-48b306e5e189",
-  "lastUpdateTime": "1731857091544",
+  "id": "SHARED-DA-bb5d80eb-95c6-4044-b551-e33f56d3d260",
+  "lastUpdateTime": "1731858569497",
   "createTime": "1730993592781",
   "author": {
     "name": "He"
