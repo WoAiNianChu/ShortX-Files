@@ -113,11 +113,11 @@
     },
     {
       "id": "rule-cf801b7e-c7ab-4bcf-bb7b-0265a155d513",
-      "fileUrl": "ShortX-输入法助手_1.6.txt",
-      "title": "输入法助手(1.6",
-      "description": "例:复制/粘贴\n单击复制，长按粘贴",
-      "versionCode": 2,
-      "updateTimeMillis": 1709856411654,
+      "fileUrl": "ShortX-输入法助手_1.7.txt",
+      "title": "输入法助手(1.7",
+      "description": "例:复制/粘贴\n单击复制，长按粘贴\n请去指令参数填写信息",
+      "versionCode": 3,
+      "updateTimeMillis": 1732029006009,
       "author": "He",
       "tags": []
     },
