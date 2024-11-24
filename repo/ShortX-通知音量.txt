@@ -1,0 +1,44 @@
+{
+  "facts": [{
+    "@type": "type.googleapis.com/ScreenOn",
+    "customContextDataKey": {
+    },
+    "id": "F-9cb865d3-23be-43a8-8460-71f133b2f5b3"
+  }],
+  "actions": [{
+    "@type": "type.googleapis.com/ExecuteMVEL",
+    "expression": "import android.media.AudioManager;\nimport android.content.Context;\n\n// 获取系统的音频服务\nAudioManager audioManager \u003d (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);\n\n// 获取通知音量的最大值\nint maxVolume \u003d audioManager.getStreamMaxVolume(AudioManager.STREAM_NOTIFICATION);\n\n// 目标比例（例如 10%）\nfloat targetRatio \u003d 0.1f; // 范围 0.0f ~ 1.0f\n\n// 按比例计算目标音量值\nint targetVolume \u003d Math.round(maxVolume * targetRatio);\n\n// 设置通知流的音量为目标音量\naudioManager.setStreamVolume(AudioManager.STREAM_NOTIFICATION, targetVolume, 0);",
+    "customContextDataKey": {
+    },
+    "id": "A-339c7170-48b9-4c09-b003-9264da846937"
+  }],
+  "id": "SHARE-rule-deab31b6-755f-4ae4-8cee-0459d8e49198",
+  "lastUpdateTime": "1732451561380",
+  "createTime": "1732446972163",
+  "author": {
+    "name": "He"
+  },
+  "title": "通知音量",
+  "description": "亮屏时将通知音量调成10%\n息屏时将通知音量调成100%",
+  "hook": {
+  },
+  "quit": {
+    "facts": [{
+      "@type": "type.googleapis.com/ScreenOff",
+      "customContextDataKey": {
+      },
+      "id": "F-d60c4ef3-2751-464e-a2f0-8f36fb24c8ed"
+    }],
+    "isEnabled": true,
+    "actions": [{
+      "@type": "type.googleapis.com/ExecuteMVEL",
+      "expression": "import android.media.AudioManager;\nimport android.content.Context;\n\n// 获取系统的音频服务\nAudioManager audioManager \u003d (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);\n\n// 获取通知音量的最大值\nint maxVolume \u003d audioManager.getStreamMaxVolume(AudioManager.STREAM_NOTIFICATION);\n\n// 目标比例（例如 100%）\nfloat targetRatio \u003d 1f; // 范围 0.0f ~ 1.0f\n\n// 按比例计算目标音量值\nint targetVolume \u003d Math.round(maxVolume * targetRatio);\n\n// 设置通知流的音量为目标音量\naudioManager.setStreamVolume(AudioManager.STREAM_NOTIFICATION, targetVolume, 0);",
+      "customContextDataKey": {
+      },
+      "id": "A-339c7170-48b9-4c09-b003-9264da846937"
+    }]
+  },
+  "versionCode": "1"
+}
+###------###
+{"type":"rule"}
