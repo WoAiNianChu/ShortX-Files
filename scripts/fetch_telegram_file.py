@@ -1,11 +1,8 @@
 import asyncio
-import os
 from telethon import TelegramClient
 
-# 从环境变量获取 API ID 和 API HASH
-api_id = os.getenv('TELEGRAM_API_ID')  # 使用环境变量
-api_hash = os.getenv('TELEGRAM_API_HASH')  # 使用环境变量
-
+api_id = '2040'
+api_hash = 'b18441a1ff607e10a989891a5462e627'
 session_name = 'chat_name'
 group_id = 1604486631
 topic_id = 752
