@@ -35,42 +35,7 @@ jobs:
         TOPIC_ID: '752'
       run: |
         OUTPUT_FILE="telegram_output.txt"
-        python -c "
-import asyncio
-from telethon import TelegramClient
-
-async def fetch_latest_file(client, group_id, topic_id):
-    try:
-        group_entity = await client.get_entity(group_id)
-        messages = await client.get_messages(
-            group_entity,
-            limit=80,
-            reply_to=topic_id
-        )
-        file_messages = [msg for msg in messages if msg.file]
-        if not file_messages:
-            print('未找到包含文件的消息。')
-            return
-        latest_message = max(file_messages, key=lambda msg: msg.date)
-        file_name = latest_message.file.name
-        if '(' in file_name and ')' in file_name:
-            start = file_name.index('(') + 1
-            end = file_name.index(')')
-            number_in_parentheses = file_name[start:end]
-            print(f'{number_in_parentheses}')
-        else:
-            print('未找到括号中的内容。')
-    except Exception as e:
-        print(f'获取文件失败: {e}')
-
-async def main():
-    client = TelegramClient('${{ env.SESSION_NAME }}', '${{ env.API_ID }}', '${{ env.API_HASH }}')
-    await client.start()
-    await fetch_latest_file(client, '${{ env.GROUP_ID }}', '${{ env.TOPIC_ID }}')
-    await client.disconnect()
-
-asyncio.run(main())
-        " > $OUTPUT_FILE
+        python scripts/fetch_telegram_file.py > $OUTPUT_FILE
         echo "Output saved to $OUTPUT_FILE"
 
     - name: Commit and push output to repository
