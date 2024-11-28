@@ -1,0 +1,82 @@
+name: Fetch Latest File from Telegram Group
+
+on:
+  # 手动触发工作流
+  workflow_dispatch:
+
+  # 定时触发工作流（每小时）
+  schedule:
+    - cron: '0 * * * *'  # 每小时的第 0 分钟触发
+
+jobs:
+  telegram-fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'  # 可以根据需要更改为您使用的 Python 版本
+
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install telethon
+
+    - name: Run Telegram fetch script and save output to file
+      env:
+        API_ID: ${{ secrets.TELEGRAM_API_ID }}
+        API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
+        SESSION_NAME: 'chat_name'
+        GROUP_ID: '1604486631'
+        TOPIC_ID: '752'
+      run: |
+        OUTPUT_FILE="telegram_output.txt"
+        python -c "
+import asyncio
+from telethon import TelegramClient
+
+async def fetch_latest_file(client, group_id, topic_id):
+    try:
+        group_entity = await client.get_entity(group_id)
+        messages = await client.get_messages(
+            group_entity,
+            limit=80,
+            reply_to=topic_id
+        )
+        file_messages = [msg for msg in messages if msg.file]
+        if not file_messages:
+            print('未找到包含文件的消息。')
+            return
+        latest_message = max(file_messages, key=lambda msg: msg.date)
+        file_name = latest_message.file.name
+        if '(' in file_name and ')' in file_name:
+            start = file_name.index('(') + 1
+            end = file_name.index(')')
+            number_in_parentheses = file_name[start:end]
+            print(f'{number_in_parentheses}')
+        else:
+            print('未找到括号中的内容。')
+    except Exception as e:
+        print(f'获取文件失败: {e}')
+
+async def main():
+    client = TelegramClient('${{ env.SESSION_NAME }}', '${{ env.API_ID }}', '${{ env.API_HASH }}')
+    await client.start()
+    await fetch_latest_file(client, '${{ env.GROUP_ID }}', '${{ env.TOPIC_ID }}')
+    await client.disconnect()
+
+asyncio.run(main())
+        " > $OUTPUT_FILE
+        echo "Output saved to $OUTPUT_FILE"
+
+    - name: Commit and push output to repository
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add telegram_output.txt
+        git commit -m "Update Telegram fetch output"
+        git push
