@@ -53,9 +53,9 @@
       "id": "SHARED-DA-7221c9e0-3192-4324-ad96-45ac3398c719",
       "fileUrl": "ShortX-Shortcuts_快捷方式.txt",
       "title": "Shortcuts(快捷方式",
-      "description": "3.0版本\n支持全部类型快捷方式\n支持多用户",
-      "versionCode": 3,
-      "updateTimeMillis": 1730729167452,
+      "description": "4.0版本\n支持全部类型快捷方式\n支持多用户\n多种语言",
+      "versionCode": 4,
+      "updateTimeMillis": 1762037653533,
       "author": "HeWei",
       "tags": []
     },
