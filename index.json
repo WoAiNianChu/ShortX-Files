@@ -20,6 +20,16 @@
       "tags": []
     },
     {
+      "id": "SHARED-DA-bb5d80eb-95c6-4044-b551-e33f56d3d260",
+      "fileUrl": "ShortX-真实好友_1.4.3.txt",
+      "title": "真实好友 1.4.3",
+      "description": "微信语言仅支持简体中文\n需要下载Termux\n执行\npkg install sqlcipher\npkg install openssl",
+      "versionCode": 1,
+      "updateTimeMillis": 1731858569497,
+      "author": "He",
+      "tags": []
+    },
+    {
       "id": "SHARED-DA-88e8aacf-6c30-4c6a-9b75-b4047d42ba20",
       "fileUrl": "ShortX-设置项监视器_4.6.txt",
       "title": "设置项监视器 4.6",
