@@ -58,16 +58,6 @@
       "updateTimeMillis": 1730286175722,
       "author": "He",
       "tags": []
-    },
-    {
-      "id": "SHARED-DA-dad2f48b-e38b-4ef0-97b2-85b0904e8bc3",
-      "fileUrl": "ShortX-云盘君_简.txt",
-      "title": "云盘君·简",
-      "description": "将阿里云盘链接转换成海阔视界小程序(云盘君)的规则，方便导入",
-      "versionCode": 1,
-      "updateTimeMillis": 1728099601174,
-      "author": "He",
-      "tags": []
     }
   ],
   "rules": [
