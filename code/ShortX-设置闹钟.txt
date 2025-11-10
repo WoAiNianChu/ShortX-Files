@@ -1,0 +1,17 @@
+{
+  "actions": [{
+    "@type": "code.library.item.type/mvel",
+    "expression": "代码内容"
+  }],
+  "id": "SHARED-DA-0070f453-640f-48ec-bdd2-e3d5c1742ee7",
+  "lastUpdateTime": "1762778144249",
+  "createTime": "1762777798491",
+  "author": {
+    "name": "HeWei"
+  },
+  "title": "标题",
+  "description": "描述",
+  "versionCode": "1"
+}
+###------###
+{"type":"code"}
