@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-b3093f61-df48-5ada-8678-14c4740ec936",
+  "name": "显示输入法",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1105\n// 创建时间: 2025-12-23T04:18:56\n\nimportClass(Packages.tornaco.apps.shortx.core.proto.action.ShowHideInsets);\nimportClass(Packages.tornaco.apps.shortx.core.proto.common.WindowInsetType);\n\nshortx.executeAction(ShowHideInsets.newBuilder().setIsHide(false).addType(WindowInsetType.WindowInsetType_Ime).build());\n",
+  "createdAt": "1766434736000",
+  "updatedAt": "1766434736000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

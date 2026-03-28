@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-3f8d0dc3-9522-5075-a6ea-5269370835ec",
+  "name": "获取JS代码执行日志内容",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1490\n// 创建时间: 2026-01-02T01:00:16\n\nimportClass(Packages.tornaco.apps.shortx.core.OooO0O0);\nimportPackage(Packages.java.io);\nimportClass(Packages.java.nio.charset.Charset);\n\nvar iShortX = OooO0O0.OooO00o();\n// 获取JS日志的ParcelFileDescriptor\nvar Jslog = iShortX.getJSLogFD();\n// 获取底层的FileDescriptor\nvar fileDescriptor = Jslog.getFileDescriptor();\n// 创建FileInputStream来读取FileDescriptor\nvar fileInputStream = new FileInputStream(fileDescriptor);\n// 创建Java字节数组（byte[]）\nvar buffer = new java.lang.reflect.Array.newInstance(Packages.java.lang.Byte.TYPE, 1024);\n// 读取数据\nvar bytesRead = fileInputStream.read(buffer);\n// 将字节数组转换为字符串输出\nvar logContent = \"\";\nif (bytesRead > 0) {\n    logContent = new java.lang.String(buffer, 0, bytesRead, Charset.forName(\"UTF-8\"));\n}\nlogContent;\n",
+  "createdAt": "1767286816000",
+  "updatedAt": "1767286816000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

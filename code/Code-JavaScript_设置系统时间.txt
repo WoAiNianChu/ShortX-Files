@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-8fd5acac-7e93-5af0-95fa-57f2392ce805",
+  "name": "设置系统时间",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/300\n// 创建时间: 2025-12-01T22:35:16\n// 更新时间: 2025-12-02T06:11:46\n\nfunction createTimestamp(year, month, day, hour, minute, second) {\n    Calendar = java.util.Calendar;\n    cal = Calendar.getInstance();\n    cal.set(year, month - 1, day, hour, minute, second);\n    cal.set(Calendar.MILLISECOND, 0);\n    return cal.getTimeInMillis();\n}\n\n// 示例为2023年12月25日 14点30分30秒\ntimestamp = createTimestamp(2023, 12, 25, 14, 30, 30);\n\nandroid.os.ServiceManager.getService(\"alarm\").setTime(timestamp); \n// 设置系统时间\n",
+  "createdAt": "1764599716000",
+  "updatedAt": "1764627106000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

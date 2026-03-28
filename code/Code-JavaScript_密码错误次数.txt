@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-2062fe85-77a1-558d-ae26-f2fbfb61a13e",
+  "name": "密码错误次数",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/37\n// 创建时间: 2025-11-27T01:01:26\n// 更新时间: 2025-11-30T16:44:22\n\nService = android.os.ServiceManager.getService(\"device_policy\");\n\nif (android.os.Build.VERSION.SDK_INT > 33) {\n    Service.getCurrentFailedPasswordAttempts(\"android\", 0, true);\n} else {\n    Service.getCurrentFailedPasswordAttempts(0, true);\n}\n// 获取锁屏密码错误次数\n",
+  "createdAt": "1764176486000",
+  "updatedAt": "1764492262000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

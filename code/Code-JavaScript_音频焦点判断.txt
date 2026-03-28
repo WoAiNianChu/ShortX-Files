@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-4257a016-110e-5ae0-8e1f-bd5dd8b16530",
+  "name": "音频焦点判断",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1107\n// 创建时间: 2025-12-23T08:03:51\n\nandroid.os.ServiceManager.getService(\"audio\").getCurrentAudioFocus() != 0;\n// 判断当前是否有音频焦点\n",
+  "createdAt": "1766448231000",
+  "updatedAt": "1766448231000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

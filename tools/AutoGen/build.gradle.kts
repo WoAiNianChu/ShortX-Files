@@ -1,32 +1,10 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import java.io.FileInputStream
-import java.util.*
-
 plugins {
-    kotlin("jvm") version "1.8.21"
+    kotlin("jvm") version "2.1.20-Beta1"
     application
-}
-
-group = "shortx"
-version = "1.0-SNAPSHOT"
-
-val githubProperties = Properties()
-val githubPropFile = File(rootProject.projectDir, "github.properties")
-println("githubPropFile: $githubPropFile")
-if (githubPropFile.exists()) {
-    githubProperties.load(FileInputStream(githubPropFile))
 }
 
 repositories {
     mavenCentral()
-    maven {
-        name = "GitHubPackages"
-        url = uri("https://maven.pkg.github.com/ShortX-Repo/ShortX-Core")
-        credentials {
-            username = (githubProperties["gpr.usr"] ?: project.findProperty("GPR_USER")).toString()
-            password = (githubProperties["gpr.key"] ?: project.findProperty("GPR_API_KEY")).toString()
-        }
-    }
 }
 
 dependencies {
@@ -46,25 +24,26 @@ dependencies {
     implementation(protoBufUtil)
     implementation(protoBuf)
 
-    implementation("shortx:core:1.1.2-SNAPSHOT")
+    implementation(files("libs/core-api.jar"))
 
     testImplementation(kotlin("test"))
 }
 
-tasks.test {
-    useJUnitPlatform()
+
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
+    // Or shorter:
+   // jvmToolchain(21)
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
 }
 
 application {
     mainClass.set("shortx.tool.gen.MainKt")
-}
-
-subprojects {
-    configurations.all {
-        resolutionStrategy.cacheChangingModulesFor(0, TimeUnit.SECONDS)
-    }
 }

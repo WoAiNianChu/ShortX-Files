@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-522dbb06-1e7b-5031-9a05-0cd26f8d0ec5",
+  "name": "设置隐私状态提示禁用弹窗",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/265\n// 创建时间: 2025-11-30T06:03:09\n// 更新时间: 2025-11-30T09:10:51\n\ncontext.getSystemService(\"sensor_privacy\").suppressSensorPrivacyReminders(1, true, 0)\n// 设置指定用户麦克风隐私状态提示禁用弹窗\n/*\n(int sensor, boolean suppress, int userId)\nsensor：1=麦克风、2=摄像头\nsuppress：true=屏蔽弹窗\n*/\n",
+  "createdAt": "1764453789000",
+  "updatedAt": "1764465051000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

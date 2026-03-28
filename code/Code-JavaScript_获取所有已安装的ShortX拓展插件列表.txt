@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-ffeef221-ae32-5014-ac81-151d184b72ee",
+  "name": "获取所有已安装的ShortX拓展插件列表",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1444\n// 创建时间: 2026-01-01T20:50:00\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getInstalledPluginFacts();\n// 获取所有已安装的ShortX拓展插件列表\n",
+  "createdAt": "1767271800000",
+  "updatedAt": "1767271800000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

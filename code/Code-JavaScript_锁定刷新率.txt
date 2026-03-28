@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-1f404ddc-fadd-5e48-a6ba-13490248e661",
+  "name": "锁定刷新率",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/405\n// 创建时间: 2025-12-06T13:50:03\n// 更新时间: 2025-12-12T18:20:04\n\n/*\n * 强制锁定指定刷新率\n */\nfunction lockRefreshRate(modeId) {\n    realMode = modeId - 1;\n\n    sf = android.os.ServiceManager.getService(\"SurfaceFlinger\");\n\n    data = android.os.Parcel.obtain();\n    data.writeInterfaceToken(\"android.ui.ISurfaceComposer\");\n    data.writeInt(realMode);\n    sf.transact(1035, data, null, 0);\n}\n// 重启需重新设置，个别系统锁屏后也会失效，自己测试。\n// 改成自己想锁定的刷新率对应ID，不要乱填\nlockRefreshRate(1);\n",
+  "createdAt": "1765000203000",
+  "updatedAt": "1765534804000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

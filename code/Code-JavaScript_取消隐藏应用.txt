@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-0cb9f21d-45c4-56ab-a77a-263dc3d64e74",
+  "name": "取消隐藏应用",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/68\n// 创建时间: 2025-11-27T11:51:19\n// 更新时间: 2025-11-27T11:51:39\n\nandroid.os.ServiceManager.getService(\"package\").setApplicationHiddenSettingAsUser(\"包名\", false, 0);\n// 设置取消隐藏指定用户的指定包名应用\n",
+  "createdAt": "1764215479000",
+  "updatedAt": "1764215499000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

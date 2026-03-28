@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-045d9233-b084-562f-9fe1-2e6b10992f87",
+  "name": "获取指定SIM卡的网络类型",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/224\n// 创建时间: 2025-11-29T01:45:50\n\n// 获取活动订阅信息\nsubscriptionManager = android.telephony.SubscriptionManager.from(context);\nsubscriptionInfoList = subscriptionManager.getActiveSubscriptionInfoList();\n\n// 检查订阅信息是否为空\nif (subscriptionInfoList == \"[]\") {\n    false;\n} else {\n    // 获取卡一 的订阅ID\n    subId = subscriptionInfoList.get(0).getSubscriptionId();\n\n    // 获取网络类型\n    telephonyManager = com.android.internal.telephony.ITelephony.Stub.asInterface(android.os.ServiceManager.getService(\"phone\"));\n    telephonyManager.getNetworkTypeForSubscriber(subId, \"android\", \"\");\n}\n //获取卡一的网络类型\n",
+  "createdAt": "1764351950000",
+  "updatedAt": "1764351950000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

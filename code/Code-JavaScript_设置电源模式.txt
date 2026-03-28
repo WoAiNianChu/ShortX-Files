@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-98392bd5-7fc1-5a5d-958f-c4f79f0e454c",
+  "name": "设置电源模式",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1277\n// 创建时间: 2025-12-26T03:30:30\n// 更新时间: 2025-12-26T04:18:13\n\nService = android.os.ServiceManager.getService(\"display\");\n\nif (android.os.Build.VERSION.SDK_INT > 35) {\n    Service.requestDisplayPower(0, 1);\n} else {\n    Service.requestDisplayPower(0, true);\n}\n// Android 15及以上方可使用\n// 设置指定显示器电源模式\n// Android 16+(int displayId, int state)\n/*\nstate 模式\n电源关闭         → 1\n电源开启         → 2\n待机模式         → 3\n深度待机模式     → 4\n*/\n// Android 15 (int displayId, boolean on)\n",
+  "createdAt": "1766691030000",
+  "updatedAt": "1766693893000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

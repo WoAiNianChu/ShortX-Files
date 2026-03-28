@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-fcc77183-dbc1-506e-8a40-883ca867fa70",
+  "name": "附近所有WiFi BSSID",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1675\n// 创建时间: 2026-01-26T19:31:25\n// 更新时间: 2026-01-27T18:26:19\n\n// 输出所有的WiFi Mac地址\nvar scanResults = context.getSystemService(\"wifi\").getScanResults();\n\n// 使用HashSet保证BSSID唯一性\nuniqueBSSIDs = new java.util.HashSet();\n\nfor (var i = 0; i < scanResults.size(); i++) {\n    var result = scanResults.get(i);\n    uniqueBSSIDs.add(result.BSSID);  // 只加入BSSID\n}\n\nbssidInfo = \"\";\niterator = uniqueBSSIDs.iterator();\nwhile (iterator.hasNext()) {\n    bssidInfo += iterator.next() + \"\\n\";  // 拼接BSSID (Mac地址)\n}\n\nbssidInfo;\n",
+  "createdAt": "1769427085000",
+  "updatedAt": "1769509579000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

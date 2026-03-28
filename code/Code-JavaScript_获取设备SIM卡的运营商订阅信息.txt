@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-09206ef3-d324-5f10-a53e-15077cda8e7a",
+  "name": "获取设备SIM卡的运营商订阅信息",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1371\n// 创建时间: 2026-01-01T20:48:43\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getActiveSubscriptionInfoList();\n// 获取设备SIM卡的运营商订阅信息\n",
+  "createdAt": "1767271723000",
+  "updatedAt": "1767271723000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

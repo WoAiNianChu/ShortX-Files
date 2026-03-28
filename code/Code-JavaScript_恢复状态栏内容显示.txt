@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-5225f67b-c59d-5960-bc4d-0642548e91d4",
+  "name": "恢复状态栏内容显示",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/204\n// 创建时间: 2025-11-28T06:06:19\n// 更新时间: 2025-11-28T08:06:07\n\ncontext.getSystemService(\"statusbar\").disable(0);\n//设置显示状态栏所有内容\n",
+  "createdAt": "1764281179000",
+  "updatedAt": "1764288367000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

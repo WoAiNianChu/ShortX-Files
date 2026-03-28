@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-b44866cb-a176-58ea-86fa-be843f259525",
+  "name": "获取WiFi IP",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/195\n// 创建时间: 2025-11-27T22:49:51\n\nip = android.os.ServiceManager.getService(\"wifi\").getConnectionInfo(\"android\", null).getIpAddress();\n(ip & 0xff) + \".\" + ((ip >> 8) & 0xff) + \".\" +\n            ((ip >> 16) & 0xff) + \".\" + ((ip >> 24) & 0xff);\n// 获取当前WiFi IP\n",
+  "createdAt": "1764254991000",
+  "updatedAt": "1764254991000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-660ddcd7-377a-5a94-bd03-cc85547616de",
+  "name": "取消固定应用",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1067\n// 创建时间: 2025-12-21T02:48:02\n// 更新时间: 2025-12-21T07:40:52\n\nandroid.os.ServiceManager.getService(\"activity_task\").stopSystemLockTaskMode()\n// 取消固定应用\n",
+  "createdAt": "1766256482000",
+  "updatedAt": "1766274052000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

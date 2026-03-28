@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-2b9ba990-9782-5aa5-8b23-0a592abc6ee3",
+  "name": "通知清除",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/31\n// 创建时间: 2025-11-26T23:40:54\n// 更新时间: 2025-11-26T23:41:13\n\nandroid.os.ServiceManager.getService(\"statusbar\").onClearAllNotifications(0);\n// 清除指定用户的所有通知\n",
+  "createdAt": "1764171654000",
+  "updatedAt": "1764171673000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

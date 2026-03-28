@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-9f2c05af-196a-5371-88a8-40fd8233d92f",
+  "name": "调用解锁传感器对话框",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/261\n// 创建时间: 2025-11-30T05:22:46\n// 更新时间: 2025-11-30T09:10:59\n\nandroid.os.ServiceManager.getService(\"sensor_privacy\").showSensorUseDialog(2);\n/*\n在关闭对应传感器的前提，手动弹一次“解锁传感器开关”的确认对话框\n 1 - 麦克风使用权限\n 2 - 摄像头使用权限\n*/\n",
+  "createdAt": "1764451366000",
+  "updatedAt": "1764465059000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

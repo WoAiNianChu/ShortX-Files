@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-febfa9e3-0680-51d0-ad2a-df7a21ec58bf",
+  "name": "固定应用",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1065\n// 创建时间: 2025-12-21T02:46:51\n// 更新时间: 2025-12-21T07:40:50\n\nandroid.os.ServiceManager.getService(\"activity_task\").startSystemLockTaskMode(taskId);\n// 固定指定应用\n",
+  "createdAt": "1766256411000",
+  "updatedAt": "1766274050000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-6f201e19-55d3-570a-8608-4e5c8d8951e5",
+  "name": "热点判断",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/45\n// 创建时间: 2025-11-27T02:39:57\n// 更新时间: 2025-11-29T03:38:33\n\nandroid.os.ServiceManager.getService(\"wifi\").getWifiApEnabledState() == 13;\n// 获取热点是否开启\n",
+  "createdAt": "1764182397000",
+  "updatedAt": "1764358713000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-65c87ce2-ebd9-508d-b6e8-0cc8e038d8ec",
+  "name": "获取方向传感器数据",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1096\n// 创建时间: 2025-12-22T00:39:37\n// 更新时间: 2025-12-22T11:35:14\n\nimportClass(android.content.Context);\nimportClass(android.hardware.Sensor);\nimportClass(android.hardware.SensorManager);\nimportClass(android.hardware.SensorEventListener);\nimportClass(android.hardware.SensorEvent);\nimportClass(java.lang.Thread);\nimportClass(java.lang.Runnable);\nimportClass(android.os.Looper);\nimportClass(android.os.Handler);\nimportClass(java.util.concurrent.CountDownLatch);\nimportClass(java.util.concurrent.TimeUnit);\n\nfunction getOrientationData() {\n    var sensorManager = context.getSystemService(Context.SENSOR_SERVICE);\n    var orientationSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);\n\n    if (orientationSensor == null) {\n        return \"设备不支持方向传感器\";\n    }\n\n    var azimuth = 0, pitch = 0, roll = 0;\n    var latch = new CountDownLatch(1);\n\n    var listener = new SensorEventListener({\n        onSensorChanged: function (event) {\n            azimuth = event.values[0];  // 方位角（0°-360°，朝北为0°）\n            pitch = event.values[1];    // 俯仰角（-90° 到 90°，0° 为水平）\n            roll = event.values[2];     // 滚转角（-90° 到 90°，0° 为水平）\n            latch.countDown(); // 收到数据后释放\n        },\n        onAccuracyChanged: function (sensor, accuracy) {}\n    });\n\n    // 注册监听器，必须在主线程\n    new Handler(Looper.getMainLooper()).post(new Runnable({\n        run: function () {\n            sensorManager.registerListener(listener, orientationSensor, SensorManager.SENSOR_DELAY_NORMAL);\n        }\n    }));\n\n    // 最多等待 2 秒获取数据\n    var received = latch.await(2, TimeUnit.SECONDS);\n\n    // 无论成功与否都要注销监听器\n    sensorManager.unregisterListener(listener);\n\n    if (!received) {\n        return \"未能获取方向传感器数据\";\n    }\n\n    return \"方向传感器数据:\\nX: \" + azimuth + \"°\\nY: \" + pitch + \"°\\nZ: \" + roll + \"°\";\n}\n\ngetOrientationData();\n",
+  "createdAt": "1766335177000",
+  "updatedAt": "1766374514000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

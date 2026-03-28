@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-7712b44f-667c-5f89-87cf-11e059fef919",
+  "name": "设置无锁屏",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/44\n// 创建时间: 2025-11-27T02:02:59\n// 更新时间: 2025-11-27T02:03:15\n\nandroid.os.ServiceManager.getService(\"lock_settings\").setBoolean(\"lockscreen.disabled\", true, 0)\n// 设置指定用户为无锁屏\n// 无锁屏!=滑动\n",
+  "createdAt": "1764180179000",
+  "updatedAt": "1764180195000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-48859edb-6202-5849-9c4a-6d6369ebdaec",
+  "name": "省电模式判断",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1112\n// 创建时间: 2025-12-23T09:53:05\n\nandroid.os.ServiceManager.getService(\"power\").isPowerSaveMode();\n// 判断是否处于省电模式\n",
+  "createdAt": "1766454785000",
+  "updatedAt": "1766454785000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

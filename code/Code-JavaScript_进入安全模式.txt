@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-b42f6fdf-89ac-5944-b3db-d56d694f9986",
+  "name": "进入安全模式",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1111\n// 创建时间: 2025-12-23T09:51:08\n// 更新时间: 2025-12-23T09:57:04\n\nandroid.os.ServiceManager.getService(\"power\").rebootSafeMode(false, true);\n// 设备重启并进入安全模式\n",
+  "createdAt": "1766454668000",
+  "updatedAt": "1766455024000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

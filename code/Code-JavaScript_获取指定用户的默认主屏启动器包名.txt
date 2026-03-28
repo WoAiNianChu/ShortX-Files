@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-488d5033-e5ca-5453-8e88-deec6c463f27",
+  "name": "获取指定用户的默认主屏启动器包名",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1546\n// 创建时间: 2026-01-07T00:45:54\n// 更新时间: 2026-01-15T06:32:04\n\nandroid.os.ServiceManager.getService(\"shortcut\").getDefaultLauncher(0);\n// 获取指定用户的默认主屏启动器包名\n",
+  "createdAt": "1767717954000",
+  "updatedAt": "1768429924000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

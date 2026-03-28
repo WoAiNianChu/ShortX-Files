@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-0f598382-214c-5387-bd5c-039dcfee3c2b",
+  "name": "5G 判断",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/226\n// 创建时间: 2025-11-29T01:49:19\n// 更新时间: 2025-11-29T02:02:21\n\ncom.android.internal.telephony.ITelephony.Stub.asInterface(android.os.ServiceManager.getService(\"phone\")).getDataNetworkType(\"android\", \"\") == 20;\n// 判断当前SIM卡网络类型是否为5G\n",
+  "createdAt": "1764352159000",
+  "updatedAt": "1764352941000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

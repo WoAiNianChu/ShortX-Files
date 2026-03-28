@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-ebbba102-7b98-54b3-8139-2f6da3641edf",
+  "name": "清空App所有动态快捷方式",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1543\n// 创建时间: 2026-01-06T23:59:31\n// 更新时间: 2026-01-15T06:32:11\n\nandroid.os.ServiceManager.getService(\"shortcut\").removeAllDynamicShortcuts(\"tornaco.apps.shortx\", 0);\n// 清空指定App的所有动态快捷方式\n",
+  "createdAt": "1767715171000",
+  "updatedAt": "1768429931000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

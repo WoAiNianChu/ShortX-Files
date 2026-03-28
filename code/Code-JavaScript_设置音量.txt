@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-545d3471-36d4-5ec1-9c74-7ac6bdd7bad3",
+  "name": "设置音量",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/350\n// 创建时间: 2025-12-03T04:39:50\n// 更新时间: 2025-12-14T19:30:32\n\naudioManager = context.getSystemService(\"audio\");\nfunction getVolumeInfo(context, streamType, targetVolume) {\n     volume = android.os.ServiceManager.getService(\"audio\").setStreamVolume(streamType, targetVolume, 0, null);\n    return volume;\n}\n\ngetVolumeInfo(context, audioManager.STREAM_ALARM, 7);\n// 设置闹钟音量\n// 设置指定音量类型\n",
+  "createdAt": "1764707990000",
+  "updatedAt": "1765711832000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

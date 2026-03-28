@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-fb2e1f8c-962f-5a69-9ed8-6a6f21a85105",
+  "name": "百度地图骑行导航",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/274\n// 创建时间: 2025-12-01T02:52:00\n// 更新时间: 2025-12-01T08:25:51\n\nIntent = android.content.Intent;\nUserHandle = android.os.UserHandle;\n// ShortX自带的百度地图骑行导航无法正常使用，该接口可以\nlat = 39.915119;\n// lat - 纬度\nlon = 116.403963;\n// lon - 经度\ncoord_type = \"bd09ll\";\n/*\n坐标类型\nbd09ll（百度经纬度坐标） //用百度坐标拾取器，可避免误差\nbd09mc（百度墨卡托坐标）\ngcj02（经国测局加密的坐标）\nwgs84（gps获取的原始坐标）\n*/\n// 电动车导航\nmyIntent = Intent.parseUri('baidumap://map/bikenavi?destination=' + lat + ',' + lon + '&coord_type=' + coord_type + '&src=andr.baidu.openAPIdemo', 0);\n\nmyIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\n// 指定用户启动\nuserHandle = UserHandle.of(0);\n\ncontext.startActivityAsUser(myIntent, userHandle);\n// 坐标拾取器 https://lbs.baidu.com/maptool/getpoint\n// 指定用户百度地图 电动车导航\n",
+  "createdAt": "1764528720000",
+  "updatedAt": "1764548751000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

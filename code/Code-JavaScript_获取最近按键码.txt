@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-1b4fec9f-6acb-534d-84b2-37e674a5fd8f",
+  "name": "获取最近按键码",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/38\n// 创建时间: 2025-11-27T01:29:15\n// 更新时间: 2025-11-27T01:43:41\n\nandroid.os.ServiceManager.getService(\"statusbar\").getLastSystemKey();\n// 获取最近按键事件的按键码\n",
+  "createdAt": "1764178155000",
+  "updatedAt": "1764179021000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

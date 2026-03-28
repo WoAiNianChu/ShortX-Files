@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-feab4d6a-9227-5440-8518-074f5e77019e",
+  "name": "获取指定传感器状态",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/266\n// 创建时间: 2025-11-30T06:20:15\n// 更新时间: 2025-11-30T09:10:50\n\nandroid.os.ServiceManager.getService(\"sensor_privacy\").isCombinedToggleSensorPrivacyEnabled(2);\n/*\n第二种方法\n获取摄像头权限开关是否关闭\n 1 - 麦克风使用权限\n 2 - 摄像头使用权限\n */\n",
+  "createdAt": "1764454815000",
+  "updatedAt": "1764465050000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

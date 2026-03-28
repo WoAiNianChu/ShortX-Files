@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-ae3c5114-af39-5f85-bc2e-e6e77aff2e4f",
+  "name": "充电伪装",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/28\n// 创建时间: 2025-11-26T23:32:56\n// 更新时间: 2025-11-26T23:36:22\n\nandroid.os.ServiceManager.getService(\"batterystats\").unplugBattery(true);\n//伪装成未充电\n",
+  "createdAt": "1764171176000",
+  "updatedAt": "1764171382000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

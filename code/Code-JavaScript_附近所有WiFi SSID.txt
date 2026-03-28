@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-d7768264-5bd7-5f03-8e81-bfc59a994927",
+  "name": "附近所有WiFi SSID",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1674\n// 创建时间: 2026-01-26T19:31:25\n// 更新时间: 2026-01-27T18:26:19\n\n// 输出所有的WiFi名称\nscanResults = context.getSystemService(\"wifi\").getScanResults();\n\n// 使用HashSet保证SSID唯一性\nuniqueSSIDs = new java.util.HashSet();\n\nfor (var i = 0; i < scanResults.size(); i++) {\n     result = scanResults.get(i);\n    uniqueSSIDs.add(result.SSID); \n}\n\nwifiInfo = \"\";\niterator = uniqueSSIDs.iterator();\nwhile (iterator.hasNext()) {\n    wifiInfo += iterator.next() + \"\\n\";  // 拼接SSID\n}\n\nwifiInfo;\n",
+  "createdAt": "1769427085000",
+  "updatedAt": "1769509579000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-d3324c2c-ad32-5053-aa35-350e7de038d4",
+  "name": "获取当前网络类型",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/223\n// 创建时间: 2025-11-29T01:44:59\n// 更新时间: 2025-11-29T01:50:02\n\ncom.android.internal.telephony.ITelephony.Stub.asInterface(android.os.ServiceManager.getService(\"phone\")).getDataNetworkType(\"android\", \"\");\n// 获取当前SIM卡的网络类型\n",
+  "createdAt": "1764351899000",
+  "updatedAt": "1764352202000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

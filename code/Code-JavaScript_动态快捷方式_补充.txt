@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-8b015243-b147-507f-88b7-ada9589be192",
+  "name": "动态快捷方式",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/842\n// 创建时间: 2025-12-14T18:55:33\n// 更新时间: 2025-12-14T19:30:10\n\n// 删掉指定应用指定动态快捷方式\nimportClass(android.content.Context);\nimportClass(android.content.pm.ShortcutManager);\nimportClass(java.util.Collections);\n\n// ================= 目标应用包名 =================\nvar targetPackage = \"包名\"; // ← 可修改为任意 app 包名\n\ntry {\n    // 获取目标应用上下文\n    var otherContext = context.createPackageContext(\n        targetPackage,\n        Context.CONTEXT_INCLUDE_CODE |\n        Context.CONTEXT_IGNORE_SECURITY |\n        Context.CONTEXT_DEVICE_PROTECTED_STORAGE |\n        Context.CONTEXT_REGISTER_PACKAGE\n    );\n\n    // 获取系统服务 ShortcutManager\n    var shortcutManager = otherContext.getSystemService(Context.SHORTCUT_SERVICE);\n\n    if (shortcutManager == null) {\n        console.log(\"❌ 此设备不支持 ShortcutManager。\");\n        JSON.stringify([]);\n    }\n\n    // ================= 删除指定 ID 的动态快捷方式 =================\n    var shortcutId = \"shortcut_1759818721903\"; // ← 只删这个 ID\n    var list = java.util.Collections.singletonList(shortcutId);\n    shortcutManager.removeDynamicShortcuts(list);\n\n    \"✅ 已删除 \" + targetPackage + \" 的快捷方式 ID: \" + shortcutId;\n\n} catch (e) {\n    console.log(\"❌ 删除快捷方式出错: \" + e);\n    JSON.stringify([]);\n}\n",
+  "createdAt": "1765709733000",
+  "updatedAt": "1765711810000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

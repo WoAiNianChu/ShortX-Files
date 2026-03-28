@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-4b900fcd-933b-53c0-baa1-0f922f9ccfbf",
+  "name": "获取当前音量",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/349\n// 创建时间: 2025-12-03T04:39:19\n// 更新时间: 2025-12-14T19:30:32\n\naudioManager = context.getSystemService(\"audio\");\n// 获取指定音量类型的音量值并返回\nfunction getVolumeInfo(context, streamType) {\n     volume = android.os.ServiceManager.getService(\"audio\").getStreamVolume(streamType);\n    return volume;\n}\n\ngetVolumeInfo(context, audioManager.STREAM_RING);\n// 获取当前铃声音量\n// 获取指定音量类型当前音量\n",
+  "createdAt": "1764707959000",
+  "updatedAt": "1765711832000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-55062a92-d805-5d62-9177-0a9acad97b1d",
+  "name": "无线ADB调试授权",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/186\n// 创建时间: 2025-11-27T22:03:34\n// 更新时间: 2025-11-27T22:08:46\n\nandroid.os.ServiceManager.getService(\"adb\").allowWirelessDebugging(true, \"**:**:**:**:**:**\")\n// 无线调试授权指定公钥\n/*\n写入非当前wifi的BSSID前，需关闭无线调试开关。\n如果写入的是当前WiFi的BSSID会自动打开无线ADB调试\n具体观察/data/misc/adb/adb_temp_keys.xml\n**:**这个参数是指wifi的BSSID，一般都是授权当前WiFi\n*/\n",
+  "createdAt": "1764252214000",
+  "updatedAt": "1764252526000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

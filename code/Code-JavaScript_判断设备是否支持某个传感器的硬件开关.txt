@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-66e9e3d8-d3ef-5195-8a23-bbb5fb043872",
+  "name": "判断设备是否支持某个传感器的硬件开关",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/259\n// 创建时间: 2025-11-30T05:14:35\n\nandroid.os.ServiceManager.getService(\"sensor_privacy\").supportsSensorToggle(1, 2);     \n// 设备是否支持摄像头硬件开关\n/*\n   (1, 传感器类型1/2)\n 1 - 麦克风使用权限\n 2 - 摄像头使用权限\n*/\n",
+  "createdAt": "1764450875000",
+  "updatedAt": "1764450875000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-d7b544ec-71a0-59b4-9c01-2737248cd8e7",
+  "name": "获取导航栏模式",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/49\n// 创建时间: 2025-11-27T03:32:45\n\nm=android.os.ServiceManager.getService(\"statusbar\").getNavBarMode();\nm==0?\"手势导航\":m==1?\"三段式导航\":\"未知:\"+m;\n// 获取导航栏模式\n",
+  "createdAt": "1764185565000",
+  "updatedAt": "1764185565000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

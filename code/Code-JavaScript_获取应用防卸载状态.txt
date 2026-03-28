@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-b66215ed-a4fc-589f-a036-b9ca36db990c",
+  "name": "获取应用防卸载状态",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/70\n// 创建时间: 2025-11-27T11:55:17\n// 更新时间: 2025-11-27T12:16:12\n\nandroid.os.ServiceManager.getService(\"package\").getBlockUninstallForUser(\"包名\", true, 0)\n// 获取阻止指定用户指定包名的卸载状态\n",
+  "createdAt": "1764215717000",
+  "updatedAt": "1764216972000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-5ff8b138-7e59-513f-8251-78b5f8d9222c",
+  "name": "清除ADB调试密钥",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/184\n// 创建时间: 2025-11-27T21:13:39\n\nandroid.os.ServiceManager.getService(\"adb\").clearDebuggingKeys();\n// 清除ADB调试密钥\n",
+  "createdAt": "1764249219000",
+  "updatedAt": "1764249219000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

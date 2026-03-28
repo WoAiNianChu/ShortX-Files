@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-ad5fca86-e4f3-592c-9236-ef62ceda5160",
+  "name": "执行JS代码",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1466\n// 创建时间: 2026-01-01T20:50:00\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().executeJS('js代码', 0);\n// 执行JS代码\n/*\nDefault    → 0\nIO         → 1\nUI         → 2\n*/\n",
+  "createdAt": "1767271800000",
+  "updatedAt": "1767271800000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-613e8bf6-b94f-5320-8ce9-63aad2aae200",
+  "name": "判断按键紧急停用ShortX功能是否开启",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1355\n// 创建时间: 2026-01-01T20:48:43\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().isForceDisableShortXByKeyPressEnabled();\n// 判断按键紧急停用ShortX功能是否开启\n",
+  "createdAt": "1767271723000",
+  "updatedAt": "1767271723000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

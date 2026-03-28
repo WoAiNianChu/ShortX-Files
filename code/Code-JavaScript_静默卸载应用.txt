@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-2ea2e86c-5fd4-52a1-9a43-154d3ffeb056",
+  "name": "静默卸载应用",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1684\n// 创建时间: 2026-01-29T15:45:30\n// 更新时间: 2026-01-29T16:58:56\n\n// 静默卸载指定用户指定应用\npackageManager = android.os.ServiceManager.getService(\"package\");\npackageName = \"com.google.android.apps.photos\";\nuserid = 0;\n// 获取版本号\nversion = packageManager.getPackageInfo(packageName, 128, userid).versionCode;\n\npackageManager.deletePackageAsUser(packageName, version, null, userid, 2);\n\n// (String packageName, int versionCode, IPackageDeleteObserver observer, int userId, int flags)\n/*\nDeletion Flags\n1 - 删除应用但保留数据\n2 - 删除所有用户的数据\n4 - 允许删除系统应用\n8 - 删除但不杀死应用进程\n16 - 存档应用（而非完全删除）\n*/\n",
+  "createdAt": "1769672730000",
+  "updatedAt": "1769677136000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-dae50db0-2c3a-51ef-9aef-46d201204efa",
+  "name": "禁用屏幕触摸",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/221\n// 创建时间: 2025-11-29T01:00:42\n\nInputDevice = android.view.InputDevice;\n\ninputManager = android.os.ServiceManager.getService(\"input\");\n\ndeviceIds = inputManager.getInputDeviceIds();\n\ntouchDeviceId = -1;\n\nfor (i = 0; i < deviceIds.length; i++) {\n    id = deviceIds[i];\n    sources = inputManager.getInputDevice(id).getSources();\n    if ((sources & InputDevice.SOURCE_TOUCHSCREEN) == InputDevice.SOURCE_TOUCHSCREEN) {\n        touchDeviceId = id;\n    }\n}\n\ninputManager.disableInputDevice(touchDeviceId);\n// 禁用触摸设备\n",
+  "createdAt": "1764349242000",
+  "updatedAt": "1764349242000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

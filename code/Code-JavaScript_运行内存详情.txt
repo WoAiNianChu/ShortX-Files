@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-85dee9fb-b690-55ae-94f7-932fe780eb10",
+  "name": "运行内存详情",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1069\n// 创建时间: 2025-12-21T03:11:41\n// 更新时间: 2025-12-21T07:40:58\n\n// 运行内存详情\nMemoryInfo = android.app.ActivityManager.MemoryInfo;\nmemInfo = new MemoryInfo();\nactivityService = android.os.ServiceManager.getService(\"activity\");\nactivityService.getMemoryInfo(memInfo);\n\navailGB = memInfo.availMem / 1024.0 / 1024 / 1024;\ntotalGB = memInfo.totalMem / 1024.0 / 1024 / 1024;\nthresholdMB = memInfo.threshold / 1024.0 / 1024;\n\nusedGB = totalGB - availGB;\nusedPercent  = (usedGB  / totalGB) * 100;\navailPercent = (availGB / totalGB) * 100;\n\navailGB2 = Math.floor(availGB * 100) / 100;\ntotalGB2 = Math.floor(totalGB * 100) / 100;\nusedGB2  = Math.floor(usedGB  * 100) / 100;\n\nusedPercent2  = Math.floor(usedPercent  * 100) / 100;\navailPercent2 = Math.floor(availPercent * 100) / 100;\nthresholdMB2 = Math.floor(thresholdMB * 100) / 100;\n\n\n\"可用内存: \" + availGB2 + \" GB (\" + availPercent2 + \" %)\\n\" +\n\"已用内存: \" + usedGB2  + \" GB (\" + usedPercent2  + \" %)\\n\" +\n\"总内存: \" + totalGB2 + \" GB\\n\" +\n\"低内存模式: \" + memInfo.lowMemory + \"\\n\" +\n\"低内存阈值: \" + thresholdMB2 + \" MB\";\n",
+  "createdAt": "1766257901000",
+  "updatedAt": "1766274058000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

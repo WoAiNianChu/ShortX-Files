@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-2791e49a-d870-5015-81d6-e0825470f1e7",
+  "name": "停止手势录制",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1477\n// 创建时间: 2026-01-01T20:50:00\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().stopGestureRecording(boolean);\n// 停止手势录制\n// 参数为布尔值，true=保存录制、false=放弃\n",
+  "createdAt": "1767271800000",
+  "updatedAt": "1767271800000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

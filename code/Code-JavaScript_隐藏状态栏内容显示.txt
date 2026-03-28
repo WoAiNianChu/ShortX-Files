@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-8ac68739-5c7c-5a2d-858e-f58f639df8da",
+  "name": "隐藏状态栏内容显示",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/203\n// 创建时间: 2025-11-28T06:05:07\n// 更新时间: 2025-11-30T11:07:16\n\nstatusbar = context.getSystemService(\"statusbar\");\n// 设置禁用标志（禁用通知图标、系统信息、时钟）\nstatusbar.disable(statusbar.DISABLE_NOTIFICATION_ICONS | statusbar.DISABLE_SYSTEM_INFO | statusbar.DISABLE_CLOCK);\n// 设置隐藏状态栏基本内容显示\n/*\n禁用后台多任务界面\nDISABLE_RECENT\n禁用导航栏\nDISABLE_NAVIGATION\n全家桶（禁用所有能禁用的组件）（慎用）\nDISABLE_MASK\n禁用下拉状态栏(个别系统恢复下拉状态栏，执行恢复命令后需锁屏一次)\nDISABLE_EXPAND\n\n详情查看https://blog.csdn.net/qq_45146250/article/details/131088228\n*/\n",
+  "createdAt": "1764281107000",
+  "updatedAt": "1764472036000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

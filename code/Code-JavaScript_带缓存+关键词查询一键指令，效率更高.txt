@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-05085c42-5cb9-543a-b1a1-ed20b4758af7",
+  "name": "带缓存+关键词查询一键指令，效率更高",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1382\n// 创建时间: 2026-01-01T20:48:43\n// 更新时间: 2026-01-01T20:55:16\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getAllDirectActionWithQueryCache(String, int, int);\n// 带缓存+关键词查询一键指令，效率更高\n// 猜测参数1为指令名称关键词（模糊匹配），参数2=分类ID，参数3=状态（同上）\n",
+  "createdAt": "1767271723000",
+  "updatedAt": "1767272116000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

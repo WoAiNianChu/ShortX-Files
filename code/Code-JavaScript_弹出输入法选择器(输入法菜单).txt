@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-4bb5b891-c481-5ff7-b36a-d6736c5c109a",
+  "name": "弹出输入法选择器(输入法菜单)",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/51\n// 创建时间: 2025-11-27T03:51:34\n// 更新时间: 2025-12-23T04:29:52\n\nandroid.os.ServiceManager.getService(\"input_method\").showInputMethodPickerFromSystem(0 ,0);\n// 调用输入法选择器\n",
+  "createdAt": "1764186694000",
+  "updatedAt": "1766435392000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

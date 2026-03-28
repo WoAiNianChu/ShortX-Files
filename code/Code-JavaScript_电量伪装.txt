@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-71c376e5-f649-5425-8924-285ad6191d0c",
+  "name": "电量伪装",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/27\n// 创建时间: 2025-11-26T23:30:18\n// 更新时间: 2025-11-27T05:27:52\n\nandroid.os.ServiceManager.getService(\"batterystats\").setBatteryLevel(250, true); \n// 伪装指定电量，强制更新\n",
+  "createdAt": "1764171018000",
+  "updatedAt": "1764192472000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

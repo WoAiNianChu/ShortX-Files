@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-f69d4953-beec-5e63-bf7a-176d806cd0c3",
+  "name": "获取下一个从空闲唤醒的时间",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/302\n// 创建时间: 2025-12-01T22:57:12\n// 更新时间: 2025-12-02T06:11:43\n\nnext = android.os.ServiceManager.getService(\"alarm\").getNextWakeFromIdleTime();\n\nif (next >= 9000000000) {\n    \"当前没有任何会唤醒设备的闹钟\";\n} else {\n    real = java.lang.System.currentTimeMillis() + next - android.os.SystemClock.elapsedRealtime();\n    new java.text.SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\").format(new java.util.Date(real));\n}\n// 获取下一次从Doze/空闲模式唤醒的时间\n",
+  "createdAt": "1764601032000",
+  "updatedAt": "1764627103000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

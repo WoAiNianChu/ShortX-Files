@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-4b70c9d2-7e07-5afc-908c-593630d7b011",
+  "name": "获取指定App的所有快捷信息",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1545\n// 创建时间: 2026-01-07T00:36:10\n// 更新时间: 2026-01-15T06:32:06\n\n// 获取指定App的所有快捷方式信息\ntargetPackage = \"tornaco.apps.shortx\";\n\n// 1. 获取 ShortcutService 的 IBinder\nvar shortcutService = android.os.ServiceManager.getService(\"shortcut\");\nif (!shortcutService) {\n    throw \"无法获取 shortcut 服务\";\n}\n// ==================== 主流程 ====================\nvar MATCH_ALL = 0x0000000F; // MATCH_MANIFEST (1) | MATCH_DYNAMIC (2) | MATCH_PINNED (4) | MATCH_CACHED (8)\n\nvar slice = shortcutService.getShortcuts(targetPackage, MATCH_ALL, userId);\nvar shortcutList = slice.getList();\n\nvar result = [];\n\nif (shortcutList && shortcutList.size() > 0) {\n    for (var i = 0; i < shortcutList.size(); i++) {\n        var shortcutItem = shortcutList.get(i);  // 获取每个快捷方式\n        \n        // 反射所有字段\n        var fields = shortcutItem.getClass().getDeclaredFields();\n        var shortcut = {};\n\n        // 遍历字段并输出字段名及其值\n        for (var j = 0; j < fields.length; j++) {\n            var field = fields[j];\n            field.setAccessible(true); // 允许访问私有字段\n            try {\n                var fieldName = field.getName();  // 获取字段名\n                var fieldValue = field.get(shortcutItem);  // 获取字段值\n                \n                // 将字段名和值加入到结果中\n                shortcut[fieldName] = fieldValue ? fieldValue.toString() : \"null\";\n            } catch (e) {\n                shortcut[fieldName] = \"无法获取值\";\n            }\n        }\n        \n        result.push(shortcut); // 添加到结果数组\n    }\n}\n\n// 输出结果\nJSON.stringify(result, null, 2);\n",
+  "createdAt": "1767717370000",
+  "updatedAt": "1768429926000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

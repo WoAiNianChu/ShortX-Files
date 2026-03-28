@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-8fb6125a-b370-5ce0-a545-5d35138416f1",
+  "name": "获取距离传感器数据",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1091\n// 创建时间: 2025-12-22T00:21:39\n// 更新时间: 2025-12-22T11:35:05\n\nimportClass(android.content.Context);\nimportClass(android.hardware.Sensor);\nimportClass(android.hardware.SensorManager);\nimportClass(android.hardware.SensorEventListener);\nimportClass(android.hardware.SensorEvent);\nimportClass(java.lang.Thread);\nimportClass(java.lang.Runnable);\nimportClass(android.os.Looper);\nimportClass(android.os.Handler);\nimportClass(java.util.concurrent.CountDownLatch);\nimportClass(java.util.concurrent.TimeUnit);\n\nfunction getProximityData() {\n    var sensorManager = context.getSystemService(Context.SENSOR_SERVICE);\n    var proximitySensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);\n\n    if (proximitySensor == null) {\n        return \"设备不支持距离传感器\";\n    }\n\n    var maxRange = proximitySensor.getMaximumRange();\n    var distance = -1;\n\n    var latch = new CountDownLatch(1);\n\n    var listener = new SensorEventListener({\n        onSensorChanged: function (event) {\n            distance = event.values[0];\n            latch.countDown(); // 一旦收到数据就释放等待\n        },\n        onAccuracyChanged: function (sensor, accuracy) {\n            // 可选：处理精度变化\n        }\n    });\n\n    // 在主线程中注册监听器\n    new Handler(Looper.getMainLooper()).post(new Runnable({\n        run: function () {\n            sensorManager.registerListener(listener, proximitySensor, SensorManager.SENSOR_DELAY_NORMAL);\n        }\n    }));\n\n    // 最多等待2秒\n    var received = latch.await(2, TimeUnit.SECONDS);\n\n    // 不管成功与否都注销监听器\n    sensorManager.unregisterListener(listener);\n\n    if (!received || distance < 0) {\n        return \"未能获取距离传感器数据\";\n    }\n\n    // 判断是否接近（通常 0 表示接近）\n    var isNear = distance <= 1.0;  // 兼容某些 maxRange 比较小的设备\n\n    return \"距离传感器数据: \" + distance + \" 厘米\\n是否接近: \" + (isNear ? \"是\" : \"否\");\n}\n\ngetProximityData();\n",
+  "createdAt": "1766334099000",
+  "updatedAt": "1766374505000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

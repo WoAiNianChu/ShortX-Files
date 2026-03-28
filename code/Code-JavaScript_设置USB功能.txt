@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-0a8ee11b-f895-564a-bb12-c968ba837520",
+  "name": "设置USB功能",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/935\n// 创建时间: 2025-12-17T00:12:15\n// 更新时间: 2025-12-20T22:49:12\n\nandroid.os.ServiceManager.getService(\"usb\").setCurrentFunctions(4, 0);\n// 开启USB文件传输模式\n\n/*\nnone         → 仅充电        → 0\nadb          → 设备调试      → 1\naccessory    → 外设模式      → 2\nmtp          → 文件传输      → 4\nmidi         → MIDI          → 8\nptp          → 图片传输      → 16\nrndis        → USB共享网络   → 32\naudio_source → USB音频       → 64\nuvc          → USB摄像头     → 128\nncm          → USB网络(NCM)  → 1024\n*/\n",
+  "createdAt": "1765901535000",
+  "updatedAt": "1766242152000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

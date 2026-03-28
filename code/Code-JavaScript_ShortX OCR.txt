@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-5950010f-dea8-5cd8-be3c-e579291da9be",
+  "name": "ShortX OCR",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/921\n// 创建时间: 2025-12-16T16:18:47\n// 更新时间: 2025-12-16T16:23:01\n\nimportClass(Packages.tornaco.apps.shortx.core.proto.action.OcrDetect);\nimportClass(Packages.tornaco.apps.shortx.core.proto.common.RectSourceRect);\nimportClass(Packages.tornaco.apps.shortx.core.proto.common.Rect);\nimportClass(com.google.protobuf.Any);\n\nvar action = OcrDetect.newBuilder()\n    .setRectSrc(\n        Any.pack(\n            RectSourceRect.newBuilder()\n                .setRect(\n                    Rect.newBuilder()\n                        .setLeft(\"\")\n                        .setTop(\"\")\n                        .setRight(\"\")\n                        .setBottom(\"\")\n                        .build()\n                )\n                .build()\n        )\n    )\n    .build();\n\nvar result = shortx.executeAction(action);\n\nresult.contextData.get(\"ocrResult\")\n// 输入屏幕区域\n",
+  "createdAt": "1765873127000",
+  "updatedAt": "1765873381000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

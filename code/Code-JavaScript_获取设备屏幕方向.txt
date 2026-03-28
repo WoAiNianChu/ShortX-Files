@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-965fa121-36ac-5244-8d03-3465b5a76d4e",
+  "name": "获取设备屏幕方向",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1090\n// 创建时间: 2025-12-22T00:20:11\n// 更新时间: 2025-12-22T11:35:03\n\n// 根据加速度传感器获取设备屏幕方向\nimportClass(android.content.Context);\nimportClass(android.hardware.Sensor);\nimportClass(android.hardware.SensorManager);\nimportClass(android.hardware.SensorEventListener);\nimportClass(android.os.Looper);\nimportClass(android.os.Handler);\nimportClass(java.util.concurrent.CountDownLatch);\nimportClass(java.util.concurrent.TimeUnit);\nimportClass(java.lang.Runnable);\n\nfunction getPhoneOrientation() {\n    var sensorManager = context.getSystemService(Context.SENSOR_SERVICE);\n    var accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);\n\n    if (accelerometer == null) {\n        return \"设备不支持加速度传感器\";\n    }\n\n    var x = 0, y = 0, z = 0;\n    var latch = new CountDownLatch(1);\n\n    var listener = new SensorEventListener({\n        onSensorChanged: function(event) {\n            x = event.values[0];\n            y = event.values[1];\n            z = event.values[2];\n            latch.countDown();\n        },\n        onAccuracyChanged: function(sensor, accuracy) {}\n    });\n\n    new Handler(Looper.getMainLooper()).post(new Runnable({\n        run: function() {\n            sensorManager.registerListener(listener, accelerometer, SensorManager.SENSOR_DELAY_NORMAL);\n        }\n    }));\n\n    var received = latch.await(2, TimeUnit.SECONDS);\n    sensorManager.unregisterListener(listener);\n\n    if (!received) {\n        return \"未能获取加速度传感器数据\";\n    }\n\n    // 判断朝向\n    var absX = Math.abs(x), absY = Math.abs(y), absZ = Math.abs(z);\n\n    if (absZ > absX && absZ > absY) {\n        return z > 0 ? \"屏幕朝上\" : \"屏幕朝下\";\n    } else if (absY > absX && absY > absZ) {\n        return y > 0 ? \"顶部朝上\" : \"底部朝上\";\n    } else if (absX > absY && absX > absZ) {\n        return x > 0 ? \"右侧朝上\" : \"左侧朝上\";\n    } else {\n        return \"无法判断\";\n    }\n}\n\ngetPhoneOrientation();\n",
+  "createdAt": "1766334011000",
+  "updatedAt": "1766374503000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

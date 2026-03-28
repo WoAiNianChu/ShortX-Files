@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-db7c3699-7764-5ad8-b0b7-26fb9c19f5b5",
+  "name": "获取距离上一次触摸的时间差",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1332\n// 创建时间: 2025-12-30T09:20:52\n// 更新时间: 2025-12-30T12:03:49\n\n// 全局空闲秒数，即获取距离上一次触摸时间差(秒\nvar idle = 0;\ntry {\n    var h = {};\n    var t = new java.lang.Thread(function () {\n        try {\n            var im = android.hardware.input.IInputManager.Stub.asInterface(android.os.ServiceManager.getService(\"input\"));\n            var p = android.os.ParcelFileDescriptor.createReliablePipe();\n            im.dump(p[1].getFileDescriptor(), null);\n            p[1].close();\n\n            var s = new android.os.ParcelFileDescriptor.AutoCloseInputStream(p[0]);\n            var b = java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, 4096);\n            var o = new java.io.ByteArrayOutputStream();\n            while ((r = s.read(b)) != -1 && o.size() < 999999) o.write(b, 0, r);\n            s.close();\n\n            h.t = o.toString(\"UTF-8\");\n        } catch (e) {}\n    });\n\n    t.start();\n    t.join(3000);\n\n    var m = h.t && h.t.match(/age=([0-9.]+)ms/);\n    if (m) idle = m[1] / 1000;\n} catch (e) {}\n\nif (!idle) {\n    var result = shortx.executeAction(Packages.tornaco.apps.shortx.core.proto.action.ShellCommand.newBuilder().setCommand(\"dumpsys input 2>/dev/null | sed -rn \\\"/RecentQueue:/ n;/.*age=([0-9]*).*/{s//\\\\1/p;q}\\\"\").build()).contextData.get(\"shellOut\");\n\n    if (result) idle = result / 1000;\n}\n\nidle;\n",
+  "createdAt": "1767057652000",
+  "updatedAt": "1767067429000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-31088c94-e0b4-5320-ba9e-7dad2e709965",
+  "name": "查看指定显示屏窗口模式",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1177\n// 创建时间: 2025-12-25T00:38:02\n// 更新时间: 2025-12-25T02:37:11\n\nandroid.os.ServiceManager.getService(\"window\").getWindowingMode(0);\n// 该命令暂时不要用。\n// 查看指定显示屏当前窗口模式\n",
+  "createdAt": "1766594282000",
+  "updatedAt": "1766601431000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

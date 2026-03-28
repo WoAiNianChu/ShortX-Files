@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-2b3eb082-ddfc-5ad1-8d7c-00bceb9790c7",
+  "name": "调节音量",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/351\n// 创建时间: 2025-12-03T04:42:05\n// 更新时间: 2025-12-14T19:30:31\n\naudioManager = context.getSystemService(\"audio\");\naudio =android.os.ServiceManager.getService(\"audio\");\nfunction getVolumeInfo(context, streamType, targetVolume) {\n    currentVolume = audio.getStreamVolume(streamType);\n    newVolume = currentVolume + targetVolume;\n    maxVolume = audio.getStreamMaxVolume(streamType);\n    minVolume = 0;\n    newVolume = Math.max(minVolume, Math.min(newVolume, maxVolume));\n    audio.setStreamVolume(streamType, newVolume, 0, null);\n    return newVolume;\n}\n\ngetVolumeInfo(context, audioManager.STREAM_ALARM, 2);\n// 调整闹钟音量（比如2 或 -2）\n// 调节指定音量类型\n",
+  "createdAt": "1764708125000",
+  "updatedAt": "1765711831000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-52f0c28f-23f8-5809-887b-028726608e18",
+  "name": "获取主设备显示ID",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1324\n// 创建时间: 2025-12-30T04:10:00\n// 更新时间: 2025-12-30T07:52:39\n\n(android.hardware.display.DisplayManagerGlobal.getInstance()).getDisplayInfo(0).address.getPhysicalDisplayId();\n// 获取主设备ID\n",
+  "createdAt": "1767039000000",
+  "updatedAt": "1767052359000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

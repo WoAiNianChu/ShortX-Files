@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-845f12e5-cea8-5fe4-9692-807f94f660f9",
+  "name": "充电判断",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/30\n// 创建时间: 2025-11-26T23:39:15\n\nandroid.os.ServiceManager.getService(\"batterystats\").isCharging();\n// 判断是否充电\n",
+  "createdAt": "1764171555000",
+  "updatedAt": "1764171555000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

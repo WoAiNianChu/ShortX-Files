@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-46083533-3599-5ea2-b728-59aa347a3005",
+  "name": "隐藏应用(伪装卸载)",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/67\n// 创建时间: 2025-11-27T11:31:43\n// 更新时间: 2025-12-07T03:29:42\n\nandroid.os.ServiceManager.getService(\"package\").setApplicationHiddenSettingAsUser(\"包名\", true, 0);\n// （伪装卸载，尽量让别的软件扫不到，额外会冻结应用）！\n// 设置隐藏指定用户的指定包名应用\n",
+  "createdAt": "1764214303000",
+  "updatedAt": "1765049382000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

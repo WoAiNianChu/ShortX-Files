@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-4c43c9ef-8b29-559b-8d78-16b75f276736",
+  "name": "创建Thanox应用集",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/830\n// 创建时间: 2025-12-14T12:54:45\n// 更新时间: 2025-12-14T19:30:18\n\nimportClass(Packages.github.tornaco.android.thanos.core.app.ThanosManagerNative);\n\nvar iThanos = ThanosManagerNative.getDefault();\n\nvar pkgManager = iThanos.getPkgManager();\n\nresult = pkgManager.createPackageSet(\"测试创建集合\");\n",
+  "createdAt": "1765688085000",
+  "updatedAt": "1765711818000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

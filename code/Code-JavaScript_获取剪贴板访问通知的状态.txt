@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-3ad9965e-d407-5557-b635-102ef11de62b",
+  "name": "获取剪贴板访问通知的状态",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/180\n// 创建时间: 2025-11-27T20:24:24\n// 更新时间: 2025-11-27T20:24:33\n\nandroid.os.ServiceManager.getService(\"clipboard\").areClipboardAccessNotificationsEnabledForUser(0);\n// 获取指定用户剪贴板访问通知是否启用\n// 例如已将剪贴板中内容粘贴到**的吐司通知\n",
+  "createdAt": "1764246264000",
+  "updatedAt": "1764246273000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

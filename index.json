@@ -152,17 +152,5005 @@
       "tags": []
     }
   ],
-  "codes": [
+  "codeLibraries": [
     {
-      "id": "SHARE-code-e4462102-ac38-48bf-a342-f2a6aa3d7673",
-      "fileUrl": "ShortX-设置闹钟.txt",
-      "title": "描述",
-      "language": "mvel",      
+      "id": "CODELIB-0f598382-214c-5387-bd5c-039dcfee3c2b",
+      "fileUrl": "Code-JavaScript_5G 判断.txt",
+      "title": "5G 判断",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
       "versionCode": 1,
-      "updateTimeMillis": 1760051256010,
+      "updateTimeMillis": 1764352941000,
       "author": "HeWei",
-      "tags": []
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-720aa695-2b3f-54d1-bfbb-2a2019ee843d",
+      "fileUrl": "Code-JavaScript_Color系统 听剧模式.txt",
+      "title": "Color系统 听剧模式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764548756000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-250fd02e-e07f-5809-a999-6d29980d7f7a",
+      "fileUrl": "Code-JavaScript_HTML解析.txt",
+      "title": "HTML解析",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765711809000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1db4959b-d79a-5f7b-a622-308ea9ddfcb6",
+      "fileUrl": "Code-JavaScript_NFC判断.txt",
+      "title": "NFC判断",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764358796000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5950010f-dea8-5cd8-be3c-e579291da9be",
+      "fileUrl": "Code-JavaScript_ShortX OCR.txt",
+      "title": "ShortX OCR",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765873381000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d912681d-821d-5e67-899c-f54400309a47",
+      "fileUrl": "Code-JavaScript_USB网络共享.txt",
+      "title": "USB网络共享",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766242151000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-7574a8a1-911c-5362-ac97-33b4bf242a97",
+      "fileUrl": "Code-JavaScript_WiFi 扫描.txt",
+      "title": "WiFi 扫描",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1769509581000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-30c28fba-68a9-5b27-aa3c-2383ab1efa3e",
+      "fileUrl": "Code-JavaScript_中文转拼音.txt",
+      "title": "中文转拼音",
+      "description": "来自 TG 聊天记录的 JavaScript 示例（依赖 DEX/JAR）",
+      "versionCode": 1,
+      "updateTimeMillis": 1768416358000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-fa0e32a2-3bab-5cd4-a7d5-043ca35e65d8",
+      "fileUrl": "Code-JavaScript_主动触发Android系统服务崩溃.txt",
+      "title": "主动触发Android系统服务崩溃",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-a6a37cc3-04ed-58da-ad00-5d999eb3a98e",
+      "fileUrl": "Code-JavaScript_二维码扫描.txt",
+      "title": "二维码扫描",
+      "description": "来自 TG 聊天记录的 JavaScript 示例（依赖 DEX/JAR）",
+      "versionCode": 1,
+      "updateTimeMillis": 1768457387000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-2739c382-616a-5196-b217-f7bd10296d6b",
+      "fileUrl": "Code-JavaScript_二维码生成.txt",
+      "title": "二维码生成",
+      "description": "来自 TG 聊天记录的 JavaScript 示例（依赖 DEX/JAR）",
+      "versionCode": 1,
+      "updateTimeMillis": 1768429902000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-dda0b6ed-40c4-515e-a515-b0c2c6b8da5d",
+      "fileUrl": "Code-JavaScript_以太网络共享.txt",
+      "title": "以太网络共享",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766242150000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d13999a5-c5ed-56c7-9548-d6c5df476fd7",
+      "fileUrl": "Code-JavaScript_停止当前音频录制.txt",
+      "title": "停止当前音频录制",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-2791e49a-d870-5015-81d6-e0825470f1e7",
+      "fileUrl": "Code-JavaScript_停止手势录制.txt",
+      "title": "停止手势录制",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ae3c5114-af39-5f85-bc2e-e6e77aff2e4f",
+      "fileUrl": "Code-JavaScript_充电伪装.txt",
+      "title": "充电伪装",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764171382000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-845f12e5-cea8-5fe4-9692-807f94f660f9",
+      "fileUrl": "Code-JavaScript_充电判断.txt",
+      "title": "充电判断",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764171555000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-b3e3a550-7674-5684-ae37-209434383bc9",
+      "fileUrl": "Code-JavaScript_关机.txt",
+      "title": "关机",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766453994000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-086f7e68-f68b-5383-99ff-35ebf6f96b55",
+      "fileUrl": "Code-JavaScript_关键词查询一键指令.txt",
+      "title": "关键词查询一键指令",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767272096000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3585b502-6ee2-59df-9db1-e39d8f6c9c74",
+      "fileUrl": "Code-JavaScript_关键词查询自动规则.txt",
+      "title": "关键词查询自动规则",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767272106000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ec28e4a1-08d9-50bf-b833-b5d3d9bdf6d4",
+      "fileUrl": "Code-JavaScript_关闭剪贴板访问通知.txt",
+      "title": "关闭剪贴板访问通知",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764246382000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3ac0c8d2-5610-57fe-a43c-f55d03d0c243",
+      "fileUrl": "Code-JavaScript_内部存储详情.txt",
+      "title": "内部存储详情",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766274056000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-a1c43c41-ad4e-58e9-8e4c-add7253ef0d1",
+      "fileUrl": "Code-JavaScript_切换面板状态.txt",
+      "title": "切换面板状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766413031000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-cb0ba17f-74dd-5ce3-a27d-77892fdd3ef3",
+      "fileUrl": "Code-JavaScript_列表对话框 JSON格式.txt",
+      "title": "列表对话框 JSON格式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766242153000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4c43c9ef-8b29-559b-8d78-16b75f276736",
+      "fileUrl": "Code-JavaScript_创建Thanox应用集.txt",
+      "title": "创建Thanox应用集",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765711818000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-9c3fded1-5744-55f3-9915-f00cfd6a2c96",
+      "fileUrl": "Code-JavaScript_删除指定WebDav配置.txt",
+      "title": "删除指定WebDav配置",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-deb3bad5-f79c-5f18-bbf4-45e8cf704f9d",
+      "fileUrl": "Code-JavaScript_删除指定一键指令.txt",
+      "title": "删除指定一键指令",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0e8c5198-4638-5429-b218-3fb23cb67e5a",
+      "fileUrl": "Code-JavaScript_删除指定代码库片段.txt",
+      "title": "删除指定代码库片段",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-7decad13-2f00-5e1c-9d82-b04b6432c716",
+      "fileUrl": "Code-JavaScript_删除指定全局变量.txt",
+      "title": "删除指定全局变量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0aa8d2c5-cefa-5e23-a2b0-33f65aec4f66",
+      "fileUrl": "Code-JavaScript_删除指定动态快捷方式.txt",
+      "title": "删除指定动态快捷方式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1768429933000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-db3b63b4-8075-515b-8e66-1dca38f00616",
+      "fileUrl": "Code-JavaScript_删除指定应用集合.txt",
+      "title": "删除指定应用集合",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-054a755c-7e3f-5827-804c-a299e0a12ab2",
+      "fileUrl": "Code-JavaScript_删除指定开关指令.txt",
+      "title": "删除指定开关指令",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d8933ae8-be50-5f97-9194-0212d11d0761",
+      "fileUrl": "Code-JavaScript_删除指定手势.txt",
+      "title": "删除指定手势",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-cbbbac8a-3dc5-5d68-9675-8b5b71b1c4b8",
+      "fileUrl": "Code-JavaScript_删除指定自动指令.txt",
+      "title": "删除指定自动指令",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-df01c8a5-d948-58fa-93e3-2e1076d2328a",
+      "fileUrl": "Code-JavaScript_删除指定音频录制文件.txt",
+      "title": "删除指定音频录制文件",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-43674e36-b90b-5936-b8d1-c92314704d21",
+      "fileUrl": "Code-JavaScript_判断HTTP请求日志功能是否开启.txt",
+      "title": "判断HTTP请求日志功能是否开启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5a47c967-b986-572e-b8a1-89f279a057fc",
+      "fileUrl": "Code-JavaScript_判断Shell命令引擎-Shell in SystemUI功能是否开启.txt",
+      "title": "判断Shell命令引擎-Shell in SystemUI功能是否开启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0433389d-6c10-5c7d-98fe-eb77c3389385",
+      "fileUrl": "Code-JavaScript_判断ShortX应用通知功能是否开启.txt",
+      "title": "判断ShortX应用通知功能是否开启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d2717fdd-c232-56a9-a499-acc17ad2d4f0",
+      "fileUrl": "Code-JavaScript_判断ShortX是否出现致命错误.txt",
+      "title": "判断ShortX是否出现致命错误",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8c3a0349-c253-58f3-b1f5-71f8bd313a4b",
+      "fileUrl": "Code-JavaScript_判断ShortX是否正在录制手势.txt",
+      "title": "判断ShortX是否正在录制手势",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ebdc992c-43f7-5d42-9cf1-9a4ead55ca15",
+      "fileUrl": "Code-JavaScript_判断ShortX是否正在进行录音.txt",
+      "title": "判断ShortX是否正在进行录音",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-c14c92c2-def0-50f5-9144-3bdf58b8f0f0",
+      "fileUrl": "Code-JavaScript_判断ShortX调试(详细)日志功能是否开启.txt",
+      "title": "判断ShortX调试(详细)日志功能是否开启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3409c8b1-6d71-50bc-a07a-aa677912fb17",
+      "fileUrl": "Code-JavaScript_判断全局传感器状态.txt",
+      "title": "判断全局传感器状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764465055000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-768fa975-595e-56ee-8d8a-9ffc2a3932ca",
+      "fileUrl": "Code-JavaScript_判断快捷栏图标是否为深色模式.txt",
+      "title": "判断快捷栏图标是否为深色模式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-f85acaaf-8c89-555b-8577-75fc3431e8bc",
+      "fileUrl": "Code-JavaScript_判断指定应用集是否存在.txt",
+      "title": "判断指定应用集是否存在",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767285448000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-fe057b2e-648c-51c2-bdb8-95b6376f8560",
+      "fileUrl": "Code-JavaScript_判断指定开关指令是否开启.txt",
+      "title": "判断指定开关指令是否开启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-bba5439d-f3cb-54fc-8dc9-57d63b5008bd",
+      "fileUrl": "Code-JavaScript_判断指定规则引擎是否开启.txt",
+      "title": "判断指定规则引擎是否开启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-34b71805-62b6-5151-9fa5-b800d1f602e4",
+      "fileUrl": "Code-JavaScript_判断指定音频流静音状态.txt",
+      "title": "判断指定音频流静音状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766449160000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1226cebe-5bcf-53b7-bf2a-270f75011fed",
+      "fileUrl": "Code-JavaScript_判断指针位置显示功能是否开启.txt",
+      "title": "判断指针位置显示功能是否开启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-00b1504b-0df5-5541-9e0d-25b700e1999a",
+      "fileUrl": "Code-JavaScript_判断按键事件提示功能是否开启.txt",
+      "title": "判断按键事件提示功能是否开启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-613e8bf6-b94f-5320-8ce9-63aad2aae200",
+      "fileUrl": "Code-JavaScript_判断按键紧急停用ShortX功能是否开启.txt",
+      "title": "判断按键紧急停用ShortX功能是否开启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-92127fd4-3e8f-5f7b-8411-32c60661c0bc",
+      "fileUrl": "Code-JavaScript_判断磁贴点击优化功能是否开启.txt",
+      "title": "判断磁贴点击优化功能是否开启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1c9cd656-5609-5042-9ac5-0952949e25e2",
+      "fileUrl": "Code-JavaScript_判断自动规则核心功能(总开关)是否开启.txt",
+      "title": "判断自动规则核心功能(总开关)是否开启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-66e9e3d8-d3ef-5195-8a23-bbb5fb043872",
+      "fileUrl": "Code-JavaScript_判断设备是否支持某个传感器的硬件开关.txt",
+      "title": "判断设备是否支持某个传感器的硬件开关",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764450875000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-26d4ba81-9dd8-5a07-b3e2-dc5c58d70db2",
+      "fileUrl": "Code-JavaScript_刷新率支持状态.txt",
+      "title": "刷新率支持状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765711820000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ee2c7795-123a-5f03-84ec-eec149c69eb2",
+      "fileUrl": "Code-JavaScript_动态快捷方式.txt",
+      "title": "动态快捷方式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765711812000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8b015243-b147-507f-88b7-ada9589be192",
+      "fileUrl": "Code-JavaScript_动态快捷方式_补充.txt",
+      "title": "动态快捷方式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765711810000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8cabe1a3-c113-59a1-a29f-fdad724bca85",
+      "fileUrl": "Code-JavaScript_单个应用传感器管理.txt",
+      "title": "单个应用传感器管理",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764472924000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8ec8b85e-e7ac-5240-8a17-7e1463dadb23",
+      "fileUrl": "Code-JavaScript_取消(停止)指定执行中的任务.txt",
+      "title": "取消(停止)指定执行中的任务",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-660ddcd7-377a-5a94-bd03-cc85547616de",
+      "fileUrl": "Code-JavaScript_取消固定应用.txt",
+      "title": "取消固定应用",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766274052000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0cb9f21d-45c4-56ab-a77a-263dc3d64e74",
+      "fileUrl": "Code-JavaScript_取消隐藏应用.txt",
+      "title": "取消隐藏应用",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764215499000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5011f8b2-c667-57b6-91a9-7fc91fad5983",
+      "fileUrl": "Code-JavaScript_启用屏幕截图.txt",
+      "title": "启用屏幕截图",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764211325000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-fc6d2b4f-e05d-5bf7-afba-e4a262dbcc97",
+      "fileUrl": "Code-JavaScript_固定前台应用.txt",
+      "title": "固定前台应用",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766274051000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-febfa9e3-0680-51d0-ad2a-df7a21ec58bf",
+      "fileUrl": "Code-JavaScript_固定应用.txt",
+      "title": "固定应用",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766274050000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1d45d454-3b5e-5a2e-b754-0979008fbfe4",
+      "fileUrl": "Code-JavaScript_夜间模式判断.txt",
+      "title": "夜间模式判断",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766792592000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0e3d247f-3959-5173-b69a-1c61d1fa9f44",
+      "fileUrl": "Code-JavaScript_定位判断.txt",
+      "title": "定位判断",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764173824000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-2062fe85-77a1-558d-ae26-f2fbfb61a13e",
+      "fileUrl": "Code-JavaScript_密码错误次数.txt",
+      "title": "密码错误次数",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764492262000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-650fc9e4-af54-5a3b-afe4-eec6dd964e53",
+      "fileUrl": "Code-JavaScript_屏幕截图状态.txt",
+      "title": "屏幕截图状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764176027000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-e5b52644-4614-5959-be70-bf0eb5a2daa5",
+      "fileUrl": "Code-JavaScript_展开快捷设置面板.txt",
+      "title": "展开快捷设置面板",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766412957000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-05085c42-5cb9-543a-b1a1-ed20b4758af7",
+      "fileUrl": "Code-JavaScript_带缓存+关键词查询一键指令，效率更高.txt",
+      "title": "带缓存+关键词查询一键指令，效率更高",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767272116000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-f86b91f7-333c-56c9-b9b6-0ae15e01bd8d",
+      "fileUrl": "Code-JavaScript_开启剪贴板访问通知.txt",
+      "title": "开启剪贴板访问通知",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764246415000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-bd67d612-7975-5243-99f1-f9d45b34ad48",
+      "fileUrl": "Code-JavaScript_开启指定Hook功能.txt",
+      "title": "开启指定Hook功能",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3143d590-2c4d-53f2-af49-0081032f27fb",
+      "fileUrl": "Code-JavaScript_开始录制手势.txt",
+      "title": "开始录制手势",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4bb5b891-c481-5ff7-b36a-d6736c5c109a",
+      "fileUrl": "Code-JavaScript_弹出输入法选择器(输入法菜单).txt",
+      "title": "弹出输入法选择器(输入法菜单)",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766435392000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-88fd71fe-b208-5125-86b1-e82abd704eef",
+      "fileUrl": "Code-JavaScript_恢复伪装.txt",
+      "title": "恢复伪装",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764171436000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0a8e8c31-5e6f-58a1-894d-b0b7d2323fdb",
+      "fileUrl": "Code-JavaScript_恢复屏幕触摸.txt",
+      "title": "恢复屏幕触摸",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764349290000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5225f67b-c59d-5960-bc4d-0642548e91d4",
+      "fileUrl": "Code-JavaScript_恢复状态栏内容显示.txt",
+      "title": "恢复状态栏内容显示",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764288367000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-43b95715-7409-5cbb-925b-27ca0355c277",
+      "fileUrl": "Code-JavaScript_恢复系统时间.txt",
+      "title": "恢复系统时间",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764627105000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1747d8c0-fd1f-5c89-b722-ba4ec6fcb168",
+      "fileUrl": "Code-JavaScript_息屏运行(屏幕电源.txt",
+      "title": "息屏运行(屏幕电源",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764289247000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d6b3440f-cb83-55e7-b451-ba2238ad6e53",
+      "fileUrl": "Code-JavaScript_息屏运行(屏幕电源_补充.txt",
+      "title": "息屏运行(屏幕电源",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764305260000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4d370753-23f8-5b4b-a4fc-00f6fa79862a",
+      "fileUrl": "Code-JavaScript_执行HTTP网络请求.txt",
+      "title": "执行HTTP网络请求",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ad5fca86-e4f3-592c-9236-ef62ceda5160",
+      "fileUrl": "Code-JavaScript_执行JS代码.txt",
+      "title": "执行JS代码",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-a704f6c9-644a-5bc5-ba8b-8131e207909f",
+      "fileUrl": "Code-JavaScript_执行MVEL表达式.txt",
+      "title": "执行MVEL表达式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-509bae74-d0e7-5212-872f-8028a96731cf",
+      "fileUrl": "Code-JavaScript_执行单条自动化动作.txt",
+      "title": "执行单条自动化动作",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3c022059-2314-57b3-99b0-d058e4211950",
+      "fileUrl": "Code-JavaScript_执行指定一键指令.txt",
+      "title": "执行指定一键指令",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-dd5834ef-be64-5b15-b796-aa50ad5de6de",
+      "fileUrl": "Code-JavaScript_执行指定代码库片段.txt",
+      "title": "执行指定代码库片段",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d15e0ddb-be5a-526c-a361-fe4004471039",
+      "fileUrl": "Code-JavaScript_执行指定动作.txt",
+      "title": "执行指定动作",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767272166000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-2375f325-11bd-5d65-b627-5e58dd905c2f",
+      "fileUrl": "Code-JavaScript_执行指定自动指令.txt",
+      "title": "执行指定自动指令",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-aeab43cf-6275-5e30-a96d-034059a71bf9",
+      "fileUrl": "Code-JavaScript_执行指定自动指令的绑定动作.txt",
+      "title": "执行指定自动指令的绑定动作",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-7b3b080b-c1c6-5a96-82d0-e69d6fc1c12b",
+      "fileUrl": "Code-JavaScript_执行系统Shell命令.txt",
+      "title": "执行系统Shell命令",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3432e225-6633-5cac-9bed-903e645bf2e1",
+      "fileUrl": "Code-JavaScript_指定App添加动态快捷方式.txt",
+      "title": "指定App添加动态快捷方式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1768429935000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0cdf1ede-efc8-5da4-a5e3-481d465f18ac",
+      "fileUrl": "Code-JavaScript_指定快捷方式固定桌面.txt",
+      "title": "指定快捷方式固定桌面",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1768429929000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4378944f-c910-5e91-b386-592fd395c8a0",
+      "fileUrl": "Code-JavaScript_收起所有面板.txt",
+      "title": "收起所有面板",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766413046000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-7a1f2b44-3d8e-4eb3-a8f7-12fd9fb9a202",
+      "fileUrl": "Code-JavaScript_文本工具箱.txt",
+      "title": "JavaScript 文本工具箱",
+      "description": "常用字符串拼接和时长格式化函数示例。",
+      "versionCode": 1,
+      "updateTimeMillis": 1773888000000,
+      "author": "ShortX",
+      "tags": [
+        "example",
+        "javascript",
+        "text"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-23430d3e-caad-54f9-a6d9-eb18b0329fe4",
+      "fileUrl": "Code-JavaScript_新增WebDav配置.txt",
+      "title": "新增WebDav配置",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-280beada-9b4a-5cc0-b8bf-3d75dc53de99",
+      "fileUrl": "Code-JavaScript_新增_更新一键指令集.txt",
+      "title": "新增/更新一键指令集",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-df3932ba-68d9-5030-8170-541a0a1172d5",
+      "fileUrl": "Code-JavaScript_新增_更新自动指令集.txt",
+      "title": "新增/更新自动指令集",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1cc42833-fb89-577b-937c-7ddcd3130ebb",
+      "fileUrl": "Code-JavaScript_新增一键指令.txt",
+      "title": "新增一键指令",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-accd9edd-805d-50cd-bb3a-c83989604274",
+      "fileUrl": "Code-JavaScript_新增代码库片段.txt",
+      "title": "新增代码库片段",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-c0de2429-2f85-563c-9847-a05a50b51e08",
+      "fileUrl": "Code-JavaScript_新增全局变量.txt",
+      "title": "新增全局变量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-b3691de8-3f50-5320-9569-10ec4d5ea713",
+      "fileUrl": "Code-JavaScript_新增应用集.txt",
+      "title": "新增应用集",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-c4f3852c-9f35-546f-b199-eab84772ea84",
+      "fileUrl": "Code-JavaScript_新增应用集数据.txt",
+      "title": "新增应用集数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767333685000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4de99f85-25a8-50cd-b956-f7875468bd18",
+      "fileUrl": "Code-JavaScript_新增开关指令.txt",
+      "title": "新增开关指令",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-6e95e5e9-fec1-51f5-a0e0-b461c026c67e",
+      "fileUrl": "Code-JavaScript_新增手势记录.txt",
+      "title": "新增手势记录",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-2077d1e9-4069-5fba-b0bb-ffe74fda96d9",
+      "fileUrl": "Code-JavaScript_新增自动指令.txt",
+      "title": "新增自动指令",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-55062a92-d805-5d62-9177-0a9acad97b1d",
+      "fileUrl": "Code-JavaScript_无线ADB调试授权.txt",
+      "title": "无线ADB调试授权",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764252526000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-9f156b8c-d12c-5d29-9685-66347e5bd6e5",
+      "fileUrl": "Code-JavaScript_无线ADB调试授权_补充.txt",
+      "title": "无线ADB调试授权",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764252767000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-b0faa56f-2d33-57ec-bc5f-949d877520c8",
+      "fileUrl": "Code-JavaScript_无锁屏状态.txt",
+      "title": "无锁屏状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764180078000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4d2cfde6-73c5-5eff-915e-3904271d09d7",
+      "fileUrl": "Code-JavaScript_日历.txt",
+      "title": "日历",
+      "description": "来自 TG 聊天记录的 JavaScript 示例（依赖 DEX/JAR）",
+      "versionCode": 1,
+      "updateTimeMillis": 1768457416000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-01f78d95-10bc-5721-a33b-b07d377f51cb",
+      "fileUrl": "Code-JavaScript_显示屏刷新率显示管理.txt",
+      "title": "显示屏刷新率显示管理",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765711824000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-b3093f61-df48-5ada-8678-14c4740ec936",
+      "fileUrl": "Code-JavaScript_显示输入法.txt",
+      "title": "显示输入法",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766434736000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-31088c94-e0b4-5320-ba9e-7dad2e709965",
+      "fileUrl": "Code-JavaScript_查看指定显示屏窗口模式.txt",
+      "title": "查看指定显示屏窗口模式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766601431000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8715f494-29e6-599e-ae3a-1177690b35c8",
+      "fileUrl": "Code-JavaScript_查询指定App的BroadcastReceiver组件.txt",
+      "title": "查询指定App的BroadcastReceiver组件",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5f81741f-fe8e-5ed5-a901-d2369d8c3c41",
+      "fileUrl": "Code-JavaScript_查询指定App的所有Activity组件.txt",
+      "title": "查询指定App的所有Activity组件",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-edf61c3a-920d-55f3-9223-8c92fc9f2e50",
+      "fileUrl": "Code-JavaScript_查询指定状态的运行中App包名.txt",
+      "title": "查询指定状态的运行中App包名",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8a09069f-7191-5cf8-a6e6-25f0d2ef6353",
+      "fileUrl": "Code-JavaScript_查询符合条件的所有一键指令.txt",
+      "title": "查询符合条件的所有一键指令",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767272087000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ebbba102-7b98-54b3-8139-2f6da3641edf",
+      "fileUrl": "Code-JavaScript_清空App所有动态快捷方式.txt",
+      "title": "清空App所有动态快捷方式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1768429931000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-859d4470-4c65-50bb-bb88-2fbeb0826577",
+      "fileUrl": "Code-JavaScript_清空Hook方法的调用日志.txt",
+      "title": "清空Hook方法的调用日志",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1018a1ae-31f4-502b-9f47-123eda093623",
+      "fileUrl": "Code-JavaScript_清空Http log.txt",
+      "title": "清空Http log",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ad748a97-60cd-50e7-9f2e-6ba7d94155fe",
+      "fileUrl": "Code-JavaScript_清空JS Logs.txt",
+      "title": "清空JS Logs",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-753d1cfb-9fa0-5ae0-acba-c20b843c0067",
+      "fileUrl": "Code-JavaScript_清空指令记录.txt",
+      "title": "清空指令记录",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5ff8b138-7e59-513f-8251-78b5f8d9222c",
+      "fileUrl": "Code-JavaScript_清除ADB调试密钥.txt",
+      "title": "清除ADB调试密钥",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764249219000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-48a88a3c-3df9-5845-b533-4e75d418d10f",
+      "fileUrl": "Code-JavaScript_清除应用全部数据.txt",
+      "title": "清除应用全部数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764178765000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8c3c7eff-e1ea-5a90-b6fa-2a237d89ab16",
+      "fileUrl": "Code-JavaScript_清除应用缓存数据.txt",
+      "title": "清除应用缓存数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764178759000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-6f201e19-55d3-570a-8608-4e5c8d8951e5",
+      "fileUrl": "Code-JavaScript_热点判断.txt",
+      "title": "热点判断",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764358713000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-71c376e5-f649-5425-8924-285ad6191d0c",
+      "fileUrl": "Code-JavaScript_电量伪装.txt",
+      "title": "电量伪装",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764192472000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-6ba4a41d-e491-568d-a1a3-a6f126ba60da",
+      "fileUrl": "Code-JavaScript_百度地图步行导航.txt",
+      "title": "百度地图步行导航",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764548752000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-fb2e1f8c-962f-5a69-9ed8-6a6f21a85105",
+      "fileUrl": "Code-JavaScript_百度地图骑行导航.txt",
+      "title": "百度地图骑行导航",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764548751000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-48859edb-6202-5849-9c4a-6d6369ebdaec",
+      "fileUrl": "Code-JavaScript_省电模式判断.txt",
+      "title": "省电模式判断",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766454785000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4e6a6f17-849c-5ecc-bb63-e49a18492187",
+      "fileUrl": "Code-JavaScript_禁用屏幕截图.txt",
+      "title": "禁用屏幕截图",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764175923000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-dae50db0-2c3a-51ef-9aef-46d201204efa",
+      "fileUrl": "Code-JavaScript_禁用屏幕触摸.txt",
+      "title": "禁用屏幕触摸",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764349242000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-efe02e6e-a0a6-5cef-bb60-a4cec7f3701c",
+      "fileUrl": "Code-JavaScript_系统崩溃.txt",
+      "title": "系统崩溃",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766454195000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-e4144551-5ece-58ff-90d9-e46202309bd6",
+      "fileUrl": "Code-JavaScript_获取ADB无线端口.txt",
+      "title": "获取ADB无线端口",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764249398000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-90189887-f0c1-5564-8f86-32acd81f0b98",
+      "fileUrl": "Code-JavaScript_获取Color系统的锁屏密码.txt",
+      "title": "获取Color系统的锁屏密码",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764467318000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4795382f-8bb0-57d7-9aff-e86ecb6ffa53",
+      "fileUrl": "Code-JavaScript_获取Hook方法调用日志(数据)文件描述符.txt",
+      "title": "获取Hook方法调用日志(数据)文件描述符",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-efdbba72-88e0-5206-9e5d-405875cf1288",
+      "fileUrl": "Code-JavaScript_获取Hook方法调用日志的存储路径.txt",
+      "title": "获取Hook方法调用日志的存储路径",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d7c46d11-7093-5da4-b724-0ab03d406ec6",
+      "fileUrl": "Code-JavaScript_获取HTTP请求日志(数据)文件描述符.txt",
+      "title": "获取HTTP请求日志(数据)文件描述符",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ccb4fb42-0ad7-5509-ba70-414b09d6c248",
+      "fileUrl": "Code-JavaScript_获取HTTP请求日志内容.txt",
+      "title": "获取HTTP请求日志内容",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767286771000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-e2e07237-6ec7-50a3-9c77-9765f909cfa7",
+      "fileUrl": "Code-JavaScript_获取HTTP请求日志的存储路径.txt",
+      "title": "获取HTTP请求日志的存储路径",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1def1c1e-daf2-58ca-8dfd-626f6e58f978",
+      "fileUrl": "Code-JavaScript_获取JS代码执行日志(数据)文件描述符.txt",
+      "title": "获取JS代码执行日志(数据)文件描述符",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3f8d0dc3-9522-5075-a6ea-5269370835ec",
+      "fileUrl": "Code-JavaScript_获取JS代码执行日志内容.txt",
+      "title": "获取JS代码执行日志内容",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767286816000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-551de453-0ebe-5623-a3a0-086003b137e8",
+      "fileUrl": "Code-JavaScript_获取JS代码执行日志的存储路径.txt",
+      "title": "获取JS代码执行日志的存储路径",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-f633a8c6-3d3a-579f-9710-2b1207a37e25",
+      "fileUrl": "Code-JavaScript_获取ShortX开关指令数据.txt",
+      "title": "获取ShortX开关指令数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-e7c7f551-88b6-58d8-8aaf-5392be862dc7",
+      "fileUrl": "Code-JavaScript_获取ShortX弹幕功能的UI配置数据.txt",
+      "title": "获取ShortX弹幕功能的UI配置数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ad6d1148-d3e4-5eb2-8af8-4b665d495d64",
+      "fileUrl": "Code-JavaScript_获取ShortX所有音频录制文件数据.txt",
+      "title": "获取ShortX所有音频录制文件数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-989f47e9-03e0-5c15-91ee-78f30037fc62",
+      "fileUrl": "Code-JavaScript_获取ShortX日志文件的根目录路径.txt",
+      "title": "获取ShortX日志文件的根目录路径",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-85b1bf74-3887-56d8-bd1b-c8e75287b080",
+      "fileUrl": "Code-JavaScript_获取ShortX服务的相关目录路径封装对象.txt",
+      "title": "获取ShortX服务的相关目录路径封装对象",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-fecc49b8-73e1-59b2-bbc6-bb6e615bbb3b",
+      "fileUrl": "Code-JavaScript_获取ShortX根目录.txt",
+      "title": "获取ShortX根目录",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8471376e-10ac-5a0d-86f7-aaca642f690c",
+      "fileUrl": "Code-JavaScript_获取USB功能启用状态.txt",
+      "title": "获取USB功能启用状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764248030000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-b44866cb-a176-58ea-86fa-be843f259525",
+      "fileUrl": "Code-JavaScript_获取WiFi IP.txt",
+      "title": "获取WiFi IP",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764254991000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1f3122d6-3beb-5ecf-b415-f24a7942bb1e",
+      "fileUrl": "Code-JavaScript_获取WiFi MAC地址.txt",
+      "title": "获取WiFi MAC地址",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764254991000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-af1bf603-4df9-5785-840d-8cd3b2bbd766",
+      "fileUrl": "Code-JavaScript_获取WiFi全部信息.txt",
+      "title": "获取WiFi全部信息",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764254991000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-6785b61f-dca4-5917-a4a4-3d73ec3969a6",
+      "fileUrl": "Code-JavaScript_获取WiFi名称.txt",
+      "title": "获取WiFi名称",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764253169000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5f598cd2-77f3-5485-b26d-a0f55a661e5d",
+      "fileUrl": "Code-JavaScript_获取一键指令总数量.txt",
+      "title": "获取一键指令总数量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-90c886b6-20e8-5af1-91e7-cc35a0fc401e",
+      "fileUrl": "Code-JavaScript_获取一键指令集数据.txt",
+      "title": "获取一键指令集数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-f69d4953-beec-5e63-bf7a-176d806cd0c3",
+      "fileUrl": "Code-JavaScript_获取下一个从空闲唤醒的时间.txt",
+      "title": "获取下一个从空闲唤醒的时间",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764627103000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-e8cd664e-24cf-509e-b529-f0f390538ac5",
+      "fileUrl": "Code-JavaScript_获取下拉快捷设置面板磁贴数据.txt",
+      "title": "获取下拉快捷设置面板磁贴数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-52f0c28f-23f8-5809-887b-028726608e18",
+      "fileUrl": "Code-JavaScript_获取主设备显示ID.txt",
+      "title": "获取主设备显示ID",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767052359000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-731a0a0a-1634-5099-a734-e82ea0717475",
+      "fileUrl": "Code-JavaScript_获取代码库总数量.txt",
+      "title": "获取代码库总数量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-6d93c295-d602-5f53-8e38-631f458e955d",
+      "fileUrl": "Code-JavaScript_获取光线传感器数据.txt",
+      "title": "获取光线传感器数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766374514000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3ad9965e-d407-5557-b635-102ef11de62b",
+      "fileUrl": "Code-JavaScript_获取剪贴板访问通知的状态.txt",
+      "title": "获取剪贴板访问通知的状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764246273000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-85b55ec0-f508-5d69-b4e0-f5bed887c101",
+      "fileUrl": "Code-JavaScript_获取加速度传感器数据.txt",
+      "title": "获取加速度传感器数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766374508000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3564210a-733b-56e0-a802-ce7d36e65de0",
+      "fileUrl": "Code-JavaScript_获取动态快捷方式配置.txt",
+      "title": "获取动态快捷方式配置",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d7b544ec-71a0-59b4-9c01-2737248cd8e7",
+      "fileUrl": "Code-JavaScript_获取导航栏模式.txt",
+      "title": "获取导航栏模式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764185565000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0bc7341a-7714-5dbf-84a8-895d67a90df7",
+      "fileUrl": "Code-JavaScript_获取已安装插件提供的所有自动化动作列表.txt",
+      "title": "获取已安装插件提供的所有自动化动作列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4569967c-180e-5429-8633-d08efba04614",
+      "fileUrl": "Code-JavaScript_获取已安装插件提供的所有自动化条件列表.txt",
+      "title": "获取已安装插件提供的所有自动化条件列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d1794090-2d64-5ab0-a97c-448f1d244f90",
+      "fileUrl": "Code-JavaScript_获取应用冻结状态.txt",
+      "title": "获取应用冻结状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764218270000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-b66215ed-a4fc-589f-a036-b9ca36db990c",
+      "fileUrl": "Code-JavaScript_获取应用防卸载状态.txt",
+      "title": "获取应用防卸载状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764216972000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ae8e561a-bfff-5ba2-b574-37ee305fea37",
+      "fileUrl": "Code-JavaScript_获取应用隐藏状态.txt",
+      "title": "获取应用隐藏状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764215646000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-94a849de-3d47-5f41-97d1-9d895e3ba07d",
+      "fileUrl": "Code-JavaScript_获取开关指令总数量.txt",
+      "title": "获取开关指令总数量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3b50d86e-b194-58d2-92dd-79ffef00a29e",
+      "fileUrl": "Code-JavaScript_获取当前Android系统的所有环境变量、系统参数列.txt",
+      "title": "获取当前Android系统的所有环境变量、系统参数列",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1a1041ed-1ac7-5f4a-b9d3-711f5befe14e",
+      "fileUrl": "Code-JavaScript_获取当前WiFi扫描列表.txt",
+      "title": "获取当前WiFi扫描列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-e7902913-462c-5bf8-8e66-eaeeaa4f2189",
+      "fileUrl": "Code-JavaScript_获取当前WiFi的BSSID.txt",
+      "title": "获取当前WiFi的BSSID",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764253158000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-bceb5643-19a3-5a37-9bf4-6652787432c5",
+      "fileUrl": "Code-JavaScript_获取当前位置.txt",
+      "title": "获取当前位置",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1768429910000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ac339a17-c3fc-5d3f-8d4a-08fbd35ed705",
+      "fileUrl": "Code-JavaScript_获取当前位置_附件.txt",
+      "title": "获取当前位置",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1768429910000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-a026222c-f92f-584b-b741-dd3ac4f7dd5c",
+      "fileUrl": "Code-JavaScript_获取当前启用的OCR文字识别引擎.txt",
+      "title": "获取当前启用的OCR文字识别引擎",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-06f49956-13c1-5674-b28e-3ddc34c5fbff",
+      "fileUrl": "Code-JavaScript_获取当前应用的窗口模式.txt",
+      "title": "获取当前应用的窗口模式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766601525000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d3324c2c-ad32-5053-aa35-350e7de038d4",
+      "fileUrl": "Code-JavaScript_获取当前网络类型.txt",
+      "title": "获取当前网络类型",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764352202000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-438f773c-4355-5201-8d43-972fa0a28496",
+      "fileUrl": "Code-JavaScript_获取当前设备指纹标识字符串.txt",
+      "title": "获取当前设备指纹标识字符串",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4b900fcd-933b-53c0-baa1-0f922f9ccfbf",
+      "fileUrl": "Code-JavaScript_获取当前音量.txt",
+      "title": "获取当前音量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765711832000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0f2fa743-5960-505c-9378-d22f4b543f5b",
+      "fileUrl": "Code-JavaScript_获取所有一键指令集数据.txt",
+      "title": "获取所有一键指令集数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-595e2762-cd36-5c2f-a45c-1805ed927f82",
+      "fileUrl": "Code-JavaScript_获取所有上下文菜单(触发器)的配置列表.txt",
+      "title": "获取所有上下文菜单(触发器)的配置列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-786c0662-e762-569f-938f-028d9e2cc92b",
+      "fileUrl": "Code-JavaScript_获取所有代码库数据.txt",
+      "title": "获取所有代码库数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0173abc7-ca46-599d-aab2-8d60b9dc9835",
+      "fileUrl": "Code-JavaScript_获取所有全局变量数据.txt",
+      "title": "获取所有全局变量数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767286409000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-29dbf99e-5626-5cff-ac4e-c8f294d5738b",
+      "fileUrl": "Code-JavaScript_获取所有动态快捷方式的配置列表.txt",
+      "title": "获取所有动态快捷方式的配置列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-488c31af-d95b-5d04-a0d1-eedf803f1ab4",
+      "fileUrl": "Code-JavaScript_获取所有已创建的全局变量数据.txt",
+      "title": "获取所有已创建的全局变量数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ffeef221-ae32-5014-ac81-151d184b72ee",
+      "fileUrl": "Code-JavaScript_获取所有已安装的ShortX拓展插件列表.txt",
+      "title": "获取所有已安装的ShortX拓展插件列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-41aa74f2-c091-5788-a7d9-88cb202922e5",
+      "fileUrl": "Code-JavaScript_获取所有已添加快捷方式的App列表.txt",
+      "title": "获取所有已添加快捷方式的App列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-6c6e9d86-c5e4-5d08-9703-4de12cb9c0cf",
+      "fileUrl": "Code-JavaScript_获取所有已配置的WebDav配置列表.txt",
+      "title": "获取所有已配置的WebDav配置列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-dcaaff95-7181-5fe7-a00d-20c39fc9ccf8",
+      "fileUrl": "Code-JavaScript_获取所有应用集名称.txt",
+      "title": "获取所有应用集名称",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767285298000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-9dcde543-0ab3-533a-9495-89f10adf8d25",
+      "fileUrl": "Code-JavaScript_获取所有应用集数据.txt",
+      "title": "获取所有应用集数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767454348000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-cea9d1bf-0cfd-5047-90bc-78b30c539093",
+      "fileUrl": "Code-JavaScript_获取所有手势记录数据.txt",
+      "title": "获取所有手势记录数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-92e7582d-4a67-507e-9de2-2bbeb19f7889",
+      "fileUrl": "Code-JavaScript_获取所有正在执行的任务.txt",
+      "title": "获取所有正在执行的任务",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-bfcf01f3-5bb6-5692-a51d-f3d84e75d685",
+      "fileUrl": "Code-JavaScript_获取所有正在执行的动作.txt",
+      "title": "获取所有正在执行的动作",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-014c724e-c43d-522d-b308-541a9af53ec4",
+      "fileUrl": "Code-JavaScript_获取所有状态栏图标的配置列表.txt",
+      "title": "获取所有状态栏图标的配置列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-59cb399c-045b-525a-a966-e620308f3c79",
+      "fileUrl": "Code-JavaScript_获取所有自动指令集数据.txt",
+      "title": "获取所有自动指令集数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-39eb807d-6b3a-5c97-9017-faa79464f930",
+      "fileUrl": "Code-JavaScript_获取手电筒状态.txt",
+      "title": "获取手电筒状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766374509000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-251d3fed-3c92-5676-a6e3-d6ede489e6ec",
+      "fileUrl": "Code-JavaScript_获取指定App正在运行的服务列表.txt",
+      "title": "获取指定App正在运行的服务列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3db3037e-d814-51bd-820c-cde4f4c746f7",
+      "fileUrl": "Code-JavaScript_获取指定App的Service组件.txt",
+      "title": "获取指定App的Service组件",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-32ee8e79-d019-5f54-93e6-ec2416bf0515",
+      "fileUrl": "Code-JavaScript_获取指定App的图标位图.txt",
+      "title": "获取指定App的图标位图",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4b70c9d2-7e07-5afc-908c-593630d7b011",
+      "fileUrl": "Code-JavaScript_获取指定App的所有快捷信息.txt",
+      "title": "获取指定App的所有快捷信息",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1768429926000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d49ea6eb-38a8-5378-af18-6e03e75c0110",
+      "fileUrl": "Code-JavaScript_获取指定App的显示名称.txt",
+      "title": "获取指定App的显示名称",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8dd3be29-9cac-59f9-ba2c-5385ded37862",
+      "fileUrl": "Code-JavaScript_获取指定App的组件信息.txt",
+      "title": "获取指定App的组件信息",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ef1beca2-d40b-578a-89c7-cfe8bfb1cf91",
+      "fileUrl": "Code-JavaScript_获取指定App组件的启用状态.txt",
+      "title": "获取指定App组件的启用状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-045d9233-b084-562f-9fe1-2e6b10992f87",
+      "fileUrl": "Code-JavaScript_获取指定SIM卡的网络类型.txt",
+      "title": "获取指定SIM卡的网络类型",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764351950000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3f1d916d-6cd0-5042-9203-0028ce44636f",
+      "fileUrl": "Code-JavaScript_获取指定WebDav配置.txt",
+      "title": "获取指定WebDav配置",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3f39e747-b1aa-5e9f-8431-132f5838cb56",
+      "fileUrl": "Code-JavaScript_获取指定一键指令数据.txt",
+      "title": "获取指定一键指令数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-b2b0b2e2-30a3-57a9-87ae-86bda3d24dbd",
+      "fileUrl": "Code-JavaScript_获取指定上下文菜单指令名称.txt",
+      "title": "获取指定上下文菜单指令名称",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-77d7f09e-a90c-5f46-85a4-26e59689c341",
+      "fileUrl": "Code-JavaScript_获取指定代码库片段.txt",
+      "title": "获取指定代码库片段",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-f442a07c-68c9-52f2-8b47-ef63fac85b66",
+      "fileUrl": "Code-JavaScript_获取指定传感器状态.txt",
+      "title": "获取指定传感器状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764451123000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-feab4d6a-9227-5440-8518-074f5e77019e",
+      "fileUrl": "Code-JavaScript_获取指定传感器状态_补充.txt",
+      "title": "获取指定传感器状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764465050000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-be06d762-37c7-5a65-a671-d5d8b0955aed",
+      "fileUrl": "Code-JavaScript_获取指定全局变量数据.txt",
+      "title": "获取指定全局变量数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-91cd0a0e-16cb-5c26-b15b-ec47547bbe11",
+      "fileUrl": "Code-JavaScript_获取指定应用集内应用是否存在.txt",
+      "title": "获取指定应用集内应用是否存在",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767286010000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-9406827e-140e-5b58-a5f0-f4265fcea099",
+      "fileUrl": "Code-JavaScript_获取指定应用集数据.txt",
+      "title": "获取指定应用集数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-72b9a94b-c3fa-54f3-a823-d3cdcb2f2a2b",
+      "fileUrl": "Code-JavaScript_获取指定应用集数据_补充.txt",
+      "title": "获取指定应用集数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767285998000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-42128e3b-ee35-5379-b066-b2422f846729",
+      "fileUrl": "Code-JavaScript_获取指定开关指令数据.txt",
+      "title": "获取指定开关指令数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5c2a7998-1d2e-5bc7-913a-d09fb6d3c5ed",
+      "fileUrl": "Code-JavaScript_获取指定手势记录数据.txt",
+      "title": "获取指定手势记录数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-488d5033-e5ca-5453-8e88-deec6c463f27",
+      "fileUrl": "Code-JavaScript_获取指定用户的默认主屏启动器包名.txt",
+      "title": "获取指定用户的默认主屏启动器包名",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1768429924000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8ab800d2-5c94-59d0-9ae5-4fe892b74262",
+      "fileUrl": "Code-JavaScript_获取指定自动指令数据.txt",
+      "title": "获取指定自动指令数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5b41768b-8de4-5659-a649-ce7af1906236",
+      "fileUrl": "Code-JavaScript_获取指定音频流的当前音量.txt",
+      "title": "获取指定音频流的当前音量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-f880e9bf-69fc-56c5-b47f-0652922363fb",
+      "fileUrl": "Code-JavaScript_获取指定音频流的最大音量.txt",
+      "title": "获取指定音频流的最大音量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-2382f26c-c5c1-57ea-a4da-c5fc20027a21",
+      "fileUrl": "Code-JavaScript_获取指定音频流的最小音量.txt",
+      "title": "获取指定音频流的最小音量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-caf20485-532c-5912-b0a3-2eb61bc72e06",
+      "fileUrl": "Code-JavaScript_获取按键长按检测的超时时间.txt",
+      "title": "获取按键长按检测的超时时间",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-7fb50ea3-58f0-52dc-bf6b-aec8b807c738",
+      "fileUrl": "Code-JavaScript_获取摇一摇状态.txt",
+      "title": "获取摇一摇状态",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766374520000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-65c87ce2-ebd9-508d-b6e8-0cc8e038d8ec",
+      "fileUrl": "Code-JavaScript_获取方向传感器数据.txt",
+      "title": "获取方向传感器数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766374514000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1b4fec9f-6acb-534d-84b2-37e674a5fd8f",
+      "fileUrl": "Code-JavaScript_获取最近按键码.txt",
+      "title": "获取最近按键码",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764179021000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-e368b227-ee41-566c-abf1-27933ee337db",
+      "fileUrl": "Code-JavaScript_获取滑动手势的触发阈值.txt",
+      "title": "获取滑动手势的触发阈值",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-06c1a1d9-14f8-59fd-8d3b-d6967e684e51",
+      "fileUrl": "Code-JavaScript_获取滑动手势的长度缩放比例.txt",
+      "title": "获取滑动手势的长度缩放比例",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-63885b36-ea3d-5b9f-8320-8b1c197358dd",
+      "fileUrl": "Code-JavaScript_获取状态栏剪贴板的功能配置封装对象.txt",
+      "title": "获取状态栏剪贴板的功能配置封装对象",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-19deb618-f0c9-5857-b7d7-e5413b0bc4d3",
+      "fileUrl": "Code-JavaScript_获取状态栏图标配置.txt",
+      "title": "获取状态栏图标配置",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-88f30f0f-951d-5155-aae8-1a43be9473f4",
+      "fileUrl": "Code-JavaScript_获取磁场传感器数据.txt",
+      "title": "获取磁场传感器数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766374509000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ff7c1f04-e2f4-5e58-a6da-b40bbe212020",
+      "fileUrl": "Code-JavaScript_获取自动指令总数量.txt",
+      "title": "获取自动指令总数量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-29a608ed-27e3-57b4-a441-f62044fe2e8a",
+      "fileUrl": "Code-JavaScript_获取自动指令集数据.txt",
+      "title": "获取自动指令集数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-6a6fa32f-bbba-522f-87a5-b19430b1d0a4",
+      "fileUrl": "Code-JavaScript_获取自定义su路径.txt",
+      "title": "获取自定义su路径",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-09206ef3-d324-5f10-a53e-15077cda8e7a",
+      "fileUrl": "Code-JavaScript_获取设备SIM卡的运营商订阅信息.txt",
+      "title": "获取设备SIM卡的运营商订阅信息",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271723000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-986717b7-fac2-5187-b409-749505fe8752",
+      "fileUrl": "Code-JavaScript_获取设备上所有创建的用户账号列表.txt",
+      "title": "获取设备上所有创建的用户账号列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-965fa121-36ac-5244-8d03-3465b5a76d4e",
+      "fileUrl": "Code-JavaScript_获取设备屏幕方向.txt",
+      "title": "获取设备屏幕方向",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766374503000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-10d99e06-ded7-5c7a-acfc-47b8ee440558",
+      "fileUrl": "Code-JavaScript_获取设备屏幕的分辨率.txt",
+      "title": "获取设备屏幕的分辨率",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d5cd5405-ea88-5c96-a263-74f1910566f7",
+      "fileUrl": "Code-JavaScript_获取设备已配对的所有蓝牙设备列表.txt",
+      "title": "获取设备已配对的所有蓝牙设备列表",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-129eda33-f5dc-52d7-a149-1bfd1bf16fd1",
+      "fileUrl": "Code-JavaScript_获取设备所有已安装App数据.txt",
+      "title": "获取设备所有已安装App数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d2ec4cc1-8810-5aee-b3f1-9d3213385df8",
+      "fileUrl": "Code-JavaScript_获取设备所有已安装App数据_补充.txt",
+      "title": "获取设备所有已安装App数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767286070000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5891d181-c93d-5bb8-979d-64f9b53bff6f",
+      "fileUrl": "Code-JavaScript_获取设备所有铃声、提示音、闹钟音的数据.txt",
+      "title": "获取设备所有铃声、提示音、闹钟音的数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-e18fd1b3-4b34-5a73-81d3-3f99f0240555",
+      "fileUrl": "Code-JavaScript_获取设备移动网络信号的最大强度值.txt",
+      "title": "获取设备移动网络信号的最大强度值",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-db7c3699-7764-5ad8-b0b7-26fb9c19f5b5",
+      "fileUrl": "Code-JavaScript_获取距离上一次触摸的时间差.txt",
+      "title": "获取距离上一次触摸的时间差",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767067429000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8fb6125a-b370-5ce0-a545-5d35138416f1",
+      "fileUrl": "Code-JavaScript_获取距离传感器数据.txt",
+      "title": "获取距离传感器数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766374505000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-69b7cac1-8a68-58b8-8bf5-e0e6ac5c843b",
+      "fileUrl": "Code-JavaScript_获取输入法区域.txt",
+      "title": "获取输入法区域",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766601996000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4d6e3706-02be-52ab-a16f-fbf93452e993",
+      "fileUrl": "Code-JavaScript_获取边缘手势的触摸区域厚度.txt",
+      "title": "获取边缘手势的触摸区域厚度",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-19174a2a-b1a1-5bec-8cb4-dca6ea79ed5f",
+      "fileUrl": "Code-JavaScript_获取重力传感器数据.txt",
+      "title": "获取重力传感器数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766374516000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-fdb0c624-1e91-5a4a-84ef-d0e365e3b5b7",
+      "fileUrl": "Code-JavaScript_获取陀螺仪数据.txt",
+      "title": "获取陀螺仪数据",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766374502000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-2d6164ff-9ac2-52b0-985b-9a1f82978e99",
+      "fileUrl": "Code-JavaScript_获取音量上限.txt",
+      "title": "获取音量上限",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765711826000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-f38d36e3-2781-59f5-a3c8-d338b5f30ada",
+      "fileUrl": "Code-JavaScript_蓝牙判断.txt",
+      "title": "蓝牙判断",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764358637000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-230a56ac-62ba-51ee-b22d-af548b540166",
+      "fileUrl": "Code-JavaScript_蓝牙网络共享.txt",
+      "title": "蓝牙网络共享",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766242146000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-ddb81429-7a79-516c-a38e-19cd89fdb464",
+      "fileUrl": "Code-JavaScript_解散删除指定一键指令集.txt",
+      "title": "解散删除指定一键指令集",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-c40d3587-2f61-59af-a0a9-04a3163dd4e1",
+      "fileUrl": "Code-JavaScript_解散删除指定自动指令集.txt",
+      "title": "解散删除指定自动指令集",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5dd863e3-0a87-5510-9939-6831c231740a",
+      "fileUrl": "Code-JavaScript_解锁(尝试解锁).txt",
+      "title": "解锁(尝试解锁)",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1768429922000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-bb374ef9-0a2f-5ba1-a45c-8f997fab8a9f",
+      "fileUrl": "Code-JavaScript_触发DeepLink跳转.txt",
+      "title": "触发DeepLink跳转",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271724000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0a8ee11b-f895-564a-bb12-c968ba837520",
+      "fileUrl": "Code-JavaScript_设置USB功能.txt",
+      "title": "设置USB功能",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766242152000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4338cfb9-69cc-5a52-a9be-d9c2a7b2471b",
+      "fileUrl": "Code-JavaScript_设置全局传感器(Sensors off).txt",
+      "title": "设置全局传感器(Sensors off)",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764465053000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-336ae7a6-2e39-5e40-951e-1363cd0143ea",
+      "fileUrl": "Code-JavaScript_设置导航栏模式.txt",
+      "title": "设置导航栏模式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764185648000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-985c67e9-ef63-5e64-9ae7-0d962bacc3c3",
+      "fileUrl": "Code-JavaScript_设置强身份验证(禁用生物验证).txt",
+      "title": "设置强身份验证(禁用生物验证)",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1769509576000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-c352a7fb-d517-589f-ba66-bfe3b7ee15ee",
+      "fileUrl": "Code-JavaScript_设置指定传感器开关.txt",
+      "title": "设置指定传感器开关",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764465055000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-895e9f9d-c9db-5d82-82cc-93b6c0ea07a9",
+      "fileUrl": "Code-JavaScript_设置指定显示屏的窗口模式.txt",
+      "title": "设置指定显示屏的窗口模式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766601535000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-7712b44f-667c-5f89-87cf-11e059fef919",
+      "fileUrl": "Code-JavaScript_设置无锁屏.txt",
+      "title": "设置无锁屏",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764180195000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-afeada9a-c8d0-573f-a152-b7addf704402",
+      "fileUrl": "Code-JavaScript_设置滑动手势触发阈值.txt",
+      "title": "设置滑动手势触发阈值",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8dc7ecc8-004f-5dbd-9298-83f89f572431",
+      "fileUrl": "Code-JavaScript_设置滑动手势长度缩放比例.txt",
+      "title": "设置滑动手势长度缩放比例",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1767271800000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-98392bd5-7fc1-5a5d-958f-c4f79f0e454c",
+      "fileUrl": "Code-JavaScript_设置电源模式.txt",
+      "title": "设置电源模式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766693893000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-81994030-1192-55ed-b43f-a2c75ca3d014",
+      "fileUrl": "Code-JavaScript_设置省电模式.txt",
+      "title": "设置省电模式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766454907000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8fd5acac-7e93-5af0-95fa-57f2392ce805",
+      "fileUrl": "Code-JavaScript_设置系统时间.txt",
+      "title": "设置系统时间",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764627106000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-0d3a43e9-1ff4-521c-90aa-91b06aa1f5f4",
+      "fileUrl": "Code-JavaScript_设置锁屏密码.txt",
+      "title": "设置锁屏密码",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1768392325000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-f16ca70e-d3fd-5d4b-8446-80935d4a321c",
+      "fileUrl": "Code-JavaScript_设置锁屏密码_附件.txt",
+      "title": "设置锁屏密码",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1768392325000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-522dbb06-1e7b-5031-9a05-0cd26f8d0ec5",
+      "fileUrl": "Code-JavaScript_设置隐私状态提示禁用弹窗.txt",
+      "title": "设置隐私状态提示禁用弹窗",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764465051000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-545d3471-36d4-5ec1-9c74-7ac6bdd7bad3",
+      "fileUrl": "Code-JavaScript_设置音量.txt",
+      "title": "设置音量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765711832000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-9f2c05af-196a-5371-88a8-40fd8233d92f",
+      "fileUrl": "Code-JavaScript_调用解锁传感器对话框.txt",
+      "title": "调用解锁传感器对话框",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764465059000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-2b3eb082-ddfc-5ad1-8d7c-00bceb9790c7",
+      "fileUrl": "Code-JavaScript_调节音量.txt",
+      "title": "调节音量",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765711831000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-85dee9fb-b690-55ae-94f7-932fe780eb10",
+      "fileUrl": "Code-JavaScript_运行内存详情.txt",
+      "title": "运行内存详情",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766274058000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-b42f6fdf-89ac-5944-b3db-d56d694f9986",
+      "fileUrl": "Code-JavaScript_进入安全模式.txt",
+      "title": "进入安全模式",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766455024000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-2b9ba990-9782-5aa5-8b23-0a592abc6ee3",
+      "fileUrl": "Code-JavaScript_通知清除.txt",
+      "title": "通知清除",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764171673000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-eca9c754-dd8f-5e8f-b436-f19532467d97",
+      "fileUrl": "Code-JavaScript_邮件发送.txt",
+      "title": "邮件发送",
+      "description": "来自 TG 聊天记录的 JavaScript 示例（依赖 DEX/JAR）",
+      "versionCode": 1,
+      "updateTimeMillis": 1768945754000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-666b3338-2485-5094-9a1d-5bbd47f09ac1",
+      "fileUrl": "Code-JavaScript_邮件发送_附件.txt",
+      "title": "邮件发送",
+      "description": "来自 TG 聊天记录的 JavaScript 示例（依赖 DEX/JAR）",
+      "versionCode": 1,
+      "updateTimeMillis": 1768945745000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-82f9bfb8-9140-5c3c-91a8-67525a7312af",
+      "fileUrl": "Code-JavaScript_配置热点策略.txt",
+      "title": "配置热点策略",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766242875000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-fe60e0d2-089a-53c4-a572-8a1ea0a76b06",
+      "fileUrl": "Code-JavaScript_重启.txt",
+      "title": "重启",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766453905000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-1f404ddc-fadd-5e48-a6ba-13490248e661",
+      "fileUrl": "Code-JavaScript_锁定刷新率.txt",
+      "title": "锁定刷新率",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765534804000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-96350a72-7b1d-5f82-ae75-defc08b49bfc",
+      "fileUrl": "Code-JavaScript_阻止应用卸载.txt",
+      "title": "阻止应用卸载",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764178365000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-fcc77183-dbc1-506e-8a40-883ca867fa70",
+      "fileUrl": "Code-JavaScript_附近所有WiFi BSSID.txt",
+      "title": "附近所有WiFi BSSID",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1769509579000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-d7768264-5bd7-5f03-8e81-bfc59a994927",
+      "fileUrl": "Code-JavaScript_附近所有WiFi SSID.txt",
+      "title": "附近所有WiFi SSID",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1769509579000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-46083533-3599-5ea2-b728-59aa347a3005",
+      "fileUrl": "Code-JavaScript_隐藏应用(伪装卸载).txt",
+      "title": "隐藏应用(伪装卸载)",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1765049382000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-8ac68739-5c7c-5a2d-858e-f58f639df8da",
+      "fileUrl": "Code-JavaScript_隐藏状态栏内容显示.txt",
+      "title": "隐藏状态栏内容显示",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764472036000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4202c885-c6ab-54c2-bb6a-6ae149d12d14",
+      "fileUrl": "Code-JavaScript_隐藏输入法.txt",
+      "title": "隐藏输入法",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766434869000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-2ea2e86c-5fd4-52a1-9a43-154d3ffeb056",
+      "fileUrl": "Code-JavaScript_静默卸载应用.txt",
+      "title": "静默卸载应用",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1769677136000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-4257a016-110e-5ae0-8e1f-bd5dd8b16530",
+      "fileUrl": "Code-JavaScript_音频焦点判断.txt",
+      "title": "音频焦点判断",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766448231000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-296b3a11-c7a9-5416-9484-7b3c4c23c7ae",
+      "fileUrl": "Code-JavaScript_高德地图步行导航.txt",
+      "title": "高德地图步行导航",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764548757000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-515772fe-a9eb-5ed9-a704-7041b71b7cc9",
+      "fileUrl": "Code-JavaScript_高德地图骑行导航.txt",
+      "title": "高德地图骑行导航",
+      "description": "来自 TG 聊天记录的 JavaScript 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1764548754000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "javascript"
+      ],
+      "icon": "vuejs-line",
+      "iconColor": "#FF9800",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-92e194b2-d7d9-505c-b11d-21ca268d5fda",
+      "fileUrl": "Code-MVEL_息屏运行(屏幕电源.txt",
+      "title": "息屏运行(屏幕电源",
+      "description": "来自 TG 聊天记录的 MVEL 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766686918000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "mvel"
+      ],
+      "icon": "code-line",
+      "iconColor": "#6750A4",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-5c35b1d2-0f1d-4ef9-9c75-6b2e4d2fa101",
+      "fileUrl": "Code-MVEL_时间工具箱.txt",
+      "title": "MVEL 时间工具箱",
+      "description": "时间戳、当天开始时间、常用时间格式转换示例。",
+      "versionCode": 1,
+      "updateTimeMillis": 1773888000000,
+      "author": "ShortX",
+      "tags": [
+        "example",
+        "mvel",
+        "time"
+      ],
+      "icon": "code-line",
+      "iconColor": "#6750A4",
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "CODELIB-3d3fe0ae-202f-50a6-9306-0ba1032e5ee1",
+      "fileUrl": "Code-MVEL_获取主显示设备的 Token.txt",
+      "title": "获取主显示设备的 Token",
+      "description": "来自 TG 聊天记录的 MVEL 示例",
+      "versionCode": 1,
+      "updateTimeMillis": 1766685649000,
+      "author": "HeWei",
+      "tags": [
+        "example",
+        "telegram",
+        "mvel"
+      ],
+      "icon": "code-line",
+      "iconColor": "#6750A4",
+      "requireMinShortXProtoVersion": 0
     }
-  ],  
-  "updateTimeMillis": 0
+  ],
+  "updateTimeMillis": 1773888000000
 }

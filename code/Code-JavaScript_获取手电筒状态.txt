@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-39eb807d-6b3a-5c97-9017-faa79464f930",
+  "name": "获取手电筒状态",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1093\n// 创建时间: 2025-12-22T00:24:58\n// 更新时间: 2025-12-22T11:35:09\n\nimportClass(android.content.Context);\nimportClass(android.hardware.camera2.CameraManager);\nimportClass(android.os.Build);\nimportClass(android.os.Looper);\nimportClass(android.os.Handler);\nimportClass(java.util.concurrent.CountDownLatch);\nimportClass(java.util.concurrent.TimeUnit);\n\nfunction getTorchState() {\n    if (Build.VERSION.SDK_INT < 24) {\n        return \"当前 Android 版本不支持监听手电筒状态（需要 Android 7.0+）\";\n    }\n\n    try {\n        var latch = new CountDownLatch(1);\n        var torchOn = null;\n\n        var cameraManager = context.getSystemService(Context.CAMERA_SERVICE);\n        var handler = new Handler(Looper.getMainLooper()); // 使用主线程的 Looper\n\n        var torchCallback = new android.hardware.camera2.CameraManager.TorchCallback({\n            onTorchModeChanged: function (cameraId, enabled) {\n                torchOn = enabled;\n                latch.countDown(); // 获取到状态后退出等待\n            },\n            onTorchModeUnavailable: function (cameraId) {\n                torchOn = null;\n                latch.countDown(); // 无法获取状态也退出\n            }\n        });\n\n        cameraManager.registerTorchCallback(torchCallback, handler);\n\n        latch.await(1, TimeUnit.SECONDS);\n\n        cameraManager.unregisterTorchCallback(torchCallback);\n\n        if (torchOn === null) {\n            return \"无法获取手电筒状态\";\n        }\n\n        return torchOn;\n    } catch (e) {\n        return \"发生错误: \" + e;\n    }\n}\n\ngetTorchState();\n",
+  "createdAt": "1766334298000",
+  "updatedAt": "1766374509000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

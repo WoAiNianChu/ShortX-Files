@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-34b71805-62b6-5151-9fa5-b800d1f602e4",
+  "name": "判断指定音频流静音状态",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1108\n// 创建时间: 2025-12-23T08:19:20\n\nandroid.os.ServiceManager.getService(\"audio\").isStreamMute(3);\n\n// 判断媒体音量静音状态\n",
+  "createdAt": "1766449160000",
+  "updatedAt": "1766449160000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

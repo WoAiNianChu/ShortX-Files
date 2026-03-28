@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-26d4ba81-9dd8-5a07-b3e2-dc5c58d70db2",
+  "name": "刷新率支持状态",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/404\n// 创建时间: 2025-12-06T13:48:42\n// 更新时间: 2025-12-14T19:30:20\n\nmodes = (android.os.ServiceManager.getService(\"display\").getDisplayInfo(android.view.Display.DEFAULT_DISPLAY)).supportedModes;\ns = \"\";\nfor (i = 0; i < modes.length; i++) {\n    m = modes[i];\n    s += \"id=\" + m.getModeId() + \": \" + m.getRefreshRate() + \"Hz\\n\";\n}\ns.trim();\n// 获取当前显示屏支持的刷新率以及对应ID\n",
+  "createdAt": "1765000122000",
+  "updatedAt": "1765711820000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

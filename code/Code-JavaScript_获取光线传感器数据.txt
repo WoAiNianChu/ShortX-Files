@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-6d93c295-d602-5f53-8e38-631f458e955d",
+  "name": "获取光线传感器数据",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/1098\n// 创建时间: 2025-12-22T00:43:00\n// 更新时间: 2025-12-22T11:35:14\n\nimportClass(android.content.Context);\nimportClass(android.hardware.Sensor);\nimportClass(android.hardware.SensorManager);\nimportClass(android.hardware.SensorEventListener);\nimportClass(android.hardware.SensorEvent);\nimportClass(java.lang.Thread);\nimportClass(java.lang.Runnable);\nimportClass(android.os.Looper);\nimportClass(android.os.Handler);\nimportClass(java.util.concurrent.CountDownLatch);\nimportClass(java.util.concurrent.TimeUnit);\n\nfunction getLightData() {\n    var sensorManager = context.getSystemService(Context.SENSOR_SERVICE);\n    var lightSensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);\n\n    if (lightSensor == null) {\n        return \"设备不支持光线传感器\";\n    }\n\n    var lightLevel = 0;\n    var latch = new CountDownLatch(1);\n\n    var listener = new SensorEventListener({\n        onSensorChanged: function (event) {\n            lightLevel = event.values[0];  // 光线强度（单位：勒克斯 lux）\n            latch.countDown(); // 收到数据后释放\n        },\n        onAccuracyChanged: function (sensor, accuracy) {}\n    });\n\n    // 注册监听器，必须在主线程\n    new Handler(Looper.getMainLooper()).post(new Runnable({\n        run: function () {\n            sensorManager.registerListener(listener, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);\n        }\n    }));\n\n    // 最多等待 2 秒获取数据\n    var received = latch.await(2, TimeUnit.SECONDS);\n\n    // 无论成功与否都要注销监听器\n    sensorManager.unregisterListener(listener);\n\n    if (!received) {\n        return \"未能获取光线传感器数据\";\n    }\n\n    return \"光线传感器数据:\\n光照强度: \" + lightLevel + \" lux\";\n}\n\ngetLightData();\n",
+  "createdAt": "1766335380000",
+  "updatedAt": "1766374514000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

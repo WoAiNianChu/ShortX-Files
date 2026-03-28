@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-0e3d247f-3959-5173-b69a-1c61d1fa9f44",
+  "name": "定位判断",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/32\n// 创建时间: 2025-11-27T00:14:55\n// 更新时间: 2025-11-27T00:17:04\n\nandroid.os.ServiceManager.getService(\"location\").isLocationEnabledForUser(0);\n// 判断指定用户定位是否开启\n",
+  "createdAt": "1764173695000",
+  "updatedAt": "1764173824000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

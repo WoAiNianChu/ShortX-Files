@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-88fd71fe-b208-5125-86b1-e82abd704eef",
+  "name": "恢复伪装",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/29\n// 创建时间: 2025-11-26T23:37:16\n\nandroid.os.ServiceManager.getService(\"batterystats\").resetBattery(true);\n// 一键恢复伪装\n",
+  "createdAt": "1764171436000",
+  "updatedAt": "1764171436000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}

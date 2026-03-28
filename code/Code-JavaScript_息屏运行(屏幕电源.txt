@@ -1,0 +1,16 @@
+{
+  "id": "CODELIB-1747d8c0-fd1f-5c89-b722-ba4ec6fcb168",
+  "name": "息屏运行(屏幕电源",
+  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "type": "CodeType_JAVASCRIPT",
+  "content": "// 来源: https://t.me/c/3073722829/89/205\n// 创建时间: 2025-11-28T06:51:52\n// 更新时间: 2025-11-28T08:20:47\n\nBuild = android.os.Build;\nIBinder = android.os.IBinder;\nParcel = android.os.Parcel;\nServiceManager = android.os.ServiceManager;\nSurfaceControl = android.view.SurfaceControl;\n\ndisplayMode = 0; // 直接设置电源模式  2: 开启, 0: 关闭\n\nif (Build.VERSION.SDK_INT < 34) { // Android 14 之前的版本\n    // 获取 SurfaceControl 类（旧版本需要实例化）\n    surfaceControl = new SurfaceControl();\n\n    // 根据 Android 版本获取显示器 Token 方法\n    displayToken = (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) ?\n        surfaceControl.getBuiltInDisplay(0) : SurfaceControl.getInternalDisplayToken();\n\n    // 直接调用 SurfaceControl 的方法，设置电源模式\n    SurfaceControl.setDisplayPowerMode(displayToken, displayMode);\n\n} else { // Android 14 及以上版本\n    // 获取 SurfaceFlinger 服务（AIDL 方式）\n    surfaceFlingerService = ServiceManager.getService(\"SurfaceFlingerAIDL\");\n\n    // 获取显示器 ID 列表\n    parcelData = Parcel.obtain();\n    parcelReply = Parcel.obtain();\n    parcelData.writeInterfaceToken(\"android.gui.ISurfaceComposer\");\n    surfaceFlingerService.transact(IBinder.FIRST_CALL_TRANSACTION + 5, parcelData, parcelReply, 0);\n    parcelReply.readException();\n    displayCount = parcelReply.readInt();\n\n    // 创建 long[] 数组存储显示器 ID\n    displayIds = java.lang.reflect.Array.newInstance(java.lang.Long.TYPE, displayCount);\n\n    // 读取显示器 ID\n    for (var i = 0; i < displayCount; i++) {\n        displayIds[i] = parcelReply.readLong();\n    }\n    parcelData.recycle();\n    parcelReply.recycle();\n\n    // 遍历每个显示器，设置电源模式\n    for (var i = 0; i < displayIds.length; i++) {\n        displayId = displayIds[i];\n\n        // 获取单个显示器的 Token\n        parcelData = Parcel.obtain();\n        parcelReply = Parcel.obtain();\n        parcelData.writeInterfaceToken(\"android.gui.ISurfaceComposer\");\n        parcelData.writeLong(displayId);\n        surfaceFlingerService.transact(IBinder.FIRST_CALL_TRANSACTION + 6, parcelData, parcelReply, 0);\n        parcelReply.readException();\n        displayToken = parcelReply.readStrongBinder();\n        parcelData.recycle();\n        parcelReply.recycle();\n\n        // 直接调用 SurfaceControl 的方法，设置电源模式（0=强制息屏，2=开启电源模式）\n        SurfaceControl.setDisplayPowerMode(displayToken, displayMode);\n    }\n}\n// Extinguish 息屏挂机 息屏运行 听剧模式 仅关屏 息屏不锁屏 息屏不锁屏 游戏挂机 开屏伪装FakeSceen\n",
+  "createdAt": "1764283912000",
+  "updatedAt": "1764289247000",
+  "tags": [
+    "example",
+    "telegram",
+    "javascript"
+  ]
+}
+###------###
+{"type": "CodeLibraryItem", "author": "HeWei"}
