@@ -18,7 +18,7 @@
       "description": "将阿里云盘链接转换成海阔视界小程序(云盘君)的规则，方便导入",
       "versionCode": 1,
       "updateTimeMillis": 1728099601174,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -29,7 +29,7 @@
       "description": "",
       "versionCode": 3,
       "updateTimeMillis": 1728172765257,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -40,7 +40,7 @@
       "description": "局域截图并实现贴图",
       "versionCode": 1,
       "updateTimeMillis": 1730199892158,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -51,7 +51,7 @@
       "description": "提取下次点击或滑动坐标",
       "versionCode": 1,
       "updateTimeMillis": 1730293984754,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -62,7 +62,7 @@
       "description": "使用快递 100的官方Api\n速度嘎嘎快",
       "versionCode": 3,
       "updateTimeMillis": 1702739628806,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -73,7 +73,7 @@
       "description": "微信语言仅支持简体中文\n需要下载Termux\n执行\npkg install sqlcipher\npkg install openssl",
       "versionCode": 1,
       "updateTimeMillis": 1731858569497,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -84,7 +84,7 @@
       "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
       "versionCode": 5,
       "updateTimeMillis": 1728736632200,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -95,7 +95,7 @@
       "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
       "versionCode": 6,
       "updateTimeMillis": 1729134837919,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -106,7 +106,7 @@
       "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
       "versionCode": 7,
       "updateTimeMillis": 1729243082528,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -117,7 +117,7 @@
       "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
       "versionCode": 8,
       "updateTimeMillis": 1729245841948,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -152,7 +152,7 @@
       "description": "定时备份",
       "versionCode": 1,
       "updateTimeMillis": 1728036075579,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -163,7 +163,7 @@
       "description": "自动开关代理\n没预设的代理工具自己手动输入代理应用的包名即可",
       "versionCode": 3,
       "updateTimeMillis": 1726051081836,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -174,7 +174,7 @@
       "description": "自动开关代理\n智能化选择代理工具",
       "versionCode": 5,
       "updateTimeMillis": 1729852220797,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -185,7 +185,7 @@
       "description": "自动开关代理\n智能化选择代理工具",
       "versionCode": 6,
       "updateTimeMillis": 1729951429568,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -196,7 +196,7 @@
       "description": "把想检测更新的应用放在应用集\n适合那种在检测源上架，软件没有内置更新并且你追求更新的应用(比如：ShortX\n比较版本号检测\n检测源：\n应用宝✅\n酷安✅\nAppShare✅\n华为应用市场✅\n小米应用商店✅\nvivo应用商店✅\n魅族应用商店✅\n百度手机助手✅\n360手机助手✅\n应用汇✅\n豌豆荚|PP助手✅\n历趣市场✅",
       "versionCode": 4,
       "updateTimeMillis": 1727788247074,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -207,7 +207,7 @@
       "description": "把想检测更新的应用放在应用集\n适合那种在检测源上架，软件没有内置更新并且你追求更新的应用(比如：ShortX\n比较版本号检测\n检测源：\n应用宝✅\n酷安✅\nAppShare✅\n华为应用市场✅\n小米应用商店✅\nvivo应用商店✅\n魅族应用商店✅\n百度手机助手✅\n360手机助手✅\n应用汇✅\n豌豆荚|PP助手✅\n历趣市场✅",
       "versionCode": 6,
       "updateTimeMillis": 1730033390136,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -218,7 +218,7 @@
       "description": "把想检测更新的应用放在应用集\n适合那种在检测源上架，软件没有内置更新并且你追求更新的应用(比如：ShortX\n比较版本号检测\n检测源：\n应用宝✅\n酷安✅\nAppShare✅\n华为应用市场✅\n小米应用商店✅\nvivo应用商店✅\n魅族应用商店✅\n百度手机助手✅\n360手机助手✅\n应用汇✅\n豌豆荚|PP助手✅\n历趣市场✅",
       "versionCode": 7,
       "updateTimeMillis": 1730051256010,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -229,7 +229,7 @@
       "description": "定时清理应用集内的应用缓存",
       "versionCode": 1,
       "updateTimeMillis": 1728152014491,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -240,7 +240,7 @@
       "description": "连接PC自动开启USB网络共享",
       "versionCode": 2,
       "updateTimeMillis": 1726154490064,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -251,7 +251,7 @@
       "description": "例:复制/粘贴\n单击复制，长按粘贴",
       "versionCode": 2,
       "updateTimeMillis": 1709856411654,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     },
@@ -262,7 +262,7 @@
       "description": "例:复制/粘贴\n单击复制，长按粘贴\n请去指令参数填写信息",
       "versionCode": 3,
       "updateTimeMillis": 1732029456085,
-      "author": "He",
+      "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
     }
