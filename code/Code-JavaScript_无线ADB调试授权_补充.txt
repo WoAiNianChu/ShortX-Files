@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-9f156b8c-d12c-5d29-9685-66347e5bd6e5",
   "name": "无线ADB调试授权",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "无线ADB授权当前WiFi并启动无线ADB调试",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/187\n// 创建时间: 2025-11-27T22:05:15\n// 更新时间: 2025-11-27T22:12:47\n\nbssid = android.os.ServiceManager.getService(\"wifi\").getConnectionInfo(\"android\", null).getBSSID();\nandroid.os.ServiceManager.getService(\"adb\").allowWirelessDebugging(true, bssid)\n// 无线ADB授权当前WiFi并启动无线ADB调试\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/187\n\nbssid = android.os.ServiceManager.getService(\"wifi\").getConnectionInfo(\"android\", null).getBSSID();\nandroid.os.ServiceManager.getService(\"adb\").allowWirelessDebugging(true, bssid)\n// 无线ADB授权当前WiFi并启动无线ADB调试\n",
   "createdAt": "1764252315000",
   "updatedAt": "1764252767000",
   "tags": [

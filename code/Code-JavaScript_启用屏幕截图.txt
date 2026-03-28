@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-5011f8b2-c667-57b6-91a9-7fc91fad5983",
   "name": "启用屏幕截图",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "启用屏幕截图",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/35\n// 创建时间: 2025-11-27T00:53:00\n// 更新时间: 2025-11-27T10:42:05\n\nandroid.os.ServiceManager.getService(\"device_policy\").setScreenCaptureDisabled(null, \"android\", false, false);\n// 启用屏幕截图\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/35\n\nandroid.os.ServiceManager.getService(\"device_policy\").setScreenCaptureDisabled(null, \"android\", false, false);\n// 启用屏幕截图\n",
   "createdAt": "1764175980000",
   "updatedAt": "1764211325000",
   "tags": [

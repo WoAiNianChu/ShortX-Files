@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-6ba4a41d-e491-568d-a1a3-a6f126ba60da",
   "name": "百度地图步行导航",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "lat - 纬度",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/273\n// 创建时间: 2025-12-01T02:51:10\n// 更新时间: 2025-12-01T08:25:52\n\nIntent = android.content.Intent;\nUserHandle = android.os.UserHandle;\n\nlat = 39.915119;\n// lat - 纬度\nlon = 116.403963;\n// lon - 经度\ncoord_type = \"bd09ll\";\n/*\n坐标类型\nbd09ll（百度经纬度坐标） //用百度坐标拾取器，可避免误差\nbd09mc（百度墨卡托坐标）\ngcj02（经国测局加密的坐标）\nwgs84（gps获取的原始坐标）\n*/\n// 步行导航\nmyIntent = Intent.parseUri('baidumap://map/walknavi?destination=' + lat + ',' + lon + '&coord_type=' + coord_type + '&src=andr.baidu.openAPIdemo', 0);\n\nmyIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\n// 指定用户启动\nuserHandle = UserHandle.of(0);\n\ncontext.startActivityAsUser(myIntent, userHandle);\n// 坐标拾取器 https://lbs.baidu.com/maptool/getpoint\n// 指定用户百度地图 步行导航\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/273\n\nIntent = android.content.Intent;\nUserHandle = android.os.UserHandle;\n\nlat = 39.915119;\n// lat - 纬度\nlon = 116.403963;\n// lon - 经度\ncoord_type = \"bd09ll\";\n/*\n坐标类型\nbd09ll（百度经纬度坐标） //用百度坐标拾取器，可避免误差\nbd09mc（百度墨卡托坐标）\ngcj02（经国测局加密的坐标）\nwgs84（gps获取的原始坐标）\n*/\n// 步行导航\nmyIntent = Intent.parseUri('baidumap://map/walknavi?destination=' + lat + ',' + lon + '&coord_type=' + coord_type + '&src=andr.baidu.openAPIdemo', 0);\n\nmyIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\n// 指定用户启动\nuserHandle = UserHandle.of(0);\n\ncontext.startActivityAsUser(myIntent, userHandle);\n// 坐标拾取器 https://lbs.baidu.com/maptool/getpoint\n// 指定用户百度地图 步行导航\n",
   "createdAt": "1764528670000",
   "updatedAt": "1764548752000",
   "tags": [

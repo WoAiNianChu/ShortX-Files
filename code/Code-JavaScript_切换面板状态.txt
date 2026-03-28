@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-a1c43c41-ad4e-58e9-8e4c-add7253ef0d1",
   "name": "切换面板状态",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "切换面板状态",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1103\n// 创建时间: 2025-12-22T22:17:11\n\nandroid.os.ServiceManager.getService(\"statusbar\").togglePanel();\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1103\n\nandroid.os.ServiceManager.getService(\"statusbar\").togglePanel();\n",
   "createdAt": "1766413031000",
   "updatedAt": "1766413031000",
   "tags": [

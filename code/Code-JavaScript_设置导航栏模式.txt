@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-336ae7a6-2e39-5e40-951e-1363cd0143ea",
   "name": "设置导航栏模式",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "1代表三段式导航栏",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/50\n// 创建时间: 2025-11-27T03:34:00\n// 更新时间: 2025-11-27T03:34:08\n\nandroid.os.ServiceManager.getService(\"statusbar\").setNavBarMode(1);\n// 1代表三段式导航栏\n// 0代表手势导航\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/50\n\nandroid.os.ServiceManager.getService(\"statusbar\").setNavBarMode(1);\n// 1代表三段式导航栏\n// 0代表手势导航\n",
   "createdAt": "1764185640000",
   "updatedAt": "1764185648000",
   "tags": [

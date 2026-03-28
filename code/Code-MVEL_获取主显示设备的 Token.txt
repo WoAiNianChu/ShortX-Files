@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-3d3fe0ae-202f-50a6-9306-0ba1032e5ee1",
   "name": "获取主显示设备的 Token",
-  "description": "来自 TG 聊天记录的 MVEL 示例",
+  "description": "获取主显示设备的 Token",
   "type": "CodeType_MVEL",
-  "content": "// 来源: https://t.me/c/3073722829/89/1265\n// 创建时间: 2025-12-26T02:00:49\n\nBuild = android.os.Build;\nSurfaceControl = android.view.SurfaceControl;\nDisplayControl = com.android.server.display.DisplayControl;\n\nif (Build.VERSION.SDK_INT < 34) { // \n    surfaceControl = new SurfaceControl();\n    displayToken = (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) ?\n        surfaceControl.getBuiltInDisplay(0) : SurfaceControl.getInternalDisplayToken();\n\n} else {\n    displayToken = DisplayControl.getPhysicalDisplayToken(DisplayControl.getPhysicalDisplayIds()[0]);\n\n}\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1265\n\nBuild = android.os.Build;\nSurfaceControl = android.view.SurfaceControl;\nDisplayControl = com.android.server.display.DisplayControl;\n\nif (Build.VERSION.SDK_INT < 34) { // \n    surfaceControl = new SurfaceControl();\n    displayToken = (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) ?\n        surfaceControl.getBuiltInDisplay(0) : SurfaceControl.getInternalDisplayToken();\n\n} else {\n    displayToken = DisplayControl.getPhysicalDisplayToken(DisplayControl.getPhysicalDisplayIds()[0]);\n\n}\n",
   "createdAt": "1766685649000",
   "updatedAt": "1766685649000",
   "tags": [

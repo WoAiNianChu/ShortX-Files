@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-a026222c-f92f-584b-b741-dd3ac4f7dd5c",
   "name": "获取当前启用的OCR文字识别引擎",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取OCR引擎值",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1448\n// 创建时间: 2026-01-01T20:50:00\n\n// 获取OCR引擎值\nvar ocrEngine = Packages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getOCREngine();\n// 根据返回值输出对应的OCR引擎名称\nif (ocrEngine == 1) {\n    \"Tesseract\";\n} else if (ocrEngine == 0) {\n    \"Paddle\";\n} else {\n    \"Unknown\";\n}\n// 获取当前启用的OCR文字识别引擎\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1448\n\n// 获取OCR引擎值\nvar ocrEngine = Packages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getOCREngine();\n// 根据返回值输出对应的OCR引擎名称\nif (ocrEngine == 1) {\n    \"Tesseract\";\n} else if (ocrEngine == 0) {\n    \"Paddle\";\n} else {\n    \"Unknown\";\n}\n// 获取当前启用的OCR文字识别引擎\n",
   "createdAt": "1767271800000",
   "updatedAt": "1767271800000",
   "tags": [

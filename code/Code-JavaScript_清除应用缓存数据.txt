@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-8c3c7eff-e1ea-5a90-b6fa-2a237d89ab16",
   "name": "清除应用缓存数据",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "清除指定用户的指定包名的缓存数据",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/40\n// 创建时间: 2025-11-27T01:33:37\n// 更新时间: 2025-11-27T01:39:19\n\nandroid.os.ServiceManager.getService(\"package\").deleteApplicationCacheFilesAsUser(\"包名\", 0, null)\n// 清除指定用户的指定包名的缓存数据\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/40\n\nandroid.os.ServiceManager.getService(\"package\").deleteApplicationCacheFilesAsUser(\"包名\", 0, null)\n// 清除指定用户的指定包名的缓存数据\n",
   "createdAt": "1764178417000",
   "updatedAt": "1764178759000",
   "tags": [

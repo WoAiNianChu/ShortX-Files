@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-e5b52644-4614-5959-be70-bf0eb5a2daa5",
   "name": "展开快捷设置面板",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "展开快捷设置面板",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1101\n// 创建时间: 2025-12-22T22:15:57\n\nServiceManager = android.os.ServiceManager;\n\nServiceManager.getService(\"statusbar\").expandSettingsPanel(null);\n// 展开快捷设置面板\n\n//ServiceManager.getService(\"statusbar\").collapsePanels();\n// 收起所有面板\n// 如果当前使用的是定制化系统的快捷设置与通知分离面板的话，需要把第二段代码解除注释状态\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1101\n\nServiceManager = android.os.ServiceManager;\n\nServiceManager.getService(\"statusbar\").expandSettingsPanel(null);\n// 展开快捷设置面板\n\n//ServiceManager.getService(\"statusbar\").collapsePanels();\n// 收起所有面板\n// 如果当前使用的是定制化系统的快捷设置与通知分离面板的话，需要把第二段代码解除注释状态\n",
   "createdAt": "1766412957000",
   "updatedAt": "1766412957000",
   "tags": [

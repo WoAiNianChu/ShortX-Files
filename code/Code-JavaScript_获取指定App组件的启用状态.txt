@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-ef1beca2-d40b-578a-89c7-cfe8bfb1cf91",
   "name": "获取指定App组件的启用状态",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取指定App组件的启用状态",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1425\n// 创建时间: 2026-01-01T20:48:44\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getComponentEnabledSetting(ByteArrayWrapper);\n// 获取指定App组件的启用状态\n// 猜测参数为组件封装对象，返回0=默认、1=启用、2=禁用\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1425\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getComponentEnabledSetting(ByteArrayWrapper);\n// 获取指定App组件的启用状态\n// 猜测参数为组件封装对象，返回0=默认、1=启用、2=禁用\n",
   "createdAt": "1767271724000",
   "updatedAt": "1767271724000",
   "tags": [

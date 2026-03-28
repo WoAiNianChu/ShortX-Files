@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-515772fe-a9eb-5ed9-a704-7041b71b7cc9",
   "name": "高德地图骑行导航",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "ShortX自带高德地图骑行导航无法细分自行车或电动车，该接口可以",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/272\n// 创建时间: 2025-12-01T02:50:47\n// 更新时间: 2025-12-01T08:25:54\n\nIntent = android.content.Intent;\nUserHandle = android.os.UserHandle;\n// ShortX自带高德地图骑行导航无法细分自行车或电动车，该接口可以\nlat = 39.909187;\n// lat - 纬度\nlon = 116.397463;\n// lon - 经度\nrideType = \"bike\";\n// 骑行类型，elebike 为电动车，bike 或留空为自行车。\n\nmyIntent = Intent.parseUri('amapuri://openFeature?featureName=OnRideNavi&rideType=' + rideType + '&sourceApplication=null&lat=' + lat +'&lon=' + lon, 0);\n\nmyIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\n// 指定用户启动\nuserHandle = UserHandle.of(0);\n\ncontext.startActivityAsUser(myIntent, userHandle);\n// 坐标拾取器 https://lbs.amap.com/tools/picker\n// 指定用户高德地图 自行车导航\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/272\n\nIntent = android.content.Intent;\nUserHandle = android.os.UserHandle;\n// ShortX自带高德地图骑行导航无法细分自行车或电动车，该接口可以\nlat = 39.909187;\n// lat - 纬度\nlon = 116.397463;\n// lon - 经度\nrideType = \"bike\";\n// 骑行类型，elebike 为电动车，bike 或留空为自行车。\n\nmyIntent = Intent.parseUri('amapuri://openFeature?featureName=OnRideNavi&rideType=' + rideType + '&sourceApplication=null&lat=' + lat +'&lon=' + lon, 0);\n\nmyIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\n// 指定用户启动\nuserHandle = UserHandle.of(0);\n\ncontext.startActivityAsUser(myIntent, userHandle);\n// 坐标拾取器 https://lbs.amap.com/tools/picker\n// 指定用户高德地图 自行车导航\n",
   "createdAt": "1764528647000",
   "updatedAt": "1764548754000",
   "tags": [

@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-985c67e9-ef63-5e64-9ae7-0d962bacc3c3",
   "name": "设置强身份验证(禁用生物验证)",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "即单次禁用生物识别(人脸、指纹等)",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1680\n// 创建时间: 2026-01-26T19:36:29\n// 更新时间: 2026-01-27T18:26:16\n\n// 即单次禁用生物识别(人脸、指纹等)\nandroid.os.ServiceManager.getService(\"lock_settings\").requireStrongAuth(32, 0);\n// (int strongAuthReason, int userId)\n\n/*\nstrongAuthReason \n0 - 不需要强身份验证\n1 - 设备启动后需要强身份验证\n2 - 设备管理器锁定后需要强身份验证\n8 - 设备锁定后需要强身份验证\n16 - 超时后需要强身份验证\n32 - 用户锁定后需要强身份验证\n64 - 无人值守更新时需要强身份验证\n128 - 非强生物识别超时后需要强身份验证\n256 - 信任代理过期后需要某种身份验证\n512 - 适应性认证请求后需要某种身份验证\n772 - 允许生物识别身份验证\n*/\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1680\n\n// 即单次禁用生物识别(人脸、指纹等)\nandroid.os.ServiceManager.getService(\"lock_settings\").requireStrongAuth(32, 0);\n// (int strongAuthReason, int userId)\n\n/*\nstrongAuthReason \n0 - 不需要强身份验证\n1 - 设备启动后需要强身份验证\n2 - 设备管理器锁定后需要强身份验证\n8 - 设备锁定后需要强身份验证\n16 - 超时后需要强身份验证\n32 - 用户锁定后需要强身份验证\n64 - 无人值守更新时需要强身份验证\n128 - 非强生物识别超时后需要强身份验证\n256 - 信任代理过期后需要某种身份验证\n512 - 适应性认证请求后需要某种身份验证\n772 - 允许生物识别身份验证\n*/\n",
   "createdAt": "1769427389000",
   "updatedAt": "1769509576000",
   "tags": [

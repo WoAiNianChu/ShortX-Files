@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-e4144551-5ece-58ff-90d9-e46202309bd6",
   "name": "获取ADB无线端口",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取ADB无线端口",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/185\n// 创建时间: 2025-11-27T21:16:38\n\nandroid.os.ServiceManager.getService(\"adb\").getAdbWirelessPort();\n// 获取ADB无线端口\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/185\n\nandroid.os.ServiceManager.getService(\"adb\").getAdbWirelessPort();\n// 获取ADB无线端口\n",
   "createdAt": "1764249398000",
   "updatedAt": "1764249398000",
   "tags": [

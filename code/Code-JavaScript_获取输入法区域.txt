@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-69b7cac1-8a68-58b8-8bf5-e0e6ac5c843b",
   "name": "获取输入法区域",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取当前输入法的显示(触摸)区域",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1207\n// 创建时间: 2025-12-25T02:46:36\n\nandroid.os.ServiceManager.getService(\"window\").getCurrentImeTouchRegion();\n//获取当前输入法的显示(触摸)区域\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1207\n\nandroid.os.ServiceManager.getService(\"window\").getCurrentImeTouchRegion();\n//获取当前输入法的显示(触摸)区域\n",
   "createdAt": "1766601996000",
   "updatedAt": "1766601996000",
   "tags": [

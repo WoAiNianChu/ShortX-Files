@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-1f3122d6-3beb-5ecf-b415-f24a7942bb1e",
   "name": "获取WiFi MAC地址",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取当前WiFi的MAC地址",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/194\n// 创建时间: 2025-11-27T22:49:51\n\nandroid.os.ServiceManager.getService(\"wifi\").getConnectionInfo(\"android\", null).getMacAddress();\n// 获取当前WiFi的MAC地址\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/194\n\nandroid.os.ServiceManager.getService(\"wifi\").getConnectionInfo(\"android\", null).getMacAddress();\n// 获取当前WiFi的MAC地址\n",
   "createdAt": "1764254991000",
   "updatedAt": "1764254991000",
   "tags": [

@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-bceb5643-19a3-5a37-9bf4-6652787432c5",
   "name": "获取当前位置",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取当前位置信息",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1588\n// 创建时间: 2026-01-14T21:00:25\n// 更新时间: 2026-01-15T06:31:50\n\n// 获取当前位置信息\n/*\n本实现采用 并行异步实时定位策略，同时向 GPS、Network、Fused 三种 Provider 请求 getCurrentLocation(实时定位），在总超时时间内按 预设优先级（GPS > Network > Fused） 选择最优结果；\n若实时定位全部失败或超时，则按相同顺序调用 getLastLocation(缓存位置，即最后一次已知位置) 作为兜底方案；\n在定位未开启的情况下临时启用定位，并在结束后恢复原系统状态。\n*/\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1588\n\n// 获取当前位置信息\n/*\n本实现采用 并行异步实时定位策略，同时向 GPS、Network、Fused 三种 Provider 请求 getCurrentLocation(实时定位），在总超时时间内按 预设优先级（GPS > Network > Fused） 选择最优结果；\n若实时定位全部失败或超时，则按相同顺序调用 getLastLocation(缓存位置，即最后一次已知位置) 作为兜底方案；\n在定位未开启的情况下临时启用定位，并在结束后恢复原系统状态。\n*/\n",
   "createdAt": "1768395625000",
   "updatedAt": "1768429910000",
   "tags": [

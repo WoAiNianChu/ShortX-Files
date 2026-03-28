@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-720aa695-2b3f-54d1-bfbb-2a2019ee843d",
   "name": "Color系统 听剧模式",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "Color系统的听剧模式 | 后台挂机",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/269\n// 创建时间: 2025-11-30T09:58:17\n// 更新时间: 2025-12-01T08:25:56\n\nIntent = android.content.Intent;\nComponentName = android.content.ComponentName;\n\nbgStreamIntent = new Intent();\nbgStreamIntent.setComponent(new ComponentName(\"com.oplus.exsystemservice\", \"com.oplus.backgroundstream.RouteForegroundService\"));\nbgStreamIntent.setAction(\"oplus.intent.action.BACKGROUND_STREAM_SERVICE\");\n\ncontext.startService(bgStreamIntent);\n// Color系统的听剧模式 | 后台挂机\n// Color16 不可用\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/269\n\nIntent = android.content.Intent;\nComponentName = android.content.ComponentName;\n\nbgStreamIntent = new Intent();\nbgStreamIntent.setComponent(new ComponentName(\"com.oplus.exsystemservice\", \"com.oplus.backgroundstream.RouteForegroundService\"));\nbgStreamIntent.setAction(\"oplus.intent.action.BACKGROUND_STREAM_SERVICE\");\n\ncontext.startService(bgStreamIntent);\n// Color系统的听剧模式 | 后台挂机\n// Color16 不可用\n",
   "createdAt": "1764467897000",
   "updatedAt": "1764548756000",
   "tags": [

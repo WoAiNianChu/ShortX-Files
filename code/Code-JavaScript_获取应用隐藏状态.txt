@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-ae8e561a-bfff-5ba2-b574-37ee305fea37",
   "name": "获取应用隐藏状态",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取隐藏指定用户的指定包名应用状态",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/69\n// 创建时间: 2025-11-27T11:54:06\n\nandroid.os.ServiceManager.getService(\"package\").getApplicationHiddenSettingAsUser(\"包名\", 0);\n// 获取隐藏指定用户的指定包名应用状态\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/69\n\nandroid.os.ServiceManager.getService(\"package\").getApplicationHiddenSettingAsUser(\"包名\", 0);\n// 获取隐藏指定用户的指定包名应用状态\n",
   "createdAt": "1764215646000",
   "updatedAt": "1764215646000",
   "tags": [

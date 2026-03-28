@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-f38d36e3-2781-59f5-a3c8-d338b5f30ada",
   "name": "蓝牙判断",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "判断蓝牙是否开启",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/33\n// 创建时间: 2025-11-27T00:15:50\n// 更新时间: 2025-11-29T03:37:17\n\nandroid.os.ServiceManager.getService(\"bluetooth_manager\").getState() == 12;\n// 判断蓝牙是否开启\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/33\n\nandroid.os.ServiceManager.getService(\"bluetooth_manager\").getState() == 12;\n// 判断蓝牙是否开启\n",
   "createdAt": "1764173750000",
   "updatedAt": "1764358637000",
   "tags": [

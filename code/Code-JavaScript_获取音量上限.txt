@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-2d6164ff-9ac2-52b0-985b-9a1f82978e99",
   "name": "获取音量上限",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取指定音量类型的上限",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/352\n// 创建时间: 2025-12-03T04:50:14\n// 更新时间: 2025-12-14T19:30:26\n\naudioManager = context.getSystemService(\"audio\");\naudio =android.os.ServiceManager.getService(\"audio\");\nfunction getVolumeInfo(context, streamType, targetVolume) {\n    currentVolume = audio.getStreamVolume(streamType);\n    maxVolume = audio.getStreamMaxVolume(streamType);\n    return maxVolume;\n}\n\ngetVolumeInfo(context, audioManager.STREAM_ALARM);\n// 获取指定音量类型的上限\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/352\n\naudioManager = context.getSystemService(\"audio\");\naudio =android.os.ServiceManager.getService(\"audio\");\nfunction getVolumeInfo(context, streamType, targetVolume) {\n    currentVolume = audio.getStreamVolume(streamType);\n    maxVolume = audio.getStreamMaxVolume(streamType);\n    return maxVolume;\n}\n\ngetVolumeInfo(context, audioManager.STREAM_ALARM);\n// 获取指定音量类型的上限\n",
   "createdAt": "1764708614000",
   "updatedAt": "1765711826000",
   "tags": [

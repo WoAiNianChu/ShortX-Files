@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-0d3a43e9-1ff4-521c-90aa-91b06aa1f5f4",
   "name": "设置锁屏密码",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "更改锁屏密码",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1586\n// 创建时间: 2026-01-14T19:52:05\n// 更新时间: 2026-01-14T20:05:25\n\n// 更改锁屏密码\n/*\n支持如下：\n • 无锁屏\n • 滑动解锁\n • 图案密码(3×3)\n • 数字密码\n • 混合密码\n*/\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1586\n\n// 更改锁屏密码\n/*\n支持如下：\n • 无锁屏\n • 滑动解锁\n • 图案密码(3×3)\n • 数字密码\n • 混合密码\n*/\n",
   "createdAt": "1768391525000",
   "updatedAt": "1768392325000",
   "tags": [

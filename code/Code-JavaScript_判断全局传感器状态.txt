@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-3409c8b1-6d71-50bc-a07a-aa677912fb17",
   "name": "判断全局传感器状态",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "全局传感器隐私是否开启,ShortX 已存在该条件",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/262\n// 创建时间: 2025-11-30T05:25:33\n// 更新时间: 2025-11-30T09:10:55\n\nandroid.os.ServiceManager.getService(\"sensor_privacy\").isSensorPrivacyEnabled();       \n// 全局传感器隐私是否开启,ShortX 已存在该条件\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/262\n\nandroid.os.ServiceManager.getService(\"sensor_privacy\").isSensorPrivacyEnabled();       \n// 全局传感器隐私是否开启,ShortX 已存在该条件\n",
   "createdAt": "1764451533000",
   "updatedAt": "1764465055000",
   "tags": [

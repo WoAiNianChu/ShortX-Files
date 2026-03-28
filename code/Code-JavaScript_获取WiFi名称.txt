@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-6785b61f-dca4-5917-a4a4-3d73ec3969a6",
   "name": "获取WiFi名称",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取当前WiFi的名称",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/189\n// 创建时间: 2025-11-27T22:13:55\n// 更新时间: 2025-11-27T22:19:29\n\nandroid.os.ServiceManager.getService(\"wifi\").getConnectionInfo(\"android\", null).getSSID();\n// 获取当前WiFi的名称\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/189\n\nandroid.os.ServiceManager.getService(\"wifi\").getConnectionInfo(\"android\", null).getSSID();\n// 获取当前WiFi的名称\n",
   "createdAt": "1764252835000",
   "updatedAt": "1764253169000",
   "tags": [

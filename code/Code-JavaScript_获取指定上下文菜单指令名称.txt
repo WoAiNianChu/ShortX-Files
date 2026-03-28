@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-b2b0b2e2-30a3-57a9-87ae-86bda3d24dbd",
   "name": "获取指定上下文菜单指令名称",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取上下文菜单配置指令名称",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1426\n// 创建时间: 2026-01-01T20:48:44\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getContextMenuSettingsByMenuNumber(0);\n// 获取上下文菜单配置指令名称\n// 参数为编号\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1426\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getContextMenuSettingsByMenuNumber(0);\n// 获取上下文菜单配置指令名称\n// 参数为编号\n",
   "createdAt": "1767271724000",
   "updatedAt": "1767271724000",
   "tags": [

@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-96350a72-7b1d-5f82-ae75-defc08b49bfc",
   "name": "阻止应用卸载",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "阻止指定用户指定包名的卸载",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/39\n// 创建时间: 2025-11-27T01:32:31\n// 更新时间: 2025-11-27T01:32:45\n\nandroid.os.ServiceManager.getService(\"package\").setBlockUninstallForUser(\"tornaco.apps.shortx\", true, 0)\n// 阻止指定用户指定包名的卸载\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/39\n\nandroid.os.ServiceManager.getService(\"package\").setBlockUninstallForUser(\"tornaco.apps.shortx\", true, 0)\n// 阻止指定用户指定包名的卸载\n",
   "createdAt": "1764178351000",
   "updatedAt": "1764178365000",
   "tags": [

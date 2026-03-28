@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-8471376e-10ac-5a0d-86f7-aaca642f690c",
   "name": "获取USB功能启用状态",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "检查USB功能是否启用（如adb、mtp）",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/183\n// 创建时间: 2025-11-27T20:53:50\n\nandroid.os.ServiceManager.getService(\"usb\").isFunctionEnabled(\"adb\");\n /*\nrndis → USB共享网络\nnone → 仅充电\nmtp → 文件传输\nptp → 图片传输\nadb → 设备调试\n*/\n// 检查USB功能是否启用（如adb、mtp）\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/183\n\nandroid.os.ServiceManager.getService(\"usb\").isFunctionEnabled(\"adb\");\n /*\nrndis → USB共享网络\nnone → 仅充电\nmtp → 文件传输\nptp → 图片传输\nadb → 设备调试\n*/\n// 检查USB功能是否启用（如adb、mtp）\n",
   "createdAt": "1764248030000",
   "updatedAt": "1764248030000",
   "tags": [

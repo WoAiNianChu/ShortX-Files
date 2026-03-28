@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-7574a8a1-911c-5362-ac97-33b4bf242a97",
   "name": "WiFi 扫描",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "触发WiFi扫描",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1676\n// 创建时间: 2026-01-26T19:31:25\n// 更新时间: 2026-01-27T18:26:21\n\ncontext.getSystemService(\"wifi\").startScan();  \n // 触发WiFi扫描\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1676\n\ncontext.getSystemService(\"wifi\").startScan();  \n // 触发WiFi扫描\n",
   "createdAt": "1769427085000",
   "updatedAt": "1769509581000",
   "tags": [

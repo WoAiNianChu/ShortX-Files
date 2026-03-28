@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-8dc7ecc8-004f-5dbd-9298-83f89f572431",
   "name": "设置滑动手势长度缩放比例",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "设置滑动手势长度缩放比例",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1462\n// 创建时间: 2026-01-01T20:50:00\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().setSwipeLengthScale(float);\n// 设置滑动手势长度缩放比例\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1462\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().setSwipeLengthScale(float);\n// 设置滑动手势长度缩放比例\n",
   "createdAt": "1767271800000",
   "updatedAt": "1767271800000",
   "tags": [

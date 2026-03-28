@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-7b3b080b-c1c6-5a96-82d0-e69d6fc1c12b",
   "name": "执行系统Shell命令",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "执行系统Shell命令",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1468\n// 创建时间: 2026-01-01T20:50:00\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().executeShellCommand(String, ICallback);\n// 执行系统Shell命令\n// 返回命令取消信号；参数1为完整Shell命令，参数2为命令执行回调\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1468\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().executeShellCommand(String, ICallback);\n// 执行系统Shell命令\n// 返回命令取消信号；参数1为完整Shell命令，参数2为命令执行回调\n",
   "createdAt": "1767271800000",
   "updatedAt": "1767271800000",
   "tags": [

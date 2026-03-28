@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-4338cfb9-69cc-5a52-a9be-d9c2a7b2471b",
   "name": "设置全局传感器(Sensors off)",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "设置禁用全局传感器 true=关闭传感器，false=开启所有",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/263\n// 创建时间: 2025-11-30T05:28:16\n// 更新时间: 2025-11-30T09:10:53\n\nandroid.os.ServiceManager.getService(\"sensor_privacy\").setSensorPrivacy(true);\n// 设置禁用全局传感器 true=关闭传感器，false=开启所有\n// ShortX已存在该动作\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/263\n\nandroid.os.ServiceManager.getService(\"sensor_privacy\").setSensorPrivacy(true);\n// 设置禁用全局传感器 true=关闭传感器，false=开启所有\n// ShortX已存在该动作\n",
   "createdAt": "1764451696000",
   "updatedAt": "1764465053000",
   "tags": [

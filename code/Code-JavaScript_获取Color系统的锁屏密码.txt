@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-90189887-f0c1-5564-8f86-32acd81f0b98",
   "name": "获取Color系统的锁屏密码",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取 Color 系统的锁屏密码，",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/268\n// 创建时间: 2025-11-30T09:34:19\n// 更新时间: 2025-11-30T09:48:38\n\nandroid.os.ServiceManager.getService(\"lock_settings\").getPassword();\n// 获取 Color 系统的锁屏密码，\n/* \n设置新密码后，需锁屏输入一次密码\nColor16 不可用\n*/\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/268\n\nandroid.os.ServiceManager.getService(\"lock_settings\").getPassword();\n// 获取 Color 系统的锁屏密码，\n/* \n设置新密码后，需锁屏输入一次密码\nColor16 不可用\n*/\n",
   "createdAt": "1764466459000",
   "updatedAt": "1764467318000",
   "tags": [

@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-cb0ba17f-74dd-5ce3-a27d-77892fdd3ef3",
   "name": "列表对话框 JSON格式",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "ShowListDialog Action",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/962\n// 创建时间: 2025-12-17T17:33:40\n// 更新时间: 2025-12-20T22:49:13\n\nimportPackage(Packages.tornaco.apps.shortx.core.proto.action);\nimportClass(Packages.tornaco.apps.shortx.core.proto.common.DialogUiStyleSettings);\n\nvar dataJson = `[\n    {\n        \"name\": \"Android\",\n        \"version\": 16,\n        \"__value\": \"android\",\n        \"__icon\": \"android-fill\"\n    }\n]`;\n\n// ShowListDialog Action\nvar action = ShowListDialog.newBuilder()\n    .setTitle(\"列表对话框\")\n    .setData(dataJson)\n    .setDataType(ShowListDialogDataType.ShowListDialogDataType_Json)\n    .setStyle(\n        DialogUiStyleSettings.newBuilder()\n            .setFontScale(1.0)\n            .build()\n    )\n    .setIsMultipleChoice(true)\n    // 显示底部确认按钮\n    .setNeedConfirmAction(true)\n    // 支持多选\n    .setCancelable(true)\n    // 是否可取消\n    .build();\n\nvar result = shortx.executeAction(action);\n\nresult.contextData.get(\"selectedListItem\");\n// 列表对话框JSON格式\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/962\n\nimportPackage(Packages.tornaco.apps.shortx.core.proto.action);\nimportClass(Packages.tornaco.apps.shortx.core.proto.common.DialogUiStyleSettings);\n\nvar dataJson = `[\n    {\n        \"name\": \"Android\",\n        \"version\": 16,\n        \"__value\": \"android\",\n        \"__icon\": \"android-fill\"\n    }\n]`;\n\n// ShowListDialog Action\nvar action = ShowListDialog.newBuilder()\n    .setTitle(\"列表对话框\")\n    .setData(dataJson)\n    .setDataType(ShowListDialogDataType.ShowListDialogDataType_Json)\n    .setStyle(\n        DialogUiStyleSettings.newBuilder()\n            .setFontScale(1.0)\n            .build()\n    )\n    .setIsMultipleChoice(true)\n    // 显示底部确认按钮\n    .setNeedConfirmAction(true)\n    // 支持多选\n    .setCancelable(true)\n    // 是否可取消\n    .build();\n\nvar result = shortx.executeAction(action);\n\nresult.contextData.get(\"selectedListItem\");\n// 列表对话框JSON格式\n",
   "createdAt": "1765964020000",
   "updatedAt": "1766242153000",
   "tags": [

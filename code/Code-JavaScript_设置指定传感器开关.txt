@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-c352a7fb-d517-589f-ba66-bfe3b7ee15ee",
   "name": "设置指定传感器开关",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "设置指定用户麦克风传感器使用权限",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/264\n// 创建时间: 2025-11-30T05:32:39\n// 更新时间: 2025-11-30T09:10:55\n\nandroid.os.ServiceManager.getService(\"sensor_privacy\").setToggleSensorPrivacy(0, 0, 1, true);\n// 设置指定用户麦克风传感器使用权限\n/*\n(userId, source, sensor, true);\n *   userId：一般为 0\n *   source：来源，填0即可\n *   sensor：1=麦克风、2=摄像头\n *   enable：true=启用隐私保护,关闭传感器\n *    false = 开启传感器\n */\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/264\n\nandroid.os.ServiceManager.getService(\"sensor_privacy\").setToggleSensorPrivacy(0, 0, 1, true);\n// 设置指定用户麦克风传感器使用权限\n/*\n(userId, source, sensor, true);\n *   userId：一般为 0\n *   source：来源，填0即可\n *   sensor：1=麦克风、2=摄像头\n *   enable：true=启用隐私保护,关闭传感器\n *    false = 开启传感器\n */\n",
   "createdAt": "1764451959000",
   "updatedAt": "1764465055000",
   "tags": [

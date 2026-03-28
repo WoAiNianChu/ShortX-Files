@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-ccb4fb42-0ad7-5509-ba70-414b09d6c248",
   "name": "获取HTTP请求日志内容",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取HTTP请求日志的ParcelFileDescriptor",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1489\n// 创建时间: 2026-01-02T00:59:31\n\nimportClass(Packages.tornaco.apps.shortx.core.OooO0O0);\nimportPackage(Packages.java.io);\nimportClass(Packages.java.nio.charset.Charset);\n\nvar iShortX = OooO0O0.OooO00o();\n\n// 获取HTTP请求日志的ParcelFileDescriptor\nvar Httplog = iShortX.getHttpRequestLogFD();\n\n// 获取底层的FileDescriptor\nvar fileDescriptor = Httplog.getFileDescriptor();\n// 创建FileInputStream来读取FileDescriptor\nvar fileInputStream = new FileInputStream(fileDescriptor);\n// 创建Java字节数组（byte[]）\nvar buffer = new java.lang.reflect.Array.newInstance(Packages.java.lang.Byte.TYPE, 1024);\n// 读取数据\nvar bytesRead = fileInputStream.read(buffer);\n// 将字节数组转换为字符串输出\nvar logContent = \"\";\nif (bytesRead > 0) {\n    logContent = new java.lang.String(buffer, 0, bytesRead, Charset.forName(\"UTF-8\"));\n}\nlogContent;\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1489\n\nimportClass(Packages.tornaco.apps.shortx.core.OooO0O0);\nimportPackage(Packages.java.io);\nimportClass(Packages.java.nio.charset.Charset);\n\nvar iShortX = OooO0O0.OooO00o();\n\n// 获取HTTP请求日志的ParcelFileDescriptor\nvar Httplog = iShortX.getHttpRequestLogFD();\n\n// 获取底层的FileDescriptor\nvar fileDescriptor = Httplog.getFileDescriptor();\n// 创建FileInputStream来读取FileDescriptor\nvar fileInputStream = new FileInputStream(fileDescriptor);\n// 创建Java字节数组（byte[]）\nvar buffer = new java.lang.reflect.Array.newInstance(Packages.java.lang.Byte.TYPE, 1024);\n// 读取数据\nvar bytesRead = fileInputStream.read(buffer);\n// 将字节数组转换为字符串输出\nvar logContent = \"\";\nif (bytesRead > 0) {\n    logContent = new java.lang.String(buffer, 0, bytesRead, Charset.forName(\"UTF-8\"));\n}\nlogContent;\n",
   "createdAt": "1767286771000",
   "updatedAt": "1767286771000",
   "tags": [

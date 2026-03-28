@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-01f78d95-10bc-5721-a33b-b07d377f51cb",
   "name": "显示屏刷新率显示管理",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "显示屏刷新率显示管理",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/403\n// 创建时间: 2025-12-06T12:27:40\n// 更新时间: 2025-12-14T19:30:24\n\n/*\n * 显示刷新率开关控制函数\n *     0 = 关闭\n *     1 = 开启  \n *     2 = 查询当前状态（返回 true/false）\n *     3 = 切换（打开→关 / 关→开）\n */\nfunction showRefreshRate(mode) {\n    sf = android.os.ServiceManager.getService(\"SurfaceFlinger\");\n\n    function call(flag, needReply) {\n        data = android.os.Parcel.obtain();\n        reply = needReply ? android.os.Parcel.obtain() : null;\n        data.writeInterfaceToken(\"android.ui.ISurfaceComposer\");\n        data.writeInt(flag);\n        sf.transact(1034, data, reply, 0);\n        return reply;\n    }\n\n    if (mode == 3) {\n        current = call(2, true).readBoolean();\n        call(current ? 0 : 1, false);\n        return !current;\n    }\n\n    // mode: 0=关 1=开 2=查\n    if (mode == 2) {\n        return call(2, true).readBoolean();\n    } else {\n        call(mode, false);\n        return mode == 1;\n    }\n}\n\n// 切换显示屏刷新率显示开关\nshowRefreshRate(3);\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/403\n\n/*\n * 显示刷新率开关控制函数\n *     0 = 关闭\n *     1 = 开启  \n *     2 = 查询当前状态（返回 true/false）\n *     3 = 切换（打开→关 / 关→开）\n */\nfunction showRefreshRate(mode) {\n    sf = android.os.ServiceManager.getService(\"SurfaceFlinger\");\n\n    function call(flag, needReply) {\n        data = android.os.Parcel.obtain();\n        reply = needReply ? android.os.Parcel.obtain() : null;\n        data.writeInterfaceToken(\"android.ui.ISurfaceComposer\");\n        data.writeInt(flag);\n        sf.transact(1034, data, reply, 0);\n        return reply;\n    }\n\n    if (mode == 3) {\n        current = call(2, true).readBoolean();\n        call(current ? 0 : 1, false);\n        return !current;\n    }\n\n    // mode: 0=关 1=开 2=查\n    if (mode == 2) {\n        return call(2, true).readBoolean();\n    } else {\n        call(mode, false);\n        return mode == 1;\n    }\n}\n\n// 切换显示屏刷新率显示开关\nshowRefreshRate(3);\n",
   "createdAt": "1764995260000",
   "updatedAt": "1765711824000",
   "tags": [

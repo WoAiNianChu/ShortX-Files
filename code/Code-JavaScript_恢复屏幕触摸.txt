@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-0a8e8c31-5e6f-58a1-894d-b0b7d2323fdb",
   "name": "恢复屏幕触摸",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "设置启用屏幕触摸",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/222\n// 创建时间: 2025-11-29T01:01:30\n\nInputDevice = android.view.InputDevice;\n\ninputManager = android.os.ServiceManager.getService(\"input\");\n\ndeviceIds = inputManager.getInputDeviceIds();\n\ntouchDeviceId = -1;\n\nfor (i = 0; i < deviceIds.length; i++) {\n    id = deviceIds[i];\n    sources = inputManager.getInputDevice(id).getSources();\n    if ((sources & InputDevice.SOURCE_TOUCHSCREEN) == InputDevice.SOURCE_TOUCHSCREEN) {\n        touchDeviceId = id;\n    }\n}\n\ninputManager.enableInputDevice(touchDeviceId);\n// 设置启用屏幕触摸\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/222\n\nInputDevice = android.view.InputDevice;\n\ninputManager = android.os.ServiceManager.getService(\"input\");\n\ndeviceIds = inputManager.getInputDeviceIds();\n\ntouchDeviceId = -1;\n\nfor (i = 0; i < deviceIds.length; i++) {\n    id = deviceIds[i];\n    sources = inputManager.getInputDevice(id).getSources();\n    if ((sources & InputDevice.SOURCE_TOUCHSCREEN) == InputDevice.SOURCE_TOUCHSCREEN) {\n        touchDeviceId = id;\n    }\n}\n\ninputManager.enableInputDevice(touchDeviceId);\n// 设置启用屏幕触摸\n",
   "createdAt": "1764349290000",
   "updatedAt": "1764349290000",
   "tags": [

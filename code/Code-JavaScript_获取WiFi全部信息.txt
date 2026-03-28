@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-af1bf603-4df9-5785-840d-8cd3b2bbd766",
   "name": "获取WiFi全部信息",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取当前WiFi 全部信息",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/196\n// 创建时间: 2025-11-27T22:49:51\n\nandroid.os.ServiceManager.getService(\"wifi\").getConnectionInfo(\"android\", null);\n// 获取当前WiFi 全部信息\n// 我就不一个一个弄了，有些我自己也不需要\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/196\n\nandroid.os.ServiceManager.getService(\"wifi\").getConnectionInfo(\"android\", null);\n// 获取当前WiFi 全部信息\n// 我就不一个一个弄了，有些我自己也不需要\n",
   "createdAt": "1764254991000",
   "updatedAt": "1764254991000",
   "tags": [

@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-b3691de8-3f50-5320-9569-10ec4d5ea713",
   "name": "新增应用集",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "新增应用集",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1412\n// 创建时间: 2026-01-01T20:48:44\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().addPkgSet(ByteArrayWrapper);\n// 新增应用集\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1412\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().addPkgSet(ByteArrayWrapper);\n// 新增应用集\n",
   "createdAt": "1767271724000",
   "updatedAt": "1767271724000",
   "tags": [

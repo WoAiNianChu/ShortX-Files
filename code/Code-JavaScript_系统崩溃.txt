@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-efe02e6e-a0a6-5cef-bb60-a4cec7f3701c",
   "name": "系统崩溃",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "引发设备崩溃",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1110\n// 创建时间: 2025-12-23T09:43:15\n\nandroid.os.ServiceManager.getService(\"power\").crash(null);\n// 引发设备崩溃\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1110\n\nandroid.os.ServiceManager.getService(\"power\").crash(null);\n// 引发设备崩溃\n",
   "createdAt": "1766454195000",
   "updatedAt": "1766454195000",
   "tags": [

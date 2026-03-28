@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-5dd863e3-0a87-5510-9939-6831c231740a",
   "name": "解锁(尝试解锁)",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "其实就是Xposed Edge中的解锁动作",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1563\n// 创建时间: 2026-01-12T21:57:31\n// 更新时间: 2026-01-15T06:32:02\n\nandroid.os.ServiceManager.getService(\"window\").dismissKeyguard(null, null);\n// 其实就是Xposed Edge中的解锁动作\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1563\n\nandroid.os.ServiceManager.getService(\"window\").dismissKeyguard(null, null);\n// 其实就是Xposed Edge中的解锁动作\n",
   "createdAt": "1768226251000",
   "updatedAt": "1768429922000",
   "tags": [

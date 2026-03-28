@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-d1794090-2d64-5ab0-a97c-448f1d244f90",
   "name": "获取应用冻结状态",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取指定用户指定包名的冻结状态",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/73\n// 创建时间: 2025-11-27T12:07:29\n// 更新时间: 2025-11-27T12:37:50\n\nandroid.os.ServiceManager.getService(\"package\").isPackageAvailable(\"包名\", 0)\n// 获取指定用户指定包名的冻结状态\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/73\n\nandroid.os.ServiceManager.getService(\"package\").isPackageAvailable(\"包名\", 0)\n// 获取指定用户指定包名的冻结状态\n",
   "createdAt": "1764216449000",
   "updatedAt": "1764218270000",
   "tags": [

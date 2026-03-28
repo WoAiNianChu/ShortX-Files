@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-895e9f9d-c9db-5d82-82cc-93b6c0ea07a9",
   "name": "设置指定显示屏的窗口模式",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "该命令有点问题，暂时不要运行。",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1176\n// 创建时间: 2025-12-25T00:36:23\n// 更新时间: 2025-12-25T02:38:55\n\nandroid.os.ServiceManager.getService(\"window\").setWindowingMode(0, 5);\n// 该命令有点问题，暂时不要运行。\n// 设置指定显示屏为小窗\n\n// (int displayId, int mode)\n/* 小窗模式\nColor →  100\n默认  →  5\n/*\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1176\n\nandroid.os.ServiceManager.getService(\"window\").setWindowingMode(0, 5);\n// 该命令有点问题，暂时不要运行。\n// 设置指定显示屏为小窗\n\n// (int displayId, int mode)\n/* 小窗模式\nColor →  100\n默认  →  5\n/*\n",
   "createdAt": "1766594183000",
   "updatedAt": "1766601535000",
   "tags": [

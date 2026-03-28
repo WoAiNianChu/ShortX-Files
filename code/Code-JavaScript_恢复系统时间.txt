@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-43b95715-7409-5cbb-925b-27ca0355c277",
   "name": "恢复系统时间",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "设置恢复系统时间",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/301\n// 创建时间: 2025-12-01T22:35:35\n// 更新时间: 2025-12-02T06:11:45\n\nSettings = android.provider.Settings;\nSettings.Global.putString(context.getContentResolver(), 'auto_time', 0);\nSettings.Global.putString(context.getContentResolver(), 'auto_time', 1);\n// 设置恢复系统时间\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/301\n\nSettings = android.provider.Settings;\nSettings.Global.putString(context.getContentResolver(), 'auto_time', 0);\nSettings.Global.putString(context.getContentResolver(), 'auto_time', 1);\n// 设置恢复系统时间\n",
   "createdAt": "1764599735000",
   "updatedAt": "1764627105000",
   "tags": [

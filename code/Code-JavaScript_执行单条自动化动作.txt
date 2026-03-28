@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-509bae74-d0e7-5212-872f-8028a96731cf",
   "name": "执行单条自动化动作",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "阻塞式(同步)执行单条自动动作（完成后再执行后续操作）",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1472\n// 创建时间: 2026-01-01T20:50:00\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().executeActionBlocking(ByteArrayWrapper, ByteArrayWrapper);\n// 阻塞式(同步)执行单条自动动作（完成后再执行后续操作）\n// 参数1为动作配置，参数2为上下文数据\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1472\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().executeActionBlocking(ByteArrayWrapper, ByteArrayWrapper);\n// 阻塞式(同步)执行单条自动动作（完成后再执行后续操作）\n// 参数1为动作配置，参数2为上下文数据\n",
   "createdAt": "1767271800000",
   "updatedAt": "1767271800000",
   "tags": [

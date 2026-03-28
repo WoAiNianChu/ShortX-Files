@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-fc6d2b4f-e05d-5bf7-afba-e4a262dbcc97",
   "name": "固定前台应用",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "固定前台应用",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1066\n// 创建时间: 2025-12-21T02:47:18\n// 更新时间: 2025-12-21T07:40:51\n\nandroid.os.ServiceManager.getService(\"activity_task\").startSystemLockTaskMode((android.os.ServiceManager.getService(\"activity_task\")).getTasks(1)[0].taskId);\n// 固定前台应用\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1066\n\nandroid.os.ServiceManager.getService(\"activity_task\").startSystemLockTaskMode((android.os.ServiceManager.getService(\"activity_task\")).getTasks(1)[0].taskId);\n// 固定前台应用\n",
   "createdAt": "1766256438000",
   "updatedAt": "1766274051000",
   "tags": [

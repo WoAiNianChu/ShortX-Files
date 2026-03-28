@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-296b3a11-c7a9-5416-9484-7b3c4c23c7ae",
   "name": "高德地图步行导航",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "lat - 纬度",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/271\n// 创建时间: 2025-12-01T02:49:58\n// 更新时间: 2025-12-01T08:25:57\n\nIntent = android.content.Intent;\nUserHandle = android.os.UserHandle;\n\nlat = 39.909187;\n// lat - 纬度\nlon = 116.397463;\n// lon - 经度\n\nmyIntent = Intent.parseUri('amapuri://openFeature?featureName=OnFootNavi&sourceApplication=null&lat=' + lat +'&lon=' + lon, 0);\n\nmyIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\n// 指定用户启动\nuserHandle = UserHandle.of(0);\n\ncontext.startActivityAsUser(myIntent, userHandle);\n\n// 坐标拾取器 https://lbs.amap.com/tools/picker\n// 指定用户高德地图 步行导航\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/271\n\nIntent = android.content.Intent;\nUserHandle = android.os.UserHandle;\n\nlat = 39.909187;\n// lat - 纬度\nlon = 116.397463;\n// lon - 经度\n\nmyIntent = Intent.parseUri('amapuri://openFeature?featureName=OnFootNavi&sourceApplication=null&lat=' + lat +'&lon=' + lon, 0);\n\nmyIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\n// 指定用户启动\nuserHandle = UserHandle.of(0);\n\ncontext.startActivityAsUser(myIntent, userHandle);\n\n// 坐标拾取器 https://lbs.amap.com/tools/picker\n// 指定用户高德地图 步行导航\n",
   "createdAt": "1764528598000",
   "updatedAt": "1764548757000",
   "tags": [

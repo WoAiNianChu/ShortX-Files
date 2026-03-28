@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-dda0b6ed-40c4-515e-a515-b0c2c6b8da5d",
   "name": "以太网络共享",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "通过以太网共享手机的网络连接",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/932\n// 创建时间: 2025-12-16T23:24:31\n// 更新时间: 2025-12-20T22:49:10\n\nandroid.os.ServiceManager.getService(\"ethernet\").setEthernetEnabled(true);\n// false 关闭\n// 通过以太网共享手机的网络连接\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/932\n\nandroid.os.ServiceManager.getService(\"ethernet\").setEthernetEnabled(true);\n// false 关闭\n// 通过以太网共享手机的网络连接\n",
   "createdAt": "1765898671000",
   "updatedAt": "1766242150000",
   "tags": [

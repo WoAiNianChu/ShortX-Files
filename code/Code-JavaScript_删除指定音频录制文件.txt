@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-df01c8a5-d948-58fa-93e3-2e1076d2328a",
   "name": "删除指定音频录制文件",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "删除指定音频录制文件",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1395\n// 创建时间: 2026-01-01T20:48:44\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().deleteAudioRecordFile(ByteArrayWrapper);\n// 删除指定音频录制文件\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1395\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().deleteAudioRecordFile(ByteArrayWrapper);\n// 删除指定音频录制文件\n",
   "createdAt": "1767271724000",
   "updatedAt": "1767271724000",
   "tags": [

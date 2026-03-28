@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-48a88a3c-3df9-5845-b533-4e75d418d10f",
   "name": "清除应用全部数据",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "清除指定用户的指定包名的全部数据",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/41\n// 创建时间: 2025-11-27T01:34:46\n// 更新时间: 2025-11-27T01:39:25\n\nandroid.os.ServiceManager.getService(\"package\").clearApplicationUserData(\"包名\", null, 0)\n// 清除指定用户的指定包名的全部数据\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/41\n\nandroid.os.ServiceManager.getService(\"package\").clearApplicationUserData(\"包名\", null, 0)\n// 清除指定用户的指定包名的全部数据\n",
   "createdAt": "1764178486000",
   "updatedAt": "1764178765000",
   "tags": [

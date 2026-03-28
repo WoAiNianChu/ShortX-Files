@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-1db4959b-d79a-5f7b-a622-308ea9ddfcb6",
   "name": "NFC判断",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "判断NFC是否开启",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/220\n// 创建时间: 2025-11-29T00:59:52\n// 更新时间: 2025-11-29T03:39:56\n\nandroid.nfc.INfcAdapter.Stub.asInterface(android.os.ServiceManager.getService(\"nfc\")).getState() == 3;\n// 判断NFC是否开启\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/220\n\nandroid.nfc.INfcAdapter.Stub.asInterface(android.os.ServiceManager.getService(\"nfc\")).getState() == 3;\n// 判断NFC是否开启\n",
   "createdAt": "1764349192000",
   "updatedAt": "1764358796000",
   "tags": [

@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-b3e3a550-7674-5684-ae37-209434383bc9",
   "name": "关机",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "关机",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/48\n// 创建时间: 2025-11-27T03:22:51\n// 更新时间: 2025-12-23T09:39:54\n\nandroid.os.ServiceManager.getService(\"power\").shutdown(false, null, true);\n// 关机\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/48\n\nandroid.os.ServiceManager.getService(\"power\").shutdown(false, null, true);\n// 关机\n",
   "createdAt": "1764184971000",
   "updatedAt": "1766453994000",
   "tags": [

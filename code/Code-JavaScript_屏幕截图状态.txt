@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-650fc9e4-af54-5a3b-afe4-eec6dd964e53",
   "name": "屏幕截图状态",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "判断屏幕截图是否禁用",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/36\n// 创建时间: 2025-11-27T00:53:47\n\nandroid.os.ServiceManager.getService(\"device_policy\").getScreenCaptureDisabled(null, 0, false);\n// 判断屏幕截图是否禁用\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/36\n\nandroid.os.ServiceManager.getService(\"device_policy\").getScreenCaptureDisabled(null, 0, false);\n// 判断屏幕截图是否禁用\n",
   "createdAt": "1764176027000",
   "updatedAt": "1764176027000",
   "tags": [

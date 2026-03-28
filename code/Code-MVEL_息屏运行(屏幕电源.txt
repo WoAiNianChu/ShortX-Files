@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-92e194b2-d7d9-505c-b11d-21ca268d5fda",
   "name": "息屏运行(屏幕电源",
-  "description": "来自 TG 聊天记录的 MVEL 示例",
+  "description": "仅对主显示设备生效",
   "type": "CodeType_MVEL",
-  "content": "// 来源: https://t.me/c/3073722829/89/1266\n// 创建时间: 2025-12-26T02:21:58\n\n// 仅对主显示设备生效\nBuild = android.os.Build;\nSurfaceControl = android.view.SurfaceControl;\nDisplayControl = com.android.server.display.DisplayControl;\n\ndisplayMode = 0;  // 直接设置电源模式  2: 开启, 0: 关闭\n\nif (Build.VERSION.SDK_INT < 34) { \n    surfaceControl = new SurfaceControl();\n\n    displayToken = (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) ?\n        surfaceControl.getBuiltInDisplay(0) : SurfaceControl.getInternalDisplayToken();\n\n    SurfaceControl.setDisplayPowerMode(displayToken, displayMode);\n\n} else {\n    displayToken = DisplayControl.getPhysicalDisplayToken(DisplayControl.getPhysicalDisplayIds()[0]);\n\n        SurfaceControl.setDisplayPowerMode(displayToken, displayMode);\n}\n// Extinguish 息屏挂机 息屏运行 听剧模式 仅关屏 息屏不锁屏 息屏不锁屏 游戏挂机 开屏伪装FakeSceen\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1266\n\n// 仅对主显示设备生效\nBuild = android.os.Build;\nSurfaceControl = android.view.SurfaceControl;\nDisplayControl = com.android.server.display.DisplayControl;\n\ndisplayMode = 0;  // 直接设置电源模式  2: 开启, 0: 关闭\n\nif (Build.VERSION.SDK_INT < 34) { \n    surfaceControl = new SurfaceControl();\n\n    displayToken = (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) ?\n        surfaceControl.getBuiltInDisplay(0) : SurfaceControl.getInternalDisplayToken();\n\n    SurfaceControl.setDisplayPowerMode(displayToken, displayMode);\n\n} else {\n    displayToken = DisplayControl.getPhysicalDisplayToken(DisplayControl.getPhysicalDisplayIds()[0]);\n\n        SurfaceControl.setDisplayPowerMode(displayToken, displayMode);\n}\n// Extinguish 息屏挂机 息屏运行 听剧模式 仅关屏 息屏不锁屏 息屏不锁屏 游戏挂机 开屏伪装FakeSceen\n",
   "createdAt": "1766686918000",
   "updatedAt": "1766686918000",
   "tags": [

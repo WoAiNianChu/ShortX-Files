@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-1d45d454-3b5e-5a2e-b754-0979008fbfe4",
   "name": "夜间模式判断",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "android.os.ServiceManager.getService(\"uimode\").getNightMode() == 2;",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1072\n// 创建时间: 2025-12-21T03:32:13\n// 更新时间: 2025-12-27T07:43:12\n\n(context.getResources().getConfiguration().uiMode & 48) == 32;\n\n//android.os.ServiceManager.getService(\"uimode\").getNightMode() == 2;\n\n// \n((android.os.ServiceManager.getService(\"activity\").getConfiguration()).uiMode & 48) == 32;\n\n// 三种方式\n// 深色主题(夜间模式)判断\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1072\n\n(context.getResources().getConfiguration().uiMode & 48) == 32;\n\n//android.os.ServiceManager.getService(\"uimode\").getNightMode() == 2;\n\n// \n((android.os.ServiceManager.getService(\"activity\").getConfiguration()).uiMode & 48) == 32;\n\n// 三种方式\n// 深色主题(夜间模式)判断\n",
   "createdAt": "1766259133000",
   "updatedAt": "1766792592000",
   "tags": [

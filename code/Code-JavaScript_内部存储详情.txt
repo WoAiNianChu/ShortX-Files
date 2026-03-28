@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-3ac0c8d2-5610-57fe-a43c-f55d03d0c243",
   "name": "内部存储详情",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "内部存储详情",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1070\n// 创建时间: 2025-12-21T03:18:02\n// 更新时间: 2025-12-21T07:40:56\n\n// 内部存储详情\nStatFs = android.os.StatFs;\nstat = new StatFs(\"/data\");\n\ntotalGB = stat.getTotalBytes() / 1024.0 / 1024 / 1024;\navailGB = stat.getAvailableBytes() / 1024.0 / 1024 / 1024;\n\nusedGB = totalGB - availGB;\nusedPercent  = (usedGB  / totalGB) * 100;\navailPercent = (availGB / totalGB) * 100;\n\n\"总存储: \" + (Math.floor(totalGB * 100) / 100) + \" GB\\n\" +\n\"已用存储: \" + (Math.floor(usedGB * 100) / 100) + \" GB\\n\" +\n\"可用存储: \" + (Math.floor(availGB * 100) / 100) + \" GB\\n\" +\n\"已用比例: \" + (Math.floor(usedPercent * 100) / 100) + \" %\\n\" +\n\"可用比例: \" + (Math.floor(availPercent * 100) / 100) + \" %\";\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1070\n\n// 内部存储详情\nStatFs = android.os.StatFs;\nstat = new StatFs(\"/data\");\n\ntotalGB = stat.getTotalBytes() / 1024.0 / 1024 / 1024;\navailGB = stat.getAvailableBytes() / 1024.0 / 1024 / 1024;\n\nusedGB = totalGB - availGB;\nusedPercent  = (usedGB  / totalGB) * 100;\navailPercent = (availGB / totalGB) * 100;\n\n\"总存储: \" + (Math.floor(totalGB * 100) / 100) + \" GB\\n\" +\n\"已用存储: \" + (Math.floor(usedGB * 100) / 100) + \" GB\\n\" +\n\"可用存储: \" + (Math.floor(availGB * 100) / 100) + \" GB\\n\" +\n\"已用比例: \" + (Math.floor(usedPercent * 100) / 100) + \" %\\n\" +\n\"可用比例: \" + (Math.floor(availPercent * 100) / 100) + \" %\";\n",
   "createdAt": "1766258282000",
   "updatedAt": "1766274056000",
   "tags": [

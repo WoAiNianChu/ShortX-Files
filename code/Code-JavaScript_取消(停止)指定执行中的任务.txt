@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-8ec8b85e-e7ac-5240-8a17-7e1463dadb23",
   "name": "取消(停止)指定执行中的任务",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "取消(停止)指定执行中的任务",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1465\n// 创建时间: 2026-01-01T20:50:00\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().cancelJobs(List);\n// 取消(停止)指定执行中的任务\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1465\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().cancelJobs(List);\n// 取消(停止)指定执行中的任务\n",
   "createdAt": "1767271800000",
   "updatedAt": "1767271800000",
   "tags": [

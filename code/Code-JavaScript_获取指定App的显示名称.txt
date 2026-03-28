@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-d49ea6eb-38a8-5378-af18-6e03e75c0110",
   "name": "获取指定App的显示名称",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取指定App的显示名称",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1423\n// 创建时间: 2026-01-01T20:48:44\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getAppLabel(ByteArrayWrapper);\n// 获取指定App的显示名称\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1423\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getAppLabel(ByteArrayWrapper);\n// 获取指定App的显示名称\n",
   "createdAt": "1767271724000",
   "updatedAt": "1767271724000",
   "tags": [

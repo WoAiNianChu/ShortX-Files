@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-4378944f-c910-5e91-b386-592fd395c8a0",
   "name": "收起所有面板",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "包括通知与快捷设置面板",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1102\n// 创建时间: 2025-12-22T22:16:31\n// 更新时间: 2025-12-22T22:17:26\n\nandroid.os.ServiceManager.getService(\"statusbar\").collapsePanels();\n// 包括通知与快捷设置面板\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1102\n\nandroid.os.ServiceManager.getService(\"statusbar\").collapsePanels();\n// 包括通知与快捷设置面板\n",
   "createdAt": "1766412991000",
   "updatedAt": "1766413046000",
   "tags": [

@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-0aa8d2c5-cefa-5e23-a2b0-33f65aec4f66",
   "name": "删除指定动态快捷方式",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "从指定App中移除指定ID的动态快捷方式",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1542\n// 创建时间: 2026-01-06T23:59:04\n// 更新时间: 2026-01-15T06:32:13\n\nandroid.os.ServiceManager.getService(\"shortcut\").removeDynamicShortcuts(\"tornaco.apps.shortx\", [\"shortcut_00001\"], 0);\n// 从指定App中移除指定ID的动态快捷方式\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1542\n\nandroid.os.ServiceManager.getService(\"shortcut\").removeDynamicShortcuts(\"tornaco.apps.shortx\", [\"shortcut_00001\"], 0);\n// 从指定App中移除指定ID的动态快捷方式\n",
   "createdAt": "1767715144000",
   "updatedAt": "1768429933000",
   "tags": [

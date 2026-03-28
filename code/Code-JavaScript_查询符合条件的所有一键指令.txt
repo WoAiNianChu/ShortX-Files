@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-8a09069f-7191-5cf8-a6e6-25f0d2ef6353",
   "name": "查询符合条件的所有一键指令",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "查询符合条件的所有一键指令",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1381\n// 创建时间: 2026-01-01T20:48:43\n// 更新时间: 2026-01-01T20:54:47\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getAllDirectAction(int, int);\n// 查询符合条件的所有一键指令\n// 猜测参数1为分类ID（0=全部、1=系统、2=自定义），参数2为状态（0=全部、1=启用、2=禁用）\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1381\n\nPackages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getAllDirectAction(int, int);\n// 查询符合条件的所有一键指令\n// 猜测参数1为分类ID（0=全部、1=系统、2=自定义），参数2为状态（0=全部、1=启用、2=禁用）\n",
   "createdAt": "1767271723000",
   "updatedAt": "1767272087000",
   "tags": [

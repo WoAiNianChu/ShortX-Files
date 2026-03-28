@@ -1,9 +1,9 @@
 {
   "id": "CODELIB-fecc49b8-73e1-59b2-bbc6-bb6e615bbb3b",
   "name": "获取ShortX根目录",
-  "description": "来自 TG 聊天记录的 JavaScript 示例",
+  "description": "获取ShortX根目录",
   "type": "CodeType_JAVASCRIPT",
-  "content": "// 来源: https://t.me/c/3073722829/89/1353\n// 创建时间: 2026-01-01T20:48:43\n\nnew java.io.File(Packages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getLogDir()).getParentFile().getAbsolutePath();\n// 获取ShortX根目录\n",
+  "content": "// 来源: https://t.me/c/3073722829/89/1353\n\nnew java.io.File(Packages.tornaco.apps.shortx.core.OooO0O0.OooO00o().getLogDir()).getParentFile().getAbsolutePath();\n// 获取ShortX根目录\n",
   "createdAt": "1767271723000",
   "updatedAt": "1767271723000",
   "tags": [
