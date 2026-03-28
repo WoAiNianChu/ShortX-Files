@@ -13,6 +13,14 @@
       "id": "F-57f628e2-096c-4446-ad10-4c3b6ae8127d"
     }
   ],
+  "conditions": [
+    {
+      "@type": "type.googleapis.com/MatchMVEL",
+      "expression": "import android.app.ActivityManager;\nimport android.content.ComponentName;\nimport android.content.Context;\nimport java.util.List;\n\n// 获取 ActivityManager 实例\nActivityManager activityManager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);\n\n// 获取正在运行的任务列表，参数为 1 表示只获取一个任务（即当前最前端的任务）\nList runningTasks = activityManager.getRunningTasks(1);\n\n// 如果任务列表为空\nif (runningTasks.isEmpty()) {\n    return \"任务列表为空，无法获取当前运行任务的活动名称\";\n} else {\n    // 获取栈顶活动的组件名称\n    ComponentName topActivity = runningTasks.get(0).topActivity;\n\n    // 如果栈顶活动为空\n    if (topActivity == null) {\n        return \"栈顶活动为空，无法获取当前运行任务的活动名称\";\n    } else {\n        // 获取完整类名\n        String fullClassName = topActivity.getClassName();\n        \n        // 获取包名\n        String packageName = topActivity.getPackageName();\n        \n        // 在包名后面加上横杠\n        String componentName = packageName + \"/.\" + fullClassName.substring(packageName.length() + 1);\n        \n        // 返回组件名称\n    }\n}\ncomponentName != 'tornaco.apps.shortx/.ui.main.MainActivity';",
+      "customContextDataKey": {},
+      "id": "C-6f7a3797-c155-4fbe-aa68-f50a935e9558"
+    }
+  ],
   "actions": [
     {
       "@type": "type.googleapis.com/ShowOverlayButton",
@@ -34,7 +42,7 @@
                   "actions": [
                     {
                       "@type": "type.googleapis.com/InputText",
-                      "text": "argOf$phone",
+                      "text": "globalVarOf$phone",
                       "customContextDataKey": {},
                       "id": "A-dc25d60a-ee0c-4435-843a-9fc0db6a829a"
                     },
@@ -61,7 +69,7 @@
                   "actions": [
                     {
                       "@type": "type.googleapis.com/InputText",
-                      "text": "argOf$Mail",
+                      "text": "globalVarOf$Mail",
                       "customContextDataKey": {},
                       "id": "A-dc25d60a-ee0c-4435-843a-9fc0db6a829a"
                     },
@@ -88,7 +96,7 @@
                   "actions": [
                     {
                       "@type": "type.googleapis.com/InputText",
-                      "text": "argOf$ID number",
+                      "text": "globalVarOf$ID number",
                       "customContextDataKey": {},
                       "id": "A-f7116fc6-5644-4a38-aebd-32f2acac90e9"
                     },
@@ -115,7 +123,7 @@
                   "actions": [
                     {
                       "@type": "type.googleapis.com/InputText",
-                      "text": "argOf$QQ",
+                      "text": "globalVarOf$QQ",
                       "customContextDataKey": {},
                       "id": "A-dc25d60a-ee0c-4435-843a-9fc0db6a829a"
                     },
@@ -139,7 +147,7 @@
                   "longClickActions": [
                     {
                       "@type": "type.googleapis.com/InputText",
-                      "text": "argOf$WeChat",
+                      "text": "globalVarOf$WeChat",
                       "customContextDataKey": {},
                       "id": "A-dc25d60a-ee0c-4435-843a-9fc0db6a829a"
                     },
@@ -387,15 +395,137 @@
     }
   ],
   "id": "rule-cf801b7e-c7ab-4bcf-bb7b-0265a155d513",
-  "lastUpdateTime": "1732029456085",
+  "lastUpdateTime": "1709856411654",
   "createTime": "1709771107788",
   "author": {
     "name": "HeWei"
   },
-  "title": "输入法助手(1.7",
-  "description": "例:复制/粘贴\n单击复制，长按粘贴\n请去指令参数填写信息",
+  "title": "输入法助手(1.6",
+  "description": "例:复制/粘贴\n单击复制，长按粘贴",
   "isEnabled": true,
-  "hook": {},
+  "hook": {
+    "actionsOnEnabled": [
+      {
+        "@type": "type.googleapis.com/CreateGlobalVar",
+        "globalVar": {
+          "name": "phone",
+          "type": {
+            "@type": "type.googleapis.com/StringVar"
+          },
+          "isSecret": true
+        },
+        "customContextDataKey": {},
+        "id": "A-71d6f583-4b3d-4299-a7d2-fca35986358e"
+      },
+      {
+        "@type": "type.googleapis.com/CreateGlobalVar",
+        "globalVar": {
+          "name": "Mail",
+          "type": {
+            "@type": "type.googleapis.com/StringVar"
+          },
+          "isSecret": true
+        },
+        "customContextDataKey": {},
+        "id": "A-2cebb7b0-68eb-49a6-b6fa-d03d114c5785"
+      },
+      {
+        "@type": "type.googleapis.com/CreateGlobalVar",
+        "globalVar": {
+          "name": "ID number",
+          "type": {
+            "@type": "type.googleapis.com/StringVar"
+          },
+          "isSecret": true
+        },
+        "customContextDataKey": {},
+        "id": "A-f38a0216-bf2b-4993-87f5-dcf296d4c9f5"
+      },
+      {
+        "@type": "type.googleapis.com/CreateGlobalVar",
+        "globalVar": {
+          "name": "QQ",
+          "type": {
+            "@type": "type.googleapis.com/StringVar"
+          },
+          "isSecret": true
+        },
+        "customContextDataKey": {},
+        "id": "A-953d97b6-a4ed-4b33-9dde-e59a5dc9c0f7"
+      },
+      {
+        "@type": "type.googleapis.com/CreateGlobalVar",
+        "globalVar": {
+          "name": "WeChat",
+          "type": {
+            "@type": "type.googleapis.com/StringVar"
+          },
+          "isSecret": true
+        },
+        "customContextDataKey": {},
+        "id": "A-29f64131-1c06-4868-b569-48f7e17b7ec0"
+      },
+      {
+        "@type": "type.googleapis.com/ShowTextFieldDialog",
+        "title": "输入你的个人信息",
+        "cancelable": true,
+        "textFields": [
+          {
+            "placeholder": "手机号"
+          },
+          {
+            "placeholder": "邮箱"
+          },
+          {
+            "placeholder": "身份证"
+          },
+          {
+            "placeholder": "QQ"
+          },
+          {
+            "placeholder": "微信"
+          }
+        ],
+        "customContextDataKey": {},
+        "id": "A-e73c8231-2a0e-43f9-b07f-cb355d5efecf"
+      },
+      {
+        "@type": "type.googleapis.com/WriteGlobalVar",
+        "varName": "phone",
+        "valueAsString": "{textFieldInput1}",
+        "customContextDataKey": {},
+        "id": "A-da2cb997-9c75-428c-8094-4b704c72093b"
+      },
+      {
+        "@type": "type.googleapis.com/WriteGlobalVar",
+        "varName": "Mail",
+        "valueAsString": "{textFieldInput2}",
+        "customContextDataKey": {},
+        "id": "A-16dc30c6-f712-443b-b590-58618f720bab"
+      },
+      {
+        "@type": "type.googleapis.com/WriteGlobalVar",
+        "varName": "ID number",
+        "valueAsString": "{textFieldInput3}",
+        "customContextDataKey": {},
+        "id": "A-03f1a057-d5dc-409d-9fac-542ecc6b94f2"
+      },
+      {
+        "@type": "type.googleapis.com/WriteGlobalVar",
+        "varName": "QQ",
+        "valueAsString": "{textFieldInput4}",
+        "customContextDataKey": {},
+        "id": "A-193c39fe-79ee-47c3-85bf-631aca7373dd"
+      },
+      {
+        "@type": "type.googleapis.com/WriteGlobalVar",
+        "varName": "WeChat",
+        "valueAsString": "{textFieldInput5}",
+        "customContextDataKey": {},
+        "id": "A-e03f0367-3549-4f22-b47d-d225a224bbbd"
+      }
+    ]
+  },
   "quit": {
     "facts": [
       {
@@ -424,26 +554,9 @@
       }
     ]
   },
-  "versionCode": "3",
+  "versionCode": "2",
   "conflictPolicy": "ConflictStrategy_ReplaceOld",
-  "ruleSetId": "RS-54c75bea-6f7e-424f-b420-ee267ad27844",
-  "parameters": [
-    {
-      "name": "QQ"
-    },
-    {
-      "name": "WeChat"
-    },
-    {
-      "name": "ID number"
-    },
-    {
-      "name": "Mail"
-    },
-    {
-      "name": "phone"
-    }
-  ]
+  "ruleSetId": "RS-54c75bea-6f7e-424f-b420-ee267ad27844"
 }
 ###------###
 {"type":"rule"}

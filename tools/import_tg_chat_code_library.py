@@ -53,6 +53,17 @@ DEPENDENCY_PATTERNS = (
 )
 SAFE_FILENAME_CHARS = re.compile(r'[<>:"/\\|?*\r\n]+')
 WHITESPACE_RE = re.compile(r"\s+")
+HEADER_COMMENT_PREFIXES = ("来源:", "提取自:", "依赖:")
+DECORATIVE_COMMENT_RE = re.compile(r"^[=\-_*#~/|·.\s]+$")
+LOW_SIGNAL_COMMENT_PATTERNS = (
+    re.compile(r"^(true|false)\b", re.IGNORECASE),
+    re.compile(r"^(使用示例|工具函数|辅助函数)$"),
+    re.compile(r"^(简洁设置入口|执行并返回结果|核心类加载与反射辅助|邮件执行函数|邮件服务器属性配置)$"),
+    re.compile(r"^(配置路径|创建\s*loader|加载.+相关类|缓存.+成员|预热.+结构)$"),
+    re.compile(r"^获取\s+DEFAULT\b"),
+    re.compile(r"^获取静态方法\b"),
+    re.compile(r"^输出拼音$"),
+)
 ICON_NAME_BY_TYPE = {
     TYPE_JS: "vuejs-line",
     TYPE_MVEL: "code-line",
@@ -223,10 +234,37 @@ def has_dependency_hint(*texts: str) -> bool:
     return any(re.search(pattern, joined) for pattern in DEPENDENCY_PATTERNS)
 
 
-def build_description(code_type: str, dependency_hint: bool) -> str:
-    label = "JavaScript" if code_type == TYPE_JS else "MVEL"
-    suffix = "（依赖 DEX/JAR）" if dependency_hint else ""
-    return f"来自 TG 聊天记录的 {label} 示例{suffix}"
+def is_low_signal_comment(comment: str) -> bool:
+    normalized = comment.strip()
+    if not normalized:
+        return True
+    if "===" in normalized:
+        return True
+    if DECORATIVE_COMMENT_RE.fullmatch(normalized):
+        return True
+    for pattern in LOW_SIGNAL_COMMENT_PATTERNS:
+        if pattern.search(normalized):
+            return True
+    return False
+
+
+def extract_description(expression: str, fallback: str) -> str:
+    scanned_non_empty = 0
+    for raw_line in expression.splitlines():
+        stripped = raw_line.strip()
+        if stripped:
+            scanned_non_empty += 1
+        if scanned_non_empty > 18:
+            break
+        if not stripped.startswith("//"):
+            continue
+        comment = stripped[2:].strip()
+        if any(comment.startswith(prefix) for prefix in HEADER_COMMENT_PREFIXES):
+            continue
+        if is_low_signal_comment(comment):
+            continue
+        return comment
+    return fallback
 
 
 def build_source_link(chat_id: int, topic_segment: str, message_id: int) -> str:
@@ -238,12 +276,7 @@ def deterministic_code_id(source_key: str) -> str:
 
 
 def build_content(sample: Sample, source_link: str) -> str:
-    header_lines = [
-        f"// 来源: {source_link}",
-        f"// 创建时间: {sample.created_at_text}",
-    ]
-    if sample.updated_at_text != sample.created_at_text:
-        header_lines.append(f"// 更新时间: {sample.updated_at_text}")
+    header_lines = [f"// 来源: {source_link}"]
     if sample.extraction_note:
         header_lines.append(f"// 提取自: {sample.extraction_note}")
     if sample.dependency_hint:
@@ -429,7 +462,7 @@ def write_code_library(repo_root: Path, chat_id: int, topic_segment: str, sample
     payload = {
         "id": deterministic_code_id(f"{sample.source_kind}:{sample.message_id}:{sample.sequence}:{sample.title}:{sample.code_type}"),
         "name": sample.title,
-        "description": build_description(sample.code_type, sample.dependency_hint),
+        "description": extract_description(sample.expression, sample.title),
         "type": sample.code_type,
         "content": content,
         "createdAt": sample.created_at_millis,

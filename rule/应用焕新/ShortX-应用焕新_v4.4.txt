@@ -3563,19 +3563,6 @@
         {
           "case": [
             {
-              "@type": "type.googleapis.com/MatchMVEL",
-              "expression": "!({Code} > {versionCode});",
-              "customContextDataKey": {},
-              "id": "C-098914b1-0df2-42d1-870a-bf591bb80d23"
-            }
-          ],
-          "description": "无新版本",
-          "id": "Case-f60bfb08-baac-428f-b62a-20be733d3df6",
-          "isBreak": true
-        },
-        {
-          "case": [
-            {
               "@type": "type.googleapis.com/EvaluateGlobalVar",
               "op": "IsExists",
               "varName": "NoopDelay",
@@ -5114,12 +5101,12 @@
     }
   ],
   "id": "SHARE-rule-e4462102-ac38-48bf-a342-f2a6aa3d7673",
-  "lastUpdateTime": "1730051256010",
+  "lastUpdateTime": "1730033390136",
   "createTime": "1710941295173",
   "author": {
     "name": "HeWei"
   },
-  "title": "应用焕新 v4.5",
+  "title": "应用焕新 v4.4",
   "description": "把想检测更新的应用放在应用集\n适合那种在检测源上架，软件没有内置更新并且你追求更新的应用(比如：ShortX\n比较版本号检测\n检测源：\n应用宝✅\n酷安✅\nAppShare✅\n华为应用市场✅\n小米应用商店✅\nvivo应用商店✅\n魅族应用商店✅\n百度手机助手✅\n360手机助手✅\n应用汇✅\n豌豆荚|PP助手✅\n历趣市场✅",
   "isEnabled": true,
   "hook": {
@@ -7473,7 +7460,7 @@
       }
     ]
   },
-  "versionCode": "7",
+  "versionCode": "6",
   "conflictPolicy": "ConflictStrategy_ReplaceOld"
 }
 ###------###

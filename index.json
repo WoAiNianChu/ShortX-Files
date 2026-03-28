@@ -79,50 +79,6 @@
     },
     {
       "id": "SHARED-DA-88e8aacf-6c30-4c6a-9b75-b4047d42ba20",
-      "fileUrl": "ShortX-设置项监视器_4.0.txt",
-      "title": "设置项监视器 4.0",
-      "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
-      "versionCode": 5,
-      "updateTimeMillis": 1728736632200,
-      "author": "HeWei",
-      "tags": [],
-      "requireMinShortXProtoVersion": 0
-    },
-    {
-      "id": "SHARED-DA-88e8aacf-6c30-4c6a-9b75-b4047d42ba20",
-      "fileUrl": "ShortX-设置项监视器_4.2.txt",
-      "title": "设置项监视器 4.2",
-      "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
-      "versionCode": 6,
-      "updateTimeMillis": 1729134837919,
-      "author": "HeWei",
-      "tags": [],
-      "requireMinShortXProtoVersion": 0
-    },
-    {
-      "id": "SHARED-DA-88e8aacf-6c30-4c6a-9b75-b4047d42ba20",
-      "fileUrl": "ShortX-设置项监视器_4.3.txt",
-      "title": "设置项监视器 4.3",
-      "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
-      "versionCode": 7,
-      "updateTimeMillis": 1729243082528,
-      "author": "HeWei",
-      "tags": [],
-      "requireMinShortXProtoVersion": 0
-    },
-    {
-      "id": "SHARED-DA-88e8aacf-6c30-4c6a-9b75-b4047d42ba20",
-      "fileUrl": "ShortX-设置项监视器_4.4.txt",
-      "title": "设置项监视器 4.4",
-      "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。",
-      "versionCode": 8,
-      "updateTimeMillis": 1729245841948,
-      "author": "HeWei",
-      "tags": [],
-      "requireMinShortXProtoVersion": 0
-    },
-    {
-      "id": "SHARED-DA-88e8aacf-6c30-4c6a-9b75-b4047d42ba20",
       "fileUrl": "ShortX-设置项监视器_4.6.txt",
       "title": "设置项监视器 4.6",
       "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。\n\nRun once before the change and once after the change, benchmarking against the Settings Monitor App to identify changes in settings.",
@@ -158,55 +114,11 @@
     },
     {
       "id": "SHARE-rule-debea634-75d4-4727-b672-ada30c7eaf2d",
-      "fileUrl": "ShortX-代理Boss_2.4.txt",
-      "title": "代理Boss(2.4",
-      "description": "自动开关代理\n没预设的代理工具自己手动输入代理应用的包名即可",
-      "versionCode": 3,
-      "updateTimeMillis": 1726051081836,
-      "author": "HeWei",
-      "tags": [],
-      "requireMinShortXProtoVersion": 0
-    },
-    {
-      "id": "SHARE-rule-debea634-75d4-4727-b672-ada30c7eaf2d",
-      "fileUrl": "ShortX-代理Boss_2.6.txt",
-      "title": "代理Boss(2.6",
-      "description": "自动开关代理\n智能化选择代理工具",
-      "versionCode": 5,
-      "updateTimeMillis": 1729852220797,
-      "author": "HeWei",
-      "tags": [],
-      "requireMinShortXProtoVersion": 0
-    },
-    {
-      "id": "SHARE-rule-debea634-75d4-4727-b672-ada30c7eaf2d",
       "fileUrl": "ShortX-代理Boss_2.7.txt",
       "title": "代理Boss(2.7",
       "description": "自动开关代理\n智能化选择代理工具",
       "versionCode": 6,
       "updateTimeMillis": 1729951429568,
-      "author": "HeWei",
-      "tags": [],
-      "requireMinShortXProtoVersion": 0
-    },
-    {
-      "id": "SHARE-rule-e4462102-ac38-48bf-a342-f2a6aa3d7673",
-      "fileUrl": "ShortX-应用焕新_v4.2.txt",
-      "title": "应用焕新 v4.2",
-      "description": "把想检测更新的应用放在应用集\n适合那种在检测源上架，软件没有内置更新并且你追求更新的应用(比如：ShortX\n比较版本号检测\n检测源：\n应用宝✅\n酷安✅\nAppShare✅\n华为应用市场✅\n小米应用商店✅\nvivo应用商店✅\n魅族应用商店✅\n百度手机助手✅\n360手机助手✅\n应用汇✅\n豌豆荚|PP助手✅\n历趣市场✅",
-      "versionCode": 4,
-      "updateTimeMillis": 1727788247074,
-      "author": "HeWei",
-      "tags": [],
-      "requireMinShortXProtoVersion": 0
-    },
-    {
-      "id": "SHARE-rule-e4462102-ac38-48bf-a342-f2a6aa3d7673",
-      "fileUrl": "ShortX-应用焕新_v4.4.txt",
-      "title": "应用焕新 v4.4",
-      "description": "把想检测更新的应用放在应用集\n适合那种在检测源上架，软件没有内置更新并且你追求更新的应用(比如：ShortX\n比较版本号检测\n检测源：\n应用宝✅\n酷安✅\nAppShare✅\n华为应用市场✅\n小米应用商店✅\nvivo应用商店✅\n魅族应用商店✅\n百度手机助手✅\n360手机助手✅\n应用汇✅\n豌豆荚|PP助手✅\n历趣市场✅",
-      "versionCode": 6,
-      "updateTimeMillis": 1730033390136,
       "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
@@ -240,17 +152,6 @@
       "description": "连接PC自动开启USB网络共享",
       "versionCode": 2,
       "updateTimeMillis": 1726154490064,
-      "author": "HeWei",
-      "tags": [],
-      "requireMinShortXProtoVersion": 0
-    },
-    {
-      "id": "rule-cf801b7e-c7ab-4bcf-bb7b-0265a155d513",
-      "fileUrl": "ShortX-输入法助手_1.6.txt",
-      "title": "输入法助手(1.6",
-      "description": "例:复制/粘贴\n单击复制，长按粘贴",
-      "versionCode": 2,
-      "updateTimeMillis": 1709856411654,
       "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0

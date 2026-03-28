@@ -27,18 +27,18 @@ object Gen {
     fun run(inputDir: String, outputDir: String) {
         runBlocking {
             runCatching {
-                val allDAFiles = scanFiles(inputDir, daDir)
+                val allDAFiles = scanFiles(inputDir, daDir, recursive = false)
                 Logger.debug(allDAFiles)
 
                 val das = allDAFiles.toList().map(::parseDAItem)
                 Logger.info("Direct action count: ${das.size}")
 
-                val allRuleFiles = scanFiles(inputDir, ruleDir)
+                val allRuleFiles = scanFiles(inputDir, ruleDir, recursive = false)
                 Logger.debug(allRuleFiles)
                 val rules = allRuleFiles.toList().map(::parseRuleItem)
                 Logger.info("Rule count: ${rules.size}")
 
-                val allCodeFiles = scanFiles(inputDir, codeDir)
+                val allCodeFiles = scanFiles(inputDir, codeDir, recursive = true)
                 Logger.debug(allCodeFiles)
                 val codeLibraries = allCodeFiles.toList().map(::parseCodeLibraryItem)
                 Logger.info("Code library count: ${codeLibraries.size}")
@@ -133,12 +133,19 @@ object Gen {
         )
     }
 
-    private fun scanFiles(rootDir: String, childDir: String): Sequence<File> {
-        return File(rootDir, childDir)
+    private fun scanFiles(rootDir: String, childDir: String, recursive: Boolean): Sequence<File> {
+        val child = File(rootDir, childDir)
             .takeIf { it.exists() }
-            ?.walkTopDown()
-            ?.filter { it.isFile }
-            ?: emptySequence()
+            ?: return emptySequence()
+        return if (recursive) {
+            child.walkTopDown()
+                .filter { it.isFile }
+        } else {
+            child.listFiles()
+                ?.asSequence()
+                ?.filter { it.isFile }
+                ?: emptySequence()
+        }
     }
 
     private fun splitShareContent(text: String): Pair<String, Map<String, String>> {
