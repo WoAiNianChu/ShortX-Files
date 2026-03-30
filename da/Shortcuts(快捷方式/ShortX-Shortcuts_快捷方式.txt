@@ -1,0 +1,549 @@
+{
+  "actions": [{
+    "@type": "type.googleapis.com/NoAction",
+    "icon": "lark-one",
+    "customContextDataKey": {
+    },
+    "id": "A-4bcc5b75-9bde-485b-b4b7-76cbc3d88dcc"
+  }, {
+    "@type": "type.googleapis.com/SwitchCase",
+    "case": [{
+      "case": [{
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "importPackage(java.io);\n\n// 设置目标目录\nvar dirPath \u003d \"/data/system_ce/\";\nvar dir \u003d new File(dirPath);\n\n// 检查目录是否存在且是一个目录\nif (dir.exists() \u0026\u0026 dir.isDirectory()) {\n    var files \u003d dir.listFiles();\n    var numberFolders \u003d 0; // 用于统计纯数字文件夹的数量\n\n    // 遍历所有文件和文件夹\n    for (var i \u003d 0; i \u003c files.length; i++) {\n        var fileName \u003d files[i].getName();\n        // 检查是否是目录，并且名字是否是纯数字\n        if (files[i].isDirectory() \u0026\u0026 /^\\d+$/.test(fileName)) {\n            numberFolders++;\n            // 一旦找到超过1个纯数字文件夹，输出true并停止\n            if (numberFolders \u003e 1) {\n                true;\n                break;\n            }\n        }\n    }\n\n    // 如果数量不超过1个，输出false\n    if (numberFolders \u003c\u003d 1) {\n        false;\n    }\n} else {\n    false;\n}",
+        "customContextDataKey": {
+        },
+        "id": "C-70af419d-7970-47ac-ac13-62ef0e0da80c"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "importPackage(java.io);\n\n// 设置目标目录\nvar dirPath \u003d \"/data/system_ce/\";\nvar dir \u003d new File(dirPath);\n\n// 检查目录是否存在且是一个目录\nif (dir.exists() \u0026\u0026 dir.isDirectory()) {\n    var files \u003d dir.listFiles();\n    var numberFolders \u003d []; // 用于存储纯数字文件夹的列表\n\n    // 遍历所有文件和文件夹\n    for (var i \u003d 0; i \u003c files.length; i++) {\n        var fileName \u003d files[i].getName();\n        // 检查是否是目录，并且名字是否是纯数字\n        if (files[i].isDirectory() \u0026\u0026 /^\\d+$/.test(fileName)) {\n            numberFolders.push(fileName);\n        }\n    }\n\n    // 对纯数字文件夹进行排序\n    numberFolders.sort(function(a, b) {\n        return parseInt(a) - parseInt(b); // 从小到大排序\n    });\n\n    // 拼接所有纯数字文件夹\n    var result \u003d numberFolders.length \u003e 0 ? numberFolders.join(\" , \") : \"没有找到纯数字文件夹\";\n    result;\n} else {\n    \"目录不存在或不是一个有效的目录\";\n}",
+        "context": "CoroutineContext_IO",
+        "customContextDataKey": {
+        },
+        "id": "A-3a501361-72b4-4219-8096-48ec1fcfc111"
+      }, {
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "// 导入必要的 Android 类\nimportClass(android.content.Context);\nimportClass(android.content.res.Configuration);\n\n// 获取当前系统语言\nvar configuration \u003d context.getResources().getConfiguration();\nvar locale \u003d configuration.locale.getLanguage();\nvar country \u003d configuration.locale.getCountry();\n\n// 定义语言与输出的映射\nvar messages \u003d {\n    \"zh_CN\": \"选择用户\",   // 简体中文\n    \"zh_TW\": \"選擇用戶\",   // 台湾繁体中文\n    \"zh_HK\": \"選擇用戶\",   // 香港繁体中文\n    \"en\": \"Select user\",   // 英文\n    \"ja\": \"ユーザーを選択\", // 日语\n    \"ar\": \"اختر المستخدم\", // 阿拉伯语\n    \"fr\": \"Sélectionner un utilisateur\", // 法语\n    \"es\": \"Seleccionar usuario\", // 西班牙语\n    \"de\": \"Benutzer auswählen\", // 德语\n    \"it\": \"Seleziona utente\", // 意大利语\n    \"ru\": \"Выбрать пользователя\", // 俄语\n    \"pt\": \"Selecionar usuário\", // 葡萄牙语\n    \"ko\": \"사용자 선택\", // 韩语\n    \"hi\": \"उपयोगकर्ता चयन करें\", // 印地语\n    \"th\": \"เลือกผู้ใช้\", // 泰语\n    \"id\": \"Pilih pengguna\", // 印尼语\n    \"pl\": \"Wybierz użytkownika\", // 波兰语\n    \"tr\": \"Kullanıcı seçin\"  // 土耳其语\n};\n\n// 获取对应语言输出\nvar key \u003d (locale \u003d\u003d \"zh\") ? (locale + \"_\" + country) : locale;\nvar result \u003d messages[key] || \"Select user\";  // 如果没有匹配的语言，则使用默认值\n\nresult;  // 输出对应的语言信息",
+        "customContextDataKey": {
+          "keys": [{
+            "first": "jsRet",
+            "second": "language"
+          }]
+        },
+        "id": "A-960f6c1f-9d4f-426a-af45-9da622be7848"
+      }, {
+        "@type": "type.googleapis.com/ShowListDialog",
+        "title": "{language}",
+        "data": "{jsRet}",
+        "delimiter": [" , "],
+        "needConfirmAction": true,
+        "style": {
+        },
+        "customContextDataKey": {
+        },
+        "id": "A-b0f7cb34-1340-4a9f-9c04-1e789465dcbe"
+      }, {
+        "@type": "type.googleapis.com/ExecuteMVEL",
+        "expression": "selectedListItem[0]",
+        "customContextDataKey": {
+          "keys": [{
+            "first": "mvelRet",
+            "second": "userId"
+          }]
+        },
+        "id": "A-40082782-04af-4ce4-a578-b90a4f183d79"
+      }, {
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 导入必要类 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nimportClass(Packages.tornaco.apps.shortx.core.OooO0O0);\nimportClass(Packages.tornaco.apps.shortx.core.proto.pkgset.PkgSet);\nimportClass(java.io.ByteArrayInputStream);\nimportClass(java.io.File);\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 1️⃣ 从 ShortX 提取应用信息 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar shortxMap \u003d {};\nvar iShortX \u003d OooO0O0.OooO00o();\nvar pkgList \u003d iShortX.getInstalledApps();\n\nfor (var i \u003d 0; i \u003c pkgList.size(); i++) {\n    var wrapper \u003d pkgList.get(i);\n    var byteData \u003d wrapper.getByteData();\n    if (byteData \u003d\u003d null) continue;\n\n    var byteStream \u003d new ByteArrayInputStream(byteData);\n    var pkgSet \u003d PkgSet.parseFrom(byteStream);\n\n    var applabel \u003d pkgSet.getLabel ? pkgSet.getLabel() : \"\";\n    var appPkgsList \u003d pkgSet.getAppPkgsList ? pkgSet.getAppPkgsList() : null;\n    if (appPkgsList \u003d\u003d null) continue;\n\n    for (var j \u003d 0; j \u003c appPkgsList.size(); j++) {\n        var appPkg \u003d appPkgsList.get(j);\n        var packageNameStr \u003d appPkg.getPkgName ? appPkg.getPkgName() : (\"\" + appPkg);\n\n        shortxMap[packageNameStr] \u003d {\n            name: applabel,\n            version: packageNameStr,\n            __value: packageNameStr,\n            __icon: \"app://\" + packageNameStr\n        };\n    }\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 2️⃣ 扫描系统 shortcut 目录（自动去重） \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar dirPath \u003d \"/data/system_ce/\" + userId + \"/shortcut_service/packages/\";\nvar dir \u003d new File(dirPath);\nvar files \u003d dir.listFiles();\n\nvar finalList \u003d [];\nvar seen \u003d {}; // 去重\n\nif (files) {\n    for (var i \u003d 0; i \u003c files.length; i++) {\n        var fileName \u003d files[i].getName();\n        var dotIndex \u003d fileName.lastIndexOf(\u0027.xml\u0027);\n        if (dotIndex \u003e -1) fileName \u003d fileName.substring(0, dotIndex);\n\n        // 去重：已经存在的跳过\n        if (seen[fileName]) continue;\n        seen[fileName] \u003d true;\n\n        var info;\n        if (shortxMap[fileName]) {\n            info \u003d shortxMap[fileName];\n        } else {\n            info \u003d {\n                name: \"未知应用\",\n                version: fileName,\n                __value: fileName,\n                __icon: \"app://\" + fileName\n            };\n        }\n\n        finalList.push(info);\n    }\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 3️⃣ 输出 JSON \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nJSON.stringify(finalList, null, 4);",
+        "customContextDataKey": {
+        },
+        "id": "A-b900ae81-6a84-46ca-83ab-228bfd3e1432"
+      }],
+      "description": "多用户",
+      "id": "Case-64908d19-27c7-4218-bb6c-59bfc69c4ab2"
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "importPackage(java.io);\n\n// 设置目标目录\nvar dirPath \u003d \"/data/system_ce/\";\nvar dir \u003d new File(dirPath);\n\n// 检查目录是否存在且是一个目录\nif (dir.exists() \u0026\u0026 dir.isDirectory()) {\n    var files \u003d dir.listFiles();\n    var numberFolders \u003d 0; // 用于统计纯数字文件夹的数量\n\n    // 遍历所有文件和文件夹\n    for (var i \u003d 0; i \u003c files.length; i++) {\n        var fileName \u003d files[i].getName();\n        // 检查是否是目录，并且名字是否是纯数字\n        if (files[i].isDirectory() \u0026\u0026 /^\\d+$/.test(fileName)) {\n            numberFolders++;\n            // 一旦找到超过1个纯数字文件夹，输出true并停止\n            if (numberFolders \u003e 1) {\n                true;\n                break;\n            }\n        }\n    }\n\n    // 如果数量不超过1个，输出false\n    if (numberFolders \u003c\u003d 1) {\n        false;\n    }\n} else {\n    false;\n}",
+        "customContextDataKey": {
+        },
+        "isInvert": true,
+        "id": "C-eedf5825-33aa-4130-8dcc-7c4d982d3054"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/ExecuteMVEL",
+        "expression": "0",
+        "customContextDataKey": {
+          "keys": [{
+            "first": "mvelRet",
+            "second": "userId"
+          }]
+        },
+        "id": "A-ac15eab2-a4c4-4ac2-b13b-2892e8dde66c"
+      }, {
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 导入必要类 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nimportClass(Packages.tornaco.apps.shortx.core.OooO0O0);\nimportClass(Packages.tornaco.apps.shortx.core.proto.pkgset.PkgSet);\nimportClass(java.io.ByteArrayInputStream);\nimportClass(java.io.File);\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 1️⃣ 从 ShortX 提取应用信息 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar shortxMap \u003d {};\nvar iShortX \u003d OooO0O0.OooO00o();\nvar pkgList \u003d iShortX.getInstalledApps();\n\nfor (var i \u003d 0; i \u003c pkgList.size(); i++) {\n    var wrapper \u003d pkgList.get(i);\n    var byteData \u003d wrapper.getByteData();\n    if (byteData \u003d\u003d null) continue;\n\n    var byteStream \u003d new ByteArrayInputStream(byteData);\n    var pkgSet \u003d PkgSet.parseFrom(byteStream);\n\n    var applabel \u003d pkgSet.getLabel ? pkgSet.getLabel() : \"\";\n    var appPkgsList \u003d pkgSet.getAppPkgsList ? pkgSet.getAppPkgsList() : null;\n    if (appPkgsList \u003d\u003d null) continue;\n\n    for (var j \u003d 0; j \u003c appPkgsList.size(); j++) {\n        var appPkg \u003d appPkgsList.get(j);\n        var packageNameStr \u003d appPkg.getPkgName ? appPkg.getPkgName() : (\"\" + appPkg);\n\n        shortxMap[packageNameStr] \u003d {\n            name: applabel,\n            version: packageNameStr,\n            __value: packageNameStr,\n            __icon: \"app://\" + packageNameStr\n        };\n    }\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 2️⃣ 扫描系统 shortcut 目录（自动去重） \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar dirPath \u003d \"/data/system_ce/\" + userId + \"/shortcut_service/packages/\";\nvar dir \u003d new File(dirPath);\nvar files \u003d dir.listFiles();\n\nvar finalList \u003d [];\nvar seen \u003d {}; // 去重\n\nif (files) {\n    for (var i \u003d 0; i \u003c files.length; i++) {\n        var fileName \u003d files[i].getName();\n        var dotIndex \u003d fileName.lastIndexOf(\u0027.xml\u0027);\n        if (dotIndex \u003e -1) fileName \u003d fileName.substring(0, dotIndex);\n\n        // 去重：已经存在的跳过\n        if (seen[fileName]) continue;\n        seen[fileName] \u003d true;\n\n        var info;\n        if (shortxMap[fileName]) {\n            info \u003d shortxMap[fileName];\n        } else {\n            info \u003d {\n                name: \"未知应用\",\n                version: fileName,\n                __value: fileName,\n                __icon: \"app://\" + fileName\n            };\n        }\n\n        finalList.push(info);\n    }\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 3️⃣ 输出 JSON \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nJSON.stringify(finalList, null, 4);",
+        "customContextDataKey": {
+        },
+        "id": "A-1e193f50-66f0-4470-9869-0114651617bf"
+      }],
+      "description": "单用户",
+      "id": "Case-a7a57373-8d31-4c47-9131-6765bd55446d"
+    }, {
+      "action": [{
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "// 导入必要的 Android 类\nimportClass(android.content.Context);\nimportClass(android.content.res.Configuration);\n\n// 获取当前系统语言\nvar configuration \u003d context.getResources().getConfiguration();\nvar locale \u003d configuration.locale.getLanguage();\nvar country \u003d configuration.locale.getCountry();\n\n// 定义语言与输出的映射\nvar messages \u003d {\n    \"zh_CN\": \"选择应用\",   // 简体中文\n    \"zh_TW\": \"選擇應用\",   // 台湾繁体中文\n    \"zh_HK\": \"選擇應用\",   // 香港繁体中文\n    \"en\": \"Select app\",    // 英文\n    \"ja\": \"アプリを選択\",  // 日语\n    \"ar\": \"اختر التطبيق\",  // 阿拉伯语\n    \"fr\": \"Sélectionner l\u0027application\", // 法语\n    \"es\": \"Seleccionar aplicación\", // 西班牙语\n    \"de\": \"App auswählen\", // 德语\n    \"it\": \"Seleziona app\", // 意大利语\n    \"ru\": \"Выбрать приложение\", // 俄语\n    \"pt\": \"Selecionar aplicativo\", // 葡萄牙语\n    \"ko\": \"앱 선택\", // 韩语\n    \"hi\": \"ऐप चुनें\",  // 印地语\n    \"th\": \"เลือกแอป\",  // 泰语\n    \"id\": \"Pilih aplikasi\", // 印尼语\n    \"pl\": \"Wybierz aplikację\", // 波兰语\n    \"tr\": \"Uygulama seçin\"  // 土耳其语\n};\n\n// 获取对应语言输出\nvar key \u003d (locale \u003d\u003d \"zh\") ? (locale + \"_\" + country) : locale;\nvar result \u003d messages[key] || \"Select user\";  // 如果没有匹配的语言，则使用默认值\n\nresult;  // 输出对应的语言信息",
+        "customContextDataKey": {
+          "keys": [{
+            "first": "jsRet",
+            "second": "language"
+          }]
+        },
+        "id": "A-be4cc63b-248e-43f7-a352-05f3c242d1c2"
+      }, {
+        "@type": "type.googleapis.com/ShowListDialog",
+        "title": "{language}",
+        "data": "{jsRet}",
+        "delimiter": [" , "],
+        "needConfirmAction": true,
+        "dataType": "ShowListDialogDataType_Json",
+        "style": {
+        },
+        "customContextDataKey": {
+        },
+        "id": "A-77035e85-a928-4381-b01d-ca58b5847d1c"
+      }],
+      "description": "选择应用",
+      "id": "Case-76b1539f-24ce-463d-a552-a8c9884596b8"
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/EvaluateContextVar",
+        "op": "EqualTo",
+        "varName": "selectedListItem",
+        "payload": {
+        },
+        "customContextDataKey": {
+        },
+        "id": "C-53a87e3c-972b-483d-9c3a-dd60aeea510c"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/BreakActionExecute",
+        "scope": "BreakActionExecuteScope_Root",
+        "customContextDataKey": {
+        },
+        "id": "A-d8517812-aef5-4338-883f-3eafd8b41348"
+      }],
+      "description": "不选择",
+      "id": "Case-8207aeb1-84c1-4dc3-8234-c985edce559b"
+    }],
+    "customContextDataKey": {
+    },
+    "id": "A-d4743f65-ef76-49cf-a794-9c7a74810310"
+  }, {
+    "@type": "type.googleapis.com/ExecuteJS",
+    "expression": "// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 导入 Android 必需类 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nimportClass(android.content.Context);\nimportClass(android.content.pm.PackageManager);\nimportClass(android.content.pm.ShortcutManager);\nimportClass(android.os.UserHandle);\nimportClass(android.app.ActivityManager);\nimportClass(android.content.pm.ShortcutInfo);\nimportClass(android.content.Intent);\nimportClass(java.lang.Class);\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 配置区 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n// 要解析的目标包名\nvar targetPackage \u003d selectedListItem[0]; // 可改成字符串如 \"tornaco.apps.shortx\"\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 辅助函数 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nfunction createShortcutJson(shortcut, packageName, index) {\n    var id \u003d shortcut.getId();\n    var label \u003d shortcut.getShortLabel() ? shortcut.getShortLabel().toString() : \"(无标签)\";\n    var intent \u003d shortcut.getIntent();\n    var intentStr \u003d intent ? intent.toUri(0) : \"无 Intent\";\n    \n    var jsonObj \u003d {};\n    var displayName \u003d label;\n    if (index !\u003d\u003d null \u0026\u0026 index \u003e 0) {\n        displayName \u003d index + \". \" + label;\n    }\n    jsonObj.name \u003d displayName;\n    if (intentStr.startsWith(\"#Intent\")) {\n        jsonObj.__value \u003d \"intent:\" + intentStr;\n    } else {\n        jsonObj.__value \u003d intentStr;\n    }\n    return jsonObj;\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 获取指定用户 Context \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar contextForUser;\ntry {\n    var userHandle \u003d UserHandle.of(userId);\n    contextForUser \u003d context.createContextAsUser(userHandle, 0);\n} catch (e) {\n    console.log(\"创建指定用户 Context 失败, 使用当前用户: \" + e);\n    contextForUser \u003d context;\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 获取目标应用 Context \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar allShortcuts \u003d [];\ntry {\n    var otherContext \u003d contextForUser.createPackageContext(\n        targetPackage,\n        Context.CONTEXT_IGNORE_SECURITY | Context.CONTEXT_INCLUDE_CODE\n    );\n\n    var shortcutManager \u003d otherContext.getSystemService(Context.SHORTCUT_SERVICE);\n    if (shortcutManager) {\n        // 收集所有类型快捷方式\n        var pinned \u003d shortcutManager.getPinnedShortcuts();\n        var dynamic \u003d shortcutManager.getDynamicShortcuts();\n        var manifest \u003d shortcutManager.getManifestShortcuts();\n\n        function collect(list) {\n            if (!list) return;\n            for (var i \u003d 0; i \u003c list.size(); i++) {\n                allShortcuts.push(list.get(i));\n            }\n        }\n        collect(pinned);\n        collect(dynamic);\n        collect(manifest);\n\n        // 转为 JSON\n        if (allShortcuts.length \u003e 1) {\n            for (var i \u003d 0; i \u003c allShortcuts.length; i++) {\n                allShortcuts[i] \u003d createShortcutJson(allShortcuts[i], targetPackage, i + 1);\n            }\n        } else if (allShortcuts.length \u003d\u003d\u003d 1) {\n            allShortcuts[0] \u003d createShortcutJson(allShortcuts[0], targetPackage, null);\n        }\n    } else {\n        console.log(\"ShortcutManager 不可用 (API \u003c 25?)\");\n    }\n} catch (e) {\n    console.log(\"Error 获取快捷方式: \" + e);\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 输出 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nJSON.stringify(allShortcuts);",
+    "customContextDataKey": {
+    },
+    "id": "A-a0749306-90fb-4d97-9251-7b98ba656403"
+  }, {
+    "@type": "type.googleapis.com/ExecuteJS",
+    "expression": "// 导入必要的 Android 类\nimportClass(android.content.Context);\nimportClass(android.content.res.Configuration);\n\n// 获取当前系统语言\nvar configuration \u003d context.getResources().getConfiguration();\nvar locale \u003d configuration.locale.getLanguage();\nvar country \u003d configuration.locale.getCountry();\n\n// 定义语言与输出的映射\nvar messages \u003d {\n    \"zh_CN\": \"Shortcuts 解析结果\",   // 简体中文\n    \"zh_TW\": \"Shortcuts 解析結果\",   // 台湾繁体中文\n    \"zh_HK\": \"Shortcuts 解析結果\",   // 香港繁体中文\n    \"en\": \"Shortcuts parse result\",    // 英文\n    \"ja\": \"ショートカット解析結果\",  // 日语\n    \"ar\": \"نتيجة تحليل الاختصارات\",  // 阿拉伯语\n    \"fr\": \"Résultat de l\u0027analyse des raccourcis\", // 法语\n    \"es\": \"Resultado del análisis de accesos directos\", // 西班牙语\n    \"de\": \"Ergebnis der Verknüpfungsanalyse\", // 德语\n    \"it\": \"Risultato dell\u0027analisi delle scorciatoie\", // 意大利语\n    \"ru\": \"Результат анализа ярлыков\", // 俄语\n    \"pt\": \"Resultado da análise de atalhos\", // 葡萄牙语\n    \"ko\": \"단축키 분석 결과\", // 韩语\n    \"hi\": \"शॉर्टकट विश्लेषण परिणाम\",  // 印地语\n    \"th\": \"ผลการวิเคราะห์ทางลัด\",  // 泰语\n    \"id\": \"Hasil analisis pintasan\", // 印尼语\n    \"pl\": \"Wynik analizy skrótów\", // 波兰语\n    \"tr\": \"Kısayol analiz sonucu\"  // 土耳其语\n};\n\n// 获取对应语言输出\nvar key \u003d (locale \u003d\u003d \"zh\") ? (locale + \"_\" + country) : locale;\nvar result \u003d messages[key] || \"Select user\";  // 如果没有匹配的语言，则使用默认值\n\nresult;  // 输出对应的语言信息",
+    "customContextDataKey": {
+      "keys": [{
+        "first": "jsRet",
+        "second": "language"
+      }]
+    },
+    "id": "A-f0960735-cbd0-4ef2-9630-2dec858a0d7d"
+  }, {
+    "@type": "type.googleapis.com/ShowListDialog",
+    "title": "{language}",
+    "cancelable": true,
+    "data": "{jsRet}",
+    "isMultipleChoice": true,
+    "delimiter": [","],
+    "needConfirmAction": true,
+    "dataType": "ShowListDialogDataType_Json",
+    "style": {
+      "fontScale": 1.0
+    },
+    "customContextDataKey": {
+    },
+    "id": "A-d564c29b-8b8f-420f-8777-cd9df2ff215e"
+  }, {
+    "@type": "type.googleapis.com/IfThenElse",
+    "If": [{
+      "@type": "type.googleapis.com/EvaluateContextVar",
+      "op": "EqualTo",
+      "varName": "selectedListItem",
+      "payload": {
+      },
+      "customContextDataKey": {
+      },
+      "isInvert": true,
+      "id": "C-88ab858d-e4bf-43c6-b280-f7c7073f68ac"
+    }],
+    "IfActions": [{
+      "@type": "type.googleapis.com/ExecuteJS",
+      "expression": "// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 配置区 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar delay \u003d 2000; // 延迟时间，单位是毫秒\nvar result \u003d \"\";\n\nfor (var i \u003d 0; i \u003c selectedListItem.length; i++) {\n    // 每个配置项前面都生成一次 importClass\n    result +\u003d `// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 导入所需类 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nimportClass(android.content.Intent);\nimportClass(android.os.UserHandle);\nimportClass(android.content.Context);\nimportClass(java.lang.Thread);    \n\nvar myIntent \u003d Intent.parseUri(\u0027` + selectedListItem[i] + `\u0027, 0);\n\nmyIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\n\ntry {\n    var userHandle \u003d UserHandle.of(` + userId + `);\n    context.startActivityAsUser(myIntent, userHandle);\n    \"已为用户 ` + userId + ` 启动指定 Intent\";\n} catch (e) {\n    \"启动失败: \" + e;\n}\n`;\n// 在每个配置项后面加一个延迟，除了最后一个配置项\nif (i \u003c selectedListItem.length - 1) {\n    result +\u003d `\n// 延迟部分\nThread.sleep(` + delay + `);  // 添加延迟\n`;\n}\n}\nresult;",
+      "customContextDataKey": {
+      },
+      "id": "A-fdd5b0ca-f2e2-4355-a179-7d6753fe16f2"
+    }, {
+      "@type": "type.googleapis.com/CreateLocalVar",
+      "localVar": {
+        "name": "Intent",
+        "type": {
+          "@type": "type.googleapis.com/StringVar"
+        }
+      },
+      "customContextDataKey": {
+      },
+      "id": "A-5b688eca-78d3-4cd5-8a1e-5b6d92faeecc"
+    }, {
+      "@type": "type.googleapis.com/WriteLocalVar",
+      "varName": "Intent",
+      "valueAsString": "{jsRet}",
+      "customContextDataKey": {
+      },
+      "id": "A-5e4b291a-a609-475f-abd4-b9ba009756fb"
+    }, {
+      "@type": "type.googleapis.com/ShowChoiceDialog",
+      "title": "复制类型",
+      "cancelable": true,
+      "choices": [{
+        "label": "Javascript",
+        "value": "Javascript",
+        "isSelectedByDefault": true
+      }, {
+        "label": "Shell命令",
+        "value": "Shell"
+      }],
+      "isMultipleChoice": true,
+      "style": {
+      },
+      "customContextDataKey": {
+      },
+      "isDisabled": true,
+      "id": "A-98516b4a-8cff-4b8c-bba2-f3fa84f55235"
+    }, {
+      "@type": "type.googleapis.com/ExecuteJS",
+      "expression": "// 导入必要的 Android 类\nimportClass(android.content.Context);\nimportClass(android.content.res.Configuration);\n\n// 获取当前系统语言\nvar configuration \u003d context.getResources().getConfiguration();\nvar locale \u003d configuration.locale.getLanguage();\nvar country \u003d configuration.locale.getCountry();\n\n// 定义语言与输出的映射\nvar messages \u003d {\n    \"zh_CN\": \"复制类型\",   // 简体中文\n    \"zh_TW\": \"複製類型\",   // 台湾繁体中文\n    \"zh_HK\": \"複製類型\",   // 香港繁体中文\n    \"en\": \"Copy type\",    // 英文\n    \"ja\": \"コピータイプ\",  // 日语\n    \"ar\": \"نوع النسخ\",  // 阿拉伯语\n    \"fr\": \"Type de copie\", // 法语\n    \"es\": \"Tipo de copia\", // 西班牙语\n    \"de\": \"Kopiertyp\", // 德语\n    \"it\": \"Tipo di copia\", // 意大利语\n    \"ru\": \"Тип копирования\", // 俄语\n    \"pt\": \"Tipo de cópia\", // 葡萄牙语\n    \"ko\": \"복사 유형\", // 韩语\n    \"hi\": \"कॉपी प्रकार\",  // 印地语\n    \"th\": \"ประเภทการคัดลอก\",  // 泰语\n    \"id\": \"Jenis salinan\", // 印尼语\n    \"pl\": \"Typ kopiowania\", // 波兰语\n    \"tr\": \"Kopya türü\"  // 土耳其语\n};\n\n// 获取对应语言输出\nvar key \u003d (locale \u003d\u003d \"zh\") ? (locale + \"_\" + country) : locale;\nvar result \u003d messages[key] || \"Select user\";  // 如果没有匹配的语言，则使用默认值\n\nresult;  // 输出对应的语言信息",
+      "customContextDataKey": {
+        "keys": [{
+          "first": "jsRet",
+          "second": "language"
+        }]
+      },
+      "id": "A-bcc7946a-bd31-469f-aaf1-147d0d52b190"
+    }, {
+      "@type": "type.googleapis.com/ShowMenuDialog",
+      "items": [{
+        "title": "Javascript"
+      }, {
+        "title": "Shell",
+        "clickActions": [{
+          "@type": "type.googleapis.com/ExecuteJS",
+          "expression": "\"Shell\"",
+          "customContextDataKey": {
+            "keys": [{
+              "first": "jsRet",
+              "second": "choices"
+            }]
+          },
+          "id": "A-e10ae7ca-3018-4cb1-92c1-6e03b1020014"
+        }]
+      }],
+      "title": "{language}",
+      "style": {
+        "fontScale": 0.8934519
+      },
+      "customContextDataKey": {
+      },
+      "id": "A-f1cb86d9-fdc8-425d-9b52-33a73b8202e0"
+    }, {
+      "@type": "type.googleapis.com/IfThenElse",
+      "If": [{
+        "@type": "type.googleapis.com/EvaluateContextVar",
+        "op": "Contains",
+        "varName": "choices",
+        "payload": {
+          "value": "Shell"
+        },
+        "customContextDataKey": {
+        },
+        "id": "C-c1f12d68-53cb-4d4f-a836-55a56d975c0d"
+      }],
+      "IfActions": [{
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "function generateAMCommands(selectedListItem) {\n    var commands \u003d [];\n\n    // 使用传统的 for 循环代替 map\n    for (var index \u003d 0; index \u003c selectedListItem.length; index++) {\n        var intent \u003d selectedListItem[index];\n        \n        // 第一个命令不加延迟，其余的命令前加 `sleep 2`\n        var command \u003d (index \u003d\u003d\u003d 0 ? \"\" : \"sleep 2\\n \") + \"am start --user \" + userId + \" \u0027\" + intent + \"\u0027\";\n        \n        // 将命令加入数组\n        commands.push(command);\n    }\n\n    return commands.join(\"\\n\");\n}\n\n// 调用函数\ngenerateAMCommands(selectedListItem);",
+        "customContextDataKey": {
+        },
+        "id": "A-988b5cf9-0adc-4098-b544-a03091d4f169"
+      }],
+      "customContextDataKey": {
+      },
+      "id": "A-9b502ce8-d7db-4ffa-b96a-bcdde3872da4"
+    }, {
+      "@type": "type.googleapis.com/WriteClipboard",
+      "text": "{jsRet}",
+      "customContextDataKey": {
+      },
+      "id": "A-a2afd8fb-24c6-4c37-a502-3e093aec0618"
+    }, {
+      "@type": "type.googleapis.com/ExecuteJS",
+      "expression": "// 导入必要的 Android 类\nimportClass(android.content.Context);\nimportClass(android.content.res.Configuration);\n\n// 获取当前系统语言\nvar configuration \u003d context.getResources().getConfiguration();\nvar locale \u003d configuration.locale.getLanguage();\nvar country \u003d configuration.locale.getCountry();\n\n// 定义语言与输出的映射\nvar messages \u003d {\n    \"zh_CN\": \"打开\",   // 简体中文\n    \"zh_TW\": \"打開\",   // 台湾繁体中文\n    \"zh_HK\": \"打開\",   // 香港繁体中文\n    \"en\": \"Open\",    // 英文\n    \"ja\": \"開く\",  // 日语\n    \"ar\": \"فتح\",  // 阿拉伯语\n    \"fr\": \"Ouvrir\", // 法语\n    \"es\": \"Abrir\", // 西班牙语\n    \"de\": \"Öffnen\", // 德语\n    \"it\": \"Apri\", // 意大利语\n    \"ru\": \"Открыть\", // 俄语\n    \"pt\": \"Abrir\", // 葡萄牙语\n    \"ko\": \"열기\", // 韩语\n    \"hi\": \"खोलें\",  // 印地语\n    \"th\": \"เปิด\",  // 泰语\n    \"id\": \"Buka\", // 印尼语\n    \"pl\": \"Otwórz\", // 波兰语\n    \"tr\": \"Aç\"  // 土耳其语\n};\n\n// 获取对应语言输出\nvar key \u003d (locale \u003d\u003d \"zh\") ? (locale + \"_\" + country) : locale;\nvar result \u003d messages[key] || \"Select user\";  // 如果没有匹配的语言，则使用默认值\n\nresult;  // 输出对应的语言信息",
+      "customContextDataKey": {
+        "keys": [{
+          "first": "jsRet",
+          "second": "language"
+        }]
+      },
+      "id": "A-5704fec5-e822-418b-91c4-869dc2d56b4a"
+    }, {
+      "@type": "type.googleapis.com/ShowOverlayButton",
+      "buttonSettings": [{
+        "actions": [{
+          "@type": "type.googleapis.com/CreateLocalVar",
+          "localVar": {
+            "name": "true",
+            "type": {
+              "@type": "type.googleapis.com/StringVar"
+            }
+          },
+          "customContextDataKey": {
+          },
+          "id": "A-50f04a40-8be2-41df-b478-e5b09c25b549"
+        }, {
+          "@type": "type.googleapis.com/ExecuteJS",
+          "expression": "eval(localVarOf$Intent);",
+          "customContextDataKey": {
+          },
+          "id": "A-8745d030-b7b1-43fc-b571-626cb420194b"
+        }],
+        "icon": "preview-open",
+        "label": "{language}",
+        "id": "BTN-3383ffa2-f784-4ccc-b104-f0773747ca4f"
+      }],
+      "tag": "open",
+      "maxHeightInDp": 40,
+      "maxWidthInDp": 84,
+      "backgroundAlpha": 0.8,
+      "buttonMinWidth": 68,
+      "enableGlobalDrag": true,
+      "overlayPaddingV": 15,
+      "customContextDataKey": {
+      },
+      "id": "A-48e8e24a-ccae-42ef-8f17-1773d86e0e23"
+    }, {
+      "@type": "type.googleapis.com/WaitUtilConditionMatch",
+      "condition": [{
+        "@type": "type.googleapis.com/EvaluateLocalVar",
+        "op": "IsExists",
+        "varName": "true",
+        "payload": {
+        },
+        "customContextDataKey": {
+        },
+        "id": "C-65eb0741-324a-4660-8f0f-725549595237"
+      }],
+      "timeout": "5000",
+      "customContextDataKey": {
+      },
+      "id": "A-a132e4ac-2398-48dd-a4d7-b82233b3be31"
+    }, {
+      "@type": "type.googleapis.com/HideOverlayButton",
+      "overlayTags": ["open"],
+      "customContextDataKey": {
+      },
+      "id": "A-cc3f32c0-d286-4b45-aa94-d78ca07304b9"
+    }],
+    "customContextDataKey": {
+    },
+    "isDisabled": true,
+    "id": "A-30e3e944-44a7-43e5-9858-45edfb8ae362"
+  }, {
+    "@type": "type.googleapis.com/SwitchCase",
+    "case": [{
+      "case": [{
+        "@type": "type.googleapis.com/EvaluateContextVar",
+        "op": "EqualTo",
+        "varName": "selectedListItem",
+        "payload": {
+        },
+        "customContextDataKey": {
+        },
+        "id": "C-5d537bae-d685-4935-9080-550a666ed28d"
+      }],
+      "id": "Case-1df1890d-ca4b-4476-8ade-e66dc971e9ee",
+      "isBreak": true
+    }, {
+      "action": [{
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 配置区 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar delay \u003d 2000; // 延迟时间，单位是毫秒\nvar result \u003d \"\";\n\nfor (var i \u003d 0; i \u003c selectedListItem.length; i++) {\n    // 每个配置项前面都生成一次 importClass\n    result +\u003d `// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 导入所需类 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nimportClass(android.content.Intent);\nimportClass(android.os.UserHandle);\nimportClass(android.content.Context);\nimportClass(java.lang.Thread);    \n\nvar myIntent \u003d Intent.parseUri(\u0027` + selectedListItem[i] + `\u0027, 0);\n\nmyIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\n\ntry {\n    var userHandle \u003d UserHandle.of(` + userId + `);\n    context.startActivityAsUser(myIntent, userHandle);\n    \"已为用户 ` + userId + ` 启动指定 Intent\";\n} catch (e) {\n    \"启动失败: \" + e;\n}\n`;\n// 在每个配置项后面加一个延迟，除了最后一个配置项\nif (i \u003c selectedListItem.length - 1) {\n    result +\u003d `\n// 延迟部分\nThread.sleep(` + delay + `);  // 添加延迟\n`;\n}\n}\nresult;",
+        "customContextDataKey": {
+        },
+        "id": "A-0fec4241-18a5-48f6-8e55-13cfb33e072b"
+      }, {
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "// 导入必要的 Android 类\nimportClass(android.content.Context);\nimportClass(android.content.res.Configuration);\n\n// 获取当前系统语言\nvar configuration \u003d context.getResources().getConfiguration();\nvar locale \u003d configuration.locale.getLanguage();\nvar country \u003d configuration.locale.getCountry();\n\n// 定义语言与输出的映射\nvar messages \u003d {\n    \"zh_CN\": \"复制类型\",   // 简体中文\n    \"zh_TW\": \"複製類型\",   // 台湾繁体中文\n    \"zh_HK\": \"複製類型\",   // 香港繁体中文\n    \"en\": \"Copy type\",    // 英文\n    \"ja\": \"コピータイプ\",  // 日语\n    \"ar\": \"نوع النسخ\",  // 阿拉伯语\n    \"fr\": \"Type de copie\", // 法语\n    \"es\": \"Tipo de copia\", // 西班牙语\n    \"de\": \"Kopiertyp\", // 德语\n    \"it\": \"Tipo di copia\", // 意大利语\n    \"ru\": \"Тип копирования\", // 俄语\n    \"pt\": \"Tipo de cópia\", // 葡萄牙语\n    \"ko\": \"복사 유형\", // 韩语\n    \"hi\": \"कॉपी प्रकार\",  // 印地语\n    \"th\": \"ประเภทการคัดลอก\",  // 泰语\n    \"id\": \"Jenis salinan\", // 印尼语\n    \"pl\": \"Typ kopiowania\", // 波兰语\n    \"tr\": \"Kopya türü\"  // 土耳其语\n};\n\n// 获取对应语言输出\nvar key \u003d (locale \u003d\u003d \"zh\") ? (locale + \"_\" + country) : locale;\nvar result \u003d messages[key] || \"Select user\";  // 如果没有匹配的语言，则使用默认值\n\nresult;  // 输出对应的语言信息",
+        "customContextDataKey": {
+          "keys": [{
+            "first": "jsRet",
+            "second": "language"
+          }]
+        },
+        "id": "A-d3fd0628-ff9f-43bf-9c02-59021d6915f5"
+      }, {
+        "@type": "type.googleapis.com/ShowMenuDialog",
+        "items": [{
+          "title": "Javascript"
+        }, {
+          "title": "Shell",
+          "clickActions": [{
+            "@type": "type.googleapis.com/ExecuteJS",
+            "expression": "\"Shell\"",
+            "customContextDataKey": {
+              "keys": [{
+                "first": "jsRet",
+                "second": "choices"
+              }]
+            },
+            "id": "A-e10ae7ca-3018-4cb1-92c1-6e03b1020014"
+          }]
+        }],
+        "title": "{language}",
+        "style": {
+          "fontScale": 0.900265
+        },
+        "customContextDataKey": {
+        },
+        "id": "A-67f65d2d-76a0-4bae-93cc-7bb19176c935"
+      }],
+      "id": "Case-af87c195-99fd-4745-bbc6-417a1c292461"
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/EvaluateContextVar",
+        "op": "Contains",
+        "varName": "choices",
+        "payload": {
+          "value": "Shell"
+        },
+        "customContextDataKey": {
+        },
+        "id": "C-580393cc-3ae9-491c-8ba9-8471348ff29c"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "function generateAMCommands(selectedListItem) {\n    var commands \u003d [];\n\n    // 使用传统的 for 循环代替 map\n    for (var index \u003d 0; index \u003c selectedListItem.length; index++) {\n        var intent \u003d selectedListItem[index];\n        \n        // 第一个命令不加延迟，其余的命令前加 `sleep 2`\n        var command \u003d (index \u003d\u003d\u003d 0 ? \"\" : \"sleep 2\\n \") + \"am start --user \" + userId + \" \u0027\" + intent + \"\u0027\";\n        \n        // 将命令加入数组\n        commands.push(command);\n    }\n\n    return commands.join(\"\\n\");\n}\n\n// 调用函数\ngenerateAMCommands(selectedListItem);",
+        "customContextDataKey": {
+        },
+        "id": "A-59f623b7-495a-4b62-be13-0c84f39a9262"
+      }],
+      "id": "Case-4ecd1dcf-94a1-4fd0-9419-93edbfe346b0"
+    }, {
+      "action": [{
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "importPackage(android.view);\nimportPackage(android.widget);\nimportPackage(android.content);\nimportPackage(android.os);\nimportPackage(android.graphics);\nimportClass(android.graphics.drawable.GradientDrawable);\nimportClass(android.graphics.PixelFormat);\nimportClass(android.view.WindowManager);\nimportClass(android.view.Gravity);\nimportClass(android.os.Vibrator);\nimportClass(java.lang.Thread);\nimportClass(java.lang.Runnable);\nimportClass(android.os.Handler);\nimportClass(android.os.Looper);\nimportClass(android.util.TypedValue);\nimportClass(android.content.Context);\nimportClass(java.lang.Class);\nimportClass(java.util.concurrent.CountDownLatch);\nimportClass(java.util.concurrent.TimeUnit);\nimportClass(android.view.animation.AccelerateDecelerateInterpolator);\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 辅助函数：转为 #RRGGBB 大写格式 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nfunction toHexColor(colorInt) {\n    var rgb \u003d colorInt \u0026 0xFFFFFF;\n    return \"#\" + rgb.toString(16).padStart(6, \"0\").toUpperCase();\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 目标应用包名 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar targetPackage \u003d \"tornaco.apps.shortx\";\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 颜色常量，带中文备注 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar COLOR_LIGHT_MODE_BACKGROUND;\nvar COLOR_DARK_MODE_BACKGROUND;\nvar COLOR_STROKE_LIGHT_MODE \u003d \"#22000000\";\nvar COLOR_STROKE_DARK_MODE \u003d \"#11FFFFFF\";\nvar COLOR_ICON_DARK_MODE;\nvar COLOR_ICON_LIGHT_MODE;\n\ntry {\n    var otherContext \u003d context.createPackageContext(\n        targetPackage, \n        Context.CONTEXT_IGNORE_SECURITY | Context.CONTEXT_INCLUDE_CODE\n    );\n    var RColorClass \u003d Class.forName(\"android.R$color\");\n    COLOR_LIGHT_MODE_BACKGROUND \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_100\").getInt(null),\n        otherContext.getTheme()\n    ));\n    COLOR_DARK_MODE_BACKGROUND \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_700\").getInt(null),\n        otherContext.getTheme()\n    ));\n    COLOR_ICON_DARK_MODE \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_100\").getInt(null),\n        otherContext.getTheme()\n    ));\n    COLOR_ICON_LIGHT_MODE \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_900\").getInt(null),\n        otherContext.getTheme()\n    ));\n} catch (e) {\n    COLOR_LIGHT_MODE_BACKGROUND \u003d \"#F0F0F0\";\n    COLOR_DARK_MODE_BACKGROUND \u003d \"#DADAD9\";\n    COLOR_ICON_DARK_MODE \u003d \"#000000\";\n    COLOR_ICON_LIGHT_MODE \u003d \"#000000\";\n}\n\nvar uiHandler \u003d new Handler(Looper.getMainLooper());\n\nfunction showTypingBubble(opts) {\n    var wm \u003d context.getSystemService(Context.WINDOW_SERVICE);\n    var latch \u003d new CountDownLatch(1);\n    var timeout \u003d opts.timeout || 3000;\n    var layout \u003d null;\n    var isRemoving \u003d false;\n    var lastRemoveTime \u003d 0;\n    var result \u003d null;\n\n    var displayMetrics \u003d context.getResources().getDisplayMetrics();\n    var screenWidth \u003d displayMetrics.widthPixels;\n    var screenHeight \u003d displayMetrics.heightPixels;\n    var density \u003d displayMetrics.density;\n\n    // 工具函数：将dp转换为像素\n    function dp(value) { return Math.floor(value * density); }\n\n    // 圆形图标大小为屏幕高度的10%\n    var circleSize \u003d Math.floor(screenHeight * 0.1);\n    var iconSize \u003d Math.floor(circleSize * 0.70); // 图标占圆形的70%\n    var isDarkMode \u003d (context.getResources().getConfiguration().uiMode\n        \u0026 android.content.res.Configuration.UI_MODE_NIGHT_MASK)\n        \u003d\u003d\u003d android.content.res.Configuration.UI_MODE_NIGHT_YES;\n\n    function runOnUiThread(fn) {\n        uiHandler.post(new JavaAdapter(Runnable, { run: fn }));\n    }\n\n    function hideDialog(callback) {\n        var now \u003d java.lang.System.currentTimeMillis();\n        if (isRemoving || now - lastRemoveTime \u003c 300) return;\n        lastRemoveTime \u003d now;\n        isRemoving \u003d true;\n\n        runOnUiThread(function () {\n            try {\n                latch.countDown();\n                layout.animate().cancel();\n                layout.animate()\n                    .alpha(0)\n                    .scaleX(0.9)\n                    .scaleY(0.9)\n                    .setDuration(300)\n                    .setInterpolator(new AccelerateDecelerateInterpolator())\n                    .withEndAction(new JavaAdapter(Runnable, {\n                        run: function () {\n                            try {\n                                layout.setVisibility(View.GONE);\n                            } catch (e) {}\n                            uiHandler.postDelayed(new JavaAdapter(Runnable, {\n                                run: function () {\n                                    try { wm.removeView(layout); } catch (e) {}\n                                    layout \u003d null;\n                                    if (callback) callback();\n                                }\n                            }), 100);\n                        }\n                    }))\n                    .start();\n            } catch (e) {\n                try { wm.removeView(layout); } catch (e2) {}\n                layout \u003d null;\n                if (callback) callback();\n            }\n        });\n    }\n\n    runOnUiThread(function () {\n        layout \u003d new FrameLayout(context);\n        layout.setLayerType(View.LAYER_TYPE_HARDWARE, null);\n\n        // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 背景圆 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n        var bg \u003d new GradientDrawable();\n        if (isDarkMode) {\n            bg.setColor(Color.parseColor(COLOR_DARK_MODE_BACKGROUND));\n            bg.setStroke(2, Color.parseColor(COLOR_STROKE_DARK_MODE));\n        } else {\n            bg.setColor(Color.parseColor(COLOR_LIGHT_MODE_BACKGROUND));\n            bg.setStroke(2, Color.parseColor(COLOR_STROKE_LIGHT_MODE));\n        }\n        bg.setShape(GradientDrawable.OVAL); // 设置为正圆\n        layout.setBackground(bg);\n\n        // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 图标 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n        var iconView \u003d new ImageView(context);\n        var iconParams \u003d new FrameLayout.LayoutParams(iconSize, iconSize);\n\n        // 图标完全居中（上下左右）\n        iconParams.gravity \u003d Gravity.CENTER;\n\n        // 在居中的基础上，进行左右偏移（例如，偏移 0.1% 的圆形宽度）\n        var offsetX \u003d Math.floor(circleSize * 0.03); // 偏移量：圆形宽度的 0.3%\n        iconParams.leftMargin \u003d -offsetX; // 调整左右位置\n\n        iconView.setLayoutParams(iconParams);\n        iconView.setScaleType(ImageView.ScaleType.FIT_CENTER); // 图标适配\n\n        try {\n            var remoteContext \u003d context.createPackageContext(targetPackage, Context.CONTEXT_IGNORE_SECURITY);\n            var resId \u003d remoteContext.getResources().getIdentifier(\"ic_remix_hand_up\", \"drawable\", targetPackage);\n            if (resId \u003e 0) {\n                var drawable \u003d remoteContext.getResources().getDrawable(resId, null).mutate();\n                drawable.setTint(Color.parseColor(isDarkMode ? COLOR_ICON_DARK_MODE : COLOR_ICON_LIGHT_MODE));\n                iconView.setImageDrawable(drawable);\n            } else {\n                iconView.setImageResource(android.R.drawable.sym_def_app_icon);\n            }\n        } catch (e) {\n            iconView.setImageResource(android.R.drawable.sym_def_app_icon);\n        }\n\n        layout.addView(iconView);\n\n        var vibrator \u003d context.getSystemService(Context.VIBRATOR_SERVICE);\n        var downTime \u003d 0;\n        var longPressTriggered \u003d false;\n\n        layout.setOnTouchListener(new JavaAdapter(View.OnTouchListener, {\n            onTouch: function (v, event) {\n                switch (event.getAction()) {\n                    case MotionEvent.ACTION_DOWN:\n                        if (vibrator \u0026\u0026 vibrator.hasVibrator()) {\n                            vibrator.vibrate(30);\n                        }\n                        downTime \u003d java.lang.System.currentTimeMillis();\n                        longPressTriggered \u003d false;\n                        return true;\n\n                    case MotionEvent.ACTION_MOVE:\n                        if (!longPressTriggered \u0026\u0026 java.lang.System.currentTimeMillis() - downTime \u003e\u003d 100) {\n                            longPressTriggered \u003d true;\n                            result \u003d \"取消\";\n                            hideDialog();\n                            return true;\n                        }\n                        return false;\n\n                    case MotionEvent.ACTION_UP:\n                        if (longPressTriggered) return true;\n                        result \u003d \"打开\";\n                        hideDialog();\n                        return true;\n                }\n                return false;\n            }\n        }));\n\n        var params \u003d new WindowManager.LayoutParams(\n            circleSize,\n            circleSize,\n            WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,\n            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,\n            PixelFormat.TRANSLUCENT\n        );\n        params.gravity \u003d opts.gravity || (Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);\n        params.x \u003d opts.x || 0;\n        params.y \u003d opts.y !\u003d null ? opts.y : Math.floor(screenHeight * 0.18);\n        \n        try {\n            wm.addView(layout, params);\n        } catch (e) {\n            latch.countDown();\n            return;\n        }\n\n        layout.setVisibility(View.VISIBLE);\n        layout.setAlpha(0);\n        layout.setScaleX(0.9);\n        layout.setScaleY(0.9);\n        layout.animate()\n            .alpha(1)\n            .scaleX(1)\n            .scaleY(1)\n            .setDuration(300)\n            .setInterpolator(new AccelerateDecelerateInterpolator())\n            .start();\n\n        new Thread(new JavaAdapter(Runnable, {\n            run: function () {\n                Thread.sleep(timeout);\n                hideDialog();\n            }\n        })).start();\n    });\n\n    var waited \u003d latch.await(timeout, TimeUnit.MILLISECONDS);\n    if (!waited) {\n        hideDialog();\n    }\n    return result;\n}\n\n// 示例调用\nshowTypingBubble({\n    timeout: 3000\n});",
+        "customContextDataKey": {
+          "keys": [{
+            "first": "jsRet",
+            "second": "UI"
+          }]
+        },
+        "isDisabled": true,
+        "id": "A-7d434ac3-51fc-4388-9a98-c32cdb48ceb6"
+      }, {
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 引入 Android 所需类 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nimportPackage(android.view);\nimportPackage(android.widget);\nimportPackage(android.content);\nimportPackage(android.os);\nimportPackage(android.graphics);\nimportClass(android.graphics.drawable.GradientDrawable);\nimportClass(android.graphics.drawable.RippleDrawable);\nimportClass(android.content.res.ColorStateList);\nimportClass(android.graphics.PixelFormat);\nimportClass(android.view.WindowManager);\nimportClass(android.view.Gravity);\nimportClass(android.os.Vibrator);\nimportClass(java.lang.Thread);\nimportClass(java.lang.Runnable);\nimportClass(android.os.Handler);\nimportClass(android.os.Looper);\nimportClass(android.util.TypedValue);\nimportClass(android.content.Context);\nimportClass(java.lang.Class);\nimportClass(java.util.concurrent.CountDownLatch);\nimportClass(java.util.concurrent.TimeUnit);\nimportClass(android.view.animation.AccelerateDecelerateInterpolator);\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 辅助函数：转为 #RRGGBB 大写格式 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nfunction toHexColor(colorInt) {\n    var rgb \u003d colorInt \u0026 0xFFFFFF;\n    return \"#\" + rgb.toString(16).padStart(6, \"0\").toUpperCase();\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 目标应用包名 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar targetPackage \u003d \"tornaco.apps.shortx\";\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 颜色常量，带中文备注 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar COLOR_LIGHT_MODE_BACKGROUND;\nvar COLOR_DARK_MODE_BACKGROUND;\nvar COLOR_STROKE_LIGHT_MODE \u003d \"#22000000\";\nvar COLOR_STROKE_DARK_MODE \u003d \"#11FFFFFF\";\nvar COLOR_ICON_DARK_MODE;\nvar COLOR_ICON_LIGHT_MODE;\n\ntry {\n    var otherContext \u003d context.createPackageContext(\n        targetPackage, \n        Context.CONTEXT_IGNORE_SECURITY | Context.CONTEXT_INCLUDE_CODE\n    );\n    var RColorClass \u003d Class.forName(\"android.R$color\");\n    COLOR_LIGHT_MODE_BACKGROUND \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_100\").getInt(null),\n        otherContext.getTheme()\n    ));\n    COLOR_DARK_MODE_BACKGROUND \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_700\").getInt(null),\n        otherContext.getTheme()\n    ));\n    COLOR_ICON_DARK_MODE \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_100\").getInt(null),\n        otherContext.getTheme()\n    ));\n    COLOR_ICON_LIGHT_MODE \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_900\").getInt(null),\n        otherContext.getTheme()\n    ));\n} catch (e) {\n    COLOR_LIGHT_MODE_BACKGROUND \u003d \"#F0F0F0\";\n    COLOR_DARK_MODE_BACKGROUND \u003d \"#DADAD9\";\n    COLOR_ICON_DARK_MODE \u003d \"#000000\";\n    COLOR_ICON_LIGHT_MODE \u003d \"#000000\";\n}\n\nvar uiHandler \u003d new Handler(Looper.getMainLooper());\n\nfunction showTypingBubble(opts) {\n    var wm \u003d context.getSystemService(Context.WINDOW_SERVICE);\n    var latch \u003d new CountDownLatch(1);\n    var timeout \u003d opts.timeout || 3000;\n    var layout \u003d null;\n    var isRemoving \u003d false;\n    var lastRemoveTime \u003d 0;\n    var result \u003d null;\n\n    var displayMetrics \u003d context.getResources().getDisplayMetrics();\n    var screenWidth \u003d displayMetrics.widthPixels;\n    var screenHeight \u003d displayMetrics.heightPixels;\n    var density \u003d displayMetrics.density;\n\n    // 工具函数：将dp转换为像素\n    function dp(value) { return Math.floor(value * density); }\n\n    // 圆形图标大小为屏幕高度的10%\n    var circleSize \u003d Math.floor(screenHeight * 0.1);\n    var iconSize \u003d Math.floor(circleSize * 0.70); // 图标占圆形的70%\n    var isDarkMode \u003d (context.getResources().getConfiguration().uiMode\n        \u0026 android.content.res.Configuration.UI_MODE_NIGHT_MASK)\n        \u003d\u003d\u003d android.content.res.Configuration.UI_MODE_NIGHT_YES;\n\n    function runOnUiThread(fn) {\n        uiHandler.post(new JavaAdapter(Runnable, { run: fn }));\n    }\n\n    function hideDialog(callback) {\n        var now \u003d java.lang.System.currentTimeMillis();\n        if (isRemoving || now - lastRemoveTime \u003c 300) return;\n        lastRemoveTime \u003d now;\n        isRemoving \u003d true;\n\n        runOnUiThread(function () {\n            try {\n                latch.countDown();\n                layout.animate().cancel();\n                layout.animate()\n                    .alpha(0)\n                    .scaleX(0.9)\n                    .scaleY(0.9)\n                    .setDuration(300)\n                    .setInterpolator(new AccelerateDecelerateInterpolator())\n                    .withEndAction(new JavaAdapter(Runnable, {\n                        run: function () {\n                            try {\n                                layout.setVisibility(View.GONE);\n                            } catch (e) {}\n                            uiHandler.postDelayed(new JavaAdapter(Runnable, {\n                                run: function () {\n                                    try { wm.removeView(layout); } catch (e) {}\n                                    layout \u003d null;\n                                    if (callback) callback();\n                                }\n                            }), 100);\n                        }\n                    }))\n                    .start();\n            } catch (e) {\n                try { wm.removeView(layout); } catch (e2) {}\n                layout \u003d null;\n                if (callback) callback();\n            }\n        });\n    }\n\n    runOnUiThread(function () {\n        layout \u003d new FrameLayout(context);\n        layout.setLayerType(View.LAYER_TYPE_HARDWARE, null);\n\n        // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 背景圆 + Ripple 水波纹 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n        var normalBg \u003d new GradientDrawable();\n        if (isDarkMode) {\n            normalBg.setColor(Color.parseColor(COLOR_DARK_MODE_BACKGROUND));\n            normalBg.setStroke(2, Color.parseColor(COLOR_STROKE_DARK_MODE));\n        } else {\n            normalBg.setColor(Color.parseColor(COLOR_LIGHT_MODE_BACKGROUND));\n            normalBg.setStroke(2, Color.parseColor(COLOR_STROKE_LIGHT_MODE));\n        }\n        normalBg.setShape(GradientDrawable.OVAL); // 设置为正圆\n\n        var rippleColor \u003d Color.parseColor(isDarkMode ? \"#33FFFFFF\" : \"#1F000000\"); // 可以改为 \"#FF000000\" 测试不透明黑\n        var ripple \u003d new RippleDrawable(\n            ColorStateList.valueOf(rippleColor),\n            normalBg,\n            null // mask \u003d null，使用 content 形状\n        );\n        layout.setBackground(ripple);\n\n        // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 图标 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n        var iconView \u003d new ImageView(context);\n        var iconParams \u003d new FrameLayout.LayoutParams(iconSize, iconSize);\n\n        // 图标完全居中（上下左右）\n        iconParams.gravity \u003d Gravity.CENTER;\n\n        // 在居中的基础上，进行左右偏移（例如，偏移 0.1% 的圆形宽度）\n        var offsetX \u003d Math.floor(circleSize * 0.03); // 偏移量：圆形宽度的 0.3%\n        iconParams.leftMargin \u003d -offsetX; // 调整左右位置\n\n        iconView.setLayoutParams(iconParams);\n        iconView.setScaleType(ImageView.ScaleType.FIT_CENTER); // 图标适配\n\n        try {\n            var remoteContext \u003d context.createPackageContext(targetPackage, Context.CONTEXT_IGNORE_SECURITY);\n            var resId \u003d remoteContext.getResources().getIdentifier(\"ic_remix_hand_up\", \"drawable\", targetPackage);\n            if (resId \u003e 0) {\n                var drawable \u003d remoteContext.getResources().getDrawable(resId, null).mutate();\n                drawable.setTint(Color.parseColor(isDarkMode ? COLOR_ICON_DARK_MODE : COLOR_ICON_LIGHT_MODE));\n                iconView.setImageDrawable(drawable);\n            } else {\n                iconView.setImageResource(android.R.drawable.sym_def_app_icon);\n            }\n        } catch (e) {\n            iconView.setImageResource(android.R.drawable.sym_def_app_icon);\n        }\n\n        layout.addView(iconView);\n\n        var vibrator \u003d context.getSystemService(Context.VIBRATOR_SERVICE);\n\n        // 点击缩放（返回 false，让 Ripple 生效）\n        layout.setOnTouchListener(new JavaAdapter(View.OnTouchListener, {\n            onTouch: function (v, event) {\n                switch (event.getAction()) {\n                    case MotionEvent.ACTION_DOWN:\n                        if (vibrator \u0026\u0026 vibrator.hasVibrator()) {\n                            vibrator.vibrate(30);\n                        }\n                        v.animate().scaleX(0.9).scaleY(0.9).setDuration(120).start();\n                        break;\n                    case MotionEvent.ACTION_UP:\n                    case MotionEvent.ACTION_CANCEL:\n                        v.animate().scaleX(1.0).scaleY(1.0).setDuration(120).start();\n                        break;\n                }\n                return false; // 返回 false，让 Ripple 和 Click 正常工作\n            }\n        }));\n\n        // 点击事件：短按 \"打开\"\n        layout.setOnClickListener(new JavaAdapter(View.OnClickListener, {\n            onClick: function (v) {\n                result \u003d \"打开\";\n                hideDialog();\n            }\n        }));\n\n        // 长按事件：长按 \"取消\"\n        layout.setOnLongClickListener(new JavaAdapter(View.OnLongClickListener, {\n            onLongClick: function (v) {\n                result \u003d \"取消\";\n                hideDialog();\n                return true; // 消费长按事件\n            }\n        }));\n\n        var params \u003d new WindowManager.LayoutParams(\n            circleSize,\n            circleSize,\n            WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,\n            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,\n            PixelFormat.TRANSLUCENT\n        );\n        params.gravity \u003d opts.gravity || (Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);\n        params.x \u003d opts.x || 0;\n        params.y \u003d opts.y !\u003d null ? opts.y : Math.floor(screenHeight * 0.18);\n        \n        try {\n            wm.addView(layout, params);\n        } catch (e) {\n            latch.countDown();\n            return;\n        }\n\n        layout.setVisibility(View.VISIBLE);\n        layout.setAlpha(0);\n        layout.setScaleX(0.9);\n        layout.setScaleY(0.9);\n        layout.animate()\n            .alpha(1)\n            .scaleX(1)\n            .scaleY(1)\n            .setDuration(300)\n            .setInterpolator(new AccelerateDecelerateInterpolator())\n            .start();\n\n        new Thread(new JavaAdapter(Runnable, {\n            run: function () {\n                Thread.sleep(timeout);\n                hideDialog();\n            }\n        })).start();\n    });\n\n    var waited \u003d latch.await(timeout, TimeUnit.MILLISECONDS);\n    if (!waited) {\n        hideDialog();\n    }\n    return result;\n}\n\n// 示例调用\nshowTypingBubble({\n    timeout: 3000\n});",
+        "customContextDataKey": {
+          "keys": [{
+            "first": "jsRet",
+            "second": "UI"
+          }]
+        },
+        "isDisabled": true,
+        "id": "A-4124ee5b-87e2-4c7d-876e-32372d366b8b"
+      }, {
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 引入 Android 所需类 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nimportPackage(android.view);\nimportPackage(android.widget);\nimportPackage(android.content);\nimportPackage(android.os);\nimportPackage(android.graphics);\nimportClass(android.graphics.drawable.GradientDrawable);\nimportClass(android.graphics.drawable.RippleDrawable);\nimportClass(android.content.res.ColorStateList);\nimportClass(android.graphics.PixelFormat);\nimportClass(android.view.WindowManager);\nimportClass(android.view.Gravity);\nimportClass(android.os.Vibrator);\nimportClass(java.lang.Thread);\nimportClass(java.lang.Runnable);\nimportClass(android.os.Handler);\nimportClass(android.os.Looper);\nimportClass(android.util.TypedValue);\nimportClass(android.content.Context);\nimportClass(java.lang.Class);\nimportClass(java.util.concurrent.CountDownLatch);\nimportClass(java.util.concurrent.TimeUnit);\nimportClass(android.view.animation.AccelerateDecelerateInterpolator);\nimportClass(android.view.ViewOutlineProvider); // 新增：导入 ViewOutlineProvider\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 辅助函数：转为 #RRGGBB 大写格式 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nfunction toHexColor(colorInt) {\n    var rgb \u003d colorInt \u0026 0xFFFFFF;\n    return \"#\" + rgb.toString(16).padStart(6, \"0\").toUpperCase();\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 目标应用包名 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar targetPackage \u003d \"tornaco.apps.shortx\";\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 颜色常量，带中文备注 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar COLOR_LIGHT_MODE_BACKGROUND;\nvar COLOR_DARK_MODE_BACKGROUND;\nvar COLOR_STROKE_LIGHT_MODE \u003d \"#22000000\";\nvar COLOR_STROKE_DARK_MODE \u003d \"#11FFFFFF\";\nvar COLOR_ICON_DARK_MODE;\nvar COLOR_ICON_LIGHT_MODE;\n\ntry {\n    var otherContext \u003d context.createPackageContext(\n        targetPackage, \n        Context.CONTEXT_IGNORE_SECURITY | Context.CONTEXT_INCLUDE_CODE\n    );\n    var RColorClass \u003d Class.forName(\"android.R$color\");\n    COLOR_LIGHT_MODE_BACKGROUND \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_100\").getInt(null),\n        otherContext.getTheme()\n    ));\n    COLOR_DARK_MODE_BACKGROUND \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_700\").getInt(null),\n        otherContext.getTheme()\n    ));\n    COLOR_ICON_DARK_MODE \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_100\").getInt(null),\n        otherContext.getTheme()\n    ));\n    COLOR_ICON_LIGHT_MODE \u003d toHexColor(otherContext.getResources().getColor(\n        RColorClass.getField(\"system_accent2_900\").getInt(null),\n        otherContext.getTheme()\n    ));\n} catch (e) {\n    COLOR_LIGHT_MODE_BACKGROUND \u003d \"#F0F0F0\";\n    COLOR_DARK_MODE_BACKGROUND \u003d \"#DADAD9\";\n    COLOR_ICON_DARK_MODE \u003d \"#000000\";\n    COLOR_ICON_LIGHT_MODE \u003d \"#000000\";\n}\n\nvar uiHandler \u003d new Handler(Looper.getMainLooper());\n\nfunction showTypingBubble(opts) {\n    var wm \u003d context.getSystemService(Context.WINDOW_SERVICE);\n    var latch \u003d new CountDownLatch(1);\n    var timeout \u003d opts.timeout || 3000;\n    var layout \u003d null;\n    var isRemoving \u003d false;\n    var lastRemoveTime \u003d 0;\n    var result \u003d null;\n\n    var displayMetrics \u003d context.getResources().getDisplayMetrics();\n    var screenWidth \u003d displayMetrics.widthPixels;\n    var screenHeight \u003d displayMetrics.heightPixels;\n    var density \u003d displayMetrics.density;\n\n    // 工具函数：将dp转换为像素\n    function dp(value) { return Math.floor(value * density); }\n\n    // 圆形图标大小为屏幕高度的10%\n    var circleSize \u003d Math.floor(screenHeight * 0.1);\n    var iconSize \u003d Math.floor(circleSize * 0.70); // 图标占圆形的70%\n    var isDarkMode \u003d (context.getResources().getConfiguration().uiMode\n        \u0026 android.content.res.Configuration.UI_MODE_NIGHT_MASK)\n        \u003d\u003d\u003d android.content.res.Configuration.UI_MODE_NIGHT_YES;\n\n    function runOnUiThread(fn) {\n        uiHandler.post(new JavaAdapter(Runnable, { run: fn }));\n    }\n\n    function hideDialog(callback) {\n        var now \u003d java.lang.System.currentTimeMillis();\n        if (isRemoving || now - lastRemoveTime \u003c 300) return;\n        lastRemoveTime \u003d now;\n        isRemoving \u003d true;\n\n        runOnUiThread(function () {\n            try {\n                latch.countDown();\n                layout.animate().cancel();\n                layout.animate()\n                    .alpha(0)\n                    .scaleX(0.9)\n                    .scaleY(0.9)\n                    .setDuration(300)\n                    .setInterpolator(new AccelerateDecelerateInterpolator())\n                    .withEndAction(new JavaAdapter(Runnable, {\n                        run: function () {\n                            try {\n                                layout.setVisibility(View.GONE);\n                            } catch (e) {}\n                            uiHandler.postDelayed(new JavaAdapter(Runnable, {\n                                run: function () {\n                                    try { wm.removeView(layout); } catch (e) {}\n                                    layout \u003d null;\n                                    if (callback) callback();\n                                }\n                            }), 100);\n                        }\n                    }))\n                    .start();\n            } catch (e) {\n                try { wm.removeView(layout); } catch (e2) {}\n                layout \u003d null;\n                if (callback) callback();\n            }\n        });\n    }\n\n    runOnUiThread(function () {\n        layout \u003d new FrameLayout(context);\n        layout.setLayerType(View.LAYER_TYPE_HARDWARE, null);\n        layout.setElevation(dp(2)); // 添加阴影效果（elevation）\n\n        // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 背景圆 + Ripple 水波纹 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n        var normalBg \u003d new GradientDrawable();\n        if (isDarkMode) {\n            normalBg.setColor(Color.parseColor(COLOR_DARK_MODE_BACKGROUND));\n        } else {\n            normalBg.setColor(Color.parseColor(COLOR_LIGHT_MODE_BACKGROUND));\n        }\n        normalBg.setShape(GradientDrawable.OVAL); // 设置为正圆\n\n        var rippleColor \u003d Color.parseColor(isDarkMode ? \"#33FFFFFF\" : \"#1F000000\"); // 可以改为 \"#FF000000\" 测试不透明黑\n        var ripple \u003d new RippleDrawable(\n            ColorStateList.valueOf(rippleColor),\n            normalBg,\n            null // mask \u003d null，使用 content 形状\n        );\n        layout.setBackground(ripple);\n\n        // 新增：启用 clipToOutline 并设置 OutlineProvider 以使阴影围绕整个视图\n        layout.setClipToOutline(true);\n        layout.setOutlineProvider(ViewOutlineProvider.BACKGROUND);\n\n        // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 图标 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n        var iconView \u003d new ImageView(context);\n        var iconParams \u003d new FrameLayout.LayoutParams(iconSize, iconSize);\n\n        // 图标完全居中（上下左右）\n        iconParams.gravity \u003d Gravity.CENTER;\n\n        // 在居中的基础上，进行左右偏移（例如，偏移 0.1% 的圆形宽度）\n        var offsetX \u003d Math.floor(circleSize * 0.03); // 偏移量：圆形宽度的 0.3%\n        iconParams.leftMargin \u003d -offsetX; // 调整左右位置\n\n        iconView.setLayoutParams(iconParams);\n        iconView.setScaleType(ImageView.ScaleType.FIT_CENTER); // 图标适配\n\n        try {\n            var remoteContext \u003d context.createPackageContext(targetPackage, Context.CONTEXT_IGNORE_SECURITY);\n            var resId \u003d remoteContext.getResources().getIdentifier(\"ic_remix_hand_up\", \"drawable\", targetPackage);\n            if (resId \u003e 0) {\n                var drawable \u003d remoteContext.getResources().getDrawable(resId, null).mutate();\n                drawable.setTint(Color.parseColor(isDarkMode ? COLOR_ICON_DARK_MODE : COLOR_ICON_LIGHT_MODE));\n                iconView.setImageDrawable(drawable);\n            } else {\n                iconView.setImageResource(android.R.drawable.sym_def_app_icon);\n            }\n        } catch (e) {\n            iconView.setImageResource(android.R.drawable.sym_def_app_icon);\n        }\n\n        layout.addView(iconView);\n\n        var vibrator \u003d context.getSystemService(Context.VIBRATOR_SERVICE);\n\n        // 点击缩放（返回 false，让 Ripple 生效）\n        layout.setOnTouchListener(new JavaAdapter(View.OnTouchListener, {\n            onTouch: function (v, event) {\n                switch (event.getAction()) {\n                    case MotionEvent.ACTION_DOWN:\n                        if (vibrator \u0026\u0026 vibrator.hasVibrator()) {\n                            vibrator.vibrate(30);\n                        }\n                        v.animate().scaleX(0.9).scaleY(0.9).setDuration(120).start();\n                        break;\n                    case MotionEvent.ACTION_UP:\n                    case MotionEvent.ACTION_CANCEL:\n                        v.animate().scaleX(1.0).scaleY(1.0).setDuration(120).start();\n                        break;\n                }\n                return false; // 返回 false，让 Ripple 和 Click 正常工作\n            }\n        }));\n\n        // 点击事件：短按 \"打开\"\n        layout.setOnClickListener(new JavaAdapter(View.OnClickListener, {\n            onClick: function (v) {\n                result \u003d \"打开\";\n                hideDialog();\n            }\n        }));\n\n        // 长按事件：长按 \"取消\"\n        layout.setOnLongClickListener(new JavaAdapter(View.OnLongClickListener, {\n            onLongClick: function (v) {\n                result \u003d \"取消\";\n                hideDialog();\n                return true; // 消费长按事件\n            }\n        }));\n\n        var params \u003d new WindowManager.LayoutParams(\n            circleSize,\n            circleSize,\n            WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,\n            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,\n            PixelFormat.TRANSLUCENT\n        );\n        params.gravity \u003d opts.gravity || (Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL);\n        params.x \u003d opts.x || 0;\n        params.y \u003d opts.y !\u003d null ? opts.y : Math.floor(screenHeight * 0.18);\n        \n        try {\n            wm.addView(layout, params);\n        } catch (e) {\n            latch.countDown();\n            return;\n        }\n\n        layout.setVisibility(View.VISIBLE);\n        layout.setAlpha(0);\n        layout.setScaleX(0.9);\n        layout.setScaleY(0.9);\n        layout.animate()\n            .alpha(1)\n            .scaleX(1)\n            .scaleY(1)\n            .setDuration(300)\n            .setInterpolator(new AccelerateDecelerateInterpolator())\n            .start();\n\n        new Thread(new JavaAdapter(Runnable, {\n            run: function () {\n                Thread.sleep(timeout);\n                hideDialog();\n            }\n        })).start();\n    });\n\n    var waited \u003d latch.await(timeout, TimeUnit.MILLISECONDS);\n    if (!waited) {\n        hideDialog();\n    }\n    return result;\n}\n\n// 示例调用\nshowTypingBubble({\n    timeout: 3000\n});",
+        "customContextDataKey": {
+          "keys": [{
+            "first": "jsRet",
+            "second": "UI"
+          }]
+        },
+        "id": "A-b98e42cd-e8e1-44ff-90ae-6e4b89074f97"
+      }, {
+        "@type": "type.googleapis.com/WriteClipboard",
+        "text": "{jsRet}",
+        "customContextDataKey": {
+        },
+        "id": "A-a2afd8fb-24c6-4c37-a502-3e093aec0618"
+      }],
+      "id": "Case-c9c98955-59c9-4a4a-8969-4314aeda0c78",
+      "actionAsyncMode": "ActionAsyncMode_Async"
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "UI \u003d\u003d \"打开\";",
+        "customContextDataKey": {
+        },
+        "isInvert": true,
+        "id": "C-9edb7b9f-bf30-4d21-b4e9-872d7dc50844"
+      }],
+      "id": "Case-29df1d89-d947-42fb-a4cc-00d326943ae2",
+      "isBreak": true
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/EvaluateContextVar",
+        "op": "Contains",
+        "varName": "choices",
+        "payload": {
+          "value": "Shell"
+        },
+        "customContextDataKey": {
+        },
+        "id": "C-011d3ee9-94c8-4708-a36c-907e7305f350"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/ShellCommand",
+        "command": "{jsRet}",
+        "singleShot": true,
+        "customContextDataKey": {
+        },
+        "id": "A-39dec76b-40f9-422b-89f0-7889a6b402fa"
+      }],
+      "id": "Case-b27f0327-194e-4dd4-b7f3-c8c65dbcef6d",
+      "isBreak": true
+    }, {
+      "action": [{
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "eval(jsRet);",
+        "customContextDataKey": {
+        },
+        "id": "A-8745d030-b7b1-43fc-b571-626cb420194b"
+      }],
+      "id": "Case-f3e80cec-93e1-425e-b867-1ba265784890"
+    }],
+    "customContextDataKey": {
+    },
+    "id": "A-cdac0f8c-f590-4a6c-af0a-545acc69ed6a"
+  }],
+  "id": "SHARED-DA-7221c9e0-3192-4324-ad96-45ac3398c719",
+  "lastUpdateTime": "1762037653533",
+  "createTime": "1759802018897",
+  "author": {
+    "name": "HeWei"
+  },
+  "title": "Shortcuts(快捷方式",
+  "description": "4.0版本\n支持全部类型快捷方式\n支持多用户\n多种语言",
+  "versionCode": "4",
+  "hook": {
+  },
+  "quit": {
+  }
+}
+###------###
+{"type":"da"}

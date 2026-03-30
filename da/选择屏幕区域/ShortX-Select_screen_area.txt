@@ -1,0 +1,255 @@
+{
+  "actions": [{
+    "@type": "type.googleapis.com/NoAction",
+    "icon": "drag-drop-line",
+    "customContextDataKey": {
+    },
+    "id": "A-2937189c-f091-44cc-bf77-a1b119feff6d"
+  }, {
+    "@type": "type.googleapis.com/ExecuteJS",
+    "expression": "// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 引用库 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nimportPackage(android.view);\nimportPackage(android.widget);\nimportPackage(android.content);\nimportClass(android.os.Build);\nimportPackage(android.graphics);\nimportClass(android.graphics.drawable.GradientDrawable);\nimportClass(android.graphics.PixelFormat);\nimportClass(android.view.WindowManager);\nimportClass(android.view.Gravity);\nimportClass(android.os.Handler);\nimportClass(android.os.Looper);\nimportClass(android.provider.Settings);\nimportClass(java.lang.Thread);\nimportClass(java.lang.Runnable);\nimportClass(android.util.DisplayMetrics);\nimportClass(java.util.concurrent.CountDownLatch);\nimportClass(android.graphics.drawable.RippleDrawable);\nimportClass(android.content.res.ColorStateList);\nimportClass(android.content.Context);\nimportClass(android.content.res.Configuration);\nimportClass(java.lang.Class);\nimportClass(android.graphics.Point);\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 目标应用包名 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar targetPackage \u003d \"tornaco.apps.shortx\";\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 颜色获取函数 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nfunction toHexColor(colorInt) {\n    var rgb \u003d colorInt \u0026 0xFFFFFF;\n    return \"#\" + rgb.toString(16).padStart(6, \"0\").toUpperCase();\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 需要的颜色常量 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar COLOR_ICON_DARK_MODE; // 深色模式图标颜色\nvar COLOR_ICON_LIGHT_MODE; // 浅色模式图标颜色\nvar COLOR_DARK_MODE_BUTTON_BACKGROUND; // 深色模式按钮背景色（长条背景）\nvar COLOR_LIGHT_MODE_BUTTON_BACKGROUND; // 浅色模式按钮背景色（长条背景）\nvar COLOR_DARK_MODE_CIRCLE_BACKGROUND; // 深色模式圆形按钮背景色（莫奈取色）\nvar COLOR_LIGHT_MODE_CIRCLE_BACKGROUND; // 浅色模式圆形按钮背景色（莫奈取色）\n\n// 预加载颜色\nfunction loadColors() {\n    try {\n        var getContext \u003d context.createPackageContext(\n            targetPackage,\n            Context.CONTEXT_IGNORE_SECURITY | Context.CONTEXT_INCLUDE_CODE\n        );\n\n        var RColorClass \u003d Class.forName(\"android.R$color\");  \n        \n        // 图标颜色\n        COLOR_ICON_LIGHT_MODE \u003d toHexColor(getContext.getResources().getColor(  \n            RColorClass.getField(\"system_neutral2_700\").getInt(null),  \n            getContext.getTheme()  \n        )) || \"#888888\";  \n\n        COLOR_ICON_DARK_MODE \u003d toHexColor(getContext.getResources().getColor(  \n            RColorClass.getField(\"system_accent1_100\").getInt(null),  \n            getContext.getTheme()  \n        )) || \"#888888\";  \n\n        // 长条背景颜色\n        COLOR_LIGHT_MODE_BUTTON_BACKGROUND \u003d toHexColor(getContext.getResources().getColor(  \n            RColorClass.getField(\"system_neutral1_50\").getInt(null),  \n            getContext.getTheme()  \n        )) || \"#FEFEFE\";  \n\n        COLOR_DARK_MODE_BUTTON_BACKGROUND \u003d toHexColor(getContext.getResources().getColor(  \n            RColorClass.getField(\"system_neutral2_900\").getInt(null),  \n            getContext.getTheme()  \n        )) || \"#28282D\";  \n\n        // 圆形按钮背景颜色（莫奈取色 - 使用 surface_container）\n        COLOR_LIGHT_MODE_CIRCLE_BACKGROUND \u003d toHexColor(getContext.getResources().getColor(  \n            RColorClass.getField(\"system_accent1_100\").getInt(null),  \n            getContext.getTheme()  \n        )) || \"#EDEDED\";  \n\n        COLOR_DARK_MODE_CIRCLE_BACKGROUND \u003d toHexColor(getContext.getResources().getColor(  \n            RColorClass.getField(\"system_neutral1_800\").getInt(null),  \n            getContext.getTheme()  \n        )) || \"#333333\";  \n\n    } catch (e) {\n        console.log(\"颜色获取失败: \" + e);\n        COLOR_ICON_LIGHT_MODE \u003d \"#888888\";\n        COLOR_ICON_DARK_MODE \u003d \"#888888\";\n        COLOR_LIGHT_MODE_BUTTON_BACKGROUND \u003d \"#FEFEFE\";\n        COLOR_DARK_MODE_BUTTON_BACKGROUND \u003d \"#28282D\";\n        COLOR_LIGHT_MODE_CIRCLE_BACKGROUND \u003d \"#EDEDED\";\n        COLOR_DARK_MODE_CIRCLE_BACKGROUND \u003d \"#333333\";\n    }\n}\n\nloadColors();\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 其他颜色定义 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar darkModeRippleColor \u003d \"#33FFFFFF\"; // 深色模式涟漪颜色\nvar lightModeRippleColor \u003d \"#33000000\"; // 浅色模式涟漪颜色\nvar maskColor \u003d Color.WHITE; // 涟漪遮罩颜色\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 悬浮框选 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nfunction showSelectionPanel() {\n    var result \u003d { completed: false, pointStr: null, clickedButton: \"none\" };\n    var latch \u003d new CountDownLatch(1);\n    var wm \u003d context.getSystemService(Context.WINDOW_SERVICE);\n    var containerRef \u003d null;\n\n    var handler \u003d new Handler(Looper.getMainLooper());\n    handler.post(new Runnable({\n        run: function() {\n            try {\n                var dm \u003d context.getResources().getDisplayMetrics();\n                var density \u003d dm.density;\n                var isDarkMode \u003d (context.getResources().getConfiguration().uiMode \u0026 Configuration.UI_MODE_NIGHT_MASK) \u003d\u003d Configuration.UI_MODE_NIGHT_YES;\n\n                function dp(value) { return Math.floor(value * density); }\n\n                var display \u003d wm.getDefaultDisplay();\n                var realSize \u003d new Point();\n                display.getRealSize(realSize);\n                var usableHeight \u003d realSize.y;\n                var usableHeightAlt \u003d dm.heightPixels;\n                try {\n                    var metrics \u003d new DisplayMetrics();\n                    display.getMetrics(metrics);\n                    var navBarHeight \u003d 48 * (dm.densityDpi / 160);\n                    if (realSize.y \u003e dm.heightPixels) usableHeightAlt \u003d dm.heightPixels;\n                } catch (e) {}\n                var effectiveHeight \u003d usableHeight \u003e 0 ? usableHeight : dm.heightPixels;\n\n                // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 容器 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                var container \u003d new FrameLayout(context);\n                container.setBackgroundColor(Color.TRANSPARENT);\n                containerRef \u003d container;\n\n                // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 框选变量 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                var startX \u003d -1, startY \u003d -1, endX \u003d -1, endY \u003d -1;\n                var doubleTapTime \u003d 0;\n                var dragMode \u003d null, lastX \u003d 0, lastY \u003d 0, edgeThreshold \u003d 40;\n                var hasSelection \u003d false;\n                var clickCount \u003d 0;\n                var clickHandler \u003d null;\n\n                // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 蒙板 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                function createOverlay() {\n                    var v \u003d new View(context);\n                    v.setBackgroundColor(Color.parseColor(\"#90000000\"));\n                    v.setVisibility(View.GONE);\n                    container.addView(v);\n                    return v;\n                }\n                var overlayTop \u003d createOverlay();\n                var overlayBottom \u003d createOverlay();\n                var overlayLeft \u003d createOverlay();\n                var overlayRight \u003d createOverlay();\n\n                // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 手柄 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                function createHandle() {\n                    var handle \u003d new View(context);\n                    var hdBg \u003d new GradientDrawable();\n                    hdBg.setShape(GradientDrawable.OVAL);\n                    hdBg.setColor(Color.WHITE);\n                    hdBg.setStroke(2, Color.WHITE);\n                    handle.setBackground(hdBg);\n                    handle.setLayoutParams(new FrameLayout.LayoutParams(30, 30));\n                    handle.setVisibility(View.GONE);\n                    container.addView(handle);\n                    return handle;\n                }\n                var handleLT \u003d createHandle(), handleRT \u003d createHandle(),\n                    handleLB \u003d createHandle(), handleRB \u003d createHandle();\n\n                function setHandlePosition(handle, x, y) {\n                    var size \u003d 30;\n                    handle.setX(x - size / 2);\n                    handle.setY(y - size / 2);\n                }\n\n                // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 刷新选区 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                function refreshSelection() {\n                    if (!hasSelection || startX \u003d\u003d -1 || startY \u003d\u003d -1 || endX \u003d\u003d -1 || endY \u003d\u003d -1) {\n                        handleLT.setVisibility(View.GONE);\n                        handleRT.setVisibility(View.GONE);\n                        handleLB.setVisibility(View.GONE);\n                        handleRB.setVisibility(View.GONE);\n                        overlayTop.setVisibility(View.GONE);\n                        overlayBottom.setVisibility(View.GONE);\n                        overlayLeft.setVisibility(View.GONE);\n                        overlayRight.setVisibility(View.GONE);\n                        buttonBar.setVisibility(View.GONE);\n                        return;\n                    }\n\n                    var l \u003d Math.floor(Math.min(startX, endX)),\n                        t \u003d Math.floor(Math.min(startY, endY));\n                    var r \u003d Math.floor(Math.max(startX, endX)),\n                        b \u003d Math.floor(Math.max(startY, endY));\n                    if (b \u003e effectiveHeight) b \u003d effectiveHeight;\n\n                    setHandlePosition(handleLT, l, t);\n                    setHandlePosition(handleRT, r, t);\n                    setHandlePosition(handleLB, l, b);\n                    setHandlePosition(handleRB, r, b);\n                    handleLT.setVisibility(View.VISIBLE);\n                    handleRT.setVisibility(View.VISIBLE);\n                    handleLB.setVisibility(View.VISIBLE);\n                    handleRB.setVisibility(View.VISIBLE);\n\n                    overlayTop.setX(0); overlayTop.setY(0);\n                    overlayTop.getLayoutParams().width \u003d dm.widthPixels;\n                    overlayTop.getLayoutParams().height \u003d t;\n                    overlayTop.setVisibility(View.VISIBLE);\n\n                    overlayBottom.setX(0); overlayBottom.setY(b);\n                    overlayBottom.getLayoutParams().width \u003d dm.widthPixels;\n                    overlayBottom.getLayoutParams().height \u003d effectiveHeight - b;\n                    overlayBottom.setVisibility(View.VISIBLE);\n\n                    overlayLeft.setX(0); overlayLeft.setY(t);\n                    overlayLeft.getLayoutParams().width \u003d l;\n                    overlayLeft.getLayoutParams().height \u003d b - t;\n                    overlayLeft.setVisibility(View.VISIBLE);\n\n                    overlayRight.setX(r); overlayRight.setY(t);\n                    overlayRight.getLayoutParams().width \u003d dm.widthPixels - r;\n                    overlayRight.getLayoutParams().height \u003d b - t;\n                    overlayRight.setVisibility(View.VISIBLE);\n\n                    overlayTop.requestLayout();\n                    overlayBottom.requestLayout();\n                    overlayLeft.requestLayout();\n                    overlayRight.requestLayout();\n                }\n\n                // \u003d\u003d\u003d\u003d\u003d\u003d 按钮配置 \u003d\u003d\u003d\u003d\u003d\u003d\n                var ICON_SIZE_RATIO \u003d 0.75; // 图标占按钮的比例（75%）\n                var BUTTON_SPACING \u003d dp(8); // 按钮之间的间距\n                var BAR_CORNER_RADIUS \u003d dp(15); // 长条背景的圆角\n                var BUTTON_SIZE \u003d dp(30); // 单个按钮的尺寸\n                var BAR_PADDING \u003d dp(4); // 长条内边距\n\n                // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 按钮栏 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                var buttonBar \u003d new LinearLayout(context);\n                buttonBar.setOrientation(LinearLayout.HORIZONTAL);\n                buttonBar.setGravity(Gravity.CENTER);\n                buttonBar.setVisibility(View.GONE);\n                buttonBar.setPadding(BAR_PADDING, BAR_PADDING, BAR_PADDING, BAR_PADDING); // 内边距\n                \n                // 长条背景（使用莫奈取色）\n                var barBg \u003d new GradientDrawable();\n                barBg.setColor(Color.parseColor(isDarkMode ? COLOR_DARK_MODE_BUTTON_BACKGROUND : COLOR_LIGHT_MODE_BUTTON_BACKGROUND));\n                barBg.setCornerRadius(BAR_CORNER_RADIUS);\n                buttonBar.setBackground(barBg);\n                buttonBar.setElevation(dp(8));\n                container.addView(buttonBar);\n\n                var buttonIcons \u003d [\n                    \"ic_remix_share_line\",\n                    \"ic_remix_pushpin\",\n                    \"ic_remix_save_2_fill\",\n                    \"ic_remix_font_search\",\n                    \"ic_remix_body_scan_line\",\n                    \"ic_remix_close_circle_fill\",\n                    \"ic_remix_check_small\"\n                ];\n                var buttonActions \u003d [\"share\", \"pin\", \"save\", \"ocr\", \"ownText\", \"close\", \"confirm\"];\n\n                var rippleColor \u003d ColorStateList.valueOf(Color.parseColor(isDarkMode ? darkModeRippleColor : lightModeRippleColor));\n\n                for (var i \u003d 0; i \u003c buttonIcons.length; i++) {\n                    // 外层容器（用于间距）\n                    var buttonContainer \u003d new FrameLayout(context);\n                    var containerParams \u003d new LinearLayout.LayoutParams(BUTTON_SIZE, BUTTON_SIZE);\n                    if (i \u003e 0) {\n                        containerParams.leftMargin \u003d BUTTON_SPACING; // 按钮之间的间距\n                    }\n                    buttonContainer.setLayoutParams(containerParams);\n\n                    // 圆形按钮背景（持续存在，使用莫奈取色）\n                    var buttonBg \u003d new GradientDrawable();\n                    buttonBg.setShape(GradientDrawable.OVAL);\n                    buttonBg.setColor(Color.parseColor(isDarkMode ? COLOR_DARK_MODE_CIRCLE_BACKGROUND : COLOR_LIGHT_MODE_CIRCLE_BACKGROUND)); // 使用莫奈取色\n                    \n                    // 涟漪效果（点击时的反馈）\n                    var rippleMask \u003d new GradientDrawable();\n                    rippleMask.setShape(GradientDrawable.OVAL);\n                    rippleMask.setColor(maskColor);\n                    var rippleDrawable \u003d new RippleDrawable(rippleColor, buttonBg, rippleMask);\n                    buttonContainer.setBackground(rippleDrawable);\n\n                    // 图标\n                    var iconView \u003d new ImageView(context);\n                    iconView.setScaleType(ImageView.ScaleType.FIT_CENTER);\n                    var iconSize \u003d Math.floor(BUTTON_SIZE * ICON_SIZE_RATIO); // 图标占按钮的75%\n                    var iconParams \u003d new FrameLayout.LayoutParams(iconSize, iconSize, Gravity.CENTER);\n                    iconView.setLayoutParams(iconParams);\n\n                    try {\n                        var remoteContext \u003d context.createPackageContext(targetPackage, Context.CONTEXT_IGNORE_SECURITY);\n                        var resId \u003d remoteContext.getResources().getIdentifier(buttonIcons[i], \"drawable\", targetPackage);\n                        if (resId \u003e 0) {\n                            var drawable \u003d remoteContext.getResources().getDrawable(resId, null).mutate();\n                            drawable.setTint(Color.parseColor(isDarkMode ? COLOR_ICON_DARK_MODE : COLOR_ICON_LIGHT_MODE));\n                            iconView.setImageDrawable(drawable);\n                        } else {\n                            iconView.setImageResource(android.R.drawable.ic_menu_help);\n                        }\n                    } catch (e) {\n                        console.log(\"加载图标失败: \" + e);\n                        iconView.setImageResource(android.R.drawable.ic_menu_help);\n                    }\n\n                    (function(action) {\n                        buttonContainer.setOnClickListener(new JavaAdapter(View.OnClickListener, {\n                            onClick: function(v) {\n                                result.clickedButton \u003d action;\n                                if (action \u003d\u003d\u003d \"close\") {\n                                    result.pointStr \u003d \"已取消\";\n                                } else {\n                                    var l \u003d Math.min(startX, endX);\n                                    var t \u003d Math.min(startY, endY);\n                                    var r \u003d Math.max(startX, endX);\n                                    var b \u003d Math.max(startY, endY);\n                                    result.pointStr \u003d Math.floor(l) + \" \" + Math.floor(t) + \" \" + Math.floor(r) + \" \" + Math.floor(b);\n                                }\n                                result.completed \u003d true;\n                                latch.countDown();\n                                try { wm.removeView(container); } catch (e) { console.log(\"移除悬浮框失败: \" + e); }\n                            }\n                        }));\n                    })(buttonActions[i]);\n\n                    buttonContainer.addView(iconView);\n                    buttonBar.addView(buttonContainer);\n                }\n\n                // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 显示按钮栏（智能定位）\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                function showButtonBar(rectBottom, rectRight, rectTop, rectLeft) {\n                    // 计算按钮栏总宽度和高度\n                    var totalWidth \u003d (BUTTON_SIZE * buttonIcons.length) + (BUTTON_SPACING * (buttonIcons.length - 1)) + (BAR_PADDING * 2);\n                    var barHeight \u003d BUTTON_SIZE + (BAR_PADDING * 2);\n                    var barParams \u003d new FrameLayout.LayoutParams(totalWidth, barHeight);\n                    buttonBar.setLayoutParams(barParams);\n                    buttonBar.requestLayout();\n\n                    var positionX \u003d 0;\n                    var positionY \u003d 0;\n                    var margin \u003d dp(7); // 按钮栏与选区的间距\n                    var insideMargin \u003d dp(8); // 按钮栏在选区内部的边距\n                    \n                    // 计算框选区域的尺寸\n                    var selectionWidth \u003d rectRight - rectLeft;\n                    var selectionHeight \u003d rectBottom - rectTop;\n                    \n                    // 标记是否需要显示在选区内部\n                    var showInside \u003d false;\n                    \n                    // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 第一优先级：尝试显示在选区下方（右对齐）\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                    if (effectiveHeight - rectBottom \u003e\u003d barHeight + margin) {\n                        positionY \u003d rectBottom + margin;\n                        positionX \u003d rectRight - totalWidth;\n                        \n                        // 检查水平方向是否超出屏幕\n                        if (positionX \u003c 0) {\n                            positionX \u003d 0;\n                        }\n                        if (positionX + totalWidth \u003e dm.widthPixels) {\n                            positionX \u003d dm.widthPixels - totalWidth;\n                        }\n                    }\n                    // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 第二优先级：尝试显示在选区上方（右对齐）\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                    else if (rectTop \u003e\u003d barHeight + margin) {\n                        positionY \u003d rectTop - barHeight - margin;\n                        positionX \u003d rectRight - totalWidth;\n                        \n                        // 检查水平方向是否超出屏幕\n                        if (positionX \u003c 0) {\n                            positionX \u003d 0;\n                        }\n                        if (positionX + totalWidth \u003e dm.widthPixels) {\n                            positionX \u003d dm.widthPixels - totalWidth;\n                        }\n                    }\n                    // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 第三优先级：尝试显示在选区右侧 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                    else if (dm.widthPixels - rectRight \u003e\u003d totalWidth + margin) {\n                        positionX \u003d rectRight + margin;\n                        // 垂直居中于选区\n                        positionY \u003d rectTop + (selectionHeight - barHeight) / 2;\n                        \n                        // 检查垂直方向是否超出屏幕\n                        if (positionY \u003c 0) {\n                            positionY \u003d 0;\n                        }\n                        if (positionY + barHeight \u003e effectiveHeight) {\n                            positionY \u003d effectiveHeight - barHeight;\n                        }\n                    }\n                    // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 第四优先级：尝试显示在选区左侧 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                    else if (rectLeft \u003e\u003d totalWidth + margin) {\n                        positionX \u003d rectLeft - totalWidth - margin;\n                        // 垂直居中于选区\n                        positionY \u003d rectTop + (selectionHeight - barHeight) / 2;\n                        \n                        // 检查垂直方向是否超出屏幕\n                        if (positionY \u003c 0) {\n                            positionY \u003d 0;\n                        }\n                        if (positionY + barHeight \u003e effectiveHeight) {\n                            positionY \u003d effectiveHeight - barHeight;\n                        }\n                    }\n                    // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 最后方案：显示在选区内部（右下角）\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                    else {\n                        showInside \u003d true;\n                        \n                        // 检查选区是否足够大以容纳按钮栏\n                        if (selectionWidth \u003e\u003d totalWidth + (insideMargin * 2) \u0026\u0026 \n                            selectionHeight \u003e\u003d barHeight + (insideMargin * 2)) {\n                            // 显示在选区内部右下角\n                            positionX \u003d rectRight - totalWidth - insideMargin;\n                            positionY \u003d rectBottom - barHeight - insideMargin;\n                        } else {\n                            // 选区太小，尝试居中显示\n                            positionX \u003d rectLeft + (selectionWidth - totalWidth) / 2;\n                            positionY \u003d rectTop + (selectionHeight - barHeight) / 2;\n                            \n                            // 确保不超出选区边界\n                            if (positionX \u003c rectLeft) positionX \u003d rectLeft;\n                            if (positionY \u003c rectTop) positionY \u003d rectTop;\n                            if (positionX + totalWidth \u003e rectRight) positionX \u003d rectRight - totalWidth;\n                            if (positionY + barHeight \u003e rectBottom) positionY \u003d rectBottom - barHeight;\n                        }\n                    }\n                    \n                    // 最终边界检查（确保不超出屏幕）\n                    if (positionX \u003c 0) positionX \u003d 0;\n                    if (positionY \u003c 0) positionY \u003d 0;\n                    if (positionX + totalWidth \u003e dm.widthPixels) positionX \u003d dm.widthPixels - totalWidth;\n                    if (positionY + barHeight \u003e effectiveHeight) positionY \u003d effectiveHeight - barHeight;\n                    \n                    buttonBar.setX(positionX);\n                    buttonBar.setY(positionY);\n                    buttonBar.setVisibility(View.VISIBLE);\n                    \n                    // 调试信息\n                    if (showInside) {\n                        console.log(\"按钮栏显示在选区内部\");\n                    }\n                }\n\n                // 处理返回键\n                container.setFocusableInTouchMode(true);\n                container.requestFocus();\n                container.setOnKeyListener(new View.OnKeyListener({\n                    onKey: function(v, keyCode, event) {\n                        if (keyCode \u003d\u003d KeyEvent.KEYCODE_BACK \u0026\u0026 \n                            event.getAction() \u003d\u003d KeyEvent.ACTION_UP) {\n                            try { wm.removeView(container); } catch (e) { console.log(\"移除悬浮框失败: \" + e); }\n                            result.completed \u003d true;\n                            result.pointStr \u003d \"已取消\";\n                            result.clickedButton \u003d \"close\";\n                            latch.countDown();\n                            return true;\n                        }\n                        return false;\n                    }\n                }));\n\n                // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 触摸事件 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                container.setOnTouchListener(new View.OnTouchListener({\n                    onTouch: function (v, event) {\n                        var x \u003d Math.floor(event.getX()),\n                            y \u003d Math.floor(event.getY());\n                        switch (event.getAction()) {\n                            case MotionEvent.ACTION_DOWN:\n                                lastX \u003d x; lastY \u003d y;\n                                if (hasSelection) {\n                                    var l \u003d Math.floor(Math.min(startX, endX)),\n                                        t \u003d Math.floor(Math.min(startY, endY));\n                                    var r \u003d Math.floor(Math.max(startX, endX)),\n                                        b \u003d Math.floor(Math.max(startY, endY));\n                                    if (b \u003e effectiveHeight) b \u003d effectiveHeight;\n\n                                    // 判断是否点击了手柄或选区内部\n                                    if (Math.abs(x - l) \u003c edgeThreshold \u0026\u0026 Math.abs(y - t) \u003c edgeThreshold) dragMode \u003d \u0027lt\u0027;\n                                    else if (Math.abs(x - r) \u003c edgeThreshold \u0026\u0026 Math.abs(y - t) \u003c edgeThreshold) dragMode \u003d \u0027rt\u0027;\n                                    else if (Math.abs(x - l) \u003c edgeThreshold \u0026\u0026 Math.abs(y - b) \u003c edgeThreshold) dragMode \u003d \u0027lb\u0027;\n                                    else if (Math.abs(x - r) \u003c edgeThreshold \u0026\u0026 Math.abs(y - b) \u003c edgeThreshold) dragMode \u003d \u0027rb\u0027;\n                                    else if (x \u003e l \u0026\u0026 x \u003c r \u0026\u0026 y \u003e t \u0026\u0026 y \u003c b) {\n                                        dragMode \u003d \u0027click\u0027;\n                                        clickCount++;\n                                        if (clickHandler !\u003d null) clickHandler.removeCallbacksAndMessages(null);\n                                        clickHandler \u003d new Handler(Looper.getMainLooper());\n                                        var resetRunnable \u003d new Runnable({ run: function () { clickCount \u003d 0; } });\n                                        clickHandler.postDelayed(resetRunnable, 300);\n\n                                        // 双击确认\n                                        if (clickCount \u003d\u003d 2) {\n                                            clickHandler.removeCallbacks(resetRunnable);\n                                            clickCount \u003d 0;\n                                            dragMode \u003d null;\n                                            var ll \u003d l, tt \u003d t, rr \u003d r, bb \u003d b;\n                                            if (x \u003e\u003d ll \u0026\u0026 x \u003c\u003d rr \u0026\u0026 y \u003e\u003d tt \u0026\u0026 y \u003c\u003d bb) {\n                                                result.clickedButton \u003d \"confirm\";\n                                                result.pointStr \u003d ll + \" \" + tt + \" \" + rr + \" \" + bb;\n                                                result.completed \u003d true;\n                                                latch.countDown();\n                                                try { wm.removeView(container); } catch (e) { console.log(\"移除悬浮框失败: \" + e); }\n                                                return true;\n                                            }\n                                        }\n                                    } else dragMode \u003d \u0027draw\u0027;\n                                } else dragMode \u003d \u0027draw\u0027;\n\n                                if (dragMode \u003d\u003d \u0027draw\u0027) {\n                                    startX \u003d x; startY \u003d y; endX \u003d x; endY \u003d Math.floor(Math.min(effectiveHeight, y));\n                                    hasSelection \u003d true;\n                                }\n                                refreshSelection();\n                                return true;\n\n                            case MotionEvent.ACTION_MOVE:\n                                // **拖动时立即隐藏按钮栏**\n                                if (dragMode !\u003d null \u0026\u0026 dragMode !\u003d \u0027click\u0027) {\n                                    buttonBar.setVisibility(View.GONE);\n                                }\n\n                                var dx \u003d x - lastX, dy \u003d y - lastY;\n                                lastX \u003d x; lastY \u003d y;\n\n                                var oldL \u003d Math.min(startX, endX);\n                                var oldT \u003d Math.min(startY, endY);\n                                var oldR \u003d Math.max(startX, endX);\n                                var oldB \u003d Math.max(startY, endY);\n\n                                if (dragMode \u003d\u003d \u0027move\u0027) {\n                                    // 移动整个选区\n                                    var newL \u003d oldL + dx;\n                                    var newT \u003d oldT + dy;\n                                    var newR \u003d oldR + dx;\n                                    var newB \u003d oldB + dy;\n\n                                    // 边界检查\n                                    if (newL \u003c 0) {\n                                        newR -\u003d newL;\n                                        newL \u003d 0;\n                                    }\n                                    if (newT \u003c 0) {\n                                        newB -\u003d newT;\n                                        newT \u003d 0;\n                                    }\n                                    if (newR \u003e dm.widthPixels) {\n                                        newL +\u003d dm.widthPixels - newR;\n                                        newR \u003d dm.widthPixels;\n                                    }\n                                    if (newB \u003e effectiveHeight) {\n                                        newT +\u003d effectiveHeight - newB;\n                                        newB \u003d effectiveHeight;\n                                    }\n\n                                    startX \u003d newL;\n                                    startY \u003d newT;\n                                    endX \u003d newR;\n                                    endY \u003d newB;\n                                } else if (dragMode \u003d\u003d \u0027lt\u0027) {\n                                    // 拖动左上角手柄\n                                    var newL \u003d Math.max(0, oldL + dx);\n                                    var newT \u003d Math.max(0, oldT + dy);\n                                    newL \u003d Math.min(newL, oldR);\n                                    newT \u003d Math.min(newT, oldB);\n\n                                    startX \u003d newL;\n                                    startY \u003d newT;\n                                    endX \u003d oldR;\n                                    endY \u003d oldB;\n                                } else if (dragMode \u003d\u003d \u0027rt\u0027) {\n                                    // 拖动右上角手柄\n                                    var newR \u003d Math.min(dm.widthPixels, oldR + dx);\n                                    var newT \u003d Math.max(0, oldT + dy);\n                                    newR \u003d Math.max(newR, oldL);\n                                    newT \u003d Math.min(newT, oldB);\n\n                                    startX \u003d oldL;\n                                    startY \u003d newT;\n                                    endX \u003d newR;\n                                    endY \u003d oldB;\n                                } else if (dragMode \u003d\u003d \u0027lb\u0027) {\n                                    // 拖动左下角手柄\n                                    var newL \u003d Math.max(0, oldL + dx);\n                                    var newB \u003d Math.min(effectiveHeight, oldB + dy);\n                                    newL \u003d Math.min(newL, oldR);\n                                    newB \u003d Math.max(newB, oldT);\n\n                                    startX \u003d newL;\n                                    startY \u003d oldT;\n                                    endX \u003d oldR;\n                                    endY \u003d newB;\n                                } else if (dragMode \u003d\u003d \u0027rb\u0027) {\n                                    // 拖动右下角手柄\n                                    var newR \u003d Math.min(dm.widthPixels, oldR + dx);\n                                    var newB \u003d Math.min(effectiveHeight, oldB + dy);\n                                    newR \u003d Math.max(newR, oldL);\n                                    newB \u003d Math.max(newB, oldT);\n\n                                    startX \u003d oldL;\n                                    startY \u003d oldT;\n                                    endX \u003d newR;\n                                    endY \u003d newB;\n                                } else if (dragMode \u003d\u003d \u0027draw\u0027) {\n                                    // 绘制新选区\n                                    endX \u003d Math.max(0, Math.min(dm.widthPixels, x));\n                                    endY \u003d Math.max(0, Math.min(effectiveHeight, y));\n                                } else if (dragMode \u003d\u003d \u0027click\u0027) {\n                                    // 判断是否从点击变为移动\n                                    var moveThreshold \u003d 10;\n                                    if (Math.abs(dx) \u003e moveThreshold || Math.abs(dy) \u003e moveThreshold) dragMode \u003d \u0027move\u0027;\n                                }\n\n                                refreshSelection();\n                                return true;\n\n                            case MotionEvent.ACTION_UP:\n                                dragMode \u003d null;\n                                // **松开后显示按钮栏（传入四个坐标）**\n                                if (hasSelection) {\n                                    var rectLeft \u003d Math.min(startX, endX);\n                                    var rectTop \u003d Math.min(startY, endY);\n                                    var rectRight \u003d Math.max(startX, endX);\n                                    var rectBottom \u003d Math.max(startY, endY);\n                                    showButtonBar(rectBottom, rectRight, rectTop, rectLeft);\n                                }\n                                return true;\n                        }\n                        return false;\n                    }\n                }));\n\n                // \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 悬浮窗参数 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n                var params \u003d new WindowManager.LayoutParams(\n                    dm.widthPixels,\n                    effectiveHeight,\n                    WindowManager.LayoutParams.TYPE_SYSTEM_ERROR,\n                    WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN,\n                    PixelFormat.TRANSLUCENT\n                );\n                if (Build.VERSION.SDK_INT \u003e 32) {\n                    params.layoutInDisplayCutoutMode \u003d WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES;\n                }\n                params.gravity \u003d Gravity.TOP | Gravity.LEFT;\n\n                try {\n                    wm.addView(container, params);\n                } catch (e) {\n                    console.log(\"添加悬浮窗失败: \" + e);\n                    result.completed \u003d true;\n                    result.pointStr \u003d \"错误: 添加悬浮窗失败 - \" + e;\n                    latch.countDown();\n                    return;\n                }\n\n                refreshSelection();\n            } catch (e) {\n                console.log(\"添加悬浮窗失败: \" + e);\n                result.completed \u003d true;\n                result.pointStr \u003d \"错误: 添加悬浮窗失败 - \" + e;\n                latch.countDown();\n            }\n        }\n    }));\n\n    var waited \u003d false;\n    try {\n        waited \u003d latch.await(120000, java.util.concurrent.TimeUnit.MILLISECONDS);\n    } catch (e) {\n        console.log(\"等待用户交互时出错: \" + e);\n        result.completed \u003d true;\n        result.pointStr \u003d \"错误: 等待用户交互时出错 - \" + e;\n    }\n\n    if (!waited) {\n        try {\n            if (containerRef) {\n                new Handler(Looper.getMainLooper()).post(new Runnable({\n                    run: function() {\n                        try { wm.removeView(containerRef); } catch (e) { console.log(\"移除悬浮框失败: \" + e); }\n                    }\n                }));\n            }\n        } catch (e) {\n            console.log(\"超时移除悬浮窗失败: \" + e);\n        }\n        result.pointStr \u003d \"已取消\";\n        result.clickedButton \u003d \"close\";\n    }\n\n    if (result.pointStr !\u003d null) {\n        if (result.pointStr \u003d\u003d \"已取消\") {\n            return \"已取消\";\n        } else {\n            var jsonResult \u003d {\n                rectLeft: 0,\n                rectTop: 0,\n                rectRight: 0,\n                rectBottom: 0,\n                rectFlattenToString: \"0 0 0 0\",\n                clickedButton: result.clickedButton\n            };\n\n            try {\n                var coords \u003d result.pointStr.trim().split(\" \");\n                if (coords.length \u003d\u003d\u003d 4) {\n                    jsonResult.rectLeft \u003d parseInt(coords[0]);\n                    jsonResult.rectTop \u003d parseInt(coords[1]);\n                    jsonResult.rectRight \u003d parseInt(coords[2]);\n                    jsonResult.rectBottom \u003d parseInt(coords[3]);\n                    jsonResult.rectFlattenToString \u003d result.pointStr;\n                }\n            } catch (e) {\n                jsonResult.rectFlattenToString \u003d \"错误: 解析坐标失败 - \" + e;\n            }\n\n            return JSON.stringify(jsonResult, null, 2);\n        }\n    } else {\n        result.pointStr \u003d \"未获取到点击坐标\";\n        console.log(result.pointStr);\n        return result.pointStr;\n    }\n}\n\n// \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 调用 \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nvar coordinates \u003d showSelectionPanel();\n\nif (coordinates \u003d\u003d \"已取消\") {\n    \"Cancelled\";\n} else {\n    coordinates;\n}",
+    "customContextDataKey": {
+      "keys": [{
+        "first": "jsRet",
+        "second": "reg"
+      }]
+    },
+    "id": "A-14bb5add-7384-442f-826c-889c35537b9c"
+  }, {
+    "@type": "type.googleapis.com/ShowAlertDialog",
+    "positive": "OK.",
+    "negative": "copy",
+    "onNegative": [{
+      "@type": "type.googleapis.com/WriteClipboard",
+      "text": "{reg}",
+      "customContextDataKey": {
+      },
+      "id": "A-c0407ee7-6a9d-484c-bdcd-c12e0a908acb"
+    }],
+    "message": "{reg}",
+    "cancelable": true,
+    "style": {
+      "fontScale": 1.0
+    },
+    "customContextDataKey": {
+    },
+    "isDisabled": true,
+    "note": "raw output",
+    "id": "A-19e9a954-e055-4837-b571-a66024572573"
+  }, {
+    "@type": "type.googleapis.com/SwitchCase",
+    "case": [{
+      "case": [{
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "reg \u003d\u003d \"Cancelled\";",
+        "customContextDataKey": {
+        },
+        "id": "C-03fca177-d502-4806-b4cf-790c57cf47e6"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/ShowDanmu",
+        "text": "Cancelled",
+        "customContextDataKey": {
+        },
+        "id": "A-548609b6-eae2-4534-ad71-a661bfaff58f"
+      }],
+      "description": "cancel",
+      "id": "Case-fb27311a-5b0d-4b44-b98d-6129851bc3f0",
+      "isBreak": true
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "JSON.parse(reg).clickedButton \u003d\u003d \"share\";",
+        "customContextDataKey": {
+        },
+        "id": "C-64d1c161-2ca6-4af0-a998-36dda4a3a9c9"
+      }, {
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "JSON.parse(reg).clickedButton \u003d\u003d \"pin\";",
+        "customContextDataKey": {
+        },
+        "id": "C-afbb805b-666b-490e-b4bf-c3949c7de4b2"
+      }, {
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "JSON.parse(reg).clickedButton \u003d\u003d \"save\";",
+        "customContextDataKey": {
+        },
+        "id": "C-4dded4db-2b3d-4443-8de0-85ef28c3bf3b"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/NoAction",
+        "icon": "graphic-stitching-four",
+        "customContextDataKey": {
+        },
+        "note": "screenshot logic",
+        "id": "A-8526426f-9ec2-45a5-b5b7-c644b4343128"
+      }],
+      "id": "Case-33ad07a1-03f8-4014-8751-cbe8bc52e350"
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "JSON.parse(reg).clickedButton \u003d\u003d \"confirm\";",
+        "customContextDataKey": {
+        },
+        "id": "C-a76ae6d1-d0fd-48ed-95ed-0b0c1508f3ef"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "JSON.parse(reg).rectFlattenToString;",
+        "customContextDataKey": {
+        },
+        "id": "A-771cf72d-7762-498a-a0ef-77c936a31496"
+      }, {
+        "@type": "type.googleapis.com/ShowAlertDialog",
+        "positive": "copy",
+        "onPositive": [{
+          "@type": "type.googleapis.com/WriteClipboard",
+          "text": "{jsRet}",
+          "customContextDataKey": {
+          },
+          "id": "A-576bf78e-b30a-44e4-a707-7590de178be2"
+        }],
+        "title": "coordinates",
+        "message": "{jsRet}",
+        "cancelable": true,
+        "style": {
+          "fontScale": 1.0
+        },
+        "customContextDataKey": {
+        },
+        "id": "A-d83d5187-7661-416a-8c5a-9b0901ecb313"
+      }],
+      "description": "OK",
+      "id": "Case-771fa94a-7322-4505-8024-254ea3ddcaaf",
+      "isBreak": true
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "JSON.parse(reg).clickedButton \u003d\u003d \"ownText\";",
+        "customContextDataKey": {
+        },
+        "id": "C-d35c5f28-8f07-430f-a3eb-35a1f89b7803"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/ShowDanmu",
+        "text": "widget text",
+        "customContextDataKey": {
+        },
+        "id": "A-96ded010-f053-4642-919b-374202e74d05"
+      }],
+      "description": "ownText",
+      "id": "Case-0c30d078-7c7d-4470-8066-390e79496e87",
+      "isBreak": true
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "JSON.parse(reg).clickedButton \u003d\u003d \"ocr\";",
+        "customContextDataKey": {
+        },
+        "id": "C-1e07436a-781a-479d-8e03-9b3186516bb3"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/ExecuteJS",
+        "expression": "importClass(Packages.tornaco.apps.shortx.core.proto.action.OcrDetect);\nimportClass(Packages.tornaco.apps.shortx.core.proto.common.RectSourceRect);\nimportClass(Packages.tornaco.apps.shortx.core.proto.common.Rect);\nimportClass(com.google.protobuf.Any);\n\n// JSON数据\nvar data \u003d JSON.parse(reg);\n\nvar action \u003d OcrDetect.newBuilder()\n    .setRectSrc(\n        Any.pack(\n            RectSourceRect.newBuilder()\n                .setRect(\n                    Rect.newBuilder()\n                        .setLeft(data.rectLeft)\n                        .setTop(data.rectTop)\n                        .setRight(data.rectRight)\n                        .setBottom(data.rectBottom)\n                        .build()\n                )\n                .build()\n        )\n    )\n    .build();\n\nvar result \u003d shortx.executeAction(action);\n\nresult.contextData.get(\"ocrResult\")",
+        "customContextDataKey": {
+        },
+        "id": "A-d70ef773-4b8d-4642-889b-a3b9ebafefbb"
+      }, {
+        "@type": "type.googleapis.com/ShowAlertDialog",
+        "positive": "copy",
+        "onPositive": [{
+          "@type": "type.googleapis.com/WriteClipboard",
+          "text": "{jsRet}",
+          "customContextDataKey": {
+          },
+          "id": "A-aa025f7c-04e6-4cf5-a95c-00ae6ee91477"
+        }],
+        "negative": "ok",
+        "title": "Ocr",
+        "message": "{jsRet}",
+        "cancelable": true,
+        "style": {
+          "fontScale": 1.0
+        },
+        "customContextDataKey": {
+        },
+        "id": "A-12efc6f6-c169-4d4c-bc12-ad3eae56533d"
+      }],
+      "description": "OCR",
+      "id": "Case-23271226-4512-4a19-b79d-32b1844279c1",
+      "isBreak": true
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "JSON.parse(reg).clickedButton \u003d\u003d \"save\";",
+        "customContextDataKey": {
+        },
+        "id": "C-55da1ae5-f908-4288-b5bc-ad7da8368f00"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/ShowDanmu",
+        "text": "save",
+        "customContextDataKey": {
+        },
+        "id": "A-9a3db8ae-3efc-46d1-a948-52549bf1b097"
+      }],
+      "description": "save",
+      "id": "Case-4c0d24d6-b279-41da-9f41-03808a96114f",
+      "isBreak": true
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "JSON.parse(reg).clickedButton \u003d\u003d \"share\";",
+        "customContextDataKey": {
+        },
+        "id": "C-5cace027-bfef-4658-a99e-f7436354780b"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/ShowDanmu",
+        "text": "share",
+        "customContextDataKey": {
+        },
+        "id": "A-577aa7b5-2933-432c-ac69-ac058c561e83"
+      }],
+      "description": "share",
+      "id": "Case-dc30048c-2203-40fc-9bbe-7d51bf11b595",
+      "isBreak": true
+    }, {
+      "case": [{
+        "@type": "type.googleapis.com/MatchJS",
+        "expression": "JSON.parse(reg).clickedButton \u003d\u003d \"pin\";",
+        "customContextDataKey": {
+        },
+        "id": "C-4bc1a17f-f74f-42dc-9a78-e24c9dd33a19"
+      }],
+      "action": [{
+        "@type": "type.googleapis.com/ShowDanmu",
+        "text": "texture",
+        "customContextDataKey": {
+        },
+        "id": "A-8d818187-677c-4ac7-88db-e893521d7def"
+      }],
+      "description": "texture",
+      "id": "Case-b40bfbeb-9e39-44ef-a268-ed394f072368",
+      "isBreak": true
+    }],
+    "customContextDataKey": {
+    },
+    "id": "A-d6590d6a-d1b4-4ad2-9c48-7024ecb02803"
+  }],
+  "id": "SHARED-DA-701949fd-2a3e-49a3-9d35-2a2e019560c1",
+  "lastUpdateTime": "1765889096080",
+  "createTime": "1765778518389",
+  "author": {
+    "name": "HeWei"
+  },
+  "title": "Select screen area",
+  "description": "Version 2.0\nSimilar to the cropping tool in the gallery\n \nPredefine multiple button attributes\nSupport adjusting by dragging handles\nSupport multiple output methods\nDouble-click the selected area to confirm\nSupport returning and canceling\nMonet dynamic color picking",
+  "versionCode": "3",
+  "hook": {
+  },
+  "quit": {
+  }
+}
+###------###
+{"type":"da"}

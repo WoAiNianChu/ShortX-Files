@@ -1,12 +1,34 @@
 {
   "directActions": [
     {
+      "id": "SHARED-DA-e8ea1229-7dfb-4df4-956c-0e1894b93155",
+      "fileUrl": "ShortX-Android组策略管理器.txt",
+      "title": "Android组策略管理器",
+      "description": "1.5版本\n• 实时限制\n指令允许管理员配置和管理 Android 设备上的用户限制政策。该工具提供了一组功能和实用工具，允许管理员配置和管理 Android 设备上的用户权限，类似于 Windows 系统中的组策略\n例如防止恢复出厂设置、控制应用程序（卸载、禁用、清除数据、强制停止、清除默认应用程序）等限制政策。",
+      "versionCode": 1,
+      "updateTimeMillis": 1768223541682,
+      "author": "HeWei",
+      "tags": [],
+      "requireMinShortXProtoVersion": 0
+    },
+    {
       "id": "SHARED-DA-7221c9e0-3192-4324-ad96-45ac3398c719",
-      "fileUrl": "ShortX-Shortcuts_快捷方式.txt",
+      "fileUrl": "ShortX-Shortcuts(快捷方式.txt",
       "title": "Shortcuts(快捷方式",
-      "description": "4.0版本\n支持全部类型快捷方式\n支持多用户\n多种语言",
-      "versionCode": 4,
-      "updateTimeMillis": 1762037653533,
+      "description": "4.2版本\n• 支持全类型快捷方式\n• 支持三种执行方式\n• 支持多用户\n• 支持多种语言",
+      "versionCode": 5,
+      "updateTimeMillis": 1767693939182,
+      "author": "HeWei",
+      "tags": [],
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "SHARED-DA-15d1e513-c8f8-4fc9-8973-b3f596eb69f9",
+      "fileUrl": "ShortX-ShortX_Icons.txt",
+      "title": "ShortX Icons",
+      "description": "一个使用ShortX Icons资源的UI",
+      "versionCode": 1,
+      "updateTimeMillis": 1765689975257,
       "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
@@ -34,6 +56,17 @@
       "requireMinShortXProtoVersion": 0
     },
     {
+      "id": "SHARED-DA-d6ffbe3e-2187-441b-ac79-7df3f861022f",
+      "fileUrl": "ShortX-代码库.txt",
+      "title": "代码库 1.1",
+      "description": "代码库索引，方便查找代码\n每天半夜同步索引数据",
+      "versionCode": 2,
+      "updateTimeMillis": 1764305225373,
+      "author": "HeWei",
+      "tags": [],
+      "requireMinShortXProtoVersion": 0
+    },
+    {
       "id": "SHARED-DA-cb7a42a7-c032-4536-b622-c7e5b7d90b91",
       "fileUrl": "ShortX-全局贴图_1.0.txt",
       "title": "全局贴图 1.0",
@@ -56,12 +89,34 @@
       "requireMinShortXProtoVersion": 0
     },
     {
+      "id": "SHARED-DA-83746f96-f278-4e75-ad00-1e4bef39fc51",
+      "fileUrl": "ShortX-屏幕文本查找直达.txt",
+      "title": "屏幕文本查找直达",
+      "description": "1.3.5版本\n自动滑动屏幕查找指定文本，直达目标；特别适合在不带搜索功能的长列表页面或网页里使用。\n\n使用方法：在待查找的页面里，使用Deeplink功能调用该指令。\n\n音量-，停止查找。",
+      "versionCode": 5,
+      "updateTimeMillis": 1765624571012,
+      "author": "HeWei",
+      "tags": [],
+      "requireMinShortXProtoVersion": 0
+    },
+    {
       "id": "DA312fa1a8-9ac7-40a0-9cb2-e949a4e37572",
       "fileUrl": "ShortX-快递查询_2.0.txt",
       "title": "快递查询 2.0",
       "description": "使用快递 100的官方Api\n速度嘎嘎快",
       "versionCode": 3,
       "updateTimeMillis": 1702739628806,
+      "author": "HeWei",
+      "tags": [],
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "SHARED-DA-ba0ae43a-3b60-4ed8-9a3a-b1dfb45892dd",
+      "fileUrl": "ShortX-控件检索器.txt",
+      "title": "控件检索器",
+      "description": "1.6版本",
+      "versionCode": 1,
+      "updateTimeMillis": 1767538643681,
       "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
@@ -83,7 +138,18 @@
       "title": "设置项监视器 4.6",
       "description": "变化前运行一次，变化后运行一次\n对标设置项监视器App,找出设置项变化。\n\nRun once before the change and once after the change, benchmarking against the Settings Monitor App to identify changes in settings.",
       "versionCode": 9,
-      "updateTimeMillis": 1762048906410,
+      "updateTimeMillis": 1762383207742,
+      "author": "HeWei",
+      "tags": [],
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "SHARED-DA-701949fd-2a3e-49a3-9d35-2a2e019560c1",
+      "fileUrl": "ShortX-选择屏幕区域.txt",
+      "title": "选择屏幕区域",
+      "description": "2.8版本\n类似图库中的裁剪工具\n\n预设多种按钮属性\n支持拖动手柄调整\n支持多种方式输出\n双击框选区域确定\n支持返回取消\nMonet动态取色",
+      "versionCode": 6,
+      "updateTimeMillis": 1773220923080,
       "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
@@ -163,6 +229,17 @@
       "description": "例:复制/粘贴\n单击复制，长按粘贴\n请去指令参数填写信息",
       "versionCode": 3,
       "updateTimeMillis": 1732029456085,
+      "author": "HeWei",
+      "tags": [],
+      "requireMinShortXProtoVersion": 0
+    },
+    {
+      "id": "SHARE-rule-86278dd7-b09b-4615-944a-3f00094054cf",
+      "fileUrl": "ShortX-附近有WiFi.txt",
+      "title": "附近有WiFi",
+      "description": "内置两种条件，分别为SSID/BSSID\n两种匹配方式，分别为完全匹配/包含匹配",
+      "versionCode": 1,
+      "updateTimeMillis": 1768488615436,
       "author": "HeWei",
       "tags": [],
       "requireMinShortXProtoVersion": 0
@@ -1125,7 +1202,7 @@
       "id": "CODELIB-8cabe1a3-c113-59a1-a29f-fdad724bca85",
       "fileUrl": "Code-JavaScript_单个应用传感器管理.txt",
       "title": "单个应用传感器管理",
-      "description": "如果有指定用户，添加 --user 参数",
+      "description": "指定用户指定应用传感器管理\n支持禁用、解除、查看，重置",
       "versionCode": 1,
       "updateTimeMillis": 1764472924000,
       "author": "HeWei",
@@ -1992,7 +2069,7 @@
       "id": "CODELIB-01f78d95-10bc-5721-a33b-b07d377f51cb",
       "fileUrl": "Code-JavaScript_显示屏刷新率显示管理.txt",
       "title": "显示屏刷新率显示管理",
-      "description": "显示屏刷新率显示管理",
+      "description": "显示刷新率开关控制函数\n0 = 关闭\n1 = 开启\n2 = 查询当前状态（返回 true/false）\n3 = 切换（打开→关 / 关→开）",
       "versionCode": 1,
       "updateTimeMillis": 1765711824000,
       "author": "HeWei",
@@ -2655,7 +2732,7 @@
       "id": "CODELIB-8471376e-10ac-5a0d-86f7-aaca642f690c",
       "fileUrl": "Code-JavaScript_获取USB功能启用状态.txt",
       "title": "获取USB功能启用状态",
-      "description": "检查USB功能是否启用（如adb、mtp）",
+      "description": "rndis → USB共享网络\nnone → 仅充电\nmtp → 文件传输\nptp → 图片传输\nadb → 设备调试",
       "versionCode": 1,
       "updateTimeMillis": 1764248030000,
       "author": "HeWei",
@@ -3709,7 +3786,7 @@
       "id": "CODELIB-feab4d6a-9227-5440-8518-074f5e77019e",
       "fileUrl": "Code-JavaScript_获取指定传感器状态_补充.txt",
       "title": "获取指定传感器状态",
-      "description": "获取指定传感器状态",
+      "description": "第二种方法\n获取摄像头权限开关是否关闭\n1 - 麦克风使用权限\n2 - 摄像头使用权限",
       "versionCode": 1,
       "updateTimeMillis": 1764465050000,
       "author": "HeWei",
@@ -4763,7 +4840,7 @@
       "id": "CODELIB-9f2c05af-196a-5371-88a8-40fd8233d92f",
       "fileUrl": "Code-JavaScript_调用解锁传感器对话框.txt",
       "title": "调用解锁传感器对话框",
-      "description": "调用解锁传感器对话框",
+      "description": "在关闭对应传感器的前提，手动弹一次“解锁传感器开关”的确认对话框\n1 - 麦克风使用权限\n2 - 摄像头使用权限",
       "versionCode": 1,
       "updateTimeMillis": 1764465059000,
       "author": "HeWei",
@@ -4848,7 +4925,7 @@
       "id": "CODELIB-eca9c754-dd8f-5e8f-b436-f19532467d97",
       "fileUrl": "Code-JavaScript_邮件发送.txt",
       "title": "邮件发送",
-      "description": "配置邮件发送模式",
+      "description": "Gmail  →  Google邮箱\nProtonMail\nQQ  →  QQ邮箱\nNetease →  网易邮箱",
       "versionCode": 1,
       "updateTimeMillis": 1768945754000,
       "author": "HeWei",
@@ -4865,7 +4942,7 @@
       "id": "CODELIB-666b3338-2485-5094-9a1d-5bbd47f09ac1",
       "fileUrl": "Code-JavaScript_邮件发送_附件.txt",
       "title": "邮件发送",
-      "description": "配置邮件发送模式",
+      "description": "Gmail  →  Google邮箱\nProtonMail\nQQ  →  QQ邮箱\nNetease →  网易邮箱",
       "versionCode": 1,
       "updateTimeMillis": 1768945745000,
       "author": "HeWei",
@@ -4916,7 +4993,7 @@
       "id": "CODELIB-1f404ddc-fadd-5e48-a6ba-13490248e661",
       "fileUrl": "Code-JavaScript_锁定刷新率.txt",
       "title": "锁定刷新率",
-      "description": "重启需重新设置，个别系统锁屏后也会失效，自己测试。",
+      "description": "强制锁定指定刷新率",
       "versionCode": 1,
       "updateTimeMillis": 1765534804000,
       "author": "HeWei",
@@ -5134,5 +5211,5 @@
       "requireMinShortXProtoVersion": 0
     }
   ],
-  "updateTimeMillis": 1769677136000
+  "updateTimeMillis": 1773220923080
 }

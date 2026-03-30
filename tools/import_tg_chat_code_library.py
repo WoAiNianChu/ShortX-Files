@@ -60,10 +60,12 @@ LOW_SIGNAL_COMMENT_PATTERNS = (
     re.compile(r"^(使用示例|工具函数|辅助函数)$"),
     re.compile(r"^(简洁设置入口|执行并返回结果|核心类加载与反射辅助|邮件执行函数|邮件服务器属性配置)$"),
     re.compile(r"^(配置路径|创建\s*loader|加载.+相关类|缓存.+成员|预热.+结构)$"),
+    re.compile(r"^配置.+(?:模式|属性配置|等信息)$"),
     re.compile(r"^获取\s+DEFAULT\b"),
     re.compile(r"^获取静态方法\b"),
     re.compile(r"^输出拼音$"),
 )
+DESCRIPTION_SCAN_NON_EMPTY_LIMIT = 18
 ICON_NAME_BY_TYPE = {
     TYPE_JS: "vuejs-line",
     TYPE_MVEL: "code-line",
@@ -248,22 +250,79 @@ def is_low_signal_comment(comment: str) -> bool:
     return False
 
 
+def clean_block_comment_line(line: str, is_first: bool, is_last: bool) -> str:
+    cleaned = line.strip()
+    if is_first:
+        if cleaned.startswith("/**"):
+            cleaned = cleaned[3:]
+        elif cleaned.startswith("/*"):
+            cleaned = cleaned[2:]
+    if is_last and "*/" in cleaned:
+        cleaned = cleaned.split("*/", 1)[0]
+    cleaned = cleaned.lstrip()
+    if cleaned.startswith("*"):
+        cleaned = cleaned[1:].lstrip()
+    return cleaned.strip()
+
+
+def normalize_comment_candidate_lines(lines: list[str]) -> str | None:
+    normalized_lines: list[str] = []
+    for raw_line in lines:
+        line = raw_line.strip()
+        if not line:
+            continue
+        if any(line.startswith(prefix) for prefix in HEADER_COMMENT_PREFIXES):
+            continue
+        if is_low_signal_comment(line):
+            continue
+        normalized_lines.append(line)
+    if not normalized_lines:
+        return None
+    return "\n".join(normalized_lines)
+
+
+def extract_block_comment(lines: list[str], start_index: int) -> tuple[str | None, int]:
+    raw_lines: list[str] = []
+    index = start_index
+    while index < len(lines):
+        stripped = lines[index].strip()
+        raw_lines.append(stripped)
+        if "*/" in stripped:
+            break
+        index += 1
+
+    cleaned_lines = [
+        clean_block_comment_line(
+            line,
+            is_first=offset == 0,
+            is_last=offset == len(raw_lines) - 1,
+        )
+        for offset, line in enumerate(raw_lines)
+    ]
+    return normalize_comment_candidate_lines(cleaned_lines), index
+
+
 def extract_description(expression: str, fallback: str) -> str:
+    lines = expression.splitlines()
     scanned_non_empty = 0
-    for raw_line in expression.splitlines():
-        stripped = raw_line.strip()
+    index = 0
+    while index < len(lines):
+        stripped = lines[index].strip()
         if stripped:
             scanned_non_empty += 1
-        if scanned_non_empty > 18:
+        if scanned_non_empty > DESCRIPTION_SCAN_NON_EMPTY_LIMIT:
             break
-        if not stripped.startswith("//"):
+        if stripped.startswith("/*"):
+            block_comment, index = extract_block_comment(lines, index)
+            if block_comment:
+                return block_comment
+            index += 1
             continue
-        comment = stripped[2:].strip()
-        if any(comment.startswith(prefix) for prefix in HEADER_COMMENT_PREFIXES):
-            continue
-        if is_low_signal_comment(comment):
-            continue
-        return comment
+        if stripped.startswith("//"):
+            comment = normalize_comment_candidate_lines([stripped[2:].strip()])
+            if comment:
+                return comment
+        index += 1
     return fallback
 
 

@@ -1,0 +1,47 @@
+{
+  "facts": [{
+    "@type": "type.googleapis.com/Broadcast",
+    "actions": ["android.net.wifi.SCAN_RESULTS"],
+    "customContextDataKey": {
+    },
+    "id": "F-6eda5d13-e13e-4f80-bbd1-f033c43c11b4"
+  }],
+  "conditions": [{
+    "@type": "type.googleapis.com/MatchJS",
+    "expression": "var wifiService \u003d android.os.ServiceManager.getService(\"wifi\");\nvar targetSSID \u003d \"WiFi名称\"; // 目标 SSID(Wifi名称)\nvar matchType \u003d \"contains\"; // 控制匹配方式\n/*\n\u003d\u003d 代表 完全匹配\ncontains 代表包含\n*/\n\nfunction checkSSID(ssid) {\n    if (matchType \u003d\u003d \"\u003d\u003d\") {\n        return ssid \u003d\u003d targetSSID;       // 精确匹配\n    } else if (matchType \u003d\u003d \"contains\") {\n        return ssid.includes(targetSSID); // 包含判断\n    }\n    return false; // 默认返回 false\n}\n\nfunction scanAndCheck() {\n    try {\n        var scanResults \u003d wifiService.getScanResults(\"android\", null).getList();\n        for (var i \u003d 0; i \u003c scanResults.size(); i++) {\n            if (checkSSID(scanResults.get(i).SSID)) {\n                return true; // 找到立即返回 true\n            }\n        }\n    } catch (e) {\n        try {\n            var scanResults \u003d wifiService.getScanResults(\"android\", null);\n            for (var i \u003d 0; i \u003c scanResults.size(); i++) {\n                if (checkSSID(scanResults.get(i).SSID)) {\n                    return true;\n                }\n            }\n        } catch (e) {\n            var scanResults \u003d wifiService.getScanResults(\"android\");\n            for (var i \u003d 0; i \u003c scanResults.size(); i++) {\n                if (checkSSID(scanResults.get(i).SSID)) {\n                    return true;\n                }\n            }\n        }\n    }\n    return false; // 如果没有找到目标 SSID，返回 false\n}\n\n// 调用函数，返回结果\nscanAndCheck();",
+    "customContextDataKey": {
+    },
+    "id": "C-209cad36-fdaf-4e89-bfd9-3461ef89deaf"
+  }, {
+    "@type": "type.googleapis.com/MatchJS",
+    "expression": "var wifiService \u003d android.os.ServiceManager.getService(\"wifi\");\nvar targetBSSID \u003d \"2x:x0:xf:x3:dx:x9\"; // 目标 BSSID\nvar matchType \u003d \"\u003d\u003d\"; // 控制匹配方式\n/*\n\u003d\u003d 代表 完全匹配\ncontains 代表包含\n*/\n\nfunction checkBSSID(bssid) {\n    if (matchType \u003d\u003d \"\u003d\u003d\") {\n        return bssid \u003d\u003d targetBSSID;       // 精确匹配\n    } else if (matchType \u003d\u003d \"contains\") {\n        return bssid.includes(targetBSSID); // 包含判断\n    }\n    return false; // 默认返回 false\n}\n\nfunction scanAndCheck() {\n    try {\n        var scanResults \u003d wifiService.getScanResults(\"android\", null).getList();\n        for (var i \u003d 0; i \u003c scanResults.size(); i++) {\n            if (checkBSSID(scanResults.get(i).BSSID)) {\n                return true; // 找到立即返回 true\n            }\n        }\n    } catch (e) {\n        try {\n            var scanResults \u003d wifiService.getScanResults(\"android\", null);\n            for (var i \u003d 0; i \u003c scanResults.size(); i++) {\n                if (checkBSSID(scanResults.get(i).BSSID)) {\n                    return true;\n                }\n            }\n        } catch (e) {\n            var scanResults \u003d wifiService.getScanResults(\"android\");\n            for (var i \u003d 0; i \u003c scanResults.size(); i++) {\n                if (checkBSSID(scanResults.get(i).BSSID)) {\n                    return true;\n                }\n            }\n        }\n    }\n    return false; // 如果没有找到目标 BSSID，返回 false\n}\n\n// 调用函数，返回结果\nscanAndCheck();",
+    "customContextDataKey": {
+    },
+    "id": "C-1142a84f-8b9b-4fdb-b454-c3713064fc82"
+  }],
+  "actions": [{
+    "@type": "type.googleapis.com/ScreenFlash",
+    "colorInt": "-65536",
+    "times": "2",
+    "customContextDataKey": {
+    },
+    "id": "A-bcc887d7-5abd-4b68-9c00-13b0e73074a6"
+  }],
+  "id": "SHARE-rule-86278dd7-b09b-4615-944a-3f00094054cf",
+  "lastUpdateTime": "1768488615436",
+  "createTime": "1763055370801",
+  "author": {
+    "name": "HeWei"
+  },
+  "title": "附近有WiFi",
+  "description": "内置两种条件，分别为SSID/BSSID\n两种匹配方式，分别为完全匹配/包含匹配",
+  "isEnabled": true,
+  "condOp": "ANY",
+  "hook": {
+  },
+  "quit": {
+  },
+  "versionCode": "1"
+}
+###------###
+{"type":"rule"}
